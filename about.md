@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a data scientist.
 
-### More Information
+### ABOUT
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm Quoc and this is my blog where my journey is told. Mostly, i will share my thought about the technology fascinated me. 
+* I try to visualize and explain the fundamental concepts, models: MSE, Cross Entropy, KL Deverency, Convolution Nets, Long-Short Term Memory, Attention Mechanism and give a clear picture about how it works.
+* I love to contribute to Viet Nam open source, and help self-leaners have the awesome documents.
 
 ### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Share whatever you can to me at [pbcquoc@gmail.com](mailto:pbcquoc@gmail.com)
