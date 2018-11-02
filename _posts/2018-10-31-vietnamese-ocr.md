@@ -26,8 +26,20 @@ Dữ liệu đã chuẩn bị xong thì đến phần model. Môt trong những 
 
 Đối dữ liệu là ảnh thì chúng ta sẽ dùng mô hình CNN để extract feature.  Ở đây, mình dùng VGG16 nhé. Trong model hình này, chúng ta nên lưu ý số tầng pooling, mình chỉ sử dụng 4 tầng pooling của VGG16, mỗi tầng pooling sẽ có kích thước 2x2,đồng thời bỏ hết tất cả các tầng fully connected cuối cùng, do đó output của VGG16 là một tập các feature maps, mỗi pixel trên feature tương ứng vùng 16x16 trên bức ảnh đầu vào. 
 
-<div class="img-div", markdown="0">
+<div class="img-div" markdown="0">
     <img src="/images/ocr_pooling_size.png" />
-</div>    
+</div>
 
 Việc chọn kích thước và số tầng pooling này cực kì quan trọng vì nó ảnh hưởng đến số pixel mà mỗi timestep nhìn thấy được.Nếu các bạn chọn kính thước tầng pooling size quá lớn sẽ dần đến việc một step sẽ bao gồm nhiểũ chữ trong ảnh do đó mô hình sẽ không nhận dạng được.
+
+```python
+def maxpooling(base_model):
+    model = Sequential(name='vgg16')
+    for layer in base_model.layers[:-1]:
+        if 'pool' in layer.name:
+            pooling_layer = MaxPooling2D(pool_size=(2, 2), name=layer.name)
+            model.add(pooling_layer)
+        else:
+            model.add(layer)
+    return model
+```
