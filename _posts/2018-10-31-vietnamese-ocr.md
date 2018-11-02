@@ -15,7 +15,7 @@ Môt trong những mô hình được hay sử dụng là CRNN, tuy nhiên mô h
 Đối với văn bản scan thì việc tiền xử lý như remove noise,background là cực kì quan trọng và ảnh hưởng khá nhiểu đến độ chính xác của bài toán. Để remove noise và background thì các bạn có thể sử dụng kmean để cluster bức ảnh ra 2 màu chủ đạo trắng và đen rồi sau đó binary ảnh dựa vào kết quả cluster. Trong quá trình xử lý các bạn có thể sử dụng [tool](https://github.com/mauvilsa/imgtxtenh) này nhé
 
 <div class="img-div" markdown="0">
-    <img src="/images/ocr_process_step.pngg" />
+    <img src="/images/ocr_process_step.png" />
 </div>
 
 ## Mô hình
