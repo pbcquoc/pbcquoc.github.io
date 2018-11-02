@@ -33,13 +33,5 @@ Dữ liệu đã chuẩn bị xong thì đến phần model. Môt trong những 
 Việc chọn kích thước và số tầng pooling này cực kì quan trọng vì nó ảnh hưởng đến số pixel mà mỗi timestep nhìn thấy được.Nếu các bạn chọn kính thước tầng pooling size quá lớn sẽ dần đến việc một step sẽ bao gồm nhiểũ chữ trong ảnh do đó mô hình sẽ không nhận dạng được.
 
 ```python
-def maxpooling(base_model):
-    model = Sequential(name='vgg16')
-    for layer in base_model.layers[:-1]:
-        if 'pool' in layer.name:
-            pooling_layer = MaxPooling2D(pool_size=(2, 2), name=layer.name)
-            model.add(pooling_layer)
-        else:
-            model.add(layer)
-    return model
+base_model = applications.VGG16(weights='imagenet', include_top=False)
 ```
