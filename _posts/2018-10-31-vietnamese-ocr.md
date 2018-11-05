@@ -40,3 +40,11 @@ Với ảnh đầu vào có kích thước 1280x60 thì output của vgg16 là (
 ### Visual attention
 Với mô hình CRNN, kết quả của vgg được truyền trực tiếp vào mô hình LSTM, tuy nhiên, với thực nghiệp của mình khi stack thêm một lớp attention ở giữa tầng vgg và LSTM sẽ cho kết quả nhận dạng tốt hơn. Attention cho phép model của chúng ta được thoải mái lựa chọn kết hợp thông tin giữa các timestep khác nhau để tổng hợp lại và sử dụng đặc trưng tổng hợp này làm đầu vào để nhận dạng chữ cái. 
 
+<span id="sigmoid_function" style="font-size:200%"></span>
+
+<script>
+var sigmoid_el = $("#sigmoid_function");
+console.log(sigmoid_el);
+katex.render("\\frac{1}{1 + e^{-x}}", sigmoid_el[0]);
+console.log("printing")
+</script>
