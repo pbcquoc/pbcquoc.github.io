@@ -35,3 +35,4 @@ Việc chọn kích thước và số tầng pooling này cực kì quan trọng
 ```python
 base_model = applications.VGG16(weights='imagenet', include_top=False)
 ```
+Với ảnh đầu vào là 
