@@ -32,9 +32,10 @@ Dữ liệu đã chuẩn bị xong thì đến phần model. Môt trong những 
 
 Việc chọn kích thước và số tầng pooling này cực kì quan trọng vì nó ảnh hưởng đến số pixel mà mỗi timestep nhìn thấy được.Nếu các bạn chọn kính thước tầng pooling size quá lớn sẽ dần đến việc một step sẽ bao gồm nhiểũ chữ trong ảnh do đó mô hình sẽ không nhận dạng được.
 
-```python
+{% highlight python linenos %}
 base_model = applications.VGG16(weights='imagenet', include_top=False)
-```
+{% endhighlight %}
+
 Với ảnh đầu vào có kích thước 1280x60 thì output của vgg16 là (nmaps, w, h) = ..., mỗi dòng tương ứng với chiều w thì tương ứng với một timstep cho tầng LSTM.
 
 ### Visual attention
