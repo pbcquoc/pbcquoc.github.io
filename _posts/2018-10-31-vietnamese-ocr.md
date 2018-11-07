@@ -41,11 +41,17 @@ Với ảnh đầu vào có kích thước 1280x60 thì output của vgg16 là (
 ### Visual attention
 Với mô hình CRNN, kết quả của vgg được truyền trực tiếp vào mô hình LSTM, tuy nhiên, với thực nghiệp của mình khi stack thêm một lớp attention ở giữa tầng vgg và LSTM sẽ cho kết quả nhận dạng tốt hơn. Attention cho phép model của chúng ta được thoải mái lựa chọn kết hợp thông tin giữa các timestep khác nhau để tổng hợp lại và sử dụng đặc trưng tổng hợp này làm đầu vào để nhận dạng chữ cái. 
 
-<span id="sigmoid_function" style="font-size:200%"></span>
+<span id="aligment_model" style="font-size:200%"></span>
+<span id="aligment_score" style="font-size:200%"></span>
+<span id="context_vector" style="font-size:200%"></span>
 
 <script>
-var sigmoid_el = $("#sigmoid_function");
-console.log(sigmoid_el);
-katex.render("\\frac{1}{1 + e^{-x}}", sigmoid_el[0]);
-console.log("printing")
+var aligment_model = $("#aligment_model");
+katex.render("e_{ij}=a(s_{i-1}, h_{j})", aligment_model[0]);
+
+var aligment_score = $("#aligment_score");
+katex.render("\alpha_{ij} = softmax(e_{ij})", aligment_score[0]);
+
+var context_vector = $("#context_vector");
+katex.render("c_{i} = \sum_{j=1}^{T_{x}}\alpha_{ij}*h_{j}", context_vector[0]);
 </script>
