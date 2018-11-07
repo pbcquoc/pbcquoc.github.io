@@ -39,11 +39,15 @@ base_model = applications.VGG16(weights='imagenet', include_top=False)
 Với ảnh đầu vào có kích thước 1280x60 thì output của vgg16 là (nmaps, w, h) = ..., mỗi dòng tương ứng với chiều w thì tương ứng với một timstep cho tầng LSTM.
 
 ### Visual attention
-Với mô hình CRNN, kết quả của vgg được truyền trực tiếp vào mô hình LSTM, tuy nhiên, với thực nghiệp của mình khi stack thêm một lớp attention ở giữa tầng vgg và LSTM sẽ cho kết quả nhận dạng tốt hơn. Attention cho phép model của chúng ta được thoải mái lựa chọn kết hợp thông tin giữa các timestep khác nhau để tổng hợp lại và sử dụng đặc trưng tổng hợp này làm đầu vào để nhận dạng chữ cái. 
+Với mô hình CRNN, kết quả của vgg được truyền trực tiếp vào mô hình LSTM, tuy nhiên, với thực nghiệp của mình khi stack thêm một lớp attention ở giữa tầng vgg và LSTM sẽ cho kết quả nhận dạng tốt hơn. Attention cho phép model của chúng ta được thoải mái lựa chọn kết hợp thông tin giữa các timestep khác nhau để tổng hợp lại và sử dụng đặc trưng tổng hợp này làm đầu vào để nhận dạng chữ cái. Cụ thể vector context được tổng hợp tại mỗi timestep như sau:
 
 <span id="aligment_model" style="font-size:200%"></span>
+Đầu tiên ta cần tính e với e chính là output của Aligment Model, một dạng feedforward nets với input là trạng thái của networks hiện tại 
+
 <span id="aligment_score" style="font-size:200%"></span>
+Sau đó ta tính attention score tại mỗi timestep bằng hàm softmax vì chúng ta mong muốn tổng attention score bằng 1
 <span id="context_vector" style="font-size:200%"></span>
+Cuối cùng, context vector là weighted average của trạng thái ẩn với attention score.
 
 <script>
 var aligment_model = $("#aligment_model");
