@@ -63,3 +63,17 @@ katex.render("\alpha_{ij} = softmax(e_{ij})", aligment_score[0]);
 var context_vector = $("#context_vector");
 katex.render("c_{i} = \sum_{j=1}^{T_{x}}\alpha_{ij}*h_{j}", context_vector[0]);
 </script>
+
+{% highlight python linenos %}
+def attention_rnn(inputs):
+    # inputs.shape = (batch_size, time_steps, input_dim)
+    input_dim = int(inputs.shape[2])
+    timestep = int(inputs.shape[1])
+    a = Permute((2, 1))(inputs)
+    a = Dense(timestep, activation='softmax')(a) // Alignment Model + Softmax
+    a = Lambda(lambda x: K.mean(x, axis=1), name='dim_reduction')(a)
+    a = RepeatVector(input_dim)(a)
+    a_probs = Permute((2, 1), name='attention_vec')(a)
+    output_attention_mul = multiply([inputs, a_probs], name='attention_mul') // Weighted Average 
+    return output_attention_mul
+{% endhighlight %}
