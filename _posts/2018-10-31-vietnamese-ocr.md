@@ -83,3 +83,5 @@ Với các vector context được tính ở tầng Attention được sử dụ
 <div class="img-div" markdown="0">
     <img src="/images/ocr_lstm.png" />
 </div>
+### Connectionist Temporal Classification loss
+Với dữ liệu huấn luyện, chúng ta có nhãn là một đoạn text tương ứng với chữ trong bức ảnh đó. Chúng ta không có nhãn cụ thể tại mỗi thời điểm từ xuất hiện là gì tương ứng với timestep trong mô hình LSTM, do đó chúng ta không thể dùng cross entropy loss để tính độ lỗi mà phải dùng CTC loss trong bài toán bài. 
