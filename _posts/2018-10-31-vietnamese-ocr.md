@@ -77,3 +77,6 @@ def attention_rnn(inputs):
     output_attention_mul = multiply([inputs, a_probs], name='attention_mul') // Weighted Average 
     return output_attention_mul
 {% endhighlight %}
+
+### LSTM 
+Với các vector context được tính ở tầng Attention được sử dụng là đầu vào cho mô hình LSTM. Tại mỗi timestep, chúng ta dự đoán từ tại thời điểm đó. Các timestep liên tục có thể dữ đoán cùng một từ.
