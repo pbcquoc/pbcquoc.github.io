@@ -80,3 +80,6 @@ def attention_rnn(inputs):
 
 ### LSTM 
 Với các vector context được tính ở tầng Attention được sử dụng là đầu vào cho mô hình LSTM. Tại mỗi timestep, chúng ta dự đoán từ tại thời điểm đó. Các timestep liên tục có thể dữ đoán cùng một từ.
+<div class="img-div" markdown="0">
+    <img src="/images/ocr_lstm.png" />
+</div>
