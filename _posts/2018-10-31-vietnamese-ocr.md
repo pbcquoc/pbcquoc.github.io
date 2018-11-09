@@ -85,3 +85,8 @@ Với các vector context được tính ở tầng Attention được sử dụ
 </div>
 ### Connectionist Temporal Classification loss
 Với dữ liệu huấn luyện, chúng ta có nhãn là một đoạn text tương ứng với chữ trong bức ảnh đó. Chúng ta không có nhãn cụ thể tại mỗi thời điểm từ xuất hiện là gì tương ứng với timestep trong mô hình LSTM, do đó chúng ta không thể dùng cross entropy loss để tính độ lỗi mà phải dùng CTC loss trong bài toán bài. 
+
+CTC loss giải quyết vấn đề này theo cách rất là thông minh, cụ thể chúng ta sẽ thử tất cả các aligment của ground truth và tính score của tổng tất cả aligment.
+
+Ví dụ ta có ground truth là: little sun và có mô hình LSTM của chúng ta dự toán 10 timesteps.
+
