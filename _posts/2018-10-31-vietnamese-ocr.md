@@ -103,3 +103,7 @@ Ví dụ với alignment tto-o thì sau khi decode chúng ta sẽ có too bằng
 
 #### Tính CTC loss
 Với mỗi grouth truth chúng ta có nhiều alignment, bất kì alignment nào được dự đoán đều là một dự đoán đúng. Do đó, hàm loss ta cần tối ưu chính là tổng của tất cả các alignment.
+
+<div class="img-div" markdown="0">
+    <img src="/images/ocr_ctc_loss_calc.png" />
+</div>
