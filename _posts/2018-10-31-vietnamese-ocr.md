@@ -54,11 +54,11 @@ Sau đó ta tính attention score tại mỗi timestep bằng hàm softmax vì c
 Cuối cùng, context vector là weighted average của trạng thái ẩn với attention score.
 
 <script>
-var aligment_model = $("#aligment_model");
-katex.render("e_{ij}=a(s_{i-1}, h_{j})", aligment_model[0]);
+var alignment_model = $("#aligment_model");
+katex.render("e_{ij}=a(s_{i-1}, h_{j})", alignment_model[0]);
 
-var aligment_score = $("#aligment_score");
-katex.render("\alpha_{ij} = softmax(e_{ij})", aligment_score[0]);
+var alignment_score = $("#aligment_score");
+katex.render("\alpha_{ij} = softmax(e_{ij})", alignment_score[0]);
 
 var context_vector = $("#context_vector");
 katex.render("c_{i} = \sum_{j=1}^{T_{x}}\alpha_{ij}*h_{j}", context_vector[0]);
@@ -87,16 +87,19 @@ Với các vector context được tính ở tầng Attention được sử dụ
 Với dữ liệu huấn luyện, chúng ta có nhãn là một đoạn text tương ứng với chữ trong bức ảnh đó. Chúng ta không có nhãn cụ thể tại mỗi thời điểm từ xuất hiện là gì tương ứng với timestep trong mô hình LSTM, do đó chúng ta không thể dùng cross entropy loss để tính độ lỗi mà phải dùng CTC loss trong bài toán bài. 
 
 #### Encoding ground truth
-CTC loss giải quyết vấn đề này theo cách rất là thông minh, cụ thể chúng ta sẽ thử tất cả các aligment của ground truth và tính score của tổng tất cả aligment. Alignment của ground truth được phát sinh bằng cách thêm blank token (-) và lặp lại bất kì kí tự nào trong ground truth.
+CTC loss giải quyết vấn đề này theo cách rất là thông minh, cụ thể chúng ta sẽ thử tất cả các alignment của ground truth và tính score của tổng tất cả alignment. Alignment của ground truth được phát sinh bằng cách thêm blank token (-) và lặp lại bất kì kí tự nào trong ground truth.
 
-Ví dụ ta có ground truth là: sun và có mô hình LSTM của chúng ta dự toán 4 timesteps. Thì những aligment đúng của ground truth là:
+Ví dụ ta có ground truth là: sun và có mô hình LSTM của chúng ta dự toán 4 timesteps. Thì những alignment đúng của ground truth là:
 * sun -> -sun, s-un, su-n, sun-
 * sun -> suun, ssun, sunn
 
-Đới với những từ có 2 kí tự liên tục giống nhau, chúng ta sẽ thêm blank token để ở giữa để tạo ra một alignment đúng. Ví dụ với kí tự too. Các aligment đúng có thể là:
+Đới với những từ có 2 kí tự liên tục giống nhau, chúng ta sẽ thêm blank token để ở giữa để tạo ra một alignment đúng. Ví dụ với kí tự too. Các alignment đúng có thể là:
 * too -> -to-o, tto-o
 
 Nhưng ko thể là tooo.
 #### Decoding text
-Mô hình của chúng ta sẽ học để predict những aligment trên, sau đó chúng ta phải decode để đưa ra chuỗi dự đoán cuối cùng bằng cách gộp những kí tự lặp lại liên tiếp nhau thành một kí tự và sau đó xóa hết tất cả blank token.
-Ví dụ với aligment tto-o thì sau khi decode chúng ta sẽ có too bằng cách gộp 2 kí tự 't' lại với nhau và xóa '-'.
+Mô hình của chúng ta sẽ học để predict những alignment trên, sau đó chúng ta phải decode để đưa ra chuỗi dự đoán cuối cùng bằng cách gộp những kí tự lặp lại liên tiếp nhau thành một kí tự và sau đó xóa hết tất cả blank token.
+Ví dụ với alignment tto-o thì sau khi decode chúng ta sẽ có too bằng cách gộp 2 kí tự 't' lại với nhau và xóa '-'.
+
+#### Tính CTC loss
+Với mỗi grouth truth chúng ta có nhiều alignment, bất kì alignment nào được dự đoán đều là một dự đoán đúng. Do đó, hàm loss ta cần tối ưu chính là tổng của tất cả các alignment.
