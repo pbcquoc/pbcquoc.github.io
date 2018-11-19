@@ -32,9 +32,9 @@ Dữ liệu đã chuẩn bị xong thì đến phần model. Môt trong những 
 
 Việc chọn kích thước và số tầng pooling này cực kì quan trọng vì nó ảnh hưởng đến số pixel mà mỗi timestep nhìn thấy được.Nếu các bạn chọn kính thước tầng pooling size quá lớn sẽ dần đến việc một step sẽ bao gồm nhiểũ chữ trong ảnh do đó mô hình sẽ không nhận dạng được.
 
-{% highlight python linenos %}
+```python
 base_model = applications.VGG16(weights='imagenet', include_top=False)
-{% endhighlight %}
+```
 
 Với ảnh đầu vào có kích thước 1280x60 thì output của vgg16 là (nmaps, w, h) = ..., mỗi dòng tương ứng với chiều w thì tương ứng với một timstep cho tầng LSTM.
 
@@ -64,7 +64,7 @@ var context_vector = $("#context_vector");
 katex.render("c_{i} = \sum_{j=1}^{T_{x}}\alpha_{ij}*h_{j}", context_vector[0]);
 </script>
 
-{% highlight python linenos %}
+```python
 def attention_rnn(inputs):
     # inputs.shape = (batch_size, time_steps, input_dim)
     input_dim = int(inputs.shape[2])
@@ -76,8 +76,7 @@ def attention_rnn(inputs):
     a_probs = Permute((2, 1), name='attention_vec')(a)
     output_attention_mul = multiply([inputs, a_probs], name='attention_mul') // Weighted Average 
     return output_attention_mul
-{% endhighlight %}
-
+```
 ### LSTM 
 Với các vector context được tính ở tầng Attention được sử dụng là đầu vào cho mô hình LSTM. Tại mỗi timestep, chúng ta dự đoán từ tại thời điểm đó. Các timestep liên tục có thể dữ đoán cùng một từ.
 <div class="img-div" markdown="0">
