@@ -70,10 +70,8 @@ kramdown:
   syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
     css_class: 'highlight'
-    span:
-      line_numbers: false
-    block:
-      line_numbers: false
+    line_numbers: false
+    
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
