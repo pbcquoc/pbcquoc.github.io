@@ -46,7 +46,7 @@ Với mô hình CRNN, kết quả của vgg được truyền trực tiếp vào
 Đầu tiên ta cần tính e với e chính là output của Aligment Model, một dạng feedforward nets với input là trạng thái của networks hiện tại 
 
 <div class='row'>
-<span class="text-center" id="aligment_score" style="font-size:150%"></span>
+<span class="col-sm-12 text-center" id="aligment_score" style="font-size:150%"></span>
 </div>
 
 
