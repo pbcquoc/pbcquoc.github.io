@@ -118,5 +118,9 @@ Với từ sun, ta có tổng 7 alignments đúng ở trên. Do đó theo model,
     p('sun') = p('-sun') + p('s-un') + p('su-n') + p('sun-') + p('ssun') + p('suun') + p('sunn') = 0.2186
 </span>
 </div>
+Hàm loss của chúng ta sẽ là 1 - p('sun') 
 
+### Word Beam Search
+Chúng ta có thể lựa chọn câu được phát sinh bằng best path, hoặc có thể bằng word beam search. Đối với best path, tại mỗi thời điểm chúng ta lựa chọn từ có xác suất lớn nhất. Tuy nhiên đối với cách này,câu được phát sinh có thể không phải là câu có xác suất cao nhất. Thay vào đó,chúng ta có thể sử dụng beam search để giữ tại N câu có xác suất lớn theo theo best path rồi cuối cùng câu được chọn sẽ là câu có sác xuất cao nhất trong N câu đó. 
+Đối với bài toán OCR, mỗi timestep sẽ phát sinh một kí tự do đó từ được phát sinh có thể không nằm trong từ điển. Đối trường trường hợp này, chúng ta có thể sử dụng một số phương phát post process để xử lý câu được phát sinh. Đơn giản, chúng ta sử dụng edit distance để so sánh khoảng cách 2 từ, và thay thế từ không nằm trong từ điển bằng từ có edit distance thấp nhất. Hay phức tạp hơn, chúng ta có thể dùng language model để ranking câu được phát sinh từ đó chọn ra câu tốt nhất. 
 (to be continued)
