@@ -128,5 +128,7 @@ Chúng ta có thể lựa chọn câu được phát sinh bằng best path, ho�
 
 ### OCR Data Augmentation 
 Trong cuộc thi này, tập dữ liệu mà BTC cung cấp chỉ có 2000 mẫu, do đó để huấn luyện model chúng ta cần sử dụng một số phương pháp để tăng dữ liệu.
-
+* Xoay hay dịch chuyển một ít bức ảnh.
+* Sử dụng elastic transform
+* Random erasor một phần của bức ảnh. 
 (to be continued)
