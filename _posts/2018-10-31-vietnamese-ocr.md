@@ -45,7 +45,10 @@ Với mô hình CRNN, kết quả của vgg được truyền trực tiếp vào
 
 Đầu tiên ta cần tính e với e chính là output của Aligment Model, một dạng feedforward nets với input là trạng thái của networks hiện tại 
 
-<span style="text-align: center;" id="aligment_score" style="font-size:150%"></span>
+<div class='row'>
+<span class="text-center" id="aligment_score" style="font-size:150%"></span>
+</div>
+
 
 Sau đó ta tính attention score tại mỗi timestep bằng hàm softmax vì chúng ta mong muốn tổng attention score bằng 1
 
