@@ -125,4 +125,8 @@ Chúng ta có thể lựa chọn câu được phát sinh bằng best path, ho�
 
 Đối với bài toán OCR, mỗi timestep sẽ phát sinh một kí tự do đó từ được phát sinh có thể không nằm trong từ điển. Đối trường trường hợp này, chúng ta có thể sử dụng một số phương phát post process để xử lý câu được phát sinh. Đơn giản, chúng ta sử dụng edit distance để so sánh khoảng cách 2 từ, và thay thế từ không nằm trong từ điển bằng từ có edit distance thấp nhất. Hay phức tạp hơn, chúng ta có thể dùng language model để sửa lỗi câu được phát sinh.
 Đối với python/tensorflow, các bạn có thể dùng [thư viện](https://github.com/githubharald/CTCDecoder) sau để phát sinh câu từ model 
+
+### OCR Data Augmentation 
+Trong cuộc thi này, tập dữ liệu mà BTC cung cấp chỉ có 2000 mẫu, do đó để huấn luyện model chúng ta cần sử dụng một số phương pháp để tăng dữ liệu.
+
 (to be continued)
