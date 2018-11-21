@@ -113,8 +113,10 @@ Với mỗi grouth truth chúng ta có nhiều alignment, bất kì alignment n�
     <img src="/images/ocr_ctc_loss_calc.png" />
 </div>
 Với từ sun, ta có tổng 7 alignments đúng ở trên. Do đó theo model, xác suất từ sun xuất hiện là
-
-p('sun') = p('-sun') + p('s-un') + p('su-n') + p('sun-') + p('ssun') + p('suun') + p('sunn')
-= 0.1*0.1*0.1*0.2 + 0.6*0.1*0.1*0.2 + 0.0072 + 0.1512 + 0.0012 + 0.0072 + 0.0504 = 0.2186
+<div class='row'>
+<span class="col-sm-12 text-center" >
+    p('sun') = p('-sun') + p('s-un') + p('su-n') + p('sun-') + p('ssun') + p('suun') + p('sunn') = 0.2186
+</span>
+</div>
 
 (to be continued)
