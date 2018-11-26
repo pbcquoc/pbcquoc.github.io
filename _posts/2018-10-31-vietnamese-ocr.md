@@ -131,4 +131,7 @@ Trong cuộc thi này, tập dữ liệu mà BTC cung cấp chỉ có 2000 mẫu
 * Xoay hay dịch chuyển một ít bức ảnh.
 * Sử dụng elastic transform
 * Random erasor một phần của bức ảnh. 
+<div class="img-div" markdown="0">
+    <img src="/images/ocr_aug.png" />
+</div>
 (to be continued)
