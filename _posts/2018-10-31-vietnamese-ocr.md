@@ -134,4 +134,7 @@ Trong cuộc thi này, tập dữ liệu mà BTC cung cấp chỉ có 2000 mẫu
 <div class="img-div" markdown="0">
     <img src="/images/ocr_aug.png" />
 </div>
+
+## Kết quả
+
 (to be continued)
