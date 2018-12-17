@@ -138,6 +138,8 @@ Trong cuộc thi này, tập dữ liệu mà BTC cung cấp chỉ có 2000 mẫu
 ## Kết quả
 Mình train 5 folds ,mỗi fold mất khoảng 8 tiếng để chạy. Sau khi chay khoảng 70-80 epochs thì WER khoảng 0.1x. Theo mình thấy thì kết quả tương đối chính xác. Có vẻ bộ dataset hơi dễ :))
 <div class="img-div" markdown="0">
-    <img src="/images/ocr_result.png" />
+    <img src="/images/ocr_result.jpg" />
 </div>
-(to be continued)
+## Download dataset.
+Bộ dataset này không phải của mình. Mình không chịu trách nhiệm khi các bạn sử dụng sai mục đích.
+* [OCR](https://drive.google.com/drive/folders/1Qa2YA6w6V5MaNV-qxqhsHHoYFRK5JB39)
