@@ -140,6 +140,7 @@ Mình train 5 folds ,mỗi fold mất khoảng 8 tiếng để chạy. Sau khi c
 <div class="img-div" markdown="0">
     <img src="/images/ocr_result.jpg" />
 </div>
-## Download dataset.
+
+## Download dataset
 Bộ dataset này không phải của mình. Mình không chịu trách nhiệm khi các bạn sử dụng sai mục đích.
 * [OCR](https://drive.google.com/drive/folders/1Qa2YA6w6V5MaNV-qxqhsHHoYFRK5JB39)
