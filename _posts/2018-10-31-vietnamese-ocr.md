@@ -136,6 +136,8 @@ Trong cuộc thi này, tập dữ liệu mà BTC cung cấp chỉ có 2000 mẫu
 </div>
 
 ## Kết quả
-Mình train 5 folds,mỗi fold mất khoảng 8 tiếng để chạy. Sau khi chay khoảng 70-80 epochs thì WER khoảng 0.1x
-
+Mình train 5 folds ,mỗi fold mất khoảng 8 tiếng để chạy. Sau khi chay khoảng 70-80 epochs thì WER khoảng 0.1x. Theo mình thấy thì kết quả tương đối chính xác. Có vẻ bộ dataset hơi dễ :))
+<div class="img-div" markdown="0">
+    <img src="/images/ocr_result.png" />
+</div>
 (to be continued)
