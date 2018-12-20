@@ -67,7 +67,7 @@ var alignment_score = $("#aligment_score");
 katex.render("\alpha_{ij} = softmax(e_{ij})", alignment_score[0]);
 
 var context_vector = $("#context_vector");
-katex.render("c_{i} = \sum_{j=1}^{T_{x}}\alpha_{ij}*h_{j}", context_vector[0]);
+katex.render("c_{i} =\\sum_{j=1}^{T_{x}}\alpha_{ij}*h_{j}", context_vector[0]);
 </script>
 
 ```python
