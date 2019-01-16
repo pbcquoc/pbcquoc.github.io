@@ -142,5 +142,5 @@ Mình train 5 folds ,mỗi fold mất khoảng 8 tiếng để chạy. Sau khi c
 </div>
 
 ## Download dataset
-Bộ dataset này là của Cinammon. Mình không chịu trách nhiệm khi các bạn sử dụng sai mục đích.
+Bộ dataset này là của [Cinnamon](http://cinnamon.is/vi/). Mình không chịu trách nhiệm khi các bạn sử dụng sai mục đích.
 * [OCR](https://drive.google.com/drive/folders/1Qa2YA6w6V5MaNV-qxqhsHHoYFRK5JB39)
