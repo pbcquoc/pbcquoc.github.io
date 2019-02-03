@@ -8,6 +8,7 @@ Theo thông lệ mình sẽ giới thiệu sơ qua cơ chế attention là gì, 
 <div class="img-div" markdown="0">
     <img src="/images/attn_seq2seq.png" />
 </div>
+
 ## Chi tiết cơ chế Attention
 
 ## Áp dụng
