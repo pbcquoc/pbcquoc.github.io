@@ -38,6 +38,12 @@ Trong bài toán dịch máy,chúng ta thường hay sử dụng mô hình như 
     <img src="/images/attn_seq2seq_without_attn.png"/>
 </div>
 
+Cũng tương tự như trong bài toán phát sinh mô tả ảnh. Mô hình CNN cần lưu trữ thông tin toàn bộ bức ảnh lại thành một vector duy nhất, rồi sau đó mô hình encoder sẽ phát sinh câu mô tả dựa theo thông tin lưu trong vector này, tuy nhiên, vector này có thể không chứa đủ thông tin để phát sinh cho toàn bộ câu mô tả. 
+
+<div class="img-div" markdown="0">
+    <img src="/images/attn_imagecaption_without_attn.png"/>
+</div>
+
 ## Áp dụng
 
 ### Trong mô hình seq2seq
