@@ -20,6 +20,10 @@ Với hard attention, mô hình sẽ chọn ngẫu nhiên một vùng ảnh đ�
 
 Với soft attention, cũng là phần thú vị mà mình muốn giới thiệu đến các bạn. Mô hình sẽ học trọng số để chú ý trên tất cả các phần thông tin của bức ảnh, câu, hoặc bất cứ thứ gì mà mình nghĩ rằng việc tổng hợp thông tin của tất cả các phần là cần thiết để đưa ra dự đoán. Tổng hợp thông tin này được tính bằng trung bình cộng có trọng số của tất cả các phần thông tin. Những trọng số này được mô hình tự học dễ dàng bằng backpropagation. Vì dễ tối ưu và không phức tạp trong lúc cài đặt nên soft attention, được công đồng tập trung phát triển rất nhiều nên có khá nhiều phiên bản cải tiến khác nhau. Những mà ý tưởng cũng tương đối giống nhau, nên chỉ cần hiểu được cơ bản trong bài này thì các bạn đã có thể đọc những phiên bản khác dễ dàng. 
 
+Mình liệt kê ra một số phiển bản khác nhau của soft attention để các bạn có thể nắm được một số ý tưởng chính
+* [Learn to align](https://arxiv.org/pdf/1409.0473.pdf) trong bài toán dịch máy của Bahdanau có thể xem như là phiên bản đầu tiên được mọi người chú ý, sử dụng soft attention để học cách tổng hợp thông tin từ câu được dịch để phát sinh câu đích. Trong bài này, mình sẽ lấy công thức được ghi trong bài báo này để diển giải lại cho các bạn.
+* [Global vs Local attention](https://arxiv.org/pdf/1508.04025.pdf) của anh Lương Mình Thắng. Global attention thì khá giống như của Bahdanau, còn local attention thì lấy ý tưởng từ hard attention, tức là học thêm vị trí cần được chú ý. Các bạn muốn tìm hiểu thì đọc paper nhé. 
+* Self Attention
 <div class="img-div" markdown="0">
     <img src="/images/attn_soft_hard.jpg"/>
 </div>
