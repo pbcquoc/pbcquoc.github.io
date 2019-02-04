@@ -19,7 +19,7 @@ Có khá nhiều loại cơ chế attention khác nhau, tuy nhiên tổng quan c
 Với hard attention, 
 
 <div class="img-div" markdown="0">
-    <img src="/images/attn_soft_hard.png"/>
+    <img src="/images/attn_soft_hard.jpg"/>
 </div>
 
 ## Chi tiết cơ chế Attention
