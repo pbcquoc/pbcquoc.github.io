@@ -15,6 +15,7 @@ Theo thực tế, mình nghĩ bộ não của chúng ta cũng có cơ chế atte
 Có khá nhiều loại cơ chế attention khác nhau, tuy nhiên tổng quan chúng ta có 2 loại:
 * Hard Attention: sử dụng [reinforcement learning](http://proceedings.mlr.press/v37/xuc15.pdf) để học vị trí cần phải chú ý
 * Soft Attention: học bộ trọng số bằng thuật toán backpropagation
+
 Với hard attention, 
 
 ## Chi tiết cơ chế Attention
