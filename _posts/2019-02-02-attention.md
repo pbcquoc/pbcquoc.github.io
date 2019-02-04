@@ -10,7 +10,10 @@ Theo thông lệ mình sẽ giới thiệu sơ qua cơ chế attention là gì, 
 </div>
 
 ## Tổng quan
-Có khá nhiều loại cơ chế attention khác nhau, chúng ta có thể điểm qua như
+Theo thực tế, mình nghĩ bộ não của chúng ta cũng có cơ chế attention của riêng nó. Ví dụ như, mắt của chúng ta có tầm nhìn 120 độ theo cả chiều thẳng đứng và ngang. 
+Có khá nhiều loại cơ chế attention khác nhau, tuy nhiên tổng quan chúng ta có 2 loại: 
+* Hard Attention: sử dụng 
+* Soft Attention
 ## Chi tiết cơ chế Attention
 
 ## Áp dụng
