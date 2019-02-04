@@ -22,13 +22,16 @@ Với soft attention, cũng là phần thú vị mà mình muốn giới thiệu
 
 Mình liệt kê ra một số phiển bản khác nhau của soft attention để các bạn có thể nắm được một số ý tưởng chính
 * [Learn to align](https://arxiv.org/pdf/1409.0473.pdf) trong bài toán dịch máy của Bahdanau có thể xem như là phiên bản đầu tiên được mọi người chú ý, sử dụng soft attention để học cách tổng hợp thông tin từ câu được dịch để phát sinh câu đích. Trong bài này, mình sẽ lấy công thức được ghi trong bài báo này để diển giải lại cho các bạn.
-* [Global vs Local attention](https://arxiv.org/pdf/1508.04025.pdf) của anh Lương Mình Thắng. Global attention thì khá giống như của Bahdanau, còn local attention thì lấy ý tưởng từ hard attention, tức là học thêm vị trí cần được chú ý. Các bạn muốn tìm hiểu thì đọc paper nhé. 
+* [Global vs Local attention](https://arxiv.org/pdf/1508.04025.pdf) của anh Lương Minh Thắng. Global attention thì khá giống như của Bahdanau, còn local attention thì lấy ý tưởng từ hard attention, tức là học thêm vị trí cần được chú ý. Các bạn muốn tìm hiểu thì đọc paper nhé. 
 * Self Attention
+
 <div class="img-div" markdown="0">
     <img src="/images/attn_soft_hard.jpg"/>
 </div>
 
 ## Chi tiết cơ chế Attention
+Trong phần này, mình trình bày chi tiết cơ chế attention, hầu hết các phiên bản cải tiền điều có dựa trên những ý tưởng của những công thức này. Để trình bày, mình sẽ lấy ngữ cảnh trong bài toán dịch máy, sau đó, nêu ra những hạn chế, và cách khắc phục bằng cơ chế attention.
+
 
 ## Áp dụng
 
