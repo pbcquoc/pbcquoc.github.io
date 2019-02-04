@@ -32,6 +32,11 @@ Mình liệt kê ra một số phiển bản khác nhau của soft attention đ�
 ## Chi tiết cơ chế Attention
 Trong phần này, mình trình bày chi tiết cơ chế attention, hầu hết các phiên bản cải tiền điều có dựa trên những ý tưởng của những công thức này. Để trình bày, mình sẽ lấy ngữ cảnh trong bài toán dịch máy, sau đó, nêu ra những hạn chế, và cách khắc phục bằng cơ chế attention.
 
+Trong bài toán dịch máy,chúng ta thường hay sử dụng mô hình như ở hình minh họa phía dưới. 
+
+<div class="img-div" markdown="0">
+    <img src="/images/attn_seq2seq_without_attn.png"/>
+</div>
 
 ## Áp dụng
 
