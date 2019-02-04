@@ -18,6 +18,7 @@ Có khá nhiều loại cơ chế attention khác nhau, tuy nhiên tổng quan c
 
 Với hard attention, mô hình sẽ chọn ngẫu nhiên một vùng ảnh để chú ý, do mình không có nhãn vùng nào cần được chú ý, nên cũng không tính được gradient lúc này. Để giải quyết vấn đề này, mình sẽ áp dụng reinforcement learning. Cụ thể như thế nào mình sẽ không đề cập vì đó không phải là vấn đề mình muốn giới thiệu đến các bạn, và do sử dụng reinforcement learning nên cũng gặp những khó khăn của phương pháp này như khó hội tụ, mà kết quả thật ra cũng không tốt hơn so với soft attention. Tuy nhiên, cũng có ưu điểm như là vì chỉ chọn một vùng ảnh để tính toán nên sẽ giảm được tài nguyên máy tính cần để xử lý. 
 
+Với soft attention, cũng là phần thú vị mà mình muốn giới thiệu đến các bạn. Mô hình sẽ học trọng số để chú ý trên tất cả các phần thông tin của bức ảnh, câu, hoặc bất cứ thứ gì mà mình nghĩ rằng việc tổng hợp thông tin của tất cả các phần là cần thiết để đưa ra dự đoán. Tổng hợp thông tin này được tính bằng trung bình cộng có trọng số của tất cả các phần thông tin. Những trọng số này, 
 
 <div class="img-div" markdown="0">
     <img src="/images/attn_soft_hard.jpg"/>
