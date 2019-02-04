@@ -10,7 +10,7 @@ Theo thông lệ mình sẽ giới thiệu sơ qua cơ chế attention là gì, 
 </div>
 
 ## Tổng quan
-
+Có khá nhiều loại cơ chế attention khác nhau, chúng ta có thể điểm qua như
 ## Chi tiết cơ chế Attention
 
 ## Áp dụng
