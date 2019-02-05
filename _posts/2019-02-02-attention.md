@@ -44,6 +44,7 @@ Cũng tương tự như trong bài toán phát sinh mô tả ảnh. Mô hình CN
     <img src="/images/attn_imagecaption_without_attn.png"/>
 </div>
 
+
 ## Áp dụng
 
 ### Trong mô hình seq2seq
