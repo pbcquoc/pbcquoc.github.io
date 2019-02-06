@@ -52,12 +52,18 @@ Cũng tương tự như trong bài toán phát sinh mô tả ảnh. Mô hình CN
 <span class="col-sm-12 text-center" id="context_vector" style="font-size:120%"></span>
 </div>
 
+
+
+Ví dụ tại thời điểm dự đoán từ **little** thì *c* chính là context vector được tổng hợp tại thời điểm đó bằng cách tính trung bình có trọng số của <span id="math1"></span>, tương tự tại những thời điểm khác với trọng số khác. 
+
+
 <script>
 var context_vector = $("#context_vector");
 katex.render("c_{i} = \\sum_{j=1}^{T}\\alpha_{ij}h_{j}", context_vector[0]);
+    
+var math1 = $("#math1");
+katex.render("h_{1}, h_{2}, h_{3}, h_{4}", math1[0]);
 </script>
-
-Ví dụ tại thời điểm dự đoán từ **little** thì *c* chính là context vector được tổng hợp tại thời điểm đó bằng cách tính trung bình có trọng số của *h1,h2,h3,h4*
 
 ## Áp dụng
 
