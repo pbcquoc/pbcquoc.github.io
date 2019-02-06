@@ -44,6 +44,9 @@ Cũng tương tự như trong bài toán phát sinh mô tả ảnh. Mô hình CN
     <img src="/images/attn_imagecaption_without_attn.png"/>
 </div>
 
+Để giải quyết vấn đề này, chúng ta sẽ sử dụng cơ chế attention, cho phép mô hình có thể chú ý vào từng phần của câu hoặc bức ảnh một cách rõ ràng. Từ đó,thông tin không cần phải nén vào một vector biểu diễn duy nhất. Ngoài ra,có chế attention cho phép mình có thể  hiểu được những từ hay phần ảnh nào quyết định đến kết quả hiện tại. 
+
+
 
 ## Áp dụng
 
