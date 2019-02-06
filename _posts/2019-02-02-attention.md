@@ -57,6 +57,8 @@ var context_vector = $("#context_vector");
 katex.render("c_{i} = \\sum_{j=1}^{T}\\alpha_{ij}h_{j}", context_vector[0]);
 </script>
 
+Ví dụ tại thời điểm dự đoán từ **little** thì *c* chính là context vector được tổng hợp tại thời điểm đó bằng cách tính trung bình có trọng số của *h1,h2,h3,h4*
+
 ## Áp dụng
 
 ### Trong mô hình seq2seq
