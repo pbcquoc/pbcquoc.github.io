@@ -46,7 +46,16 @@ Cũng tương tự như trong bài toán phát sinh mô tả ảnh. Mô hình CN
 
 Để giải quyết vấn đề này, chúng ta sẽ sử dụng cơ chế attention, cho phép mô hình có thể chú ý vào từng phần của câu hoặc bức ảnh một cách rõ ràng. Từ đó,thông tin không cần phải nén vào một vector biểu diễn duy nhất. Ngoài ra,có chế attention cho phép mình có thể  hiểu được những từ hay phần ảnh nào quyết định đến kết quả hiện tại. 
 
+Đầu tiên ta cần tính vector context chứa thông tin cho từ hiện tại bằng cách tính trung bình có trọng số như sau
 
+<div class='row'>
+<span class="col-sm-12 text-center" id="context_vector" style="font-size:120%"></span>
+</div>
+
+<script>
+var context_vector = $("#context_vector");
+katex.render("c_{i} = \\sum_{j=1}^{T}\\alpha_{ij}h_{j}", context_vector[0]);
+</script>
 
 ## Áp dụng
 
