@@ -67,7 +67,7 @@ Trong đó: \\(a\\) là mô hình học hệ số \\(\\alpha\\) tại mỗi th�
 Sau cùng, các bạn cần phải chuẩn hóa tổng hệ số \\(\\alpha\\) lại bằng 1 bằng cách sử dụng hàm softmax
 
 <div class='row'>
-<span class="col-sm-12 text-center" style="font-size:120%">$$a_{ij}=softmax(e_{ij})$$</span>
+<span class="col-sm-12 text-center" style="font-size:120%">$$a=softmax(e)$$</span>
 </div>
 
 ## Áp dụng
