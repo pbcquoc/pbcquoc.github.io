@@ -19,7 +19,9 @@
 
     <!-- The loading of KaTeX is deferred to speed up page rendering -->
     <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" crossorigin="anonymous"></script>
-
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 
