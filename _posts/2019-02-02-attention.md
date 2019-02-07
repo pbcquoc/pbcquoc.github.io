@@ -54,20 +54,9 @@ Cũng tương tự như trong bài toán phát sinh mô tả ảnh. Mô hình CN
 
 
 
-Ví dụ tại thời điểm dự đoán từ **little** thì *c* chính là context vector được tổng hợp tại thời điểm đó bằng cách tính trung bình có trọng số của <span id="math1"></span>, tương tự chúng ta cũng tính context vector tại những thời điểm khác với trọng số <span id="alpha"></span> khác, được tính riêng cho thời điểm đó. Vậy <span id="alpha"></span> được tính như thế nào ? Rõ rằng, các bạn có thể suy luận được rằng, <span id="alpha"></span> phụ thuộc vào các thông tin từ các h, và cũng từ chính thông tin hiện tại của mô hình decoder. \\( \\alpha \\)
+Ví dụ tại thời điểm dự đoán từ **little** thì \\(c\\) chính là context vector được tổng hợp tại thời điểm đó bằng cách tính trung bình có trọng số của \\(h_{1}, h_{2}, h_{3}, h_{4}\\), tương tự chúng ta cũng tính context vector tại những thời điểm khác với trọng số \\(\\alpha\\) khác, được tính riêng cho thời điểm đó. Vậy \\(\\alpha\\) được tính như thế nào ? Rõ rằng, các bạn có thể suy luận được rằng, \\(\\alpha\\) phụ thuộc vào các thông tin từ các h, và cũng từ chính thông tin hiện tại của mô hình decoder. 
 
 
-
-<script>
-var context_vector = $("#context_vector");
-katex.render("c_{i} = \\sum_{j=1}^{T}\\alpha_{ij}h_{j}", context_vector[0]);
-    
-var math1 = $("#math1");
-katex.render("h_{1}, h_{2}, h_{3}, h_{4}", math1[0]);
-
-var alpha = $("#alpha");
-katex.render("\\alpha", alpha[0]);
-</script>
 
 ## Áp dụng
 
