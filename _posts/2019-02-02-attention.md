@@ -59,7 +59,7 @@ Ví dụ tại thời điểm dự đoán từ **little** thì \\(c\\) chính l�
 <div class='row'>
 <span class="col-sm-12 text-center" tyle="font-size:120%">$$e_{ij} = a(s_{t}, h)$$</span>
 </div>
-Trong đó: \\(a\\) là mô hình học hệ số \\(\\alpha\\) tại mỗi thời điểm. Mô hình này đơn giản có thể là một tầng full connected chuyển từ n chiều thành 1 chiều. 
+Trong đó: \\(a\\) là mô hình học hệ số \\(\\alpha\\) tại mỗi thời điểm. Mô hình này đơn giản có thể là một tầng full connected chuyển từ n chiều thành 1 chiều. Lưu ý rằng, trọng số cần học của mô hình \\(a\\)) cũng chia sẻ theo thời gian. 
 
 ## Áp dụng
 
