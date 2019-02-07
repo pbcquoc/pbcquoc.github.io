@@ -64,7 +64,7 @@ Trong đó: \\(a\\) là mô hình học hệ số \\(\\alpha\\) tại mỗi th�
     <img src="/images/attn_seq2seq_compute_alpha.png"/>
 </div>
 
-Sau cùng, các bạn cần phải chuẩn hóa tổng hệ số \\(alpha\\) lại bằng 1 bằng cách sử dụng hàm softmax
+Sau cùng, các bạn cần phải chuẩn hóa tổng hệ số \\(\\alpha\\) lại bằng 1 bằng cách sử dụng hàm softmax
 
 <div class='row'>
 <span class="col-sm-12 text-center" style="font-size:120%">$$a_{ij}=softmax(e_{ij})$$</span>
