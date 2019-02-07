@@ -73,6 +73,8 @@ Sau cùng, các bạn cần phải chuẩn hóa tổng hệ số \\(\\alpha\\) l
 Cuối cùng, chúng ta sử dụng thêm vector context trong quá trình dự đoán. 
 
 ## Áp dụng
+Trong phần này, mình chia sẻ một vài ý tưởng sử dụng cơ chế attention trong các bài toán mà mình đã gặp, trong hâu hết các trường hợp đều cho kết quả tốt hơn khi áp dụng cơ chế này. Bên cạnh đó, một trọng những điều mà mình rất thích ở cơ chế này là có thể hiểu được quá trình dự đoán phụ thuộc vào phần thông tin nào của bức ảnh hay câu.
+
 
 ### Trong mô hình seq2seq
 
