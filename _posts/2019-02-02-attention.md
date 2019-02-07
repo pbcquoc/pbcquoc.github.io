@@ -49,12 +49,12 @@ Cũng tương tự như trong bài toán phát sinh mô tả ảnh. Mô hình CN
 Đầu tiên ta cần tính vector context chứa thông tin cho từ hiện tại bằng cách tính trung bình có trọng số như sau
 
 <div class='row'>
-<span class="col-sm-12 text-center" id="context_vector" style="font-size:120%"></span>
+<span class="col-sm-12 text-center" style="font-size:120%">$$c_{i}=\\sum_{}^{}$$</span>
 </div>
 
 
 
-Ví dụ tại thời điểm dự đoán từ **little** thì \\(C\\) chính là context vector được tổng hợp tại thời điểm đó bằng cách tính trung bình có trọng số của \\(h_{1}, h_{2}, h_{3}, h_{4}\\), tương tự chúng ta cũng tính context vector tại những thời điểm khác với trọng số \\(\\alpha\\) khác, được tính riêng cho thời điểm đó. Vậy \\(\\alpha\\) được tính như thế nào ? Rõ rằng, các bạn có thể suy luận được rằng, \\(\\alpha\\) phụ thuộc vào các thông tin từ các \\(h\\), và cũng từ chính thông tin hiện tại của mô hình decoder. 
+Ví dụ tại thời điểm dự đoán từ **little** thì \\(c\\) chính là context vector được tổng hợp tại thời điểm đó bằng cách tính trung bình có trọng số của \\(h_{1}, h_{2}, h_{3}, h_{4}\\), tương tự chúng ta cũng tính context vector tại những thời điểm khác với trọng số \\(\\alpha\\) khác, được tính riêng cho thời điểm đó. Vậy \\(\\alpha\\) được tính như thế nào ? Rõ rằng, các bạn có thể suy luận được rằng, \\(\\alpha\\) phụ thuộc vào các thông tin từ các \\(h\\), và cũng từ chính thông tin hiện tại của mô hình decoder. 
 
 <div class='row'>
 <span class="col-sm-12 text-center" tyle="font-size:120%">$$e_{ij} = a(s_{t}, h)$$</span>
