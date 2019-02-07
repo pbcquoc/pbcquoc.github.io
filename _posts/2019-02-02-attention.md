@@ -61,6 +61,10 @@ Ví dụ tại thời điểm dự đoán từ **little** thì \\(C\\) chính l�
 </div>
 Trong đó: \\(a\\) là mô hình học hệ số \\(\\alpha\\) tại mỗi thời điểm. Mô hình này đơn giản có thể là một tầng full connected chuyển từ n chiều thành 1 chiều. Lưu ý rằng, trọng số cần học của mô hình \\(a\\) cũng chia sẻ theo thời gian như mô hình RNN.
 
+<div class="img-div" markdown="0">
+    <img src="/images/attn_seq2seq_compute_alpha.png"/>
+</div>
+
 ## Áp dụng
 
 ### Trong mô hình seq2seq
