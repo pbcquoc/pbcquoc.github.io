@@ -70,6 +70,8 @@ Sau cùng, các bạn cần phải chuẩn hóa tổng hệ số \\(\\alpha\\) l
 <span class="col-sm-12 text-center" style="font-size:120%">$$a=softmax(e)$$</span>
 </div>
 
+Cuối cùng, chúng ta sử dụng thêm vector context trong quá trình dự đoán. 
+
 ## Áp dụng
 
 ### Trong mô hình seq2seq
