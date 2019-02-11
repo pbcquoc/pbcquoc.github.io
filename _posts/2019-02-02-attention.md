@@ -109,3 +109,9 @@ Mình đã phát sinh tổng cộng 20k mẫu, trong đó 5k dùng để validat
 
 ### Kết quả
 Vì tập dữ liệu mình dùng để minh họa khá đơn giản, nên chỉ cần sau 3 epochs bạn đã có kết quả tương đối chính xác. Mình huấn luyện đến 10 epochs thì loss là 0.023 trên tập validation. 
+
+Dưới này là một minh họa của câu đầu vào là "05 thg 5 2017", các bạn có thể thấy rằng các phần ngày tháng năm khi phát sinh đều được mô hình chú ý một cách đúng lúc. 
+
+<div class="img-div" markdown="0">
+    <img src="/images/attn_ex_2.png"/>
+</div>
