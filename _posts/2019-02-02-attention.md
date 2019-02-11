@@ -92,4 +92,20 @@ Chúng ta có thể áp dụng cơ chế attention trong phân tích ngữ nghĩ
 Thay vì dùng hidden state ở thời điểm cuối cùng để phân tích ngữ nghĩa của câu, chúng ta có thể tổng hợp thông tin từ các hidden states ở thời điểm khác thông qua cơ chế attention, rồi dùng vector này để thực hiện phân tích ngữ nghĩa của câu.
 
 ## Cài đặt thuật toán
+Để minh họa cho cơ chế attention, mình đã cài đặt cơ chế này trong bài toán seq2seq được đơn giản hóa. Đồng thời mình cũng minh họa kết quả tại mỗi thời điểm phụ thuộc vào từ nào trong câu đầu vào.
 
+Code các bạn có thể tìm tại [đây](https://github.com/pbcquoc/attention_tutorial) nhé. Trong code mình có comment chi tiết từng bước, hy vọng các bạn có thể đọc hiểu các thực hiện từng bước như thế nào. 
+
+### Dataset
+Để minh họa cơ chế attention, mình sử dụng tập dataset tự phát sinh, với đầu vào là các câu biểu diễn ngày tháng năm của con người đọc, và nhãn là ngày tháng năm tương ứng do máy tính hiểu.
+
+| Input                            | Label         |
+| ---------------------------------| ------------- |
+| 12, thg 9 2010                   | 2010-09-12    |
+| Thứ Tư, ngày 21 tháng 3 năm 1973 | 1973-03-21    |
+| 31 thg 7, 1988                   | 1988-07-31    |
+
+Mình đã phát sinh tổng cộng 20k mẫu, trong đó 5k dùng để validation.
+
+### Kết quả
+Vì tập dữ liệu mình dùng để minh họa khá đơn giản, nên chỉ cần sau 3 epochs bạn đã có kết quả tương đối chính xác. Mình huấn luyện đến 10 epochs thì loss là 0.023 trên tập validation. 
