@@ -76,7 +76,7 @@ Cuối cùng, chúng ta sử dụng thêm vector context trong quá trình dự 
 Trong phần này, mình chia sẻ một vài ý tưởng sử dụng cơ chế attention trong các bài toán mà mình đã gặp, trong hâu hết các trường hợp đều cho kết quả tốt hơn khi áp dụng cơ chế này. Bên cạnh đó, một trọng những điều mà mình rất thích ở cơ chế này là có thể hiểu được quá trình dự đoán phụ thuộc vào phần thông tin nào của bức ảnh hay câu.
 
 ### Trong mô hình nhận dạng chữ Tiếng Việt
-Như mình có chia sẻ ở một bài [blog khác](https://pbcquoc.github.io/vietnamese-ocr)
+Như mình có chia sẻ ở một bài [blog nhận dạng tiếng việt](https://pbcquoc.github.io/vietnamese-ocr), các bạn có thể hoàn toàn áp dụng cơ chế attention để cải thiện kết quả dự đoán của mô hình. Ở bài toán nhận dạng chữ Tiếng Việt, các bạn sử dụng mô hình CNN để học một vector biểu diễn 2 chiều duy nhất, rồi sau đó sử dụng mô hình LSTM để decoder thành các chữ tiếng việt. Hạn chế  
 
 ### Trong mô hình phân tích ngữ nghĩa - sentiment analysis
 
