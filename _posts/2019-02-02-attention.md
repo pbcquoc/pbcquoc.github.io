@@ -99,18 +99,18 @@ Code các bạn có thể tìm tại [đây](https://github.com/pbcquoc/attentio
 ### Dataset
 Để minh họa cơ chế attention, mình sử dụng tập dataset tự phát sinh, với đầu vào là các câu biểu diễn ngày tháng năm của con người đọc, và nhãn là ngày tháng năm tương ứng do máy tính hiểu.
 
-| Input                            | Label         |
-| ---------------------------------| ------------- |
-| 12, thg 9 2010                   | 2010-09-12    |
-| Thứ Tư, ngày 21 tháng 3 năm 1973 | 1973-03-21    |
-| 31 thg 7, 1988                   | 1988-07-31    |
+| **Input**                            | **Label**         |
+| -------------------------------------| ------------- |
+| 12, thg 9 2010                    | 2010-09-12    |
+| Thứ Tư, ngày 21 tháng 3 năm 1973  | 1973-03-21    |
+| 31 thg 7, 1988                    | 1988-07-31    |
 
 Mình đã phát sinh tổng cộng 20k mẫu, trong đó 5k dùng để validation.
 
 ### Kết quả
 Vì tập dữ liệu mình dùng để minh họa khá đơn giản, nên chỉ cần sau 3 epochs bạn đã có kết quả tương đối chính xác. Mình huấn luyện đến 10 epochs thì loss là 0.023 trên tập validation. 
 
-Dưới này là một minh họa của câu đầu vào là "05 thg 5 2017", các bạn có thể thấy rằng các phần ngày tháng năm khi phát sinh đều được mô hình chú ý một cách đúng lúc. 
+Dưới này là một minh họa của câu đầu vào là "05 thg 5 2017", các bạn có thể thấy rằng các phần ngày tháng năm khi phát sinh đều được mô hình chú ý một cách đúng lúc và chính xác. 
 
 <div class="img-div" markdown="0">
     <img src="/images/attn_ex_2.png"/>
