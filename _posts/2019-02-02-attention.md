@@ -83,6 +83,13 @@ Như mình có chia sẻ ở một bài [blog nhận dạng tiếng việt](http
 </div>
 
 ### Trong mô hình phân tích ngữ nghĩa - sentiment analysis
+Chúng ta có thể áp dụng cơ chế attention trong phân tích ngữ nghĩa của một câu. Cơ chế này cho mình thấy được những keywords nào quan trọng trong kết quả dự đoán của một câu, và theo mình thấy, các bạn có thể cải thiện được kết quả dự đoán một cách đáng kể. 
+
+<div class="img-div" markdown="0">
+    <img src="/images/attn_sentiment_analysis.png"/>
+</div>
+
+Thay vì dùng hidden state ở thời điểm cuối cùng để phân tích ngữ nghĩa của câu, chúng ta có thể tổng hợp thông tin từ các hidden states ở thời điểm khác thông qua cơ chế attention, rồi dùng vector này để thực hiện phân tích ngữ nghĩa của câu.
 
 ## Cài đặt thuật toán
 
