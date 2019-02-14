@@ -93,7 +93,16 @@ Thay vì dùng hidden state ở thời điểm cuối cùng để phân tích ng
 
 ### Attention cho nhiều vector embedding - Quora Insincere Questions Classification
 
-Khi tham gia vào cuộc thi [Quora Insincere Questions Classification](https://www.kaggle.com/c/quora-insincere-questions-classification) team đã sử dụng attention cho tầng embedding. Ở bài toán này, chúng ta phải phân loại một câu hỏi trên quora có phải là hợp lệ hay không. Các đội tham gia chỉ được sử dụng một số embedding vectors cho sẵn như là glove, paragram, google news. 
+Khi tham gia vào cuộc thi [Quora Insincere Questions Classification](https://www.kaggle.com/c/quora-insincere-questions-classification) team đã sử dụng attention cho tầng embedding. Ở bài toán này, chúng ta phải phân loại một câu hỏi trên quora có phải là hợp lệ hay không. Các đội tham gia chỉ được sử dụng một số embedding vectors cho sẵn như là glove, paragram, google news. Một số đội lựa chọn concat của 3 loại vector, hoặc lấy trung bình cộng, hoặc huấn luyện các mô hình riêng biệt trên dừng embedding. Team mình đã lựa chọn sử dụng tầng attention cho các loại embedding (và rất nhiều tuning khác) từ đó giúp đạt được Gold Medal trong cuộc thi này. Các bạn có thể tham khảo kiến trúc dưới đây mà team mình đã áp dụng
+
+<div class="img-div" markdown="0">
+    <img src="/images/attn_embed_kaggle.png"/>
+</div>
+
+Và Gold Medal xứng đáng cho sự cố gắng của cả team. 
+<div class="img-div" markdown="0">
+    <img src="/images/attn_kaggle_quora_private.png"/>
+</div>
 
 ## Cài đặt thuật toán
 Để minh họa cho cơ chế attention, mình đã cài đặt cơ chế này trong bài toán seq2seq được đơn giản hóa. Đồng thời mình cũng minh họa kết quả tại mỗi thời điểm phụ thuộc vào từ nào trong câu đầu vào.
