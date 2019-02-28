@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tìm Hiểu và Áp Dụng Cơ Chế Attention
+title: Tìm Hiểu và Áp Dụng Cơ Chế Attention - Understanding Attention Mechanism
 ---
 
 ## Giới thiệu
