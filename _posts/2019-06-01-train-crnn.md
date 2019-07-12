@@ -7,7 +7,7 @@ Nhận dạng chữ tiếng việt là một trong những vấn đề rất qua
 
 # Mô hình
 <div class="img-div" markdown="0">
-    <img src="https://github.com/pbcquoc/crnn/blob/master/img/crnn.png" />
+    <img src="https://github.com/pbcquoc/crnn/raw/master/img/crnn.png" />
 </div>
 # Chuẩn bị dữ liệu
 # Huấn luyện
