@@ -48,7 +48,26 @@ Trong đó:
 * expr_dir: nơi lưu lại các mô hình được huấn luyện. 
 
 # Kết quả
+Kết quả sau khi huấn luyện các bạn có thể thấy ctc loss xấp xỉ 4 và cer loss < 0.1 là cho kết quả bình thường. 
+Để predict dựa trên mô hình đã được huấn luyện, các bạn sử dụng câu lệnh sau:
+```
+python demo.py --model checkpoint/netCRNN.pth  --alphabet /data/char --img /data/test.jpg --imgW 1024 --imgH 64
+```
+Trong đó:
+* model: mô hình đã được huấn luyện.
+* alphabet: chứa các kí tự mà mô hình có thể predict. Giống như file lúc train.
+* img: ảnh dùng để test.
+* imgH: với kiến trúc hiện tại thì tham số này có giá trị là 64
+* imgW: default là None sẽ lấy kích thước của ảnh
+
+Ví dụ với ảnh hưởng đây, mô hình sẽ cho ra kết quả như sau:
+<div class="img-div" markdown="0">
+    <img src="https://raw.githubusercontent.com/pbcquoc/crnn/master/data/18449-2_10-4.jpg" />
+</div>
+Result: đđ-ặ--nngg vvviiệệtt tt--h--ắ--nnggg ----> đặng việt thắng : prob: 0.9896178245544434
+prob là xác xuất của câu mà mô hình tính toán được. Giá trị còn nhỏ thì kết quả có thể sẽ không tin tưởng được.
 
 # Pretrained model và Dataset
+
 
 (to be continued)
