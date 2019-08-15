@@ -34,6 +34,18 @@ Ngoaì ra các bạn cần có 3 file sau:
 Các bạn nên tham khảo thư mục data trong repo của mình để chuẩn bị dữ liệu cho chính xác nhé. 
 
 # Huấn luyện
+Sau khi chuẩn bị dữ liệu xong, các bạn đã có thể tiến hành huấn luyện mô hình cho tập dữ liệu của riêng mình. Để huấn luyện các bạn sử dụng câu lệnh sau:
+```
+python train.py --root /data --train train --val test --workers 8 --cuda --pretrain /data/quocpbc/tmp/netCRNN.pth --alphabet char --expr_dir checkpoint/
+```
+Trong đó:
+* root: là thự mục chứa dữ liệu (file train/test/char).
+* train: là file chứa các file ảnh để train.
+* test: là file chứa các file ảnh để test.
+* workers: số cores dùng để load dữ liệu, nên để bằng hoặc thấp hơn số cores của máy.
+* pretrain: pretrain model, nên xử dụng vì tăng tính tống quát hóa của mô hình.
+* alphabet: tập hợp tất cả các kí tự mà mô hình có thể predict.
+* expr_dir: nơi lưu lại các mô hình được huấn luyện. 
 
 # Kết quả
 
