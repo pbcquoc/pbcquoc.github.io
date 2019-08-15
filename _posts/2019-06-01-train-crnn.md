@@ -64,7 +64,7 @@ Ví dụ với ảnh hưởng đây, mô hình sẽ cho ra kết quả như sau:
 <div class="img-div" markdown="0">
     <img src="https://raw.githubusercontent.com/pbcquoc/crnn/master/data/18449-2_10-4.jpg" />
 </div>
-Result: đđ-ặ--nngg vvviiệệtt tt--h--ắ--nnggg ----> đặng việt thắng : prob: 0.9896178245544434
+Kết quả: đđ-ặ--nngg vvviiệệtt tt--h--ắ--nnggg ----> đặng việt thắng : prob: 0.9896178245544434
 prob là xác xuất của câu mà mô hình tính toán được. Giá trị còn nhỏ thì kết quả có thể sẽ không tin tưởng được.
 
 # Pretrained model và Dataset
