@@ -15,14 +15,17 @@ Mô hình CRNN cho bài toán nhân dạng chữ viết tay trong cài đặt n�
 
 # Chuẩn bị dữ liệu
 Để huấn luyện mô hình CRNN mà mình cung cấp trong [repo](https://github.com/pbcquoc/crnn) này. Các bạn cần chuẩn bị data theo cấu trúc sau:
-``
+```
 data/
 ├── 0.jpg
 ├── 0.txt
 ├── 10000.jpg
 ├── 10000.txt
-``
-Mỗi ảnh sẽ phải tương ứng với một file txt chưa nhãn tương ứng. 
+```
+Mỗi ảnh sẽ phải tương ứng với một file txt chưa nhãn tương ứng. Ví dụ với ảnh có tên file dưới đấy là 1.jpg, thì phải có một file 1.txt tương ứng chứa nhãn *từ chối trả lời và nói không phản ứng gì dù những*
+<div class="img-div" markdown="0">
+    <img src="/images/crnn_ex.png" />
+</div>
 
 # Huấn luyện
 
