@@ -68,5 +68,5 @@ Result: đđ-ặ--nngg vvviiệệtt tt--h--ắ--nnggg ----> đặng việt th�
 prob là xác xuất của câu mà mô hình tính toán được. Giá trị còn nhỏ thì kết quả có thể sẽ không tin tưởng được.
 
 # Pretrained model và Dataset
-Mình cung cấp pretrain mô hình được huấn luyện trên 4 triệu ảnh, bao gồm chữ in, viết tay, ảnh noise. Mô hình có thể predict 245 kí tự như mình cung cấp ở file char.
-Đồng thời các bạn có thể download toàn bộ dữ liệu tại [này]() nhé. 
+Mình cung cấp mô hình pretrain trong repo được huấn luyện trên 4 triệu ảnh, bao gồm chữ in, viết tay, ảnh noise. Mô hình có thể predict 245 kí tự như mình cung cấp ở file char.
+Đồng thời các bạn có thể download toàn bộ dữ liệu 4 triệu ảnh tại [này]() nhé. 
