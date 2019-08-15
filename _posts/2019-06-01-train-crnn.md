@@ -14,8 +14,20 @@ Nhận dạng chữ tiếng việt là một trong những vấn đề rất qua
 Mô hình CRNN cho bài toán nhân dạng chữ viết tay trong cài đặt này là mô hình đơn giản bao gồm 2 phần: CNN và LSTM. Cụ thể CNN sẽ rút trích feature từ ảnh,kết quả sẽ cho ra tensor 3 chiều có kích thước batch_size x 1 x f. Do đó, các bạn cần lưu ý kiến trúc của CNN phải phù hợp để có thể nhận đầu vào có kích thước wxh và chiều w của tensor output có kích thước là 1. Để đưa tensor output vào LSTM, các bạn đơn giản chỉ cần remove w có kích thước là 1. Đến đây, các bạn áp dụng mô hình LSTM và dùng CTC loss để cập nhật trọng số. 
 
 # Chuẩn bị dữ liệu
+Để huấn luyện mô hình CRNN mà mình cung cấp trong [repo](https://github.com/pbcquoc/crnn) này. Các bạn cần chuẩn bị data theo cấu trúc sau:
+``
+data/
+├── 0.jpg
+├── 0.txt
+├── 10000.jpg
+├── 10000.txt
+``
+Mỗi ảnh sẽ phải tương ứng với một file txt chưa nhãn tương ứng. 
+
 # Huấn luyện
+
 # Kết quả
+
 # Pretrained model và Dataset
 
 (to be continued)
