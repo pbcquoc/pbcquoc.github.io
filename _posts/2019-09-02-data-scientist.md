@@ -44,6 +44,6 @@ Machine learning (Máy học) thì không cần phải bàn nhiều vì nó chí
 
 Deep Learning là kiến thức cũng không thể thiếu được của một Data Scientist. Những mô hình này giải quyết tốt các bài toán liên quan đến hình ảnh và ngôn ngữ tự nhiên. Hiện tại, Deep Learning vẫn là một topic hot nhất và sôi động nhất trong giới học thuật và được ứng dụng khá nhiều trong đời sống. Các bạn ắt hẵn đã từng nghe về hệ thống nhận dạng khuôn mặt của [Trung Quốc](https://www.forbes.com/sites/zakdoffman/2019/10/08/trump-lands-crushing-new-blow-on-chinas-facial-recognition-unicorns/), tạo ra các bản nhạc, rồi tới chơi cờ vậy. Các mô hình chủ yếu là Convolution Neural Nets và Recurrent Neural Nets. Các biến dạng của 2 mô hình này thì có vô vàng. Các bạn hãy tận dụng thành xuân mà học cho hết nhé.
 
-Giải tích và đại số tuyến tính là kiến thức toán nền toán của các mô hình máy học. Giúp các bạn nắm vững phần toán sau những mô hình đó, từ đó giúp các bạn khả năng đọc hiểu được các tài liệu học thuật để cập nhận các kiến thức, mô h
+Giải tích và đại số tuyến tính là kiến thức toán nền toán của các mô hình máy học. Giúp các bạn nắm vững phần toán sau những mô hình đó, từ đó giúp các bạn khả năng đọc hiểu được các tài liệu học thuật để cập nhận các kiến thức, mô hình máy học mới nhất.   
 
 # Các lưu ý khi bắt đầu một dự án Data Science
