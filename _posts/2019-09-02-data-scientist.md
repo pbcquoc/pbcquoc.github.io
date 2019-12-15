@@ -24,4 +24,6 @@ Hình dưới mình ghi lại những từ khoá quan trọng mà các bạn khi
 </div>
 
 # Các kiến thức cơ bản cần có để trở thành Data Scientist
+Người ta hay bảo nhau rằng **Data Scientist: The Sexiest Job of the 21st Century**. Tuy nhiên, những năm vừa qua do việc tuyển dụng khá nhiều nên title Data Scientist đôi khi được đặt lên nhầm người. Bản thân mình cũng thấy khi gọi bản thân là Data Scientist là 
+
 # Các lưu ý khi bắt đầu một dự án Data Science
