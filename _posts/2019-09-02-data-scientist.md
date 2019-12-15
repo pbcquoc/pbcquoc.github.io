@@ -24,6 +24,9 @@ Hình dưới mình ghi lại những từ khoá quan trọng mà các bạn khi
 </div>
 
 # Các kiến thức cơ bản cần có để trở thành Data Scientist
-Người ta hay bảo nhau rằng **Data Scientist: The Sexiest Job of the 21st Century**. Tuy nhiên, những năm vừa qua do việc tuyển dụng khá nhiều nên title Data Scientist đôi khi được đặt lên nhầm người. Bản thân mình cũng thấy khi gọi bản thân là Data Scientist là 
+Người ta hay bảo nhau rằng **Data Scientist: The Sexiest Job of the 21st Century**. Tuy nhiên, những năm vừa qua do việc tuyển dụng khá nhiều nên title Data Scientist đôi khi được đặt lên nhầm người. Bản thân mình cũng thấy cái tên gọi Data Scientist cũng là chưa thực sự phù hợp với khả năng hiện tại.
+
+Để trở thành Data Scientist các bạn phải có nhiều kiến thức cũng như là kinh nghiệm (những bài học từ những sai lầm) trong quá trình làm việc. Các kiến thức đó bao gồm: Ngôn ngữ lập trình, Software/Web Engineering, Data Visualization and story teller, Data Sense, Xác suất và thống kê, Máy học, Giải tích và đại số tuyến tính. Những kiến thức trên hầu hết đều được mình sử dụng trong để giải quyết cho những bài toán hiện tại, cho nên kiến thức trên đều quan trọng chứ không phải chỉ là một đống lý thuyết chỉ liệt kê trên giấy.
+
 
 # Các lưu ý khi bắt đầu một dự án Data Science
