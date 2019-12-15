@@ -13,7 +13,9 @@ Những tool mà mình biết các bạn Data Engineer thường xuyên làm vi�
 ## Data Analytist là ai?
 Sau khi dữ liệu được lưu trữ, lúc này các công cty sẽ có như cầu phân tích dữ liệu để biết được tình trạng hiện tại của việc kinh doanh. Lúc đó một Data Analytist sẽ được tuyển dụng và làm những công việc như đưa ra các số liệu thống kê, theo dõi các chỉ số về tình trạng hoạt động của công cty. Một Data Analytist như làm dâu trăm họ. Các team khác nhau của công ty đều cần tới  để lấy chỉ số, để yêu cầu các report, để hỗ trợ đo đếm số liệu cho một tính năng mới. Cuộc sống của một Data Analytist thường xoay quanh report.
 
-Các Data Analytist cần có những kiến thức cơ bản về sác xuất và thống kê để tránh đưa ra những báo cáo bị [bias](https://en.wikipedia.org/wiki/Sampling_bias). 
+Các Data Analytist cần có những kiến thức cơ bản về sác xuất và thống kê để tránh đưa ra những báo cáo bị [bias](https://en.wikipedia.org/wiki/Sampling_bias). Điều này là cực kì quan trọng vì Data Analytist cũng chính là người đưa ra những lời khuyên cho bên kinh doanh. Đo đó các kết luận không chính xác đều gây ra những ảnh hưởng tiêu cực. 
+
+Các ngôn ngữ lập trình mà Data Analytist hay sử dụng là Python, R, hay thâm chí là Excel. Do đó, nếu bạn mong muốn làm Data Analytist thì hãy thật vững 2 ngôn ngữ lập trình này. 
 
 # Các kiến thức cơ bản cần có để trở thành Data Scientist
 # Các lưu ý khi bắt đầu một dự án Data Science
