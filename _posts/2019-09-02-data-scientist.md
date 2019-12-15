@@ -28,5 +28,10 @@ Người ta hay bảo nhau rằng **Data Scientist: The Sexiest Job of the 21st 
 
 Để trở thành Data Scientist các bạn phải có nhiều kiến thức cũng như là kinh nghiệm (những bài học từ những sai lầm) trong quá trình làm việc. Các kiến thức đó bao gồm: Ngôn ngữ lập trình, Software/Web Engineering, Data Visualization and story teller, Data Sense, Xác suất và thống kê, Máy học, Giải tích và đại số tuyến tính. Những kiến thức trên hầu hết đều được mình sử dụng trong để giải quyết cho những bài toán hiện tại, cho nên kiến thức trên đều quan trọng chứ không phải chỉ là một đống lý thuyết chỉ liệt kê trên giấy.
 
+Ngôn ngữ lập trình ở đây là các kiến thức vể lập trình như các cơ bản của một ngôn ngữ, cấu trúc dự liệu, lập trình hướng đối tượng. Những kiến thức này chính là nền tảng của mọi lập trình viên. Do đó sẽ giúp ích rất nhiều cho khi làm việc thực tế để hiểu,viết và tổ chức mã nguỗn cho hợp lý, gọn gàng và dễ phát triển về sau. 
+
+Với những kiến thức cơ bản về web programming, các Data Scientist có thể tự tạo một dashboard cơ bản để theo dõi kết quả của mô hình, các chỉ số liên quan để đánh giá ảnh hưởng của dự án đến người dùng, hoặc là một giao diện đơn giản để a/b testing, hoặc là dùng để labeling hay đơn giản là để thể hiện kết quả ra bên ngoài cho nội bộ team sài và đánh giá. Việc tạo ra một giao diện có tương tác sẽ giúp ích và giảm thiểu thời gian đánh giá kết quả đi rất nhiều. Với những team nhỏ, không có đủ nhận lực thì kiến thức về lập trình web sẽ rất hữu ý cho một Data Scientist.
+
+
 
 # Các lưu ý khi bắt đầu một dự án Data Science
