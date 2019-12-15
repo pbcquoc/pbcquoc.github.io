@@ -11,7 +11,9 @@ Data Engineer là những người đảm nhận nhiệm vụ xây dựng hệ t
 
 Những tool mà mình biết các bạn Data Engineer thường xuyên làm việc là các tool liên quan đến lưu trữ dữ liệu như Mongo, SQL, Postgres, những công cụ như Spark giúp xây dựng một hệ thống phân tán. Ngôn ngữ mà Data Engineer thường dùng là Java. 
 ## Data Analytist là ai?
-Sau khi dữ liệu được lưu trữ, lúc này các công cty sẽ có 
+Sau khi dữ liệu được lưu trữ, lúc này các công cty sẽ có như cầu phân tích dữ liệu để biết được tình trạng hiện tại của việc kinh doanh. Lúc đó một Data Analytist sẽ được tuyển dụng và làm những công việc như đưa ra các số liệu thống kê, theo dõi các chỉ số về tình trạng hoạt động của công cty. Một Data Analytist như làm dâu trăm họ. Các team khác nhau của công ty đều cần tới  để lấy chỉ số, để yêu cầu các report, để hỗ trợ đo đếm số liệu cho một tính năng mới. Cuộc sống của một Data Analytist thường xoay quanh report.
+
+Các Data Analytist cần có những kiến thức cơ bản về sác xuất và thống kê để tránh đưa ra những báo cáo bị [bias](https://en.wikipedia.org/wiki/Sampling_bias). 
 
 # Các kiến thức cơ bản cần có để trở thành Data Scientist
 # Các lưu ý khi bắt đầu một dự án Data Science
