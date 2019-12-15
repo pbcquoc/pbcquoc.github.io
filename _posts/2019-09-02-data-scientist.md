@@ -17,7 +17,7 @@ Các Data Analytist cần có những kiến thức cơ bản về sác xuất v
 
 Các ngôn ngữ lập trình mà Data Analytist hay sử dụng là Python, R, hay thâm chí là Excel. Do đó, nếu bạn mong muốn làm Data Analytist thì hãy thật vững 2 ngôn ngữ lập trình này. 
 
-Hình dưới mình ghi lại những từ khoá quan trọng mà các bạn khi muốn trở thành Data Analytics thì cần phải biết và nắm thật vững nhé. Có khá nhiều bạn muốn trở thành Data Analytics vcó chuyên môn bên kinh tế nên những điều này hy vọng sẽ vạch ra con đường rõ ràng hơn cho các bạn đi tiếp. 
+Hình dưới mình ghi lại những từ khoá quan trọng mà các bạn khi muốn trở thành Data Analytics thì cần phải biết và nắm thật vững nhé. Có khá nhiều bạn muốn trở thành Data Analytics và có chuyên môn bên kinh tế nên những điều này hy vọng sẽ vạch ra con đường rõ ràng hơn cho các bạn đi tiếp. 
 
 <div class="img-div" markdown="0">
     <img src="/images/data_scientist/da_roadmap.png" />
