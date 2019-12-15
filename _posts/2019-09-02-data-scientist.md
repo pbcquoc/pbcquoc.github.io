@@ -32,6 +32,6 @@ Ngôn ngữ lập trình ở đây là các kiến thức vể lập trình như
 
 Với những kiến thức cơ bản về web programming, các Data Scientist có thể tự tạo một dashboard cơ bản để theo dõi kết quả của mô hình, các chỉ số liên quan để đánh giá ảnh hưởng của dự án đến người dùng, hoặc là một giao diện đơn giản để a/b testing, hoặc là dùng để labeling hay đơn giản là để thể hiện kết quả ra bên ngoài cho nội bộ team sài và đánh giá. Việc tạo ra một giao diện có tương tác sẽ giúp ích và giảm thiểu thời gian đánh giá kết quả đi rất nhiều. Với những team nhỏ, không có đủ nhận lực thì kiến thức về lập trình web sẽ rất hữu ý cho một Data Scientist.
 
-
+Data Visualization là kĩ năng dùng đồ thị để minh hoạ cho nhưng con số, các Data Scientist cần biết những đồ thị nào là phù hợp để minh hoạ cho những insight của dữ liệu, minh hoạ các con số được nói từ dữ liệu. Ngoài ra có thể tự tạo được những đồ thị phù hợp với ý muốn của mình. Song song bên cạnh Data Visualization là kỹ năng Story telling, kỹ năng này giúp Data Scientist truyền tải những con số , những insight từ mô hình máy học thành những lời nói dễ hiểu cho những bên liên quan, đặt biệt là bên kinh doanh, hoặc cấp trên. K
 
 # Các lưu ý khi bắt đầu một dự án Data Science
