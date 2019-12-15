@@ -17,5 +17,9 @@ Các Data Analytist cần có những kiến thức cơ bản về sác xuất v
 
 Các ngôn ngữ lập trình mà Data Analytist hay sử dụng là Python, R, hay thâm chí là Excel. Do đó, nếu bạn mong muốn làm Data Analytist thì hãy thật vững 2 ngôn ngữ lập trình này. 
 
+<div class="img-div" markdown="0">
+    <img src="/images/data_scientist/da_roadmap.png" />
+</div>
+
 # Các kiến thức cơ bản cần có để trở thành Data Scientist
 # Các lưu ý khi bắt đầu một dự án Data Science
