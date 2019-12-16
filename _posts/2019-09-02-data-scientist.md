@@ -50,4 +50,16 @@ Deep Learning là kiến thức cũng không thể thiếu được của một 
 
 Giải tích và đại số tuyến tính là kiến thức toán nền toán của các mô hình máy học. Giúp các bạn nắm vững phần toán sau những mô hình đó, từ đó giúp các bạn khả năng đọc hiểu được các tài liệu học thuật để cập nhận các kiến thức, mô hình máy học mới nhất.   
 
+# Chu trình của một project data science
+## Tìm hiểu về business
+## Data collection
+## Data Cleaning
+## Exploration Data Analysis
+## Modelling
+## Performance Evaluation
+## Communicating to stackholders
+## Deployment
+## Real world testing
+## Operations & Optimization
+
 # Các lưu ý khi bắt đầu một dự án Data Science
