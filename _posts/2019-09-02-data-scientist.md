@@ -52,6 +52,10 @@ Giải tích và đại số tuyến tính là kiến thức toán nền toán c
 
 # Chu trình của một project data science
 ## Tìm hiểu về business
+Đây là bước đầu tiên trong một dự án data science bất kỳ. và do đó, cũng là bước quan trọng nhất của toàn bộ dự án. Hiểu được ngữ cảnh của vấn đề kinh doanh cần được trợ giúp từ góc nhìn của data science sẽ giúp các bạn xác định rõ ràng mục tiêu cần được tối ưu dưới góc nhìn của một mô hình máy học. Trong bước này, chúng ta cần có thật nhiều kiến thức và kinh nghiệm trong vấn đề của kinh doanh. Từ đó, giúp chúng ta có những ý tưởng tốt trong bước feature enineering. Tuy nhiên, thông thường với nền tảng là một lập trình viên, chúng ta thường thiếu các kiến thức này, do đó, mình gợi ý các bạn hãy làm việc trực tiếp với bên kinh doanh, cố gắng hiểu thật kĩ những vấn đề của họ trước ghi các bạn thực hiện các bước tiếp theo. 
+
+Mình muốn nhấn mạnh một lần nữa, có cái nhìn cụ thể, rõ ràng về vấn đề kinh doanh là rất quan trọng cho toàn bộ dự án. Giúp các bạn định hướng rõ ràng mục tiêu của dự án,các KPI và đảm bảo những gì bạn làm ra đem lại giá trị cho các bộ phận liên quan. 
+
 ## Data collection
 ## Data Cleaning
 ## Exploration Data Analysis
