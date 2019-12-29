@@ -57,6 +57,8 @@ Giải tích và đại số tuyến tính là kiến thức toán nền toán c
 Mình muốn nhấn mạnh một lần nữa, có cái nhìn cụ thể, rõ ràng về vấn đề kinh doanh là rất quan trọng cho toàn bộ dự án. Giúp các bạn định hướng rõ ràng mục tiêu của dự án,các KPI và đảm bảo những gì bạn làm ra đem lại giá trị cho các bộ phận liên quan. 
 
 ## Data collection
+Giai đoạn này liên quan đến quá trình kiến thức của Data engineering. Data dùng cho một dự án data science có thể đến từ nhiều nguồn khác nhau, ví dụ như đến từ các file csv, json, hoặc là từ cơ sở dự liệu lớn. Do đó kiến thức về ETL đữ liệu và SQL sẽ giúp ích khá nhiều trong giai đoạn này. Trong một số trường hợp, dữ liệu có thể không có sẵn mà các bạn phải tự thu thập trên các website. Một ít kiến thức về html cũng như về web api sẽ rất là hữu ích để giúp các bạn giải quyết khó khăn này. Một thư viện python mà mình hay sài để thu thập dữ liệu từ các website là beautifulsoup, các bạn cũng có thể tìm hiểu nhé. 
+
 ## Data Cleaning
 ## Exploration Data Analysis
 ## Modelling
