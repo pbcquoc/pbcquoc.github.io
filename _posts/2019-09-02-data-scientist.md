@@ -95,3 +95,6 @@ Kết quả đưa lên production và đánh giá mức độ hiệu quả. Nế
 Khi bắt đầu các dự án data science, việc các bạn nhận thức được các vấn đề sau sẽ giúp ích rất lớn trong quá trình làm việc và triển khai một dự án thành công. 
 Phần này mình trình bày các rules mà mình thấy quan trọng trong quá trình làm việc. Các bạn nên xem tất cả 43 rules được khuyến nghị bởi [Martin Zinkevich](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf) tại google để có cái nhìn tổng quan hơn nhé. 
 
+Trong hầu hết các trường hợp trong thực tế để có một mô hình machine learning tốt, chúng ta cần phải tập trung vào việc tìm kiếm các features tốt, hơn là đi tìm một mô hình phức tạp như neural nets. Do đó, để xây dựng một mô hình machine learning thành công, các bạn trước hết cần phải xây dựng môt pipeline hoàn chỉnh để dễ dành theo dõi, đánh giá mô hình, dễ dành thêm features. Từ đó giúp các bạn có thể nhanh chóng thực hiện các thí nghiệm mới. và giúp đồng nghiệp cùng cộng tác với nhau dễ dàng.
+
+
