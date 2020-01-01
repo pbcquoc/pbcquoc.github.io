@@ -75,6 +75,8 @@ Trong giai đoạn có thể là phần thú vị nhất đối với hầu hế
 Khi xây dựng mô hình, các bạn cần lưu ý đến độ trễ của việc dự đoán, tính giải thích được của mô hình. Trong một số trường hợp cần mô hình có thể dự đoán nhanh chóng và cần hiểu được lý do tại sao mô hình lại cho kết quả như vậy, các bạn có thể xem xét sử dụng linear/logistic regression. Ngoài ra, các bạn cần lưu ý rằng, khi sử dụng mô hình linear/logistic regression để dự đoán có độ chính xác 90% thì các bạn không cần thiết phải sử dụng những mô hình phức tạp hơn như neural nets để để cải thiện kết quả lên 1% vì tốn kém về mặc thời gian cũng như 1% cải thiện trong bài toán thức tế có thể không thật sự cần thiết để đánh đổi với tính giải thích được của các mô hình đơn giản. 
 
 ## Performance Evaluation
+Huấn luyện xong mô hình thì tất nhiên các bạn cần phải đánh giá và so sánh kết quả với các chỉ số về kinh doanh nếu được. hoặc đơn giản là xem xét các độ đô đơn giản như precision, recall, hoặc cụ thể hơn là confusion matrix, hay các chỉ số như mse. Từ đó, các bạn cần quyết định xem mình nên tiếp tục cải thiện, hay đã đủ tốt để đưa vào production. 
+
 ## Communicating to stackholders
 ## Deployment
 ## Real world testing
