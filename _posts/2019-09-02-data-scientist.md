@@ -65,7 +65,9 @@ Dữ liệu mà các bạn thu thập ở bước trên thông thường chưa �
 Các bạn hãy luôn nhớ rằng việc làm sạch dữ liệu là việc cực kì quan trọng. Để bảo đảm mô hình có thế hội tụ cũng như trách các kết quả bất thường khi dự đoán. 
 
 ## Exploration Data Analysis
-Đã có dữ liệu rồi bước tiếp theo các bạn cần là tìm hiểu dữ liệu bằng một số chỉ số thống kê cơ bản, và các kĩ thuật visualization để nhìn tận mắt vào những đối tượng các bạn cần làm việc. Thông thường, các bạn cần xem xét phân bố các của biến, mối tương quan giữ các biến với nhau và với biến cần dự đoán. 
+Đã có dữ liệu rồi bước tiếp theo các bạn cần là tìm hiểu dữ liệu bằng một số chỉ số thống kê cơ bản, và các kĩ thuật visualization để nhìn tận mắt vào những đối tượng các bạn cần làm việc. Thông thường, các bạn cần xem xét phân bố các của biến, mối tương quan giữ các biến với nhau và với biến cần dự đoán. Kiểm tra xem các lớp cần dự đoán có cân bằng hay không hay thậm chí thực hiện một số hypothesis test. Hoặc dimemsion reduction để xem phân bố trên không gian 2 hay 3 chiều như thế nào, có tuyến tính hay không hay là ngẫu nhiên.  
+
+Quá trình tìm hiểu ở trên giúp các bạn đưa ra các nhận định về dữ liệu từ đó có những ý tưởng về việc feature engineering ở bước tiếp theo. H
 
 ## Modelling
 ## Performance Evaluation
