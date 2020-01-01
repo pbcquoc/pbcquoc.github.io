@@ -93,4 +93,5 @@ Kết quả đưa lên production và đánh giá mức độ hiệu quả. Nế
 
 # Các lưu ý khi bắt đầu một dự án Data Science
 Khi bắt đầu các dự án data science, việc các bạn nhận thức được các vấn đề sau sẽ giúp ích rất lớn trong quá trình làm việc và triển khai một dự án thành công. 
-Phần này mình tổng hợp từ các rules được khuyến nghị bởi [Martin Zinkevich](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf) tại google
+Phần này mình trình bày các rules mà mình thấy quan trọng trong quá trình làm việc. Các bạn nên xem tất cả 43 rules được khuyến nghị bởi [Martin Zinkevich](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf) tại google để có cái nhìn tổng quan hơn nhé. 
+
