@@ -60,7 +60,10 @@ Mình muốn nhấn mạnh một lần nữa, có cái nhìn cụ thể, rõ rà
 Giai đoạn này liên quan đến quá trình kiến thức của Data engineering. Data dùng cho một dự án data science có thể đến từ nhiều nguồn khác nhau, ví dụ như đến từ các file csv, json, hoặc là từ cơ sở dự liệu lớn. Do đó kiến thức về ETL đữ liệu và SQL sẽ giúp ích khá nhiều trong giai đoạn này. Trong một số trường hợp, dữ liệu có thể không có sẵn mà các bạn phải tự thu thập trên các website. Một ít kiến thức về html cũng như về web api sẽ rất là hữu ích để giúp các bạn giải quyết khó khăn này. Một thư viện python mà mình hay sài để thu thập dữ liệu từ các website là beautifulsoup, các bạn cũng có thể tìm hiểu nhé. 
 
 ## Data Cleaning
-Dữ liệu mà các bạn thu thập ở bước trên thông thường chưa được sử dụng ngay để đưa vào các mô hình máy học do chưa nhiều nhiễu. Do đó, các bạn cần phải xử lý để lọc bỏ các dự liệu bất này này ra. 
+Dữ liệu mà các bạn thu thập ở bước trên thông thường chưa được sử dụng ngay để đưa vào các mô hình máy học do chưa nhiều nhiễu hay các biến kiểu categorical hay các giá trị bị rỗng. Do đó, các bạn cần phải xử lý các dữ liệu như vậy trước thực hiện những bước tiếp theo. Một số vấn đề phổ biến trong gia đoạn xử lý dữ liệu này là thay thế các giá trị rỗng bằng một giá trị mặc định như trung bình, hay bất kì giá trị nào có ý nghĩa theo trong ngữ cảnh của bài toán. Các biến kiểu categorical thường được mã hoá sang vector dạng one-hot hoặc những vector biểu diễn khác được học từ các mô hình deep learning. Các outlier cần được xem xét và nên được xoá khỏi dữ liệu. Xác định các outlier này thường phụ thuộc vào kiến thức của lĩnh vực kinh doanh thực tế. 
+
+Các bạn hãy luôn nhớ rằng việc làm sạch dữ liệu là việc cực kì quan trọng. Để bảo đảm mô hình có thế hội tụ cũng như trách các kết quả bất thường khi dự đoán. 
+
 ## Exploration Data Analysis
 ## Modelling
 ## Performance Evaluation
