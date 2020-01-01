@@ -92,3 +92,5 @@ Kết quả đưa lên production và đánh giá mức độ hiệu quả. Nế
 Ở bước cuối này, khi mô hình đã đưa vào vận hành các bạn cần theo dõi kết quả dự đoán, cũng như tính hiệu quả của mô hình vì trong một số trường hợp thực chưa lường trước như thay đổi phân bố dữ liệu hoặc các yếu tố vận hành sẽ làm cho mô hình các bạn cho kết quả tệ.
 
 # Các lưu ý khi bắt đầu một dự án Data Science
+Khi bắt đầu các dự án data science, việc các bạn nhận thức được các vấn đề sau sẽ giúp ích rất lớn trong quá trình làm việc và triển khai một dự án thành công. 
+Phần này mình tổng hợp từ các rules được khuyến nghị bởi [Martin Zinkevich](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf) tại google
