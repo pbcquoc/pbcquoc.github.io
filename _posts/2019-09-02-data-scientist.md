@@ -83,7 +83,12 @@ Huấn luyện xong mô hình thì tất nhiên các bạn cần phải đánh g
 Hãy thuyết phục và kiên trì.
 
 ## Deployment
+Đến bước này các bạn cần làm việc trực tiếp với team data engineer, để triển khai kết quả lên môi trường production. Các bạn cũng có thể cần phải xây dựng một giao diện đơn giản để phục vụ cho các cá nhân sử dụng kết quả của bạn hiệu quả hơn. Ngoài ra, các bạn cũng có thể phải viết lại phần dự đoán bằng ngôn ngữ C/C++ để giảm thời gian dự đoán trong các bài toán cần xử lý lượng lớn dự liệu. 
+
 ## Real world testing
+Kết quả đưa lên production và đánh giá mức độ hiệu quả. Nếu mô hình bạn đem lại kết quả tốt thì xin chúc mừng bạn đã có một dự án thành công. Trong giai đoạn này, các bạn có thể sử dụng A/B test để đánh giá tính hiệu quả khi triển khai mô hình mới  mà giúp các bạn đạt được KPI của bên kinh doanh đạt ra. 
+
 ## Operations & Optimization
+Ở bước cuối này, khi mô hình đã đưa vào vận hành các bạn cần theo dõi kết quả dự đoán, cũng như tính hiệu quả của mô hình vì trong một số trường hợp thực chưa lường trước như thay đổi phân bố dữ liệu hoặc các yếu tố vận hành sẽ làm cho mô hình các bạn cho kết quả tệ.
 
 # Các lưu ý khi bắt đầu một dự án Data Science
