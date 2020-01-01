@@ -78,6 +78,10 @@ Khi xây dựng mô hình, các bạn cần lưu ý đến độ trễ của vi�
 Huấn luyện xong mô hình thì tất nhiên các bạn cần phải đánh giá và so sánh kết quả với các chỉ số về kinh doanh nếu được. hoặc đơn giản là xem xét các độ đô đơn giản như precision, recall, hoặc cụ thể hơn là confusion matrix, hay các chỉ số như mse. Từ đó, các bạn cần quyết định xem mình nên tiếp tục cải thiện, hay đã đủ tốt để đưa vào production. 
 
 ## Communicating to stackholders
+Ở bước này các bạn cần nói chuyện với bên kinh doanh để trao đổi với họ về những insight của mô hình. Và bên kinh doanh sẽ để xuất các cách để đánh giá mô hình của các bạn bằng các chỉ số của họ. Các bạn cần thuyết phục họ tại sao có thể sử dụng mô hình này để cải thiện hiệu quả công việc mà phương pháp cũ không làm được. 
+
+Hãy thuyết phục và kiên trì.
+
 ## Deployment
 ## Real world testing
 ## Operations & Optimization
