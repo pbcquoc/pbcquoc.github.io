@@ -65,6 +65,8 @@ Dữ liệu mà các bạn thu thập ở bước trên thông thường chưa �
 Các bạn hãy luôn nhớ rằng việc làm sạch dữ liệu là việc cực kì quan trọng. Để bảo đảm mô hình có thế hội tụ cũng như trách các kết quả bất thường khi dự đoán. 
 
 ## Exploration Data Analysis
+Đã có dữ liệu rồi bước tiếp theo các bạn cần là tìm hiểu dữ liệu bằng một số chỉ số thống kê cơ bản, và các kĩ thuật visualization để nhìn tận mắt vào những đối tượng các bạn cần làm việc. Thông thường, các bạn cần xem xét phân bố các của biến, mối tương quan giữ các biến với nhau và với biến cần dự đoán. 
+
 ## Modelling
 ## Performance Evaluation
 ## Communicating to stackholders
