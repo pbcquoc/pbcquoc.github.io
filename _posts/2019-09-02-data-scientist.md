@@ -78,22 +78,22 @@ Khi xây dựng mô hình, các bạn cần lưu ý đến độ trễ của vi�
 Huấn luyện xong mô hình thì tất nhiên các bạn cần phải đánh giá và so sánh kết quả với các chỉ số về kinh doanh nếu được. hoặc đơn giản là xem xét các độ đô đơn giản như precision, recall, hoặc cụ thể hơn là confusion matrix, hay các chỉ số như mse. Từ đó, các bạn cần quyết định xem mình nên tiếp tục cải thiện, hay đã đủ tốt để đưa vào production. 
 
 ## Communicating to stackholders
-Ở bước này các bạn cần nói chuyện với bên kinh doanh để trao đổi với họ về những insight của mô hình. Và bên kinh doanh sẽ để xuất các cách để đánh giá mô hình của các bạn bằng các chỉ số của họ. Các bạn cần thuyết phục họ tại sao có thể sử dụng mô hình này để cải thiện hiệu quả công việc mà phương pháp cũ không làm được. 
+Ở bước này các bạn cần nói chuyện với bên kinh doanh để trao đổi với họ về những insight của mô hình. Và bên kinh doanh sẽ để xuất các cách để đánh giá mô hình của các bạn bằng các chỉ số của họ. Các bạn cần thuyết phục họ tại sao có thể sử dụng mô hình này để cải thiện hiệu quả công việc mà phương pháp cũ không làm được.
 
 Hãy thuyết phục và kiên trì.
 
 ## Deployment
-Đến bước này các bạn cần làm việc trực tiếp với team data engineer, để triển khai kết quả lên môi trường production. Các bạn cũng có thể cần phải xây dựng một giao diện đơn giản để phục vụ cho các cá nhân sử dụng kết quả của bạn hiệu quả hơn. Ngoài ra, các bạn cũng có thể phải viết lại phần dự đoán bằng ngôn ngữ C/C++ để giảm thời gian dự đoán trong các bài toán cần xử lý lượng lớn dự liệu. 
+Đến bước này các bạn cần làm việc trực tiếp với team data engineer, để triển khai kết quả lên môi trường production. Các bạn cũng có thể cần phải xây dựng một giao diện đơn giản để phục vụ cho các cá nhân sử dụng kết quả của bạn hiệu quả hơn. Ngoài ra, các bạn cũng có thể phải viết lại phần dự đoán bằng ngôn ngữ C/C++ để giảm thời gian dự đoán trong các bài toán cần xử lý lượng lớn dự liệu.
 
 ## Real world testing
-Kết quả đưa lên production và đánh giá mức độ hiệu quả. Nếu mô hình bạn đem lại kết quả tốt thì xin chúc mừng bạn đã có một dự án thành công. Trong giai đoạn này, các bạn có thể sử dụng A/B test để đánh giá tính hiệu quả khi triển khai mô hình mới  mà giúp các bạn đạt được KPI của bên kinh doanh đạt ra. 
+Kết quả đưa lên production và đánh giá mức độ hiệu quả. Nếu mô hình bạn đem lại kết quả tốt thì xin chúc mừng bạn đã có một dự án thành công. Trong giai đoạn này, các bạn có thể sử dụng A/B test để đánh giá tính hiệu quả khi triển khai mô hình mới  mà giúp các bạn đạt được KPI của bên kinh doanh đạt ra.
 
 ## Operations & Optimization
 Ở bước cuối này, khi mô hình đã đưa vào vận hành các bạn cần theo dõi kết quả dự đoán, cũng như tính hiệu quả của mô hình vì trong một số trường hợp thực chưa lường trước như thay đổi phân bố dữ liệu hoặc các yếu tố vận hành sẽ làm cho mô hình các bạn cho kết quả tệ.
 
 # Các lưu ý khi bắt đầu một dự án Data Science
-Khi bắt đầu các dự án data science, việc các bạn nhận thức được các vấn đề sau sẽ giúp ích rất lớn trong quá trình làm việc và triển khai một dự án thành công. 
-Phần này mình trình bày các rules mà mình thấy quan trọng trong quá trình làm việc. Các bạn nên xem tất cả 43 rules được khuyến nghị bởi [Martin Zinkevich](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf) tại google để có cái nhìn tổng quan hơn nhé. 
+Khi bắt đầu các dự án data science, việc các bạn nhận thức được các vấn đề sau sẽ giúp ích rất lớn trong quá trình làm việc và triển khai một dự án thành công.
+Phần này mình trình bày các rules mà mình thấy quan trọng trong quá trình làm việc. Các bạn nên xem tất cả 43 rules được khuyến nghị bởi [Martin Zinkevich](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf) tại google để có cái nhìn tổng quan hơn nhé.
 
 Trong hầu hết các trường hợp trong thực tế để có một mô hình machine learning tốt, chúng ta cần phải tập trung vào việc tìm kiếm các features tốt, hơn là đi tìm một mô hình phức tạp như neural nets. Do đó, để xây dựng một mô hình machine learning thành công, các bạn trước hết cần phải xây dựng môt pipeline hoàn chỉnh để dễ dành theo dõi, đánh giá mô hình, dễ dành thêm features. Từ đó giúp các bạn có thể nhanh chóng thực hiện các thí nghiệm mới. và giúp đồng nghiệp cùng cộng tác với nhau dễ dàng.
 
