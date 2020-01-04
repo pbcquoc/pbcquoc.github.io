@@ -120,3 +120,5 @@ Chúng ta thường xem nhẹ việc xây dựng một pipeline tốt và thư�
 
 Khi xây dựng pipeline trước cho phép ta giải quyết các vấn đề liên quan đến data engineering từ đó giúp tăng tốc quá trình xây dựng mô hình nhanh chóng hơn ở các bước tiếp theo. Do đó, hãy bình tính, không nên nóng vội lao đầu vào xây dựng một mô hình siêu to phức tạp, mà nên tập trung hầu hết thời gian lúc đầu để xây dựng pipeline vững chắc.
 
+### Rule 5: Hãy bắt đầu với một mô hình dễ giải thích. 
+
