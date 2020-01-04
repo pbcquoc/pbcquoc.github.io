@@ -99,5 +99,15 @@ Trong hầu hết các trường hợp trong thực tế để có một mô hì
 
 Do đó các bạn cần ý thức được những điều sau đây.
 - Cần tạo một pipeline hoàn chỉnh càng sớm càng tốt. tức là từ việc lấy data source, xử lý dữ liệu, feature engineering, train, test, prediction, lưu trữ kết quả dự đoán hằng ngày hoặc hằng tuần cần được hoàn thành và vận hành mượt mà ngay từ lúc đầu tiên. 
+- Kết nối kết quả của mô hình với business càng sớm càng tốt, từ đó giúp các bạn đánh giá được mức độ hiểu quả đóng góp từ quá trình xây dựng mô hình.
 
+Các lưu ý  này được chia làm 4 phần, mỗi phần sẽ bao gồm một số rules các bạn cần lưu ý mà mình hay gặp phải ở một số công ty tại Việt Nam
+## Trước khi xây dựng mô hình Machine Learing
+### Rule 1: Nếu một vấn đề có thể giải quyết bằng những heuristic đơn giản thì hãy nghĩ ngay đến việc cài đặt điều đó trước.
+Trong giải quyết một vấn đề, nếu các bạn cảm thấy rằng vấn đề đang xem xét có thể được giải quyết một phần nào bằng những heuristic đơn giản thì nên xây dựng một pipeline với phần mô hình được cài đặt là những logic đó trước hết. Điều đó giúp các bạn có thể  hoàn thành một pipeline nhanh chóng, và nghĩ đến các vấn đề quan trọng khác như đo đếm các chỉ số của kinh doanh để thấy được hiệu quả, hoặc tìm cách thuyết phục các bên liên quan sử dụng kết quả của mình.  
 
+Ngoài ra, khi bắt đầu một dự án data science ở Việt Nam. Rất nhiều trường hợp bạn chưa có dữ liệu những vẫn phải xây dựng mô hình vậy thì giải pháp lúc đó là sử dụng các heuristic đơn giản nhé. Sau khi đi vào vận hành, các bạn sẽ có thêm dữ liệu và hãy nghĩ đến các bước xây dựng mô hình machine learning thật sự. 
+
+### Rule 2: Hãy suy nghĩ và cài đặt các metrics để đo đêm tính hiệu quả của mô hình của bạn đến việc kinh doanh. 
+Việc đo đếm các chỉ số kinh doanh trước khi có mô hình machine learning tác động giúp các bạn có thể so sánh với kết quả sau khi sử dụng các kết quả của bạn. Đo đếm các chỉ số này trước giúp các bạn có được cái nhìn tổng quan về các chỉ số mà bạn muốn tối ưu. 
+Tuy nhiên ở những công ty mình làm, việc xác định chỉ số bên kinh doanh cần tối ưu thường không rõ ràng, vì những mục tiêu thường hay bị thay đổi khi các bạn thảo luận với các bên liên quan. Do đó, tốt nhất là nên biết chắc những gì mình làm và giữ vững lập trường. 
