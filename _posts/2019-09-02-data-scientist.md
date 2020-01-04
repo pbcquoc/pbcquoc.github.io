@@ -118,4 +118,5 @@ Chúng ta khi giải quyết vấn đề thường chọn một mô hình machin
 ### Rule 4: Đảm bảo xây dựng pipeline tốt ngay từ đầu với một mô hình đơn giản 
 Chúng ta thường xem nhẹ việc xây dựng một pipeline tốt và thường tập trung thời gian vào việc xây dựng mô hình machine learning ngày từ lúc đầu. Lý do đơn giản bởi vì chúng ta yêu thích việc xây dựng một hình thông minh hơn là làm những công việc nhàn chán như xây dựng một quy trình để kết nối các bước như thu thập dự liệu hàng ngày, xử lý dữ liệu, train, đổ kết quả dự đoán lại cơ sở dữ liệu và cho phép chúng có thể  chạy tác vụ cũng như huấn luyện mô hình hàng ngày mà không cần sự tác động của chúng ta. 
 
-Khi xây dựng pipeline trước cho phép ta giải quyết các vấn đề liên quan đến data engineering từ đó giúp tăng tốc quá trình xây dựng mô hình nhanh chóng hơn ở các bước tiếp theo. Do đó, hãy bình tính, không nên nóng vội lao đầu vào xây dựng một mô hình siêu to phức tạp, mà nên tập trung hầu hết thời gian lúc đầu để xây dựng mô p
+Khi xây dựng pipeline trước cho phép ta giải quyết các vấn đề liên quan đến data engineering từ đó giúp tăng tốc quá trình xây dựng mô hình nhanh chóng hơn ở các bước tiếp theo. Do đó, hãy bình tính, không nên nóng vội lao đầu vào xây dựng một mô hình siêu to phức tạp, mà nên tập trung hầu hết thời gian lúc đầu để xây dựng pipeline vững chắc.
+
