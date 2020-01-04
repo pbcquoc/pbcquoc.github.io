@@ -111,3 +111,6 @@ Ngoài ra, khi bắt đầu một dự án data science ở Việt Nam. Rất nh
 ### Rule 2: Hãy suy nghĩ và cài đặt các metrics để đo đêm tính hiệu quả của mô hình của bạn đến việc kinh doanh. 
 Việc đo đếm các chỉ số kinh doanh trước khi có mô hình machine learning tác động giúp các bạn có thể so sánh với kết quả sau khi sử dụng các kết quả của bạn. Đo đếm các chỉ số này trước giúp các bạn có được cái nhìn tổng quan về các chỉ số mà bạn muốn tối ưu. 
 Tuy nhiên ở những công ty mình làm, việc xác định chỉ số bên kinh doanh cần tối ưu thường không rõ ràng, vì những mục tiêu thường hay bị thay đổi khi các bạn thảo luận với các bên liên quan. Do đó, tốt nhất là nên biết chắc những gì mình làm và giữ vững lập trường. 
+
+### Rule 3: Chọn một mô hình machine learning thay vì một heuristic phức tạp
+Chúng ta khi giải quyết vấn đề thường chọn một mô hình machine learning, tuy nhiên trong một số trường hợp team leader lại thích sử dụng rule hơn. Điều đó dẫn đến mâu thuẫn cực lớn giữ các thành viên với nhau. Do đó, hãy chắc chắn rằng nếu bạn đang làm giải quyết các bài toán phức tạp thì hãy thuyết phục team leader sử dụng một mô hình machine learning vì điều này tạo ra nhiều lơi ích về sau như tính scale của bài toán, dễ cập nhât và maintain một mô hình machine learning hơn là một heuristic phức tạp.
