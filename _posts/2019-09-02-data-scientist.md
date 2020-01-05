@@ -136,5 +136,6 @@ Nếu bạn thấy độ chính xác trong quá trình train/validation với l�
 * Phân bố của nhãn cần dự đoán thay đổi. Nguyên nhân là lúc huấn luyện bạn đã không xem xét kĩ phân bố thực sự của nhãn cần dữ đoán trong quá trình chạy thực tế. 
 * Phân bố của các dữ liệu, features thay đổi, có các features dễ bị thay đổi theo thời gian. 
 
-Nếu sự khác biệt của dữ liệu trong quá trình train/serving khác nhau. Bạn cần ý thức được và cần thay đổi pipeline, tổng hợp features làm sao cho hạn chế sự khác biệt đó. H
+Nếu sự khác biệt của dữ liệu trong quá trình train/serving khác nhau. Bạn cần ý thức được và cần thay đổi pipeline, tổng hợp features làm sao cho hạn chế sự khác biệt đó. Hãy đảm bảo không có sự khác biệt nhiều giữ độ chính xác trên tập validation và lúc serving. 
+
 
