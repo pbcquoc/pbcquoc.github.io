@@ -34,7 +34,7 @@ Người ta hay bảo nhau rằng **Data Scientist: The Sexiest Job of the 21st 
 
 Ngôn ngữ lập trình ở đây là các kiến thức về lập trình như các cơ bản của một ngôn ngữ, cấu trúc dữ liệu, lập trình hướng đối tượng. Những kiến thức này chính là nền tảng của mọi lập trình viên. Do đó sẽ giúp ích rất nhiều cho khi làm việc thực tế để hiểu,viết và tổ chức mã nguồn cho hợp lý, gọn gàng và dễ phát triển về sau. 
 
-Cơ sở dữ liệu và tính toán phân tán là kiến thức về các cơ sở dữ liệu phổ biến như mysql, mongo, redis, mapreduce concept, hadoop, spark, cách tổ chức và xây dựng hệ thống để hỗ trợ việc xây dựng mô hình máy học có thể  scale khi cần thiết và chạy được cả offline và online để 
+Cơ sở dữ liệu và tính toán phân tán là kiến thức về các cơ sở dữ liệu phổ biến như mysql, mongo, redis, mapreduce concept, hadoop, spark, cách tổ chức và xây dựng hệ thống để hỗ trợ việc xây dựng mô hình máy học có thể  scale khi cần thiết và chạy được cả offline và online để đưa ra các dự đoán nhanh chóng.
 
 Với những kiến thức cơ bản về web programming, các Data Scientist có thể tự tạo một dashboard cơ bản để theo dõi kết quả của mô hình, các chỉ số liên quan để đánh giá ảnh hưởng của dự án đến người dùng, hoặc là một giao diện đơn giản để a/b testing, hoặc là dùng để labeling hay đơn giản là để thể hiện kết quả ra bên ngoài cho nội bộ team sài và đánh giá. Việc tạo ra một giao diện có tương tác sẽ giúp ích và giảm thiểu thời gian đánh giá kết quả đi rất nhiều. Với những team nhỏ, không có đủ nhân lực thì kiến thức về lập trình web sẽ rất hữu ý cho một Data Scientist.
 
