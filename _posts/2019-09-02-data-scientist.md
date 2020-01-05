@@ -108,7 +108,7 @@ Trong giải quyết một vấn đề, nếu các bạn cảm thấy rằng v�
 
 Ngoài ra, khi bắt đầu một dự án data science ở Việt Nam. Rất nhiều trường hợp bạn chưa có dữ liệu nhưng vẫn phải xây dựng mô hình vậy thì giải pháp lúc đó là sử dụng các heuristic đơn giản nhé. Sau khi đi vào vận hành, các bạn sẽ có thêm dữ liệu và hãy nghĩ đến các bước xây dựng mô hình machine learning thật sự. 
 
-### Rule 2: Hãy suy nghĩ và cài đặt các metrics để đo đêm tính hiệu quả của mô hình của bạn đến việc kinh doanh. 
+### Rule 2: Hãy suy nghĩ và cài đặt các metrics để đo đếm tính hiệu quả của mô hình của bạn đến việc kinh doanh. 
 Việc đo đếm các chỉ số kinh doanh trước khi có mô hình machine learning tác động giúp các bạn có thể so sánh với kết quả sau khi sử dụng các kết quả của bạn. Đo đếm các chỉ số này trước giúp các bạn có được cái nhìn tổng quan về các chỉ số mà bạn muốn tối ưu. 
 Tuy nhiên ở những công ty mình làm, việc xác định chỉ số bên kinh doanh cần tối ưu thường không rõ ràng, vì những mục tiêu thường hay bị thay đổi khi các bạn thảo luận với các bên liên quan. Do đó, tốt nhất là nên biết chắc những gì mình làm và giữ vững lập trường. 
 
