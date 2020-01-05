@@ -138,3 +138,4 @@ Nếu bạn thấy độ chính xác trong quá trình train/validation với l�
 
 Nếu sự khác biệt của dữ liệu trong quá trình train/serving khác nhau. Bạn cần ý thức được và cần thay đổi pipeline, tổng hợp features làm sao cho hạn chế sự khác biệt đó. Hãy đảm bảo không có sự khác biệt nhiều giữ độ chính xác trên tập validation và lúc serving. 
 
+Bài viết mình kết thúc tại đây. Hy vọng những chia sẽ của mình về những kinh nghiệm trong quá trình làm những dự án data science cho công ty sẽ giúp ích cho các bạn. 
