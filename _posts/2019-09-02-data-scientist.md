@@ -123,4 +123,14 @@ Khi xây dựng pipeline trước cho phép ta giải quyết các vấn đề l
 ### Rule 5: Hãy bắt đầu với một mô hình dễ giải thích. 
 Mô hình đơn giản cho phép chúng ta phát hiện các lỗi trong quá trình thu thập dữ liệu. hoặc phân tích tại sao lại có sự khác biệt giữ quá trình dự đoán lúc huấn luyện và trên môi trường production lại không giống nhau như mong đợi. Chúng ta có thể xem xét sử dụng linear regression hoặc logistic regression vì những mô hình này có thể hoàn toàn giải thích được kết quả dự đoán của nó, và trong nhiều ngữ cảnh, chúng quan tâm đến việc giải thích kết quả của quá trình dự đoán hơn chỉ là xác suất của mô hình. 
 
+## Feature Engineering
 
+### Rule 6: Hãy lauch mô hình đầu tiên với tập features vừa đủ và sau đó liên tục cập nhật mô hình 
+Các bạn không nên đợi đến khi xây dựng một mô hình vừa ý với đầu đủ các features vì như thế rất tốn kém thời gian mà lại không thấy kết quả đem lại từ mô hình của bạn cho kinh doanh. Do đó, hãy bắt đầu với mô hình đơn giản và tập features tối thiểu và nghĩ đến kế hoạch cập nhật thêm các features ở những giai đoạn tiếp theo. 
+
+### Rule 7: Bắt đầu với các features đơn giản, dễ hiểu, xuất phát từ các heuristic thay vì các features từ mô hình deep learning.
+Hầu hết các bài toán của data science đều đã được nghiên cứu tìm hiểu trong cộng đồng, do đó các bạn nên tham khảo những lời giải hay các features mà đã được cộng đồng sử dụng. Đồng thời, cố gắng chuyển cách common-sense trong quá trình tìm hiểu vấn đề thành các features thay vì nghĩ đến những features phức tạp như learned features ngay từ đầu nếu như đều đó không cần thiết. 
+
+### Rule 8: Chú ý đến việc training/serving skew
+Nếu bạn thấy độ chính xác trong quá trình train/validation với lúc chạy trên product có sự khác biệt lớn thì có thể do các nguyên nhân sau. 
+* Phân bố của nhãn cần dự đoán thay đổi. Nguyên nhân là lúc huấn luyện bạn đã không xem xét kĩ 
