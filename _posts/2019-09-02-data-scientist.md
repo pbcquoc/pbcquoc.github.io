@@ -133,4 +133,8 @@ Hầu hết các bài toán của data science đều đã được nghiên cứ
 
 ### Rule 8: Chú ý đến việc training/serving skew
 Nếu bạn thấy độ chính xác trong quá trình train/validation với lúc chạy trên product có sự khác biệt lớn thì có thể do các nguyên nhân sau. 
-* Phân bố của nhãn cần dự đoán thay đổi. Nguyên nhân là lúc huấn luyện bạn đã không xem xét kĩ 
+* Phân bố của nhãn cần dự đoán thay đổi. Nguyên nhân là lúc huấn luyện bạn đã không xem xét kĩ phân bố thực sự của nhãn cần dữ đoán trong quá trình chạy thực tế. 
+* Phân bố của các dữ liệu, features thay đổi, có các features dễ bị thay đổi theo thời gian. 
+
+Nếu sự khác biệt của dữ liệu trong quá trình train/serving khác nhau. Bạn cần ý thức được và cần thay đổi pipeline, tổng hợp features làm sao cho hạn chế sự khác biệt đó. H
+
