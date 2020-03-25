@@ -22,3 +22,4 @@ Về cơ bản mô hình Transformer chính là nền tảng của rất nhiều
 ## Masked Multi Head Attention
 # Loss function
 # Implemetation
+(to be continuted)
