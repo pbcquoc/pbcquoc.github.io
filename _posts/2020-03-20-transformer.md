@@ -13,9 +13,9 @@ Sự nổi tiếng của mô hình Transformer thì không cần phải bàn cã
 
 Ý tưởng chủ đạo của Transformer vẫn là áp dụng cơ thể Attention, những ở mức phức tạp hơn và thật sự là thú vị hơn so với cách được đề xuất trước đó trong một [bài báo](https://arxiv.org/abs/1508.04025) của tác giả Lương Minh Thắng, một người Việt rất nổi tiếng trong cộng đồng deep learning. 
 
-# Giới Thiệu
-
 # Tổng Quan Mô Hình
+Để cho dễ cảm nhận được cách mà mô hình hoạt động, mình sẽ trình bày trước toàn bộ kiến trúc mô hình ở mức high-level và sau đó sẽ đi chi tiết từng phân nhỏ cũng như công thức toán của nó. 
+
 # Encoder
 ## Embedding Layer
 ## Positional Encoding
