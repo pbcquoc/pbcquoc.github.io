@@ -13,4 +13,3 @@ title: Transformer: Ngươi Không phải là anh hùng, người là quái vậ
 ## Masked Multi Head Attention
 # Loss function
 # Implemetation
-# 
