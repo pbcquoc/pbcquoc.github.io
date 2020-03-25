@@ -6,9 +6,11 @@ title: Transformer: Ngươi Không phải là anh hùng, người là quái vậ
 # Tổng Quan Mô Hình
 # Encoder
 ## Embedding Layer
+## Positional Encoding
 ## Self Attention Layer
 ## Multi Head Attention
 # Decoder
 ## Masked Multi Head Attention
+# Loss function
 # Implemetation
 # 
