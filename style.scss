@@ -293,6 +293,14 @@ footer {
   border: 1px solid $lightGray;
 }
 
+.prediction .img-div-any-width {
+  font-size: 85%;
+  color: $gray;
+  text-align: center;
+}
+.prediction .img-div-any-width img{
+  // border: 1px solid $lightGray;
+}
 
 pre{
   padding:8px;
