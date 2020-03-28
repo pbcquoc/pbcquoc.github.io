@@ -12,6 +12,7 @@ Trong blog này, mình sẽ trình bày chi tiết cách mô hình Transformer h
 # Tổng Quan Mô Hình
 Để cho dễ cảm nhận được cách mà mô hình hoạt động, mình sẽ trình bày trước toàn bộ kiến trúc mô hình ở mức high-level và sau đó sẽ đi chi tiết từng phân nhỏ cũng như công thức toán của nó. 
 
+Giống như những mô hình dịch máy khác, kiến trúc tổng quan của mô hình transformer bao gồm 2 phần lớn là encoder và decoder. Encoder dùng để học vector biểu của câu với mong muốn rằng vector này mang thông tin hoàn hảo của câu đó. 
 # Encoder
 ## Embedding Layer
 ## Positional Encoding
