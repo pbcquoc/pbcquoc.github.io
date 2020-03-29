@@ -21,6 +21,10 @@ Trong ví dụ ở dưới, encoder của mô hình transformer nhận một câ
 
 Encoder của mô hình transfomer là một dạng feedforward neural nets, bao gồm nhiều encoder layer khác nữa. 
 
+<div class="img-div" markdown="0">
+    <img src="/images/transformer/overview2.jpg" />
+</div>
+
 # Encoder
 ## Embedding Layer
 ## Positional Encoding
