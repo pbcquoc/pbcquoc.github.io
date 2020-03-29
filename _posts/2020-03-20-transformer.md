@@ -16,7 +16,7 @@ Giống như những mô hình dịch máy khác, kiến trúc tổng quan của
 
 Trong ví dụ ở dưới, encoder của mô hình transformer nhận một câu tiếng việt, và encode thành một vector biểu diễn ngữ nghĩa của câu <i>little sun</i>, sau đó mô hình decoder nhận vector biểu diễn này, và chuyển dịch nó thành câu tiếng việt <i>mặt trời bé nhỏ</i>
 <div class="img-div" markdown="0">
-    <img src="/images/transformer/overview.png" />
+    <img src="/images/transformer/overview.jpg" />
 </div>
 
 Encoder của mô hình transfomer là một dạng feedforward neural nets, bao gồm nhiều encoder layer khác nữa. 
