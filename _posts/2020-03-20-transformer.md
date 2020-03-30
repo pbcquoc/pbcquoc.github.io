@@ -27,7 +27,7 @@ Một trong nhưng ưu điểm của transformer là mô hình này có khả n�
 </div>
 
 Mỗi encoder layer của transformer lại bao gồm 2 phần nhỏ hơn là self attention và feedforward neural net.
-<div class="img-div-any-width" markdown="0">
+<div class="img-div" markdown="0">
     <img src="/images/transformer/encoder.jpg" />
 </div>
 # Encoder
