@@ -20,8 +20,7 @@ Trong ví dụ ở dưới, encoder của mô hình transformer nhận một câ
     <img src="/images/transformer/overview.jpg" />
 </div>
 
-Một trong nhưng ưu điểm của transformer là mô hình này có khả năng xử lý song song cho các từ. 
-Encoders của mô hình transfomer là một dạng feedforward neural nets, bao gồm nhiều encoder layer khác nữa. 
+Một trong nhưng ưu điểm của transformer là mô hình này có khả năng xử lý song song cho các từ. Như các bạn thấy, Encoders của mô hình transfomer là một dạng feedforward neural nets, bao gồm nhiều encoder layer khác, mỗi encoder layer này xử lý đồng thời các từ. Trong khi đó, với mô hình LSTM, thì các từ phải được xử lý tuần được. 
 
 <div class="img-div-any-width" markdown="0">
     <img src="/images/transformer/overview2.jpg" />
