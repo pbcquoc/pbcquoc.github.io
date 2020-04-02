@@ -27,6 +27,8 @@ Một trong nhưng ưu điểm của transformer là mô hình này có khả n�
 </div>
 
 # Embedding Layer
+Trước khi đi vào mô hình encoder, chúng ta hãy xem qua cơ chế rất quen thuộc là word embedding được để biểu diễn một từ thành một vector.
+
 ## Positional Encoding
 
 # Encoder
