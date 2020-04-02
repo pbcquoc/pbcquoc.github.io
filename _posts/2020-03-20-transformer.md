@@ -33,7 +33,7 @@ Một trong nhưng ưu điểm của transformer là mô hình này có khả n�
 
 Mỗi encoder layer của transformer lại bao gồm 2 thành phần chính là multi-head attention và feedforward network, ngoài ra còn có cả skip connection và normalization layer. 
 
-Trong 2 thành phần chính, các bạn sẽ hứng thú nhiều hơn về multi-head attention vì đó là một layer mới được giới thiệu trong bài báo này, và chính nó tạo nên sự khác biệt giữ mô hình LSTM và mô hình Transformer mà chúng ta đang tìm hiểu. 
+Trong 2 thành phần chính này, các bạn sẽ hứng thú nhiều hơn về multi-head attention vì đó là một layer mới được giới thiệu trong bài báo này, và chính nó tạo nên sự khác biệt giữ mô hình LSTM và mô hình Transformer mà chúng ta đang tìm hiểu. 
 
 <div class="img-div" markdown="0">
     <img src="/images/transformer/encoder.jpg" />
