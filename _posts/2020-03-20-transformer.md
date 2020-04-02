@@ -31,7 +31,7 @@ Trước khi đi vào mô hình encoder, chúng ta sẽ tìm hiểu cơ chế r�
 
 Đầu tiên, các từ được biểu diễn bằng một vector sử dụng một ma trận word embedding có số dòng bằng kích thước của tập từ vựng. Sau đó các từ trong câu được tìm kiếm trong ma trận này, và được nối nhau thành các dòng của một ma trận 2 chiều chứa ngữ nghĩa của từng từ riêng biệt. Nhưng như các bạn đã thấy, transformer xử lý các từ song song, do đó, với chỉ word embedding mô hình không thể nào biết được vị trí các từ. Như vậy, chúng ta cần một cơ chế nào đó để đưa thông tin vị trí các từ vào trong vector đầuvào. 
 
-<div class="img-div-any-width" markdown="0">
+<div class="img-div" markdown="0">
     <img src="/images/transformer/embedding.jpg" />
 </div>
 
