@@ -27,7 +27,8 @@ Một trong nhưng ưu điểm của transformer là mô hình này có khả n�
 </div>
 
 # Embedding Layer with Position Encoding
-Trước khi đi vào mô hình encoder, chúng ta sẽ tìm hiểu một cơ chế rất thú vị dùng để đưa thông tin về vị trí của các từ 
+Trước khi đi vào mô hình encoder, chúng ta sẽ tìm hiểu cơ chế Position Encoding rất thú vị dùng để đưa thông tin về vị trí của các từ vào mô hình transformer.
+
 
 
 # Encoder
