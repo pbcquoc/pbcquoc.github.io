@@ -36,7 +36,7 @@ Biểu diễn vị trí các từ bằng chuỗi các số liên tục từ 0,1,
 ## Phương pháp đề xuất
 Phương pháp của tác giả đề xuất không gặp những hạn chế mà chúng ta vừa nêu. Vị trí của các từ được mã hóa bằng một vector có kích thước bằng word embedding và được cộng trực tiếp vào word embedding.
 
-<div class="img-div" markdown="0">
+<div class="img-div-any-width" markdown="0">
     <img src="/images/transformer/pe.png" />
 </div>
 
