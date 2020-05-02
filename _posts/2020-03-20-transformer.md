@@ -46,7 +46,7 @@ Phương pháp của tác giả đề xuất không gặp những hạn chế m�
 
 Trong đó 
 <div class='row'>
-<span class="col-sm-12 text-center" style="font-size:120%">w_{k} = \frac{1}{10000^{2k/d}}</span>
+<span class="col-sm-12 text-center" style="font-size:120%">$$w_{k} = \frac{1}{10000^{2k/d}}$$</span>
 </div>
 
 <div class="img-div-any-width" markdown="0">
