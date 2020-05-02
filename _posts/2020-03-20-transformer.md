@@ -37,7 +37,16 @@ Biểu diễn vị trí các từ bằng chuỗi các số liên tục từ 0,1,
 Phương pháp của tác giả đề xuất không gặp những hạn chế mà chúng ta vừa nêu. Vị trí của các từ được mã hóa bằng một vector có kích thước bằng word embedding và được cộng trực tiếp vào word embedding.
 
 <div class='row'>
-<span class="col-sm-12 text-center" style="font-size:120%">$$p_t^(i) = f(t)^(i) = $$</span>
+<span class="col-sm-12 text-center" style="font-size:120%">$$p_t^i = f(t)^i = 
+\begin{cases}
+   sin(w_{k}*t) &\text{if } i=2k \\
+   cos(w_{k}*t) &\text{if } i=2k+1
+\end{cases}$$</span>
+</div>
+
+Trong đó 
+<div class='row'>
+<span class="col-sm-12 text-center" style="font-size:120%">w_{k} = \frac{1}{10000^{2k/d}}</span>
 </div>
 
 <div class="img-div-any-width" markdown="0">
