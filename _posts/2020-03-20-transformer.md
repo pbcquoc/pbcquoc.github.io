@@ -86,14 +86,15 @@ Ngoài ra, một tính chất của phương pháp tác giả đề xuất là n
 Bên cạnh đó, để dễ hình dung phương pháp của tác giả đề xuất lại hoạt động tốt, các bạn có thể tưởng tượng, hàm sin, và cos, giống như là kim giây và kim phút trên đồng hồ. Với 2 kim này, chúng ta có thể biểu diễn được 3600 vị trí. Và đồng thời có thể hiểu được ngay tại sao biểu diễn của từ t + offset và từ t lại có thể dễ dàng chuyển đổi cho nhau.
 
 # Encoder
-
-Mỗi encoder layer của transformer lại bao gồm 2 thành phần chính là multi-head attention và feedforward network, ngoài ra còn có cả skip connection và normalization layer. 
+Encoder của mô hình transformer có thể bao gồm nhiều encoder layer tượng tự nhau. Mỗi encoder layer của transformer lại bao gồm 2 thành phần chính là multi-head attention và feedforward network, ngoài ra còn có cả skip connection và normalization layer. 
 
 Trong 2 thành phần chính này, các bạn sẽ hứng thú nhiều hơn về multi-head attention vì đó là một layer mới được giới thiệu trong bài báo này, và chính nó tạo nên sự khác biệt giữ mô hình LSTM và mô hình Transformer mà chúng ta đang tìm hiểu. 
 
 <div class="img-div" markdown="0">
     <img src="/images/transformer/encoder.jpg" />
 </div>
+
+Encoder đầu tiên sẽ nhận ma trận biểu diễn của các từ đã được cộng với thông tin vị trí thông qua positional encoding. Sau đó, ma trận này sẽ được xử lý bởi Multi Head Attention. Multi Head Attention thật chất là self-attention, nhưng mà để mô hình có thể có chú ý nhiều pattern khác nhau, tác giả đơn giản là sử dụng nhiều self-attention.
 
 ## Self Attention Layer
 ## Multi Head Attention
@@ -102,5 +103,6 @@ Trong 2 thành phần chính này, các bạn sẽ hứng thú nhiều hơn về
 # Loss function
 # Implemetation
 # Tham khảo
-[positional_encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
+[Positional encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
+
 (to be continuted)
