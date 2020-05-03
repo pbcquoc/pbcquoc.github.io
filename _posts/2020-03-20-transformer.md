@@ -78,7 +78,7 @@ Nên chúng ta có thể cảm nhận được việc biểu diễn của tác g
 Chúng ta cũng có thể xem ma trận khoảng cách của các vector biểu diễn vị trí như hình dưới. Rõ ràng, các vector biểu diễn thể hiện được tính chất khoảng cách giữ 2 từ. 2 từ cách xa nhau thì khoảng cách lớn và đối xứng nhau qua từ trung tâm.
 
 <div class="img-div" markdown="0">
-    <img src="/images/transformer/pe_distinct.png" />
+    <img src="/images/transformer/pe_distance.png" />
 </div>
 
 Ngoài ra, một tính chất của phương pháp tác giả đề xuất là nó cho phép mô hình dễ dàng học được mối quan hệ tương đối giữ các từ. Cụ thể, biểu diễn vị trí của từ t + offset có thể chuyển thành biểu diễn vị trí của từ t bằng một phép biến đổi tuyến tính dựa trên ma trận phép quay. 
