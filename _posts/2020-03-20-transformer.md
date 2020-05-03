@@ -55,6 +55,10 @@ Trong hình dưới này, mình minh họa cho cách tính position encoding c�
     <img src="/images/transformer/pe.png" />
 </div>
 
+<div class="img-div-any-width" markdown="0">
+    <img src="/images/transformer/pe_heatmap.png" />
+</div>
+
 <div class="img-div" markdown="0">
     <img src="/images/transformer/embedding.jpg" />
 </div>
