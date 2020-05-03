@@ -58,7 +58,7 @@ Trong hình dưới này, mình minh họa cho cách tính position encoding c�
 Lúc này một số bạn sẽ thắc mắc tại sao với cách biểu diện vị trí như tác giả đề xuất lại có thể mã hóa thông tin vị trí của từ? Hãy tưởng tượng bạn có các số từ 0-15
 
 <div class="img-div-any-width" markdown="0">
-    <img src="/images/transformer/pe_intuition.png" />
+    <img src="/images/transformer/pe_intuition.jpg" />
 </div>
 
 
