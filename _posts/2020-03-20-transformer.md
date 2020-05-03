@@ -61,7 +61,7 @@ Lúc này một số bạn sẽ thắc mắc tại sao với cách biểu diện
     <img src="/images/transformer/pe_intuition.jpg" />
 </div>
 
-Trong công thức của tác giả đề xuất, các bạn cũng thấy rằng, hàm sin và cos có dạng đồ thị tần số và tần số này giảm dần ở các chiều lớn dần.
+Trong công thức của tác giả đề xuất, các bạn cũng thấy rằng, hàm sin và cos có dạng đồ thị tần số và tần số này giảm dần ở các chiều lớn dần. Các bạn xem hình dưới, ở chiều 0, giá trị thay đổi liên tục tương ứng với màu sắc thay đổi liên tục, và tần số thay đổi này giảm dần ở các chiều lớn hơn. 
 
 <div class="img-div-any-width" markdown="0">
     <img src="/images/transformer/pe_heatmap.png" />
