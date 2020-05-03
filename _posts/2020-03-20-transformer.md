@@ -98,7 +98,9 @@ Encoder đầu tiên sẽ nhận ma trận biểu diễn của các từ đã đ
 
 ## Self Attention Layer
 Self Attention cho phép mô hình khi mã hóa một từ có thể sử dụng thông tin của những từ liên quan tới nó. Ví dụ 
-
+<div class="img-div" markdown="0">
+    <img src="/images/transformer/self_attention.jpg" />
+</div>
 ## Multi Head Attention
 # Decoder
 ## Masked Multi Head Attention
