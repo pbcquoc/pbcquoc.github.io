@@ -112,7 +112,7 @@ Bạn có thể tưởng tượng cơ chế self attention giống như cơ ch�
 
 Để tính tương quan, chúng ta đơn giản chỉ cần tính tích vô hướng dựa các vector query và key. Sau đó dùng hàm softmax để chuẩn hóa chỉ số tương quan trong đoạn 0-1, và cuối cùng, tính trung bình cộng có trọng số giữa các vector values sử dụng chỉ số tương quan mới tính được. Quá dễ !!! 
 
-<div class="img-div-any-width" markdown="0">
+<div class="img-div" markdown="0">
     <img src="/images/transformer/self_attention_2.png" />
 </div>
 
