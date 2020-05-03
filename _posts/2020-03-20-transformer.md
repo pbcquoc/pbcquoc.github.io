@@ -99,6 +99,10 @@ Encoder đầu tiên sẽ nhận ma trận biểu diễn của các từ đã đ
 ## Self Attention Layer
 Self Attention cho phép mô hình khi mã hóa một từ có thể sử dụng thông tin của những từ liên quan tới nó. Ví dụ khi từ **nó** được mã hóa, nó sẽ chú ý vào các từ liên quan như là **mặt trời**. Cơ chế self attention này có ý nghĩa tương tự như cơ chế attention mình đã chia sẻ ở [bài trước](https://pbcquoc.github.io/attention/) và những công thức toán học cũng tương ứng với nhau. 
 
+<div class="img-div" markdown="0">
+    <img src="/images/transformer/self_attention.jpg" />
+</div>
+
 Bạn có thể tưởng tượng cơ chế self attention giống như cơ chế tìm kiếm. Với một từ cho trước, cơ chế này sẽ cho phép mô hình tìm kiếm trong cách từ còn lại, từ nào "giống" để  sau đó thông tin sẽ được mã hóa dựa trên tất cả các từ trên. 
 
 Đầu tiên, với môi từ chúng ta cần tạo ra 3 vector: query, key, value vector bằng cách nhân ma trận biểu diễn các từ đầu vào với ma trận học tương ứng.
@@ -109,7 +113,7 @@ Bạn có thể tưởng tượng cơ chế self attention giống như cơ ch�
 Để tính tương quan, chúng ta đơn giản chỉ cần tính tích vô hướng dựa các vector query và key. Sau đó dùng hàm softmax để chuẩn hóa chỉ số tương quan trong đoạn 0-1, và cuối cùng, tính trung bình cộng có trọng số giữa các vector values sử dụng chỉ số tương quan mới tính được. Quá dễ !!! 
 
 <div class="img-div" markdown="0">
-    <img src="/images/transformer/self_attention.jpg" />
+    <img src="/images/transformer/self_attention_2.jpg" />
 </div>
 
 
