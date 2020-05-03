@@ -101,4 +101,6 @@ Trong 2 thành phần chính này, các bạn sẽ hứng thú nhiều hơn về
 ## Masked Multi Head Attention
 # Loss function
 # Implemetation
+# Tham khảo
+[positional_encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
 (to be continuted)
