@@ -99,9 +99,12 @@ Encoder đầu tiên sẽ nhận ma trận biểu diễn của các từ đã đ
 ## Self Attention Layer
 Self Attention cho phép mô hình khi mã hóa một từ có thể sử dụng thông tin của những từ liên quan tới nó. Ví dụ khi từ **nó** được mã hóa, nó sẽ chú ý vào các từ liên quan như là **mặt trời**. Cơ chế self attention này có ý nghĩa tương tự như cơ chế attention mình đã chia sẻ ở [bài trước](https://pbcquoc.github.io/attention/) và những công thức toán học cũng tương ứng với nhau. 
 
+Bạn có thể tưởng tượng cơ chế self attention giống như cơ chế tìm kiếm. Với một từ cho trước, cơ chế này sẽ cho phép mô hình tìm kiếm trong cách từ còn lại, từ nào "giống" để  sau đó thông tin sẽ được mã hóa dựa trên tất cả các từ trên. 
+
 <div class="img-div" markdown="0">
     <img src="/images/transformer/self_attention.jpg" />
 </div>
+
 
 
 ## Multi Head Attention
