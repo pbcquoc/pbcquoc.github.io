@@ -67,6 +67,8 @@ Trong công thức của tác giả đề xuất, các bạn cũng thấy rằng
     <img src="/images/transformer/pe_heatmap.png" />
 </div>
 
+Ngoài ra, một tính chất của phương pháp tác giả đề xuất là nó cho phép mô hình dễ dàng học được mối quan hệ tương đối giữ các từ. Cụ thể, biểu diễn vị trí của từ t + offset có thể chuyển thành biểu diễn vị trí của từ t bằng một phép biến đổi tuyến tính dựa trên ma trận phép quay. 
+
 <div class="img-div" markdown="0">
     <img src="/images/transformer/embedding.jpg" />
 </div>
