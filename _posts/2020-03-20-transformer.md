@@ -101,6 +101,10 @@ Self Attention cho phép mô hình khi mã hóa một từ có thể sử dụng
 
 Bạn có thể tưởng tượng cơ chế self attention giống như cơ chế tìm kiếm. Với một từ cho trước, cơ chế này sẽ cho phép mô hình tìm kiếm trong cách từ còn lại, từ nào "giống" để  sau đó thông tin sẽ được mã hóa dựa trên tất cả các từ trên. 
 
+Đầu tiên, với môi từ chúng ta cần tạo ra 3 vector: 
+* query vector, 
+* key vector, 
+* value vector. 
 <div class="img-div" markdown="0">
     <img src="/images/transformer/self_attention.jpg" />
 </div>
