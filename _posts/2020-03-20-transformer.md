@@ -117,9 +117,9 @@ Bạn có thể tưởng tượng cơ chế self attention giống như cơ ch�
 </div>
 
 Cụ thể hơn, quá trình tính toán attention vector có thể được tóm tắt làm 3 bước như sau:
-* bước 1: 
-* bước 2:
-* bước 3:
+* bước 1: Tính ma trận query, key, value bằng cách khởi tạo 3 ma trận trọng số query, key, vector. Sau đó nhân input với các ma trận trọng số này để tạo thành 3 ma trận tương ứng. 
+* bước 2: Tính attention weights. Nhân 2 ma trận key, query vừa được tính ở trên với nhau để với ý nghĩa là so sánh giữ câu query và key để học mối tương quan. Sau đó thì chuẩn hóa về đoạn [0-1] bằng hàm softmax. 1 có nghĩa là câu query giống với key, 0 có nghĩa là không giống.
+* bước 3: Tính output. Nhân attention weights với ma trận value. Điều này có nghĩa là chúng ta biểu diễn một từ bằng trung bình có trọng số (attention weights) của ma trận  value.
 
 <div class="img-div" markdown="0">
     <img src="/images/transformer/attention_vector.jpg" />
