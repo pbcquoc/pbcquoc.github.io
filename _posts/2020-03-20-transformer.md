@@ -116,6 +116,11 @@ Bạn có thể tưởng tượng cơ chế self attention giống như cơ ch�
     <img src="/images/transformer/self_attention_2.png" />
 </div>
 
+Cụ thể hơn, quá trình tính toán attention vector có thể được tóm tắt làm 3 bước như sau:
+* bước 1: 
+* bước 2:
+* bước 3:
+
 <div class="img-div" markdown="0">
     <img src="/images/transformer/attention_vector.jpg" />
 </div>
