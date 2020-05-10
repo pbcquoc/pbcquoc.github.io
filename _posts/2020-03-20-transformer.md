@@ -116,6 +116,9 @@ Bạn có thể tưởng tượng cơ chế self attention giống như cơ ch�
     <img src="/images/transformer/self_attention_2.png" />
 </div>
 
+<div class="img-div" markdown="0">
+    <img src="/images/transformer/attention_vector.jpg" />
+</div>
 
 
 ## Multi Head Attention
