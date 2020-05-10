@@ -127,6 +127,8 @@ Cụ thể hơn, quá trình tính toán attention vector có thể được tó
 
 
 ## Multi Head Attention
+Chúng ta muốn mô hình có thể  học nhiều kiểu mối quan hệ giữ các từ với nhau. Với mỗi self-attention, chúng ta học được một kiểu pattern, do đó để có thể mở rộng khả năng này, chúng ta đơn giản là thêm nhiều self-attention. Tức là chúng ta cần nhiều ma trận query, key, value mà thôi. Giờ đây ma trận trọng số key, query, value sẽ có kích thước là 
+
 # Decoder
 ## Masked Multi Head Attention
 # Loss function
