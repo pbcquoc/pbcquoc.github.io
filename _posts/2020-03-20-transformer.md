@@ -138,6 +138,8 @@ Multi head attention cho phép mô hình chú ý đến đồng thời những p
 * Chú ý đến từ kế sau của một từ
 * Chú ý đến những từ liên quan của một từ
 
+## Residuals Connection và Normalization Layer
+Trong kiến trúc của mô hình transformer, residuals connection và mormalization layer được sử dụng mọi nơi, giống như tinh thần của nó. 2 kỹ thuật giúp cho mô hình huấn luyện nhanh hội tụ hơn và trách mất mát thông tin trong quá trình huấn luyện mô hình, ví dụ như là thông tin của vị trí các từ được mã hóa. 
 
 # Decoder
 ## Masked Multi Head Attention
@@ -145,5 +147,6 @@ Multi head attention cho phép mô hình chú ý đến đồng thời những p
 # Implemetation
 # Tham khảo
 [Positional encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
+
 [Bert Distilling](https://towardsdatascience.com/deconstructing-bert-distilling-6-patterns-from-100-million-parameters-b49113672f77)
 (to be continuted)
