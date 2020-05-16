@@ -142,9 +142,12 @@ Multi head attention cho phép mô hình chú ý đến đồng thời những p
 Trong kiến trúc của mô hình transformer, residuals connection và mormalization layer được sử dụng mọi nơi, giống như tinh thần của nó. 2 kỹ thuật giúp cho mô hình huấn luyện nhanh hội tụ hơn và trách mất mát thông tin trong quá trình huấn luyện mô hình, ví dụ như là thông tin của vị trí các từ được mã hóa. 
 
 # Decoder
+Decoder thực hiện chức năng giải mã vector của câu nguồn thành câu đích, do đó decoder sẽ nhận thông tin từ encoder là 2 vector key và value. Kiến trúc của decoder rất giống với encoder, ngoại trừ có thêm một multi head attention nằm ở giữ dùng để học mối liên quan giữ từ đang được dịch với các từ được ở câu nguồn. 
+
 <div class="img-div" markdown="0">
     <img src="/images/transformer/decoder.jpg" />
 </div>
+
 ## Masked Multi Head Attention
 # Loss function
 # Implemetation
