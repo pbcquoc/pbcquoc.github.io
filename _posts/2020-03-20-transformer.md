@@ -117,9 +117,9 @@ Bạn có thể tưởng tượng cơ chế self attention giống như cơ ch�
 </div>
 
 Cụ thể hơn, quá trình tính toán attention vector có thể được tóm tắt làm 3 bước như sau:
-* bước 1: Tính ma trận query, key, value bằng cách khởi tạo 3 ma trận trọng số query, key, vector. Sau đó nhân input với các ma trận trọng số này để tạo thành 3 ma trận tương ứng. 
-* bước 2: Tính attention weights. Nhân 2 ma trận key, query vừa được tính ở trên với nhau để với ý nghĩa là so sánh giữ câu query và key để học mối tương quan. Sau đó thì chuẩn hóa về đoạn [0-1] bằng hàm softmax. 1 có nghĩa là câu query giống với key, 0 có nghĩa là không giống.
-* bước 3: Tính output. Nhân attention weights với ma trận value. Điều này có nghĩa là chúng ta biểu diễn một từ bằng trung bình có trọng số (attention weights) của ma trận  value.
+* Bước 1: Tính ma trận query, key, value bằng cách khởi tạo 3 ma trận trọng số query, key, vector. Sau đó nhân input với các ma trận trọng số này để tạo thành 3 ma trận tương ứng. 
+* Bước 2: Tính attention weights. Nhân 2 ma trận key, query vừa được tính ở trên với nhau để với ý nghĩa là so sánh giữ câu query và key để học mối tương quan. Sau đó thì chuẩn hóa về đoạn [0-1] bằng hàm softmax. 1 có nghĩa là câu query giống với key, 0 có nghĩa là không giống.
+* Bước 3: Tính output. Nhân attention weights với ma trận value. Điều này có nghĩa là chúng ta biểu diễn một từ bằng trung bình có trọng số (attention weights) của ma trận  value.
 
 <div class="img-div" markdown="0">
     <img src="/images/transformer/attention_vector.jpg" />
@@ -133,11 +133,17 @@ Chúng ta muốn mô hình có thể  học nhiều kiểu mối quan hệ giữ
     <img src="/images/transformer/multi_head_attention.jpg" />
 </div>
 
+Multi head attention cho phép mô hình chú ý đến đồng thời những pattern dễ quan sát được như sau. 
+* Chú ý đến từ kế trước của một từ 
+* Chú ý đến từ kế sau của một từ
+* Chú ý đến những từ liên quan của một từ
+
+
 # Decoder
 ## Masked Multi Head Attention
 # Loss function
 # Implemetation
 # Tham khảo
 [Positional encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
-
+[Bert Distilling](https://towardsdatascience.com/deconstructing-bert-distilling-6-patterns-from-100-million-parameters-b49113672f77)
 (to be continuted)
