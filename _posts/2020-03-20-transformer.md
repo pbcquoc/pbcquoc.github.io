@@ -30,7 +30,7 @@ Một trong nhưng ưu điểm của transformer là mô hình này có khả n�
     <img src="/images/transformer/overview2.jpg" />
 </div>
 
-Một cái nhìn vừa tổng quát và chi tiết sẽ giúp ích cho các bạn. 
+Một cái nhìn vừa tổng quát và chi tiết sẽ giúp ích cho các bạn. Mình sẽ đi vào chi tiết một số phần cực kì quan trọng như sinusoidal position encoding, của encoder như multi head attention, còn của decoder thì các bạn thấy được kiến trúc rất giồng như của encoder, do đó mình sẽ chỉ đi nhanh qua mà thôi. 
 
 <div class="img-div-any-width" markdown="0">
     <img src="/images/transformer/overview3.jpg" />
@@ -96,7 +96,7 @@ Ngoài ra, một tính chất của phương pháp tác giả đề xuất là n
 Bên cạnh đó, để dễ hình dung phương pháp của tác giả đề xuất lại hoạt động tốt, các bạn có thể tưởng tượng, hàm sin, và cos, giống như là kim giây và kim phút trên đồng hồ. Với 2 kim này, chúng ta có thể biểu diễn được 3600 vị trí. Và đồng thời có thể hiểu được ngay tại sao biểu diễn của từ t + offset và từ t lại có thể dễ dàng chuyển đổi cho nhau.
 
 # Encoder
-Encoder của mô hình transformer có thể bao gồm nhiều encoder layer tượng tự nhau. Mỗi encoder layer của transformer lại bao gồm 2 thành phần chính là multi-head attention và feedforward network, ngoài ra còn có cả skip connection và normalization layer. 
+Encoder của mô hình transformer có thể bao gồm nhiều encoder layer tượng tự nhau. Mỗi encoder layer của transformer lại bao gồm 2 thành phần chính là multi head attention và feedforward network, ngoài ra còn có cả skip connection và normalization layer. 
 
 Trong 2 thành phần chính này, các bạn sẽ hứng thú nhiều hơn về multi-head attention vì đó là một layer mới được giới thiệu trong bài báo này, và chính nó tạo nên sự khác biệt giữ mô hình LSTM và mô hình Transformer mà chúng ta đang tìm hiểu. 
 
