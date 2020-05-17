@@ -165,4 +165,5 @@ Với mình lý thuyết mà không có thực hành có nghĩa là vẫn chưa 
 [Positional encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
 
 [Bert Distilling](https://towardsdatascience.com/deconstructing-bert-distilling-6-patterns-from-100-million-parameters-b49113672f77)
+
 (to be continuted)
