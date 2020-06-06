@@ -168,6 +168,10 @@ Giống như nhiều mô hình khác, chúng ta cần thêm một fully connecte
 
 Loss function thì tất nhiên là cross-entropy mà thôi, giống như ở các mô hình phân loại khác mà các bạn đã làm quen. 
 
+## Các kỹ thuật đặc biệt để huấn luyện Transformer 
+### Optimizer
+### Label Smoothing
+
 # Implemetation
 Với mình lý thuyết mà không có thực hành có nghĩa là vẫn chưa hiểu rõ được lý thuyết đó. Cho nên mình đã cài đặt và mô tả chi tiết các bước làm trong notebook [tại đây](). Đồng thời mình cũng cung cấp bộ dữ liệu song ngữ được thu thập trên TED bao gồm hơn 600k câu song ngữ anh-việt [tại đây](). 
 
