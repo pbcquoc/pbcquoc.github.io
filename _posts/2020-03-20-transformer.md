@@ -175,7 +175,7 @@ Loss function thì tất nhiên là cross-entropy mà thôi, giống như ở c�
 Để huấn luyện mô hình transformer, các bạn vẫn sử dụng Adam, tuy nhiên, learning rate cần phải được điều chỉnh trong suốt quá trình hoc theo công thức sau
 
 <div class='row'>
-<span class="col-sm-12 text-center" style="font-size:120%">$$lr_rate=d^{-0.5}_{d_model}*min(step_num^{-0.5}, step_num*warmup_steps^{-1.5}) $$</span>
+<span class="col-sm-12 text-center" style="font-size:120%">$$lr\_rate=d^{-0.5}_{d\_model}*min(step\_num^{-0.5}, step\_num*warmup\_steps^{-1.5}) $$</span>
 </div>
 
 ### Label Smoothing
