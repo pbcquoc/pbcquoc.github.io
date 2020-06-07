@@ -85,7 +85,7 @@ Trong công thức của tác giả đề xuất, các bạn cũng thấy rằng
 
 Nên chúng ta có thể cảm nhận được việc biểu diễn của tác giả khá tương tự như cách biểu diễn các số nguyên trong hệ nhị phân, cho nên chúng ta có thể biểu diễn được vị trí các từ theo cách như vậy.
 
-Chúng ta cũng có thể xem ma trận khoảng cách của các vector biểu diễn vị trí như hình dưới. Rõ ràng, các vector biểu diễn thể hiện được tính chất khoảng cách giữ 2 từ. 2 từ cách xa nhau thì khoảng cách lớn và đối xứng nhau qua từ trung tâm.
+Chúng ta cũng có thể xem ma trận khoảng cách của các vector biểu diễn vị trí như hình dưới. Rõ ràng, các vector biểu diễn thể hiện được tính chất khoảng cách giữ 2 từ. 2 từ cách càng xa nhau thì khoảng cách càng lớn hơn.
 
 <div class="img-div" markdown="0">
     <img src="/images/transformer/pe_distance.png" />
