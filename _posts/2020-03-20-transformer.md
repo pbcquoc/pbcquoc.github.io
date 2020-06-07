@@ -30,7 +30,7 @@ Một trong những ưu điểm của transformer là mô hình này có khả n
     <img src="/images/transformer/overview2.jpg" />
 </div>
 
-Một cái nhìn vừa tổng quát và chi tiết sẽ giúp ích cho các bạn. Mình sẽ đi vào chi tiết một số phần cực kì quan trọng như sinusoidal position encoding, của encoder như multi head attention, còn của decoder thì các bạn thấy được kiến trúc rất giồng như của encoder, do đó mình sẽ chỉ đi nhanh qua mà thôi. 
+Một cái nhìn vừa tổng quát và chi tiết sẽ giúp ích cho các bạn. Mình sẽ đi vào chi tiết một số phần cực kì quan trọng như sinusoidal position encoding, multi head attention của encoder, còn của decoder thì các bạn thấy được kiến trúc rất giống với của encoder, do đó mình sẽ chỉ đi nhanh qua mà thôi. 
 
 <div class="img-div-any-width" markdown="0">
     <img src="/images/transformer/overview3.jpg" />
