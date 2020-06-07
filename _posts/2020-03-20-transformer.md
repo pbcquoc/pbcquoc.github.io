@@ -169,7 +169,7 @@ Giống như nhiều mô hình khác, chúng ta cần thêm một fully connecte
 Loss function thì tất nhiên là cross-entropy mà thôi, giống như ở các mô hình phân loại khác mà các bạn đã làm quen. 
 
 ## Các kỹ thuật đặc biệt để huấn luyện Transformer 
-Để huấn luyện mô hình transformer, các bạn cần phải biết đến 2 kỹ thuật rất thú vị này. Nếu không sử dụng kỹ thuật đầu tiền về optimizer thì mô hình transformer sẽ không hội tụ được luôn đấy :))
+Để huấn luyện mô hình transformer, các bạn cần phải biết đến 2 kỹ thuật rất thú vị này. Nếu không sử dụng kỹ thuật đầu tiền về optimizer thì mô hình transformer sẽ **không hội tụ** được luôn đấy :))
 
 ### Optimizer
 Để huấn luyện mô hình transformer, các bạn vẫn sử dụng Adam, tuy nhiên, learning rate cần phải được điều chỉnh trong suốt quá trình hoc theo công thức sau
@@ -182,7 +182,7 @@ Loss function thì tất nhiên là cross-entropy mà thôi, giống như ở c�
     <img src="/images/transformer/opt.png" />
 </div>
 
-Cơ bản thì learning rate sẽ tăng dần trong các lần cập nhật đầu tiên, các bước này được gọi là warm up step. Mô hình sẽ 'chạy' tẹt ga trong những lần cập nhật đầu tiên. Sau đó learning rate lại giảm dần, để mô hình hội tụ. 
+Cơ bản thì learning rate sẽ tăng dần trong các lần cập nhật đầu tiên, các bước này được gọi là warm up step, lúc này mô hình  sẽ 'chạy' tẹt ga. Sau đó learning rate lại giảm dần, để mô hình hội tụ. 
 
 ### Label Smoothing
 
