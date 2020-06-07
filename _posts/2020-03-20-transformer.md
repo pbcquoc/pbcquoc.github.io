@@ -178,6 +178,10 @@ Loss function thì tất nhiên là cross-entropy mà thôi, giống như ở c�
 <span class="col-sm-12 text-center" style="font-size:120%">$$lr\_rate=d^{-0.5}_{d\_model}*min(step\_num^{-0.5}, step\_num*warmup\_steps^{-1.5}) $$</span>
 </div>
 
+<div class="img-div" markdown="0">
+    <img src="/images/transformer/opt.png" />
+</div>
+
 Cơ bản thì learning rate sẽ tăng dần trong các lần cập nhật đầu tiên, các bước này được gọi là warm up step. Mô hình sẽ 'chạy' tẹt ga trong những lần cập nhật đầu tiên. Sau đó learning rate lại giảm dần, để mô hình hội tụ. 
 
 ### Label Smoothing
