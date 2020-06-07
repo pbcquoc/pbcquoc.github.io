@@ -185,6 +185,11 @@ Loss function thì tất nhiên là cross-entropy mà thôi, giống như ở c�
 Cơ bản thì learning rate sẽ tăng dần trong các lần cập nhật đầu tiên, các bước này được gọi là warm up step, lúc này mô hình  sẽ 'chạy' tẹt ga. Sau đó learning rate lại giảm dần, để mô hình hội tụ. 
 
 ### Label Smoothing
+Với mô hình nhiều triệu tham số của transformer,thì việt overfit là chuyện dễ dàng xảy ra. Để hạn chế hiện tượng overfit, các bạn có thể sử dụng kỹ thuật label smoothing. Về cơ bản thì ý tưởng của kỹ thuật này khá đơn giản. Thay vì mã hóa nhãn là một one-hot vector, các bạn sẽ thay đổi nhãn này một chút bằng cách phân bố một tí xác xuất vào các trường hợp còn lại. 
+
+<div class="img-div" markdown="0">
+    <img src="/images/transformer/label_smoothing.jpg" />
+</div>
 
 # Implemetation
 Với mình lý thuyết mà không có thực hành có nghĩa là vẫn chưa hiểu rõ được lý thuyết đó. Cho nên mình đã cài đặt và mô tả chi tiết các bước làm trong notebook [tại đây](). Đồng thời mình cũng cung cấp bộ dữ liệu song ngữ được thu thập trên TED bao gồm hơn 600k câu song ngữ anh-việt [tại đây](). 
