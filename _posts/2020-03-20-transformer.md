@@ -211,6 +211,13 @@ Các bạn có thể dùng heatmap để visualize giá trị attention, sẽ ch
 </div>
 
 ## Decoder Visualize
+Ở decoder, các bạn có 2 loại visualization
+* self attention: giá trị attention khi mô hình decoder mã hóa câu đích lúc dịch
+* src attention: giá trị attention khi mô hình decoder sử dụng câu src lúc dịch
+
+<div class="img-div-any-width" markdown="0">
+    <img src="/images/transformer/decoder_visualize.png" />
+</div>
 
 # Tham khảo
 [Positional encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
