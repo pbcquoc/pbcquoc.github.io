@@ -7,7 +7,7 @@ title: Transformer - Ngươi Không Phải Là Anh Hùng, Ngươi Là Quái Vậ
 <div class="img-div-any-width" markdown="0">
     <img src="/images/transformer/transformer.jpg" />
 </div>
-Trong blog này, mình sẽ trình bày chi tiết cách mô hình Transformer hoạt động, cũng như là cách cài đặt mô hình chi tiết cho những bạn mới có kiến thức cơ bản về deep learning như CNN hoặc LSTM cũng có thể hiểu được.<br/><br/>Sự nổi tiếng của mô hình Transformer thì không cần phải bàn cãi, vì nó chính là nền tảng của rất nhiều mô hình khác mà nổi tiếng nhất là BERT (Bidirectional Encoder Representations from Transformers) một mô hình dùng để học biểu diễn của các từ tốt nhất hiện tại và đã tạo ra một bước ngoặc lớn cho động đồng NLP trong năm 2019. Và chính Google cũng đã áp dụng BERT trong cỗ máy tìm kiếm của họ. Để hiểu BERT, các bạn cần phải nắm rõ về mô hình Transformer.
+Trong blog này, mình sẽ trình bày chi tiết cách mô hình Transformer hoạt động, cũng như là cách cài đặt mô hình chi tiết cho những bạn mới có kiến thức cơ bản về deep learning như CNN hoặc LSTM cũng có thể hiểu được.<br/><br/>Sự nổi tiếng của mô hình Transformer thì không cần phải bàn cãi, vì nó chính là nền tảng của rất nhiều mô hình khác mà nổi tiếng nhất là BERT (Bidirectional Encoder Representations from Transformers) một mô hình dùng để học biểu diễn của các từ tốt nhất hiện tại và đã tạo ra một bước ngoặt lớn cho động đồng NLP trong năm 2019. Và chính Google cũng đã áp dụng BERT trong cỗ máy tìm kiếm của họ. Để hiểu BERT, các bạn cần phải nắm rõ về mô hình Transformer.
 <div class="img-div" markdown="0">
     <img src="/images/transformer/bert.jpg" />
 </div>
@@ -201,7 +201,7 @@ Với mình lý thuyết mà không có thực hành có nghĩa là vẫn chưa 
 
 # Visualization
 Visualize trong số của các mô hình sử dụng cơ chế attention thực sự rất thú vị. Trong mô hình transformer, chúng ta visualize tại encoder và tại decoder. 
-Các bạn có thể visualize đồng thời tại các heads của mulithead attentions, và tại layers khác nhau. 
+Các bạn có thể visualize đồng thời tại các heads của multi-head attentions, và tại layers khác nhau. 
 
 ## Encoder Visualize
 Các bạn có thể dùng heatmap để visualize giá trị attention, sẽ cho chúng ta biết khi encode một câu mô hình chú ý từ gì ở lân cận
@@ -221,7 +221,7 @@ Các bạn có thể dùng heatmap để visualize giá trị attention, sẽ ch
     <img src="/images/transformer/decoder_visualize.png" />
 </div>
 
-Ở ví dụ này mình visualize decoder layer số 2, tại 4 heads 0,1,2,3. các bạn có thể quan sát được khi encoder từ **đình** mô hình sẽ nhìn vào các từ kế cạnh là **gia** và **tôi**, (và còn nhiều kiểu pattern khác nữa nhé). Còn khi dự đoán từ **tôi** mô hình sẽ nhìn vào từ **my**.
+Ở ví dụ này mình visualize decoder layer số 2, tại 4 heads 0,1,2,3. Các bạn có thể quan sát được khi encode từ **đình** mô hình sẽ nhìn vào các từ kế cạnh là **gia** và **tôi**, (và còn nhiều kiểu pattern khác nữa nhé). Còn khi dự đoán từ **tôi** mô hình sẽ nhìn vào từ **my**.
 
 # Tham khảo
 [Positional encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
