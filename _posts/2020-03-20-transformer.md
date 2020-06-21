@@ -223,6 +223,7 @@ Các bạn có thể dùng heatmap để visualize giá trị attention, sẽ ch
 [Positional encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
 
 [Bert Distilling](https://towardsdatascience.com/deconstructing-bert-distilling-6-patterns-from-100-million-parameters-b49113672f77)
+
 [Transformer Visualize](http://jalammar.github.io/illustrated-transformer/)
 
 (to be continued)
