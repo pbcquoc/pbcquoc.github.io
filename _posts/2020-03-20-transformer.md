@@ -210,7 +210,7 @@ Các bạn có thể dùng heatmap để visualize giá trị attention, sẽ ch
     <img src="/images/transformer/encoder_visualize.png" />
 </div>
 
-Ở đây mình visualize giá trị attention của encoder layer số 2 và 4, tại các head 0,1,2,3 (trong cài đặt các bạn có tổng cộng 6 encoder layer và 8 heads nhé). Nhìn vào các heatmaps ở trên, các bạn có thể thấy được rằng khi encode một từ mô hình sẽ nhìn vào các từ liên quan xung quanh. Ví dụ từ family có thể  được mã hóa bằng 2 từ liên quan như my và family. 
+Ở đây mình visualize giá trị attention của encoder layer số 2 và 4, tại các head 0,1,2,3 (trong cài đặt các bạn có tổng cộng 6 encoder layer và 8 heads nhé). Nhìn vào các heatmaps ở trên, các bạn có thể thấy được rằng khi encode một từ mô hình sẽ nhìn vào các từ liên quan xung quanh. Ví dụ từ **family** có thể  được mã hóa bằng 2 từ liên quan như **my** và **family**. 
 
 ## Decoder Visualize
 Ở decoder, các bạn có 2 loại visualization
@@ -221,7 +221,7 @@ Các bạn có thể dùng heatmap để visualize giá trị attention, sẽ ch
     <img src="/images/transformer/decoder_visualize.png" />
 </div>
 
-Ở ví dụ này mình visualize decoder layer số 2, tại 4 heads 0,1,2,3. các bạn có thể quan sát được khi encoder từ *đình* mô hình sẽ nhìn vào các từ kế cạnh là *gia* và *tôi*, (và còn nhiều kiểu pattern khác nữa nhé). Còn khi dự đoán từ *tôi* mô hình sẽ nhìn vào từ *my*.
+Ở ví dụ này mình visualize decoder layer số 2, tại 4 heads 0,1,2,3. các bạn có thể quan sát được khi encoder từ **đình** mô hình sẽ nhìn vào các từ kế cạnh là **gia** và **tôi**, (và còn nhiều kiểu pattern khác nữa nhé). Còn khi dự đoán từ **tôi** mô hình sẽ nhìn vào từ **my**.
 
 # Tham khảo
 [Positional encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
