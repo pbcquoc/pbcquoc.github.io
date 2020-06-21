@@ -199,6 +199,19 @@ Với mình lý thuyết mà không có thực hành có nghĩa là vẫn chưa 
 ## Dataset song ngữ anh-việt
 Đồng thời mình cũng cung cấp bộ dữ liệu song ngữ được thu thập trên TED bao gồm hơn 600k câu song ngữ anh-việt [tại đây](https://drive.google.com/file/d/1Fuo_ALIFKlUvOPbK5rUA5OfAS2wKn_95/view?usp=sharing). Với bộ dữ liệu mình hy vọng các bạn sẽ không gặp phải khó khăn khi thử nghiệm những kiến thức mới. 
 
+# Visualization
+Visualize trong số của các mô hình sử dụng cơ chế attention thực sự rất thú vị. Trong mô hình transformer, chúng ta visualize tại encoder và tại decoder. 
+Các bạn có thể visualize đồng thời tại các heads của mulithead attentions, và tại layers khác nhau. 
+
+## Encoder Visualize
+Các bạn có thể dùng heatmap để visualize giá trị attention, sẽ cho chúng ta biết khi encode một câu mô hình chú ý từ gì ở lân cận
+
+<div class="img-div-any-width" markdown="0">
+    <img src="/images/transformer/encoder_visualize.png" />
+</div>
+
+## Decoder Visualize
+
 # Tham khảo
 [Positional encoding](https://kazemnejad.com/blog/transformer_architecture_positional_encoding/)
 
