@@ -16,11 +16,16 @@ Một câu hỏi mà mình cũng khá quan tâm là *Liệu TransformerOCR có m
 # Mô Hình 
 Trong phần này mình sẽ trình bày chi tiết cách kết hợp mô hình CNN và mô hình Language Model (Seq2Seq và Transformer) để tạo thành một mô hình giúp các bạn giải quyết bài toán OCR. Ngoài ra, mình cũng so sánh hạn chế của mô hình OCR cổ điển sử dụng CTCLoss với 2 mô hình kể trên từ đó giúp các bạn lựa chọn mô hình phù hợp trong các vấn đề thực tế. 
 
+## CNN của mô hình OCR
+Mô hình CNN dùng trong bài toán OCR nhận đầu vào là một ảnh, thông thường có kich thước với chiều dài lớn hơn nhiều so với chiều rộng, do đó việc điều chỉnh tham số stride size của tầng pooling là cực kì quan trọng 
+
 ## AttentionOCR
 
 <div class="img-div-any-width" markdown="0">
     <img src="/images/vietocr/cnn_seq2seq.jpg" />
 </div>
+
+AttentionOCR là sự kết hợp giữa mô hình CNN và mô hình Attention Seq2Seq. 
 
 ## TransformerOCR
 
