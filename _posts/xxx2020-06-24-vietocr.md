@@ -21,6 +21,7 @@ Trong phần này mình sẽ trình bày chi tiết cách kết hợp mô hình 
 <div class="img-div-any-width" markdown="0">
     <img src="/images/vietocr/cnn_seq2seq.jpg" />
 </div>
+
 ## TransformerOCR
 
 <div class="img-div-any-width" markdown="0">
