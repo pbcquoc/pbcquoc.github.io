@@ -10,6 +10,8 @@ Một câu hỏi mà mình cũng khá quan tâm là *Liệu TransformerOCR có m
 Đồng thời, mình cũng cung cấp một [thư viện](https://github.com/pbcquoc/vietocr) mới cho bài toán OCR, thư viện hướng tới kết quả chính xác, nhanh chóng, dễ huấn luyện, dễ dư đoán cho cả các bạn có nhiều kinh nghiệm cũng có thể sử dụng được trong các bài toán liên quan đến số hóa.
 
 # Mô Hình 
+## AttentionOCR
+## TransformerOCR
 
 # Huấn Luyện
 
@@ -17,6 +19,10 @@ Một câu hỏi mà mình cũng khá quan tâm là *Liệu TransformerOCR có m
 
 # Kết Quả
 
-# Model Zoo
+# Hướng dẫn sử dụng thư viện
+## Huấn luyện mô hình trên tập dữ liệu của các bạn
+## Dự đoán 
+## Model Zoo
+
 
 (to be continued)
