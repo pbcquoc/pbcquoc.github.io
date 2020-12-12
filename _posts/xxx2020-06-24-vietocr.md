@@ -19,7 +19,12 @@ Trong phần này mình sẽ trình bày chi tiết cách kết hợp mô hình 
 ## CNN của mô hình OCR
 Mô hình CNN dùng trong bài toán OCR nhận đầu vào là một ảnh, thông thường có kich thước với chiều dài lớn hơn nhiều so với chiều rộng, do đó việc điều chỉnh tham số stride size của tầng pooling là cực kì quan trọng, thông thường kích thước stride size của các lớp pooling cuối cùng là wxh=2x1 trong mô hình OCR. Không thay đổi stride size phù hợp với kích thước ảnh, kết quả của mô hình sẽ tệ. 
 
+Đối với mô hình VGG, việc thay đổi pooling size khá dễ do kiến trúc đơn giản, tuy nhiên đối với mô hình phức tạp khác như resnet việc điều chỉnh tham số pooling size hơi phức tạp do một ảnh bị downsampling ko chỉ bởi tầng pooling mà còn tại các tầng convolution khác.  
 
+Trong pytorch, đối với mô hình VGG, các bạn chỉ đơn giản là thay thế stride size của tầng pooling.
+```
+cnn.features[i] = torch.nn.AvgPool2d(kernel_size=ks[pool_idx], stride=ss[pool_idx], padding=0)
+```
 
 ## AttentionOCR
 
@@ -28,6 +33,10 @@ Mô hình CNN dùng trong bài toán OCR nhận đầu vào là một ảnh, th�
 </div>
 
 AttentionOCR là sự kết hợp giữa mô hình CNN và mô hình Attention Seq2Seq. Một ảnh qua mô hình CNN, sẽ cho một feature map có kích thước channelxheightxwidth, feature map này sẽ trở thành đầu vào cho mô hình LSTM, tuy nhiên, mô hình LSTM chỉ nhận chỉ nhận đầu vào có kích thước là hiddenxtime_step. Một cách đơn giản và hợp lý là 2 chiều cuối cùng heightxwidth của feature map sẽ được đuổi thẳng. Feature map lúc này sẽ có kích thước phù hợp với yêu cầu của mô hình LSTM.
+
+<div class="img-div-any-width" markdown="0">
+    <img src="/images/vietocr/cnn_seq2seq.jpg" />
+</div>
 
 ## TransformerOCR
 
