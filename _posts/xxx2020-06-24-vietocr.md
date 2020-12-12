@@ -32,11 +32,17 @@ cnn.features[i] = torch.nn.AvgPool2d(kernel_size=ks[pool_idx], stride=ss[pool_id
     <img src="/images/vietocr/cnn_seq2seq.jpg" />
 </div>
 
-AttentionOCR là sự kết hợp giữa mô hình CNN và mô hình Attention Seq2Seq. Một ảnh qua mô hình CNN, sẽ cho một feature map có kích thước channelxheightxwidth, feature map này sẽ trở thành đầu vào cho mô hình LSTM, tuy nhiên, mô hình LSTM chỉ nhận chỉ nhận đầu vào có kích thước là hiddenxtime_step. Một cách đơn giản và hợp lý là 2 chiều cuối cùng heightxwidth của feature map sẽ được đuổi thẳng. Feature map lúc này sẽ có kích thước phù hợp với yêu cầu của mô hình LSTM.
+AttentionOCR là sự kết hợp giữa mô hình CNN và mô hình Attention Seq2Seq. Cách hoạt động của mô hình này tương tự như kiến trúc của mô hình seq2seq trong bài toán dịch máy. Với bài toán dịch máy từ tiếng việt sang anh, chúng ta cần encode một chuỗi tiếng việt thành một vector đặc trưng, còn trong mô hình AttentionOCR, thì dữ liệu đầu vào này là một ảnh. 
+
+Một ảnh qua mô hình CNN, sẽ cho một feature map có kích thước channelxheightxwidth, feature map này sẽ trở thành đầu vào cho mô hình LSTM, tuy nhiên, mô hình LSTM chỉ nhận chỉ nhận đầu vào có kích thước là hiddenxtime_step. Một cách đơn giản và hợp lý là 2 chiều cuối cùng heightxwidth của feature map sẽ được đuổi thẳng. Feature map lúc này sẽ có kích thước phù hợp với yêu cầu của mô hình LSTM.
 
 <div class="img-div-any-width" markdown="0">
     <img src="/images/vietocr/cnn_fts.jpg" />
 </div>
+
+Feature maps của mô hình CNN sau khi được flatten thì được truyền vào làm input của mô hình LSTM, tại mỗi thời điểm, mô hình LSTM cần dự đoán từ tiếp theo trong ảnh là gì. 
+
+
 
 ## TransformerOCR
 
