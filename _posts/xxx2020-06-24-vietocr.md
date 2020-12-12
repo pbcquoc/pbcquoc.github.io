@@ -35,7 +35,7 @@ cnn.features[i] = torch.nn.AvgPool2d(kernel_size=ks[pool_idx], stride=ss[pool_id
 AttentionOCR là sự kết hợp giữa mô hình CNN và mô hình Attention Seq2Seq. Một ảnh qua mô hình CNN, sẽ cho một feature map có kích thước channelxheightxwidth, feature map này sẽ trở thành đầu vào cho mô hình LSTM, tuy nhiên, mô hình LSTM chỉ nhận chỉ nhận đầu vào có kích thước là hiddenxtime_step. Một cách đơn giản và hợp lý là 2 chiều cuối cùng heightxwidth của feature map sẽ được đuổi thẳng. Feature map lúc này sẽ có kích thước phù hợp với yêu cầu của mô hình LSTM.
 
 <div class="img-div-any-width" markdown="0">
-    <img src="/images/vietocr/cnn_seq2seq.jpg" />
+    <img src="/images/vietocr/cnn_fts.jpg" />
 </div>
 
 ## TransformerOCR
