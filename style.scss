@@ -310,13 +310,9 @@ pre code{
   font-size:80%;
 }
 
-table, td{
+table, td, th{
     border:1px solid #dfe2e5;
     padding: 6px 13px;
-}
-
-th{
-    border:1px solid #dfe2e5;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
