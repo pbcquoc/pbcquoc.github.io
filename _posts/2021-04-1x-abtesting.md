@@ -12,6 +12,7 @@ Ví dụ đầu tiên để minh họa tính ngẫu nhiên là do việc quan s�
 Ví dụ tiếp theo là minh họa bản chất của việc đó là ngẫu nhiên. 
 - 
 
+Cho dù lý do 
 
 
 # Xác xuất cơ bản liên quan đến A/B Testing 
