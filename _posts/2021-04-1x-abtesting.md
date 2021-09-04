@@ -14,7 +14,12 @@ Ví dụ tiếp theo là minh họa bản chất của việc đó là ngẫu nh
 
 Dưới góc độ của chúng ta, việc ngẫu nhiên cho dù đến từ bản chất của sự việc hay do hạn chế quan sát, thường không quan trọng, cái chúng ta cần là công cụ để xem xét, đánh giá, so sánh giữ các sự kiện này. 
 
-# Xác xuất cơ bản liên quan đến A/B Testing 
+# Xác xuất cơ bản liên quan đến A/B Testing
+
+
+
 # Cách A/B testing hoạt động 
 # Cách tính conversion rate chính xác. 
 ## Chọn success event 
+
+# 2 tail-test, one-tail test
