@@ -14,9 +14,10 @@ Ví dụ tiếp theo là minh họa bản chất của việc đó là ngẫu nh
 
 Dưới góc độ của chúng ta, việc ngẫu nhiên cho dù đến từ bản chất của sự việc hay do hạn chế quan sát, thường không quan trọng, cái chúng ta cần là công cụ để xem xét, đánh giá, so sánh giữ các sự kiện này. 
 
-# Xác xuất cơ bản liên quan đến A/B Testing
+# Xác suất cơ bản liên quan đến A/B Testing
+Như mình đã nói ở trên, chúng ta cần công cụ để xem xét các sự kiện ngẫu nhiên, và hàm phân bố xác suất là một trong những khái niệm cơ bản nhất mà chúng ta cần biết. 
 
-
+Hàm phân bố xác suất của biến ngẫu nhiên cho chúng ta biết các giá trị có thể có và xác suất tương ứng giá trị đó mà biến ngẫu nhiên có thể nhận đươc. 
 
 # Cách A/B testing hoạt động 
 # Cách tính conversion rate chính xác. 
