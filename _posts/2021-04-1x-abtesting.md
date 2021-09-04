@@ -12,8 +12,7 @@ Ví dụ đầu tiên để minh họa tính ngẫu nhiên là do việc quan s�
 Ví dụ tiếp theo là minh họa bản chất của việc đó là ngẫu nhiên. 
 - 
 
-Cho dù lý do 
-
+Dưới góc độ của chúng ta, việc ngẫu nhiên cho dù đến từ bản chất của sự việc hay do hạn chế quan sát, thường không quan trọng, cái chúng ta cần là công cụ để xem xét, đánh giá, so sánh giữ các sự kiện này. 
 
 # Xác xuất cơ bản liên quan đến A/B Testing 
 # Cách A/B testing hoạt động 
