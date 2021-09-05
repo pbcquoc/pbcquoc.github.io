@@ -19,6 +19,8 @@ Quay lại với các vấn đề thực tế của chúng ta, thông thường 
 # Phương pháp kiểm tra đơn giản và không chính xác.
 Để giải quyết câu hỏi liệu tính năng mới có thực sự tốt hơn hay không? Chúng ta thường nghĩ đến phương pháp kiểm tra sai lầm như sau: Cứ mở tính năng mới cho tất cả khách hàng sử dụng, sau đó quan sát xem liệu các chỉ số như số khách sử dụng hằng ngày có tăng hay không, (và các chỉ số quan trọng khác tùy mô hình kinh doanh). Nếu thấy tăng thì chúng ta bảo là tốt hơn, và cứ thế tự tin rằng mình đang làm điều tốt đẹp. 
 
+Phương pháp này tuy sai, nhưng lại đơn giản nên hầu như ai cũng nghĩ được và vì thế nên lại thường được sử dụng. Nhưng mình nhấn mạnh lại một lần nữa là phương pháp này sai vì những lý do sau:
+
 
 # Xác suất cơ bản liên quan đến A/B Testing
 
