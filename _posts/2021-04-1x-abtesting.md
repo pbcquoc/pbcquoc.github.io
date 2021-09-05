@@ -16,7 +16,9 @@ Dưới góc độ của chúng ta, việc ngẫu nhiên cho dù đến từ b�
 
 Quay lại với các vấn đề thực tế của chúng ta, thông thường trong các công ty có phát triển sản phẩm các sản phẩm riêng như Zalo, Tiki, Momo, ..., những ứng dụng của công ty này thường được phát triển lên từ từ, được thêm nhiều tính năng mới, cải thiện tính năng cũ, cải thiện tốc độ phản hồi. Việc bổ sung, cải thiện những tính năng này là hành động chủ quan, có thể làm cho ứng dụng tệ đi hoặc tốt hơn theo nghĩa nào đó ví dụ như ít hoặc nhiều người sử dụng app hàng ngày, ít hoặc nhiều giao dịch. Do đó, chúng ta cần có cách nào đó để kiểm tra xem liệu tính năng mới đó có thực sự tốt hơn như chúng ta nghĩ hay không?
 
-# 2 kiểu kiểm định cơ bản. 
+# Phương pháp kiểm tra đơn giản và không chính xác.
+Để giải quyết câu hỏi liệu tính năng mới có thực sự tốt hơn hay không? Chúng ta thường nghĩ đến phương pháp kiểm tra sai lầm như sau: Cứ mở tính năng mới cho tất cả khách hàng sử dụng, sau đó quan sát xem liệu các chỉ số như số khách sử dụng hằng ngày có tăng hay không, (và các chỉ số quan trọng khác tùy mô hình kinh doanh). Nếu thấy tăng thì chúng ta bảo là tốt hơn, và cứ thế tự tin rằng mình đang làm điều tốt đẹp. 
+
 
 # Xác suất cơ bản liên quan đến A/B Testing
 
