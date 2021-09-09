@@ -86,8 +86,16 @@ Mình họa của phân bố đều trong thực tế mà bạn có thể quan s
 - hoặc là 1 con bài mà bạn có thể nhận được trong bộ bài tây 54 lá
 
 ### Phân bố Bernoulli (Bernoulli Distribution)
-Là phân bố rời rạc, trong đó, tập giá trị mà biến ngẫu nhiên có thể nhận được chỉ gồm 2 giá trị **Success** họăc **Fail**. Nếu xác suất của success là p thì xác suất của fail là 1 - p. 
+Là phân bố rời rạc, trong đó, tập giá trị mà biến ngẫu nhiên có thể nhận được chỉ gồm 2 giá trị **Success** họăc **Fail**. Nếu xác suất của success là p thì xác suất của fail là 1 - p. Bernoulli là tên của Jacob Bernoulli người Thụy Sĩ. 
 
+Các ví dụ minh họa biến ngẫu nhiên có phân bố Bernoulli là:
+- Tung đồng xu 1 lần
+- Thực hiện 1 lần Quyền chọn Nhị phân (binary option): là một hình thức giao dịch chứng khoáng ... lừa đảo
+và 2 ví dụ sau rất phổ biến trong thực tế mà mình gặp phải khi làm việc tại các công ty
+- 1 khách hàng có click hay không vào quảng cáo?
+- 1 khách hàng có mua sản phẩm hay không? 
+- 1 khách hàng có kết bạn khi mình gợi ý hay không?
+Nên lưu ý rằng mình ghi số lượng là 1
 
 ### Phân bố nhị thức (Binomial distribution)
 
