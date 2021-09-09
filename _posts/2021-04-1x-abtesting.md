@@ -25,6 +25,9 @@ Phương pháp này tuy sai, nhưng lại đơn giản nên hầu như ai cũng 
 Hậu quả của việc các chỉ số thống kê không đúng là chúng ta không có có sở đánh giá mức độ cải tiến, chọn nhầm các tính năng tệ hại thay vì tốt thực sự, những ý tưởng rác lại được hoang nghênh.
 
 # Cứ nghĩ là AB Test, những lại không phải !
+Có nhiều bạn cứ nghĩ rằng AB Test là việc chia tập khách hàng thành 2 tập baseline và variant theo cách ngẫu nhiên có kích thước tương đương nhau. Rồi chạy thí nghiệm, tập baseline thì vẫn giữ model gốc, còn tập variant thì chạy model cải tiến. Rồi sau đó, chỉ cần đơn giản là so sánh các chỉ số business quan trọng trên 2 tập đó là xong, nếu thấy tập variant có giá trị tốt hơn thì chứng tỏ model cải tiến tốt hơn thật, ngược lại thì model cải tiến tệ hơn. 
+
+**Điều này là một sự sai lầm tệ hại!**
 
 # Xác suất cơ bản liên quan đến A/B Testing
 
