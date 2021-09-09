@@ -51,8 +51,16 @@ Và để trả lời cho tại sao **Chiến lượt ABTest ngây thơ** là sa
 
 
 ## Random process
+Các bạn có thể suy nghĩ random process là một process là kết quả (outcome) là ngẫu nhiên hay chứ không phải tất định. Một số ví dụ về random process như sau:
+- Tung đồng xu
+- Tung xúc xắc 
+- Lắc một hộp chưa các loại viên bi xanh,đỏ, ... sau đó bốc một viên mà không được nhìn. 
+
 ## event
-## Random variable
+## Biến ngẫu nhiên (random variable)
+Có thể tưởng tượng biễn ngẫu nhiên là biến phụ thuộc vào quá trình ngẫu nhiên. Ví dụ
+- Giá trị của mặt xuất hiện trên xúc xắc khi chúng ta tung xúc xắc. 
+- Tung 2 con xúc xắc và tính tổng của 2 mặt xuất hiện. 
 
 ## Probability distribution
 
