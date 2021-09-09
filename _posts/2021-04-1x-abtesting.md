@@ -78,7 +78,11 @@ Phân bố xác suất có rất nhiều loại khác nhau, mỗi loại có và
 </div>
 
 Mình sẽ giải thích vài loại phân bố xác suất phổ biến cơ bản 
+### Uniform distribution
 
+### Binomial distribution
+
+### Normal distribution
 # Trực quan cách A/B testing hoạt động 
 # Cách tính conversion rate chính xác. 
 ## Chọn success event 
