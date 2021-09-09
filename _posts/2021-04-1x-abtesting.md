@@ -39,6 +39,10 @@ Nhưng mà công ty này phá sản thì ai cần bạn làm gì nữa chứ? V�
 
 Chắc chắn rằng chúng ta vẫn phải đạt được mục tiêu là chứng minh rằng model cải tiển tốt hơn trên toàn bộ tập khách hàng, nhưng thay vì phải đợi công ty phá sản để có được toàn bộ tập khách hành, chúng ta sẽ **sampling** tập khách hàng để đem ra kiểm định, và đó chính là tập khách hàng hiện tại và cũng vì chúng ta **sampling** một tập nhỏ hơn nên các con số chúng ta tính toán là biến ngẫu nhiên. Vì là biến ngẫu nhiên nên chúng ta có thể thấy chỉ số của mô hình cải tiến tốt hơn, hoặc tệ hơn nhưng không có nghĩa là chúng tốt/tệ hơn thật. Đơn giản chỉ vì ngẫu nhiên!. 
 
+Có bạn sẽ thắc mắc, sao lại phải kết luận trên toàn bộ tập khách hàng cơ chứ! (Mình xin nhắc lại là kết luận trên toàn bộ tập khách hàng, không có nghĩa là bạn cần tính toán trên toàn bộ tập khách hàng). Vậy mình sẽ lấy ví dụ minh họa như sau. 
+
+Bạn chế tạo ra vacxin Prizer để ngừa COVID-19. Và một số người lanh lợi sẽ hỏi rằng, vacxin này có thể giảm tỉ lệ tử vong bao nhiêu cho người được tiêm, những người này có thể là bây giờ, hoặc sau 1 năm nữa. Bạn phải kết luận cho tập người sau 1 năm nữa tiêm vacxin cũng phải có hiệu quả chứ? không lẽ bạn chỉ kết luận cho tập người được tiêm trong năm nay không thôi sao? Nhỡ đâu tập người tiêm 1 năm sau bị biến chứng nặng hơn sau khi tiêm vacxin thì sao? Ai sẽ chịu trách nhiệm cho những người 1 năm sau đó. Đó là lý do tại sao chúng ta cần kết luận trên toàn bộ quần thể (population), toàn bộ tập khách hàng. 
+
 
 # Các khái niệm về xác suất cơ bản liên quan đến A/B Testing
 
