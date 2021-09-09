@@ -72,6 +72,7 @@ Conversion rate của tập khách hàng mà chúng ta sampling cũng sẽ có p
 
 Phân bố xác suất có rất nhiều loại khác nhau, mỗi loại có vài tham số đặc trưng cho phân bố đó. 
 
+![img](/images/abtest/prob_distribution.png)
 # Trực quan cách A/B testing hoạt động 
 # Cách tính conversion rate chính xác. 
 ## Chọn success event 
