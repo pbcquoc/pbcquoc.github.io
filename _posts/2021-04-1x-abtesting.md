@@ -24,7 +24,7 @@ Phương pháp này tuy sai, nhưng lại đơn giản nên hầu như ai cũng 
 
 Hậu quả của việc các chỉ số thống kê không đúng là chúng ta không có có sở đánh giá mức độ cải tiến, chọn nhầm các tính năng tệ hại thay vì tốt thực sự, những ý tưởng rác lại được hoang nghênh.
 
-# Cứ nghĩ là AB Test, những lại không phải !
+# Chiến lượt ABtest ngây thơ - Cứ nghĩ là AB Test, những lại không phải !
 Có nhiều bạn cứ nghĩ rằng AB Test là việc chia tập khách hàng thành 2 tập baseline và variant theo cách ngẫu nhiên có kích thước tương đương nhau. Rồi chạy thí nghiệm, tập baseline thì vẫn giữ model gốc, còn tập variant thì chạy model cải tiến. Rồi sau đó, chỉ cần đơn giản là so sánh các chỉ số business quan trọng trên 2 tập đó là xong, nếu thấy tập variant có giá trị tốt hơn thì chứng tỏ model cải tiến tốt hơn thật, ngược lại thì model cải tiến tệ hơn. 
 
 **Điều này là một sự sai lầm tệ hại!**
@@ -33,6 +33,10 @@ Có nhiều bạn cứ nghĩ rằng AB Test là việc chia tập khách hàng t
 # Làm rõ mục tiêu của việc ABTest
 Bạn đã quên mất 2 điều mà khi bạn quên 2 điều này làm cho bạn cứ nghĩ rằng mình vẫn đang làm đúng.
 - Mục tiêu của việc kiểm định là để chứng minh model cải tiến tốt hơn trên toàn bộ tập khách hàng. Tập khách hàng này là tập khách hàng tại mọi thời điểm, tại tương lai, hiện tại, và quá khứ. 
+Câu phát biểu này phát sinh vấn đề là vậy thì tập khách hàng tương lai ở đâu chứ? Chúng ta chưa có. Vậy thì làm sao để có tập khách hàng tương lai này chứ? chúng ta sẽ chờ cho công này phá sản. Vậy thì toàn bộ tập khách hàng của công ty là từ lúc công ty khởi nghiệp đến lúc phá sản. Lúc này đây, bạn dùng **chiến lượt ABTest ngây thơ** ở trên để tính toán thì bạn làm đúng. 
+
+Nhưng mà công ty này phá sản thì ai cần bạn làm gì nữa chứ? 
+
 
 
 # Các khái niệm về xác suất cơ bản liên quan đến A/B Testing
