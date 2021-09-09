@@ -44,6 +44,7 @@ Có bạn sẽ thắc mắc, sao lại phải kết luận trên toàn bộ tậ
 
 Bạn chế tạo ra vacxin Prizer để ngừa COVID-19. Và một số người lanh lợi sẽ hỏi rằng, vacxin này có thể giảm tỉ lệ tử vong bao nhiêu cho người được tiêm, những người này có thể là bây giờ, hoặc sau 1 năm nữa. Bạn phải kết luận cho tập người sau 1 năm nữa tiêm vacxin cũng phải có hiệu quả chứ? không lẽ bạn chỉ kết luận cho tập người được tiêm trong năm nay không thôi sao? Nhỡ đâu tập người tiêm 1 năm sau bị biến chứng nặng hơn sau khi tiêm vacxin thì sao? Ai sẽ chịu trách nhiệm cho những người 1 năm sau đó. Đó là lý do tại sao chúng ta cần kết luận trên toàn bộ quần thể (population), toàn bộ tập khách hàng. 
 
+Và để trả lời cho tại sao **Chiến lượt ABTest ngây thơ** là sai thì đó là việc bạn chỉ đơn giản tính các chỉ số trên tập sampling rồi so sánh 2 số đó như là 2 biến bình thường thì bạn chỉ kết luận được trên tập sampling đó mà thôi. Ko trả lời được liệu trên toàn bộ population có tốt hơn thật hay không?
 
 # Các khái niệm về xác suất cơ bản liên quan đến A/B Testing
 
