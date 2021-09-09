@@ -74,6 +74,7 @@ Phân bố xác suất có rất nhiều loại khác nhau, mỗi loại có và
 
 <div class="img-div" markdown="0">
     <img src="/images/abtest/prob_distribution.png" />
+    <em>Bức ảnh này thể hiện gia phả của các phân bố xác suất cơ bản</em>
 </div>
 
 Mình sẽ giải thích vài loại phân bố xác suất phổ biến cơ bản 
