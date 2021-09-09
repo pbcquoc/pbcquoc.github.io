@@ -55,6 +55,7 @@ Các bạn có thể suy nghĩ random process là một process là kết quả 
 - Tung đồng xu
 - Tung xúc xắc 
 - Lắc một hộp chưa các loại viên bi xanh,đỏ, ... sau đó bốc một viên mà không được nhìn. 
+- Sampling ngẫu nhiên tập khách hàng của chúng ta
 
 ## event
 ## Biến ngẫu nhiên (random variable)
@@ -62,7 +63,10 @@ Có thể tưởng tượng biễn ngẫu nhiên là biến phụ thuộc vào q
 - Giá trị của mặt xuất hiện trên xúc xắc khi chúng ta tung xúc xắc. 
 - Tung 2 con xúc xắc và tính tổng của 2 mặt xuất hiện. 
 
+Đến đây, bạn có thể thấy rằng, giá trị conversion rate của tập khách hàng mà chúng ta sampling là biến ngẫu nhiên.
+
 ## Probability distribution
+Biến ngẫu nhiên nhận một tập giá trị, do đó nó sẽ có cái mà người ta gọi là phân bố xác suất. Cụ thể, phân bố xác suất cho biết khả năng mà biến ngẫu nhiên nhận giá trị bất kì là bao nhiêu. 
 
 Như mình đã nói ở trên, chúng ta cần công cụ để xem xét các sự kiện ngẫu nhiên, và hàm phân bố xác suất là một trong những khái niệm cơ bản nhất mà chúng ta cần biết. 
 
