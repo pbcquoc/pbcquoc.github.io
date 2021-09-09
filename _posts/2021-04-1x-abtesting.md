@@ -48,3 +48,6 @@ Hàm phân bố xác suất của biến ngẫu nhiên cho chúng ta biết các
 ## ABtest for mean
 
 # 2 tail-test, one-tail test
+
+# Tham khảo
+- https://math.stackexchange.com/questions/845769/why-does-the-normalized-z-score-introduce-a-square-root-and-some-more-confusio
