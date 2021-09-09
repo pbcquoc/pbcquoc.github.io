@@ -65,8 +65,8 @@ Có thể tưởng tượng biễn ngẫu nhiên là biến phụ thuộc vào q
 
 Đến đây, bạn có thể thấy rằng, giá trị conversion rate của tập khách hàng mà chúng ta sampling là biến ngẫu nhiên.
 
-## Probability distribution
-Biến ngẫu nhiên nhận một tập giá trị, do đó nó sẽ có cái mà người ta gọi là phân bố xác suất. Cụ thể, phân bố xác suất cho biết khả năng mà biến ngẫu nhiên nhận giá trị bất kì là bao nhiêu. 
+## Phân bố xác suất (Probability distribution)
+Biến ngẫu nhiên nhận một tập giá trị, do đó nó sẽ có cái mà người ta gọi là phân bố xác suất. Cụ thể, phân bố xác suất cho biết khả năng mà biến ngẫu nhiên nhận giá trị đó là bao nhiêu. 
 
 Conversion rate của tập khách hàng mà chúng ta sampling cũng sẽ có phân bố xác suất nhé. 
 
@@ -77,12 +77,22 @@ Phân bố xác suất có rất nhiều loại khác nhau, mỗi loại có và
     <em>Bức ảnh này thể hiện gia phả của các phân bố xác suất cơ bản</em>
 </div>
 
-Mình sẽ giải thích vài loại phân bố xác suất phổ biến cơ bản 
-### Uniform distribution
+Mình sẽ giải thích vài loại phân bố xác suất phổ biến cơ bản.
+### Phân bố đều (Uniform distribution)
+Là phân bố mà xác suất xuất hiện của các giá trị mà biến ngẫu nhận được là bằng nhau 
 
-### Binomial distribution
+Mình họa của phân bố đều trong thực tế mà bạn có thể quan sát được là:
+- Phân bố xác suất của biễn ngẫu nhiên là giá trị mặt xúc sắc mà bạn quan sát được khi tung con xúc sắc 1 lần. 
+- hoặc là 1 con bài mà bạn có thể nhận được trong bộ bài tây 54 lá
 
-### Normal distribution
+### Phân bố Bernoulli (Bernoulli Distribution)
+Là phân bố rời rạc, trong đó, tập giá trị mà biến ngẫu nhiên có thể nhận được chỉ gồm 2 giá trị **Success** họăc **Fail**. Nếu xác suất của success là p thì xác suất của fail là 1 - p. 
+
+
+### Phân bố nhị thức (Binomial distribution)
+
+### Phân bố chuẩn (Normal distribution)
+
 # Trực quan cách A/B testing hoạt động 
 # Cách tính conversion rate chính xác. 
 ## Chọn success event 
