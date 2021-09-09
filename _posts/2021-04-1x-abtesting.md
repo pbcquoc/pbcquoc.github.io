@@ -70,6 +70,8 @@ Biến ngẫu nhiên nhận một tập giá trị, do đó nó sẽ có cái m�
 
 Conversion rate của tập khách hàng mà chúng ta sampling cũng sẽ có phân bố xác suất nhé. 
 
+Phân bố xác suất có rất nhiều loại khác nhau, mỗi loại có vài tham số đặc trưng cho phân bố đó. 
+
 # Trực quan cách A/B testing hoạt động 
 # Cách tính conversion rate chính xác. 
 ## Chọn success event 
