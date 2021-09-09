@@ -38,8 +38,13 @@ Như mình đã nói ở trên, chúng ta cần công cụ để xem xét các s
 
 Hàm phân bố xác suất của biến ngẫu nhiên cho chúng ta biết các giá trị có thể có và xác suất tương ứng giá trị đó mà biến ngẫu nhiên có thể nhận đươc. 
 
-# Cách A/B testing hoạt động 
+# Trực quan cách A/B testing hoạt động 
 # Cách tính conversion rate chính xác. 
 ## Chọn success event 
+
+# Cách AB test trong thực tế hoạt động
+## Cental Limit Theory 
+## ABtest for propotion
+## ABtest for mean
 
 # 2 tail-test, one-tail test
