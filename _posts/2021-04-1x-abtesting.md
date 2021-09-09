@@ -43,7 +43,7 @@ Hàm phân bố xác suất của biến ngẫu nhiên cho chúng ta biết các
 ## Chọn success event 
 
 # Cách AB test trong thực tế hoạt động
-## Cental Limit Theory 
+## Central Limit Theorem
 ## ABtest for propotion
 ## ABtest for mean
 
