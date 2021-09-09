@@ -49,6 +49,7 @@ Và để trả lời cho tại sao **Chiến lượt ABTest ngây thơ** là sa
 
 # Các khái niệm về xác suất cơ bản liên quan đến A/B Testing
 
+
 ## Random process
 ## event
 ## Random variable
