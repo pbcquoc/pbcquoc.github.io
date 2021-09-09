@@ -24,6 +24,7 @@ Phương pháp này tuy sai, nhưng lại đơn giản nên hầu như ai cũng 
 
 Hậu quả của việc các chỉ số thống kê không đúng là chúng ta không có có sở đánh giá mức độ cải tiến, chọn nhầm các tính năng tệ hại thay vì tốt thực sự, những ý tưởng rác lại được hoang nghênh.
 
+# Cứ nghĩ là AB Test, những lại không phải !
 
 # Xác suất cơ bản liên quan đến A/B Testing
 
