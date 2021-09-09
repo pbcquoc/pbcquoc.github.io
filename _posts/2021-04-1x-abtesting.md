@@ -68,9 +68,7 @@ Có thể tưởng tượng biễn ngẫu nhiên là biến phụ thuộc vào q
 ## Probability distribution
 Biến ngẫu nhiên nhận một tập giá trị, do đó nó sẽ có cái mà người ta gọi là phân bố xác suất. Cụ thể, phân bố xác suất cho biết khả năng mà biến ngẫu nhiên nhận giá trị bất kì là bao nhiêu. 
 
-Như mình đã nói ở trên, chúng ta cần công cụ để xem xét các sự kiện ngẫu nhiên, và hàm phân bố xác suất là một trong những khái niệm cơ bản nhất mà chúng ta cần biết. 
-
-Hàm phân bố xác suất của biến ngẫu nhiên cho chúng ta biết các giá trị có thể có và xác suất tương ứng giá trị đó mà biến ngẫu nhiên có thể nhận đươc. 
+Conversion rate của tập khách hàng mà chúng ta sampling cũng sẽ có phân bố xác suất nhé. 
 
 # Trực quan cách A/B testing hoạt động 
 # Cách tính conversion rate chính xác. 
