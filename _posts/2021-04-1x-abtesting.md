@@ -46,10 +46,11 @@ Bạn chế tạo ra vacxin Prizer để ngừa COVID-19. Và một số ngườ
 
 Và để trả lời cho tại sao **Chiến lượt ABTest ngây thơ** là sai thì đó là việc bạn chỉ đơn giản tính các chỉ số trên tập sampling rồi so sánh 2 số đó như là 2 biến bình thường thì bạn chỉ kết luận được trên tập sampling đó mà thôi. Ko trả lời được liệu trên toàn bộ population có tốt hơn thật hay không?
 
+
 # Các khái niệm về xác suất cơ bản liên quan đến A/B Testing
 
 ## Random process
-## Random event
+## event
 ## Random variable
 
 ## Probability distribution
