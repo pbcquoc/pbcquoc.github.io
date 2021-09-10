@@ -95,7 +95,7 @@ và 2 ví dụ sau rất phổ biến trong thực tế mà mình gặp phải k
 - 1 khách hàng có mua sản phẩm hay không? 
 - 1 khách hàng có kết bạn khi mình gợi ý hay không?
 
-Nên lưu ý rằng mình ghi số lượng là 1 khách hàng click/mua sắm/kết bạn và 1 lần tung đồng xu. Nếu có 2 khách hàng hoặc 2 lần tung đồng xu thì lúc này biến ngẫu nhiên là trạng thái 2 khách hàng không còn là phân bố bernoulli nữa vì các giá trị mà biến ngẫu nhiên này nhận được là 4 giá trị khác nhau. 
+Nên lưu ý rằng mình ghi số lượng là 1 khách hàng click/mua sắm/kết bạn và 1 lần tung đồng xu. Nếu có 2 khách hàng hoặc 2 lần tung đồng xu thì lúc này biến ngẫu nhiên là trạng thái 2 khách hàng không còn là phân bố bernoulli nữa vì các giá trị mà biến ngẫu nhiên này nhận được là 4 giá trị khác nhau. Lúc này, biến ngẫu nhiên trạng thái 2 khách hàng thuộc phân bố nhị thức ở dưới nhé. 
 
 ### Phân bố nhị thức (Binomial distribution)
 
