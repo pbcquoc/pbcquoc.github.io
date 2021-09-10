@@ -95,7 +95,8 @@ và 2 ví dụ sau rất phổ biến trong thực tế mà mình gặp phải k
 - 1 khách hàng có click hay không vào quảng cáo?
 - 1 khách hàng có mua sản phẩm hay không? 
 - 1 khách hàng có kết bạn khi mình gợi ý hay không?
-Nên lưu ý rằng mình ghi số lượng là 1
+
+Nên lưu ý rằng mình ghi số lượng là 1 khách hàng clik/mua sắm/kết bạn. Nếu 
 
 ### Phân bố nhị thức (Binomial distribution)
 
@@ -109,6 +110,8 @@ Nên lưu ý rằng mình ghi số lượng là 1
 ## Central Limit Theorem
 ## ABtest for propotion
 ## ABtest for mean
+
+# ABTest khi không biết phân bố của biến ngẫu nhiên là 
 
 # 2 tail-test, one-tail test
 
