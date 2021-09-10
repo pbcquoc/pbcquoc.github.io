@@ -101,6 +101,8 @@ Nên lưu ý rằng mình ghi số lượng là 1 khách hàng click/mua sắm/k
 
 ### Phân bố chuẩn (Normal distribution)
 
+### Mối quan hệ giữa binomial distribution và normal distribution
+
 # Trực quan cách A/B testing hoạt động 
 # Cách tính conversion rate chính xác. 
 ## Chọn success event 
