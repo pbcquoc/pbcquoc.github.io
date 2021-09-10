@@ -89,14 +89,13 @@ Mình họa của phân bố đều trong thực tế mà bạn có thể quan s
 Là phân bố rời rạc, trong đó, tập giá trị mà biến ngẫu nhiên có thể nhận được chỉ gồm 2 giá trị **Success** họăc **Fail**. Nếu xác suất của success là p thì xác suất của fail là 1 - p. Bernoulli là tên của Jacob Bernoulli người Thụy Sĩ. 
 
 Các ví dụ minh họa biến ngẫu nhiên có phân bố Bernoulli là:
-- Tung đồng xu 1 lần
-- Thực hiện 1 lần Quyền chọn Nhị phân (binary option): là một hình thức giao dịch chứng khoáng ... lừa đảo
+- mặt xuất hiện khi tung đồng xu 1 lần
 và 2 ví dụ sau rất phổ biến trong thực tế mà mình gặp phải khi làm việc tại các công ty
 - 1 khách hàng có click hay không vào quảng cáo?
 - 1 khách hàng có mua sản phẩm hay không? 
 - 1 khách hàng có kết bạn khi mình gợi ý hay không?
 
-Nên lưu ý rằng mình ghi số lượng là 1 khách hàng clik/mua sắm/kết bạn. Nếu 
+Nên lưu ý rằng mình ghi số lượng là 1 khách hàng click/mua sắm/kết bạn và 1 lần tung đồng xu. Nếu có 2 khách hàng hoặc 2 lần tung đồng xu thì lúc này biến ngẫu nhiên là trạng thái 2 khách hàng không còn là phân bố bernoulli nữa vì các giá trị mà biến ngẫu nhiên này nhận được là 4 giá trị khác nhau. 
 
 ### Phân bố nhị thức (Binomial distribution)
 
