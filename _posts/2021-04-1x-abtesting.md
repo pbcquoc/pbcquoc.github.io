@@ -109,9 +109,10 @@ Câu chúng ta vừa hỏi **vậy số khách hàng click vào quảng cáo s�
 
 Vậy phân bố nhị thức là phân bố của biến ngẫu nhiên mà khi chúng ta hỏi câu có bao nhiêu lần quan sát được success event trong n lần thực hiện thí nghiệm, mỗi lần thí nghiệm là một câu hỏi yes/no question.
 
-
+Phân bố nhị thức có mối quan hệ tuyệt vời với phân bố chuẩn mà chúng ta sẽ nói đến ở các phân tiếp theo. 
 
 ### Phân bố chuẩn (Normal distribution)
+Mình nghĩ rằng phân bố chuẩn là phân bố quan trọng nhất trong các loại phân bố bởi vì nó là phân bố phẩn nhất trong đời sống. 
 
 ### Mối quan hệ giữa binomial distribution và normal distribution
 
