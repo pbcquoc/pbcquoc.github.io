@@ -116,7 +116,7 @@ Phân bố này hơi khó để diễn tả bằng lời nói một cách rõ r�
 
 <div class="img-div" markdown="0">
     <img src="/images/abtest/normal_distribution.png" />
-    <em>Bức ảnh này thể hiện gia phả của các phân bố xác suất cơ bản</em>
+    <em>Minh hoạt phân bố chuẩn và quy tắc 68-95-99.7</em>
 </div>
 
 Mình nghĩ rằng phân bố chuẩn là phân bố quan trọng nhất trong các loại phân bố bởi vì nó là phân bố phổ biến nhất trong đời sống, lý do phân bố chuẩn lại phổ biến có thể được giải thích bằng central limit theorem mà chúng ta sẽ tìm hiểu ở phần sau nhé. 
