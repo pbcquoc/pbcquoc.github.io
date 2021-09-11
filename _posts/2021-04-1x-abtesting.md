@@ -112,7 +112,7 @@ Vậy phân bố nhị thức là phân bố của biến ngẫu nhiên mà khi 
 Phân bố nhị thức có mối quan hệ tuyệt vời với phân bố chuẩn mà chúng ta sẽ nói đến ở các phân tiếp theo. 
 
 ### Phân bố chuẩn (Normal distribution)
-Phân bố này hơi khó để diễn tả bằng lời nói một cách rõ ràng. Tuy nhiên bạn có thể tưởng tượng phân bố chuẩn là phân bố có hình dạng cái chuông (bell curve), đối xứng qua trung tâm. Phân bố này có tính chất rất hay đó là xác suất 1 điểm nằm trong 1std, 2std, 3std (std: là độ lệnh chuẩn) tương ứng là 68%, 95% và 99.8%. Tính chất này gọi là quy tắc 68-95-99.7 . Quy tắc này thường dùng để kiếm tra nhẹ nhàng xem một phân bố có phải là phân bố chuẩn hay không?  Do đó không phải phân bố nào đối xứng 2 bên và có hình chuông thì cũng là phân bố chuẩn đâu nhé mà ít nhất nó phải thoải mãn tính chất 69-95-99.7
+Phân bố này hơi khó để diễn tả bằng lời nói một cách rõ ràng. Tuy nhiên bạn có thể tưởng tượng phân bố chuẩn là phân bố có hình dạng cái chuông (bell curve), đối xứng qua trung tâm. Phân bố này có tính chất rất hay đó là xác suất 1 điểm nằm trong 1std, 2std, 3std (std: là độ lệnh chuẩn) tương ứng là 68%, 95% và 99.8%. Tính chất này gọi là quy tắc 68-95-99.7 . Quy tắc này thường dùng để kiếm tra nhẹ nhàng xem một phân bố dạng bell curve có phải là phân bố chuẩn hay không?  Do đó không phải phân bố nào đối xứng 2 bên và có hình chuông thì cũng là phân bố chuẩn đâu nhé mà ít nhất nó phải thoải mãn tính chất 69-95-99.7
 
 <div class="img-div" markdown="0">
     <img src="/images/abtest/normal_distribution.png" />
