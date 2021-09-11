@@ -104,6 +104,7 @@ Chúng ta bắt đầu với phân bố nhị thức bằng cách đặt câu h�
 - 1 khách hàng có click hay không vào sản phẩm mà chúng ta quảng cáo ?
 sau đó chúng ta lại hỏi thêm câu
 - nếu bây giờ chúng ta có 10 khách hàng, vậy số khách hàng click vào quảng cáo sẽ như thế nào?
+
 Câu chúng ta vừa hỏi **vậy số khách hàng click vào quảng cáo sẽ như thế nào?** có phân bố nhị thức.
 
 
