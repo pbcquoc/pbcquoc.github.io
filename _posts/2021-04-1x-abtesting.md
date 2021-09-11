@@ -86,10 +86,10 @@ Mình họa của phân bố đều trong thực tế mà bạn có thể quan s
 - hoặc là 1 con bài mà bạn có thể nhận được trong bộ bài tây 54 lá
 
 ### Phân bố Bernoulli (Bernoulli Distribution)
-Là phân bố rời rạc, trong đó, tập giá trị mà biến ngẫu nhiên có thể nhận được chỉ gồm 2 giá trị **Success** họăc **Fail**. Nếu xác suất của success là p thì xác suất của fail là 1 - p. Bernoulli là tên của Jacob Bernoulli người Thụy Sĩ. 
+Là phân bố rời rạc, trong đó, tập giá trị mà biến ngẫu nhiên có thể nhận được chỉ gồm 2 giá trị **Success** họăc **Fail**. Nếu xác suất của success là p thì xác suất của fail là 1 - p. Thông thường, các câu hỏi dạng yes/no (yes/no question) thuộc phân bố  bernoulli. Bernoulli là tên của Jacob Bernoulli người Thụy Sĩ. 
 
 Các ví dụ minh họa biến ngẫu nhiên có phân bố Bernoulli là:
-- mặt xuất hiện khi tung đồng xu 1 lần
+- có xuất hiện mặt ngửa khi tung đồng xu 1 lần hay không?
 và 2 ví dụ sau rất phổ biến trong thực tế mà mình gặp phải khi làm việc tại các công ty
 - 1 khách hàng có click hay không vào quảng cáo?
 - 1 khách hàng có mua sản phẩm hay không? 
@@ -98,6 +98,14 @@ và 2 ví dụ sau rất phổ biến trong thực tế mà mình gặp phải k
 Nên lưu ý rằng mình ghi số lượng là 1 khách hàng click/mua sắm/kết bạn và 1 lần tung đồng xu. Nếu có 2 khách hàng hoặc 2 lần tung đồng xu thì lúc này biến ngẫu nhiên là trạng thái 2 khách hàng không còn là phân bố bernoulli nữa vì các giá trị mà biến ngẫu nhiên này nhận được là 4 giá trị khác nhau. Lúc này, biến ngẫu nhiên trạng thái 2 khách hàng thuộc phân bố nhị thức ở dưới nhé. 
 
 ### Phân bố nhị thức (Binomial distribution)
+Mình nghĩ là bắt đầu với một ví dụ để các bạn thấy sự khác biệt do của phân bố nhị thức với phân bố bernoulli mà ta là nói ở trên sẽ đơn giản hơn. 
+
+Chúng ta bắt đầu với phân bố nhị thức bằng cách đặt câu hỏi sau:
+- 1 khách hàng có click hay không vào sản phẩm mà chúng ta quảng cáo ?
+sau đó chúng ta lại hỏi thêm câu
+- nếu bây giờ chúng ta có 10 khách hàng, vậy số khách hàng click vào quảng cáo sẽ như thế nào?
+Câu chúng ta vừa hỏi **vậy số khách hàng click vào quảng cáo sẽ như thế nào?** có phân bố nhị thức.
+
 
 ### Phân bố chuẩn (Normal distribution)
 
