@@ -107,6 +107,9 @@ sau đó chúng ta lại hỏi thêm câu
 
 Câu chúng ta vừa hỏi **vậy số khách hàng click vào quảng cáo sẽ như thế nào?** có phân bố nhị thức.
 
+Vậy phân bố nhị thức là phân bố của biến ngẫu nhiên mà khi chúng ta hỏi câu có bao nhiêu lần quan sát được success event trong n lần thực hiện thí nghiệm, mỗi lần thí nghiệm là một câu hỏi yes/no question.
+
+
 
 ### Phân bố chuẩn (Normal distribution)
 
