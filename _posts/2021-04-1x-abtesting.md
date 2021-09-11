@@ -112,7 +112,14 @@ Vậy phân bố nhị thức là phân bố của biến ngẫu nhiên mà khi 
 Phân bố nhị thức có mối quan hệ tuyệt vời với phân bố chuẩn mà chúng ta sẽ nói đến ở các phân tiếp theo. 
 
 ### Phân bố chuẩn (Normal distribution)
-Mình nghĩ rằng phân bố chuẩn là phân bố quan trọng nhất trong các loại phân bố bởi vì nó là phân bố phổ biến nhất trong đời sống. 
+Phân bố này hơi khó để diễn tả bằng lời nói một cách rõ ràng. 
+
+Mình nghĩ rằng phân bố chuẩn là phân bố quan trọng nhất trong các loại phân bố bởi vì nó là phân bố phổ biến nhất trong đời sống, lý do phân bố chuẩn lại phổ biến có thể được giải thích bằng central limit theorem mà chúng ta sẽ tìm hiểu ở phần sau nhé. 
+
+Một số biến ngẫu nhiên có phân bố chuẩn là:
+- Chiều cao của dân số 
+- Chỉ số IQ
+
 
 ### Mối quan hệ giữa binomial distribution và normal distribution
 
