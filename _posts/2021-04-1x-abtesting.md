@@ -85,6 +85,10 @@ Mình họa của phân bố đều trong thực tế mà bạn có thể quan s
 - Phân bố xác suất của biễn ngẫu nhiên là giá trị mặt xúc sắc mà bạn quan sát được khi tung con xúc sắc 1 lần. 
 - hoặc là 1 con bài mà bạn có thể nhận được trong bộ bài tây 54 lá
 
+<div class='row'>
+<span class="col-sm-12 text-center" style="font-size:120%">$$a=softmax(e)$$</span>
+</div>
+
 ### Phân bố Bernoulli (Bernoulli Distribution)
 Là phân bố rời rạc, trong đó, tập giá trị mà biến ngẫu nhiên có thể nhận được chỉ gồm 2 giá trị **Success** họăc **Fail**. Nếu xác suất của success là p thì xác suất của fail là 1 - p. Thông thường, các câu hỏi dạng yes/no (yes/no question) thuộc phân bố  bernoulli. Bernoulli là tên của Jacob Bernoulli người Thụy Sĩ. 
 
@@ -134,8 +138,12 @@ Khi p càng lệch về 2 phía (xấp xỉ 1 hoặc 0 ) thì càng cần nhiề
 Câu hỏi là tại sao chúng ta lại thích xấp xỉ phần bố nhị thức thành phân bố chuẩn làm gì ? bởi vì phân bố chuẩn được sử dụng rộng rãi, chúng ta dễ dàng ghi nhớ các tính chất của nó, cũng như z score và p value, nên chúng ta dễ tính nhẩm hơn. Ngày nay, chúng ta sài máy tính phổ biến nên việc tính nhẩm này cũng không cần thiết lắm. 
 
 # Trực quan cách A/B testing hoạt động 
-AB testing chia ngẫu nhiên user thành 2 tập có kích thước tương đương nhau. 
+AB testing chia ngẫu nhiên user thành 2 tập có kích thước tương đương nhau:
+- control: tập mặc định trước khi áp dụng mô hình cải tiến
+- variant: tập áp dụng mô hình cải tiến. 
+Sử dụng kiểm định giả thuyết để đưa so sánh chỉ số cần quan tâm trên 2 tập trên, và từ đó quyết định xem có nên áp dụng mô hình cải tiện hay không?
 
+Câu hỏi là tại sao ABTesting có thể đưa ra được kết luận 
 # Cách tính conversion rate chính xác. 
 ## Chọn success event 
 
