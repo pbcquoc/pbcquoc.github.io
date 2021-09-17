@@ -127,8 +127,15 @@ Một số biến ngẫu nhiên có phân bố chuẩn là:
 
 
 ### Mối quan hệ giữa binomial distribution và normal distribution
+Các bạn hãy nhớ rằng chúng ta có thể dùng phân phối chuẩn để sấp xỉ phân bố nhị thức khi phân bố nhị thức thỏa điều kiện: xác suất p sucess gần 0.5 hoặc số lần thí nghiệm n lớn. 
+
+Khi p càng lệch về 2 phía (xấp xỉ 1 hoặc 0 ) thì càng cần nhiều lần thí nghiệm hơn để phân bố nhị thức xấp xỉ phân bố chuẩn. hoặc đơn giản ghi nhớ công thức np > 10 và n(1-p)>10 
+
+Câu hỏi là tại sao chúng ta lại thích xấp xỉ phần bố nhị thức thành phân bố chuẩn làm gì ? bởi vì phân bố chuẩn được sử dụng rộng rãi, chúng ta dễ dàng ghi nhớ các tính chất của nó, cũng như z score và p value, nên chúng ta dễ tính nhẩm hơn. Ngày nay, chúng ta sài máy tính phổ biến nên việc tính nhẩm này cũng không cần thiết lắm. 
 
 # Trực quan cách A/B testing hoạt động 
+AB testing chia ngẫu nhiên user thành 2 tập có kích thước tương đương nhau. 
+
 # Cách tính conversion rate chính xác. 
 ## Chọn success event 
 
