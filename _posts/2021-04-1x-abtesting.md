@@ -141,9 +141,14 @@ Câu hỏi là tại sao chúng ta lại thích xấp xỉ phần bố nhị th�
 AB testing chia ngẫu nhiên user thành 2 tập có kích thước tương đương nhau:
 - control: tập mặc định trước khi áp dụng mô hình cải tiến
 - variant: tập áp dụng mô hình cải tiến. 
-Sử dụng kiểm định giả thuyết để đưa so sánh chỉ số cần quan tâm trên 2 tập trên, và từ đó quyết định xem có nên áp dụng mô hình cải tiện hay không?
+ 
+Sử dụng kiểm định giả thuyết để  so sánh chỉ số cần quan tâm trên 2 tập trên, và từ đó quyết định xem có nên áp dụng mô hình cải tiện hay không?
 
-Câu hỏi là tại sao ABTesting có thể đưa ra được kết luận 
+Có 2 điểm cần lưu ý khi làm ABTest. 
+- Cần chia user thành 2 tập ngẫu nhiên. Việc chia ngẫu nhiên làm cho các tác động khác (ngoại trừ cải tiến mà chúng ta định áp dụng cho tâp control) phân bố đều vô 2 tập. Từ đó đảm bảo không có selection bias khi chúng ta thực hiện thí nghiệm. 
+- 2 tập user phải có kích thước tương đương. Để thấy tại sao lại cần chia bằng nhau mình sẽ đưa ra một ví dụ trong trường hợp cực đoạn như sau. Chúng ta có tập control gồm 2 khách hàng, và tập variant gồm 100k khách hàng. để đạt được tỉ lệ mua hàng là 50% thì tập control sẽ dễ dàng có cơ hội hơn nhiều so với tập variant. Thực tế mình gặp một số trường hợp cho rằng có thể chia user thành 2 tập có kích thước không tương nhau vì cuối cùng tỉ lệ mua hàng đều được chuẩn hóa bởi mẫu số nên có thể so sánh 2 tỉ lệ với nhau. nhưng mà suy nghĩ này đang ngây thơ mà thôi. 
+- và điều quan trọng nhất đó là so sánh các chỉ số bằng <span style="color:red">*kiểm định giả thuyết*</span>. Do chúng ta so sánh các chỉ số có tính ngẫu nhiên như phân tích ở trên, nên không tể nào so sánh kiểu tuyệt đối như 2 > 1... mà chúng ta phải so sánh phân bố của các giá trị mà biến ngẫu nhiên có thể nhận được. Cụ thể như thế nào thì chúng ta sẽ tìm hiểu ở phần dưới. 
+
 # Cách tính conversion rate chính xác. 
 ## Chọn success event 
 
