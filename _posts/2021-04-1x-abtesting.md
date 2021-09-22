@@ -151,6 +151,8 @@ Có 3 điểm cần lưu ý khi làm ABTest.
 
 Có nhiều tài liệu tham khảo trên internet nói về ABtest nhưng họ lại không đề cập việc phải dùng kiểm định giả thuyết để so sánh các chỉ số do đó thường gây ra hiểu lầm cho rất nhiều người. Ở phần tiếp theo, mình sẽ trình bày chi tiết cách sử dụng kiểm định giả thuyết trong ABTest như thế nào.
 
+# Chúng ta có thể so sánh 2 biến ngẫu nhiên như thế ?
+
 # Cách tính conversion rate chính xác. 
 ## Chọn success event 
 
