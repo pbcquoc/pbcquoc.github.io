@@ -161,6 +161,8 @@ Khi 2 biến ngẫu nhiên có cùng ý nghĩa, chúng ta có thể dùng ý tư
 (minh họa)
 
 # Cách tính conversion rate chính xác. 
+Có thể chúng ta đã hiểu được cần chia tập khách hàng thành 2 tập a,b ngẫu nhiên bằng nhau, chúng ta cũng hiểu cần so sánh 2 biến ngẫu nhiên dựa vào phân bố của chúng chứ không phải so sánh giá trị tuyệt đối. Nhưng mà đến lúc này, chúng ta vẫn có thể vẫn mắc một sai lầm chết người nữa là **chúng ta lại đi cân đo đong đếm 2 biến ngẫu nhiên mà kết quả việc này lại không trả lời chính xác được câu hỏi của business**. Lý dó là thứ nhất câu hỏi của business lỏng lẻo, thứ 2 là chúng ta tính sai hay ngu ấy. 
+
 ## Chọn success event 
 
 # Cách AB test trong thực tế hoạt động
