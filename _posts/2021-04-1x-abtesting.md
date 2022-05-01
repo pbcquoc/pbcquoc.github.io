@@ -174,6 +174,8 @@ Ví dụ dưới này sẽ làm cho các bạn dễ hình dung
 # ABTest khi không biết phân bố của biến ngẫu nhiên là 
 
 # 2 tail-test, one-tail test
+2 tail-test, 1-tail test là gì? liệu nó có liên quan đến ý tưởng so sánh 2 biến ngẫu nhiên bằng phân bố chúng ta được nếu ở trên hay không?
+
 # Một số quan điểm sai lầm
 3) Saying “We accept the Null hypothesis”
 You either reject the null hypothesis or fail to reject the null hypothesis.
