@@ -166,10 +166,10 @@ Ví dụ dưới này sẽ làm cho các bạn dễ hình dung
 
 ## Chọn success event 
 
-# Cách AB test trong thực tế hoạt động
+# Hypothesis testing 
 ## Central Limit Theorem
-## ABtest for propotion
-## ABtest for mean
+## Hypothesis testing for propotion
+## Hypothesis testing for mean
 
 # ABTest khi không biết phân bố của biến ngẫu nhiên là 
 
