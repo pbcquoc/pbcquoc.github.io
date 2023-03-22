@@ -164,6 +164,15 @@ Khi 2 biến ngẫu nhiên có cùng ý nghĩa, chúng ta có thể dùng ý tư
 Có thể chúng ta đã hiểu được cần chia tập khách hàng thành 2 tập a,b ngẫu nhiên bằng nhau, chúng ta cũng hiểu cần so sánh 2 biến ngẫu nhiên dựa vào phân bố của chúng chứ không phải so sánh giá trị tuyệt đối. Nhưng mà đến lúc này, chúng ta vẫn có thể vẫn mắc một sai lầm chết người nữa là **chúng ta lại đi cân đo đong đếm 2 biến ngẫu nhiên mà kết quả việc này lại không trả lời chính xác được câu hỏi của business**. Lý dó là thứ nhất câu hỏi của business lỏng lẻo, thứ 2 là chúng ta tính toán không chuẩn xác.  
 Ví dụ dưới này sẽ làm cho các bạn dễ hình dung  
 
+Vào một ngày đẹp trời, có một bạn team business muốn chúng ta cải thiện giao diện hiển thị sản phẩm để tăng tỉ lệ conversion khi user mua hàng? Vậy thì câu hỏi đầu tiên xuất hiện trong đầu chúng ta là? tỉ lệ conversion của user khi mua hàng được định lượng như thế nào? Chúng ta sẽ nhiều cách 
+- số lượng user click add_to_cart / số lượng user vào trang sản phẩm 
+- số lượng user click add_to_cart / số lượng user đã vào trang landing page
+- số lượng user thực hiện thành công thanh toán / số lượng user vào trang sản phẩm
+- số lần hiển thị sản phẩm có lượt mua / số lần hiển thị sản phẩm (một lần refresh page là 1 lần hiển thị)
+- và nhiều cách tính khác.
+
+Vậy thì cách tính nào đúng?
+
 ## Chọn success event 
 
 # Hypothesis testing 
