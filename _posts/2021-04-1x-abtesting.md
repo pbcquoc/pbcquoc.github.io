@@ -171,7 +171,7 @@ Vào một ngày đẹp trời, có một bạn team business muốn chúng ta c
 - số lần hiển thị sản phẩm có lượt mua / số lần hiển thị sản phẩm (một lần refresh page là 1 lần hiển thị)
 - và nhiều cách tính khác.
 
-Vậy thì cách tính nào đúng?
+Có lẽ, các bạn đang quan tâm cách tính nào đúng? Nhưng mà trước khi phân tích cách nào đúng theo tiêu chuẩn của mình, mình muốn chỉ ra sai lầm trong cách tính xuất phát từ nguyên nhân nào? Thực tế, khi business đến nói với bạn vấn đề họ cần giải quyết họ cũng thực tế chỉ hiểu sơ sơ, không cụ thể cái họ muốn chính xác là gì đâu. Bên cạnh đó, bạn DS hay DA đó cũng thực tế là không hiểu những cạm bẫy trong công thức tính của mình. 
 
 ## Chọn success event 
 
