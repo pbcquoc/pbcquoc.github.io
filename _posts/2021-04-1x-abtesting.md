@@ -176,7 +176,10 @@ Có lẽ, các bạn đang quan tâm cách tính nào đúng? Nhưng mà trướ
 ## Chọn success event 
 
 # Hypothesis testing 
+Sau khi, chúng ta thu thập đủ dữ liệu cho 
 ## Central Limit Theorem
+
+Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. 
 ## Hypothesis testing for propotion
 ## Hypothesis testing for mean
 
