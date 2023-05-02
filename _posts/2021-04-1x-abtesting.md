@@ -181,10 +181,13 @@ Sau khi, chúng ta thu thập đủ dữ liệu bằng việc đợi cho thí ng
 
 ## Cách kiểm định của người không biết lý thuyết ... toán 
 Chúng ta biết ý tưởng của việc so sánh chỉ số của 2 tập A và B đó là so sánh 2 phân bố của chỉ số này. Đến lúc này, chúng ta lại hỏi, chúng ta chỉ thực hiện một lần thí nghiệm trong n ngày thôi thì lấy đâu ra nguyên cái phân bố để so sánh chứ? Cách dễ nhất là... cứ thực hiện thêm m lần nữa là được mà :) Trong thực tế thì việc này khá tốn công sức, thay vào đó, chúng ta sử dụng một chút lý thuyết của các tiền bối để có thể đưa ra kết luận nhanh chóng và chính xác với 1 lần thực hiện thí nghiệm. 
+
+Do đó phần dưới này là lý thuyết trình bày cách so sánh chỉ số trên tập A và B với một lần thực nghiệm. 
 ## Central Limit Theorem
 
 Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. 
 ## Hypothesis testing for propotion
+Để dể hiểu mình thấy một ví dụ thực tiễn như sau: TIKI muốn kiểm ra giao diện mới có tỉ lệ user mua hàng cao hơn hay không? ... dựa vào từ `tỉ lệ` chúng ta biết ngay là dùng kiểm định giả thuyết của propotion rồi đó. Thực tế thì kiểm định này dùng cho các biến ngẫu nhiên có phân bố binomial. Nếu các bạn có thắc mắc tại sao tỉ lệ này lại tuân theo phân bố binomial thì mình sẽ giải thích như sau: xác suất khách hàng có mua sản phẩm hay không thì theo định nghĩa nó là phân bố bernoulli, và câu hỏi trong n người mà có m người mua hàng, tức là thực hiện nhiều lần bernoulli trial, thì theo định nghĩa nó là phân binomial. Giờ chúng ta, đã biết cái `tỉ lệ` đó tuân theo phân bố binomial (thực tế, chính xác hơn là sự kiện có m người mua trong tổng n người, vì 2/4=0.5 mà 1/2 cũng là 0.5 mà, nên nói tỉ lệ nó chưa đủ chi tiết). Vậy thì hãy áp dụng chút toán thống kê vô để giúp kiểm định nhanh hơn.  
 
 ## Hypothesis testing for mean
 
