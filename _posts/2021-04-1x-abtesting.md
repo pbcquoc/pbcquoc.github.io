@@ -175,12 +175,17 @@ Có lẽ, các bạn đang quan tâm cách tính nào đúng? Nhưng mà trướ
 
 ## Chọn success event 
 
+
 # Hypothesis testing 
-Sau khi, chúng ta thu thập đủ dữ liệu cho 
+Sau khi, chúng ta thu thập đủ dữ liệu bằng việc đợi cho thí nghiệm của chúng ta hoàn thành. 
+
+## Cách kiểm định của người không biết lý thuyết ... toán 
+Chúng ta biết ý tưởng của việc so sánh chỉ số của 2 tập A và B đó là so sánh 2 phân bố của chỉ số này. Đến lúc này, chúng ta lại hỏi, chúng ta chỉ thực hiện một lần thí nghiệm trong n ngày thôi thì lấy đâu ra nguyên cái phân bố để so sánh chứ? Cách dễ nhất là... cứ thực hiện thêm m lần nữa là được mà :) Trong thực tế thì việc này khá tốn công sức, thay vào đó, chúng ta sử dụng một chút lý thuyết của các tiền bối để có thể đưa ra kết luận nhanh chóng và chính xác với 1 lần thực hiện thí nghiệm. 
 ## Central Limit Theorem
 
 Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. 
 ## Hypothesis testing for propotion
+
 ## Hypothesis testing for mean
 
 # ABTest khi không biết phân bố của biến ngẫu nhiên là 
