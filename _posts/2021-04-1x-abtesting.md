@@ -160,23 +160,28 @@ Khi 2 biến ngẫu nhiên có cùng ý nghĩa, chúng ta có thể dùng ý tư
 Để dễ hiểu hơn ý tưởng này, các bạn hãy xem minh họa dưới đây.
 (minh họa)
 
-# Cách tính conversion rate chính xác. 
+# Cách tính conversion rate chính xác.
 Có thể chúng ta đã hiểu được cần chia tập khách hàng thành 2 tập a,b ngẫu nhiên bằng nhau, chúng ta cũng hiểu cần so sánh 2 biến ngẫu nhiên dựa vào phân bố của chúng chứ không phải so sánh giá trị tuyệt đối. Nhưng mà đến lúc này, chúng ta vẫn có thể vẫn mắc một sai lầm chết người nữa là **chúng ta lại đi cân đo đong đếm 2 biến ngẫu nhiên mà kết quả việc này lại không trả lời chính xác được câu hỏi của business**. Lý dó là thứ nhất câu hỏi của business lỏng lẻo, thứ 2 là chúng ta tính toán không chuẩn xác.  
 Ví dụ dưới này sẽ làm cho các bạn dễ hình dung  
 
 Vào một ngày đẹp trời, có một bạn team business muốn chúng ta cải thiện giao diện hiển thị sản phẩm để tăng tỉ lệ conversion khi user mua hàng? Vậy thì câu hỏi đầu tiên xuất hiện trong đầu chúng ta là? tỉ lệ conversion của user khi mua hàng được định lượng như thế nào? Chúng ta sẽ nhiều cách 
-- số lượng user click add_to_cart / số lượng user vào trang sản phẩm 
+- số lượng user click add_to_cart / số lượng user vào trang sản phẩm
 - số lượng user click add_to_cart / số lượng user đã vào trang landing page
 - số lượng user thực hiện thành công thanh toán / số lượng user vào trang sản phẩm
 - số lần hiển thị sản phẩm có lượt mua / số lần hiển thị sản phẩm (một lần refresh page là 1 lần hiển thị)
 - và nhiều cách tính khác.
 
-Có lẽ, các bạn đang quan tâm cách tính nào đúng? Nhưng mà trước khi phân tích cách nào đúng theo tiêu chuẩn của mình, mình muốn chỉ ra sai lầm trong cách tính xuất phát từ nguyên nhân nào? Thực tế, khi business đến nói với bạn vấn đề họ cần giải quyết họ cũng thực tế chỉ hiểu sơ sơ, không cụ thể cái họ muốn chính xác là gì đâu. Bên cạnh đó, bạn DS hay DA đó cũng thực tế là không hiểu những cạm bẫy trong công thức tính của mình. 
+Có lẽ, các bạn đang quan tâm cách tính nào đúng? Nhưng mà trước khi phân tích cách nào đúng theo tiêu chuẩn của mình, mình muốn chỉ ra sai lầm trong cách tính xuất phát từ nguyên nhân nào? Thực tế, khi business đến nói với bạn vấn đề họ cần giải quyết họ cũng thực tế chỉ hiểu sơ sơ, không cụ thể cái họ muốn chính xác là gì đâu. Bên cạnh đó, bạn DS hay DA đó cũng thực tế là không hiểu những cạm bẫy trong công thức tính của mình.
 
-## Chọn success event 
+## Chọn success event
 
+Vậy thì trước khi bắt đầu ABTest cho những đại lượng là  tỉ lệ thì chúng ta cần xác định được success event là gì trước nhất, tuy nhiên việc chọn success event cũng khá là không rõ ràng, vì có nhiều cách tính cho cùng một khái niệm như đã nói ở trên, và hơn nữa vì có nhiều cách tính cho cùng một khái niệm nên kết quả từ việc so sánh các chỉ số đó lại mâu thuẫn với nhau. ví dụ, bạn muốn chọn một chỉ số để đo performance của widget mới trên website TIKI, chúng ta bịa... ra 2 chỉ số sau. 
 
-# Hypothesis testing 
+- tỉ lệ A = user click/tỉ lệ user view
+- tỉ lệ B = user mua hàng / tỉ lệ user view
+nếu cả 2 chỉ số cùng tốt , hoặc cùng tệ hơn thì không có gì để bàn cãi. Tuy nhiên, nếu chỉ 1 trong 2 chỉ số tốt hơn, thì chúng ta bắt đầu gian lận bằng cách, chọn tỉ lệ nào lớn hơn thì lấy cái đó làm success event, rồi tuyên bố cái cái version mới mà chúng ta đang bỏ công sức vào làm là tốt hơn. Chọn như nào là tốt là câu hỏi mà mình còn chưa có câu trả lời, tuy nhiên, mình vẫn nghĩ tốt nhất là nên chọn chỉ số là key metric để tối ưu theo chỉ số đó, nếu không thì chúng ta sẽ nhảy tới, nhảy lui mà không thật sự cải thiện được gì cả. 
+
+# Hypothesis testing
 Sau khi, chúng ta thu thập đủ dữ liệu bằng việc đợi cho thí nghiệm của chúng ta hoàn thành. 
 
 ## Cách kiểm định của người không biết lý thuyết ... toán 
