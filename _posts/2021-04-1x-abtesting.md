@@ -190,6 +190,24 @@ Chúng ta biết ý tưởng của việc so sánh chỉ số của 2 tập A v�
 
 Do đó phần dưới này là lý thuyết trình bày cách so sánh chỉ số trên tập A và B với một lần thực nghiệm. 
 ## Central Limit Theorem
+Phát biểu cơ bản của định lý CLT như sau: 
+Cho $` X_{1}, X_{2},... X_{n} `$ là các random sample của n lần thử độc lập thuộc phân bố có kì vọng $` \mu `$ và variance hữu hạn $` \sigma^{2} `$, thì khi $` n \to  \infty  `$ vô cùng, 
+
+$` X_{n} \to  N(\mu, \frac{\sigma^{2}}{n}) `$
+với $` \bar{X}_{n} = \frac{X_{1} + ...  + X_{n} }{n} `$
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/IllustrationCentralTheorem.png/620px-IllustrationCentralTheorem.png)
+
+Để dễ hiểu hơn, bạn hãy tưởng tượng đang chơi một trò chơi trong đó bạn tung một con xúc xắc có sáu mặt thường. Mỗi lần bạn tung nó, bạn nhận được một số từ 1 đến 6. Bây giờ, hãy nói rằng bạn chỉ tung xúc xắc một lần duy nhất. Bạn có thể nhận được bất kỳ số nào từ 1 đến 6 và điều đó là bình thường.
+
+Nhưng bây giờ, hãy tưởng tượng bạn tung xúc xắc rất nhiều lần, như cả trăm lần hoặc thậm chí nhiều lần hơn. Mỗi lần bạn tung, bạn ghi lại số mà bạn nhận được. Sau khi bạn đã tung xúc xắc nhiều lần, bạn sẽ có một loạt các số đã được ghi lại.
+
+Bây giờ, nếu bạn nhìn vào tất cả những số đó và tìm ra trung bình (bạn cộng tất cả các số lại và sau đó chia cho số lần bạn đã tung xúc xắc), một điều thú vị xảy ra. Bất kể những con số trông như thế nào khi bạn tung xúc xắc mỗi lần, trung bình của tất cả những con số đó sẽ bắt đầu trông giống như một số đặc biệt: số 3.5.
+
+Điều này có phần giống như ma thuật! Ngay cả khi mỗi lần tung xúc xắc đều cho bạn các số khác nhau, khi bạn nhìn vào trung bình của tất cả những lần tung, nó sẽ ngày càng tiến gần hơn đến 3.5 khi bạn thực hiện nhiều lần tung hơn. Mánh khóe ma thuật này được gọi là Định lý Giới hạn Trung tâm.
+
+Vậy nên, Định lý Giới hạn Trung tâm nói cho chúng ta biết rằng khi chúng ta thực hiện một việc gì đó nhiều, nhiều lần và nhìn vào trung bình của những gì xảy ra, thường thì nó sẽ trở nên rất dễ đoán, ngay cả khi các sự việc cá nhân không thể đoán trước được chút nào. Điều này giống như khi bạn kết hợp nhiều màu sắc của đất nặn - càng kết hợp nhiều, bạn càng tiến gần tới một màu cụ thể.
+
 
 Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. 
 ## Hypothesis testing for propotion
