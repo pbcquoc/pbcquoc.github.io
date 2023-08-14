@@ -179,6 +179,7 @@ Vậy thì trước khi bắt đầu ABTest cho những đại lượng là  t�
 
 - tỉ lệ A = user click/tỉ lệ user view
 - tỉ lệ B = user mua hàng / tỉ lệ user view
+
 nếu cả 2 chỉ số cùng tốt , hoặc cùng tệ hơn thì không có gì để bàn cãi. Tuy nhiên, nếu chỉ 1 trong 2 chỉ số tốt hơn, thì chúng ta bắt đầu gian lận bằng cách, chọn tỉ lệ nào lớn hơn thì lấy cái đó làm success event, rồi tuyên bố cái cái version mới mà chúng ta đang bỏ công sức vào làm là tốt hơn. Chọn như nào là tốt là câu hỏi mà mình còn chưa có câu trả lời, tuy nhiên, mình vẫn nghĩ tốt nhất là nên chọn chỉ số là key metric để tối ưu theo chỉ số đó, nếu không thì chúng ta sẽ nhảy tới, nhảy lui mà không thật sự cải thiện được gì cả. 
 
 # Hypothesis testing
