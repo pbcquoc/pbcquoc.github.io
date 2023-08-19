@@ -214,28 +214,34 @@ Kiểm định giả thuyết (Hypothesis testing) là một phương pháp tron
 
     * **Giả thuyết không (null hypothesis - H0)**: Đây là giả thuyết ban đầu, thường khẳng định rằng không có sự khác biệt hoặc không có hiệu ứng đáng kể. Ví dụ: Giá trị trung bình bằng một giá trị đã biết trước.
     * **Giả thuyết thay thế (alternative hypothesis - H1)**: Đây là giả thuyết mà bạn muốn kiểm tra, thường khẳng định rằng có sự khác biệt hoặc có hiệu ứng đáng kể. Ví dụ: Giá trị trung bình không bằng giá trị đã biết trước.
-2. **Chọn mức ý nghĩa (significance level - α)**: Đây là ngưỡng quyết định để xác định liệu bạn sẽ bác bỏ giả thuyết không hay không. Mức ý nghĩa thường được chọn là 0.05 (5%) hoặc 0.01 (1%), nhưng bạn có thể chọn mức khác tùy theo nghiên cứu của bạn.
+      
+2. **Chọn mức ý nghĩa (significance level - α)**: Đây là ngưỡng quyết định để xác định liệu bạn sẽ bác bỏ giả thuyết không hay không. Mức ý nghĩa thường được chọn là 0.05 (5%), nhưng bạn có thể chọn mức khác tùy theo nghiên cứu của bạn. Lý do, mọi người hay chọn p_value=0.05 có thể là do giá trị 0.05 được chọn bởi Fisher ( người được coi là cha để của thống kê hiện đại). Ông đã thuyết trình và đơn giản là đưa ra giá trị 0.05 là ngưỡng để phân biệt một với kiện hiếm có đến mức có thể không phải chỉ do ngẫu nhiên mà còn do những yếu tố khác.
+Liệu có giá trị p=0.051 có khác biệt nhiều so với 0.0499 hay không?. Câu trả lời là không. Cuộc sống có nhiều sắc thái xám, và đôi khi chúng ta phải đựa ra quyết định có/không và chúng ta phải chọn một đường chia ở đâu đó. Liệu một bác sĩ có quyết định cho bệnh nhân dùng thuốc mới hay không, một không cty có nên chấp nhận thay đổi mới hay không? Đôi khi, bạn phải chọn. Vậy đó!
+<div class="img-div" markdown="0">
+    <img src="https://arbor-analytics.com/post/2022-10-10-p-ing-in-the-woods-p-values-in-forest-science/cena_Pvalue.png" />
+</div>
 
-3. **Thu thập và xử lý dữ liệu**: Thu thập dữ liệu từ tập mẫu và tiến hành các phép tính cần thiết như tính trung bình mẫu, độ lệch chuẩn, tỷ lệ, v.v.
+4. **Thu thập và xử lý dữ liệu**: Thu thập dữ liệu từ tập mẫu và tiến hành các phép tính cần thiết như tính trung bình mẫu, độ lệch chuẩn, tỷ lệ, v.v.
 
-4. **Chọn kiểu kiểm định (one-tailed hoặc two-tailed)**: Tùy theo câu hỏi nghiên cứu và giả thuyết, bạn chọn kiểu kiểm định một chiều (one-tailed) hoặc hai chiều (two-tailed). Kiểm định một chiều tập trung vào một hướng khác biệt (lớn hơn hoặc nhỏ hơn), trong khi kiểm định hai chiều tập trung vào sự khác biệt tổng quát.
+5. **Chọn kiểu kiểm định (one-tailed hoặc two-tailed)**: Tùy theo câu hỏi nghiên cứu và giả thuyết, bạn chọn kiểu kiểm định một chiều (one-tailed) hoặc hai chiều (two-tailed). Kiểm định một chiều tập trung vào một hướng khác biệt (lớn hơn hoặc nhỏ hơn), trong khi kiểm định hai chiều tập trung vào sự khác biệt tổng quát. Thông thường trong ABTest, chúng ta kiểm định một chiều tập variant có performance tốt hơn so với tập basline hay không? 
 
-5. **Tính toán giá trị thống kê**: Dựa trên dữ liệu mẫu và giả thuyết, tính giá trị thống kê cụ thể cho phương pháp kiểm định bạn sử dụng (như Z-score, t-score, chi-square, v.v.).
+6. **Tính toán giá trị thống kê**: Dựa trên dữ liệu mẫu và giả thuyết, tính giá trị thống kê cụ thể cho phương pháp kiểm định bạn sử dụng (như Z-score, t-score, chi-square, v.v.).
 
-6. **Tính giá trị p (p-value)**: Giá trị p đo lường xác suất tìm thấy kết quả mẫu hoặc kết quả cận biên (critical value) trong vùng từ chối dưới giả thuyết không. Tính giá trị p dựa trên giá trị thống kê và phân phối xác suất.
+7. **Tính giá trị p (p-value)**: Giá trị p đo lường xác suất tìm thấy kết quả mẫu hoặc kết quả cận biên (critical value) trong vùng từ chối dưới giả thuyết không. Tính giá trị p dựa trên giá trị thống kê và phân phối xác suất.
 
-7. **So sánh giá trị p và mức ý nghĩa**: Nếu giá trị p nhỏ hơn hoặc bằng mức ý nghĩa, bạn có thể bác bỏ giả thuyết không. Nếu giá trị p lớn hơn mức ý nghĩa, bạn không có đủ bằng chứng để bác bỏ giả thuyết không.
+8. **So sánh giá trị p và mức ý nghĩa**: Nếu giá trị p nhỏ hơn hoặc bằng mức ý nghĩa, bạn có thể bác bỏ giả thuyết không. Nếu giá trị p lớn hơn mức ý nghĩa, bạn không có đủ bằng chứng để bác bỏ giả thuyết không.
 
-8. **Đưa ra kết luận**: Dựa trên quyết định đã ra, bạn có thể kết luận về giả thuyết ban đầu và sự khác biệt dựa trên dữ liệu mẫu.
+9. **Đưa ra kết luận**: Dựa trên quyết định đã ra, bạn có thể kết luận về giả thuyết ban đầu và sự khác biệt dựa trên dữ liệu mẫu.
 
-Kiểm định giả thuyết giúp bạn đưa ra quyết định dựa trên dữ liệu mẫu và đánh giá xem có sự khác biệt đáng kể về mặt thống kê trong dữ liệu hay không.
+##  
+
+Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. Về cơ bản, hypothesis testing cho tỉ lệ và trung bình đều theo quy trình ở trên, sự khác biệt là ở cách tính p_value. 
+## Tính p_value cho kiểm định tỉ lệ. 
+Để dể hiểu mình thấy một ví dụ thực tiễn như sau: TIKI muốn kiểm ra giao diện mới có tỉ lệ user mua hàng cao hơn hay không? ... dựa vào từ `tỉ lệ` chúng ta biết ngay là dùng kiểm định giả thuyết của propotion rồi đó. Thực tế thì kiểm định này dùng cho các biến ngẫu nhiên có phân bố binomial. Nếu các bạn có thắc mắc tại sao tỉ lệ này lại tuân theo phân bố binomial thì mình sẽ giải thích như sau: xác suất khách hàng có mua sản phẩm hay không thì theo định nghĩa nó là phân bố bernoulli, và câu hỏi trong n người mà có m người mua hàng, tức là thực hiện nhiều lần bernoulli trial, thì theo định nghĩa nó là phân binomial. Giờ chúng ta, đã biết cái `tỉ lệ` đó tuân theo phân bố binomial (thực tế, chính xác hơn là sự kiện có m người mua trong tổng n người, vì 2/4=0.5 mà 1/2 cũng là 0.5 mà, nên nói tỉ lệ nó chưa đủ chi tiết). Vậy thì hãy áp dụng chút toán thống kê vô để giúp kiểm định nhanh hơn. 
 
 
-Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. 
-## Hypothesis testing for propotion
-Để dể hiểu mình thấy một ví dụ thực tiễn như sau: TIKI muốn kiểm ra giao diện mới có tỉ lệ user mua hàng cao hơn hay không? ... dựa vào từ `tỉ lệ` chúng ta biết ngay là dùng kiểm định giả thuyết của propotion rồi đó. Thực tế thì kiểm định này dùng cho các biến ngẫu nhiên có phân bố binomial. Nếu các bạn có thắc mắc tại sao tỉ lệ này lại tuân theo phân bố binomial thì mình sẽ giải thích như sau: xác suất khách hàng có mua sản phẩm hay không thì theo định nghĩa nó là phân bố bernoulli, và câu hỏi trong n người mà có m người mua hàng, tức là thực hiện nhiều lần bernoulli trial, thì theo định nghĩa nó là phân binomial. Giờ chúng ta, đã biết cái `tỉ lệ` đó tuân theo phân bố binomial (thực tế, chính xác hơn là sự kiện có m người mua trong tổng n người, vì 2/4=0.5 mà 1/2 cũng là 0.5 mà, nên nói tỉ lệ nó chưa đủ chi tiết). Vậy thì hãy áp dụng chút toán thống kê vô để giúp kiểm định nhanh hơn.  
 
-## Hypothesis testing for mean
+## Tính p_value cho kiểm định trung bình. 
 
 # ABTest khi không biết phân bố của biến ngẫu nhiên là 
 
