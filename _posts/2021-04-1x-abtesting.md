@@ -4,10 +4,10 @@ title: A/B Testing - Lý thuyết cơ bản và cách áp dụng
 ---
 
 # Tại sao chúng ta cần A/B Testing
-Dưới góc nhìn của chúng ta, hầu hết các sự kiện trong cuộc sống đều có tính ngẫu nhiên. Tính ngẫu nhiên này có thể là việc quan sát của chúng ta bị hạn chế, hoặc bản chất của việc đó là ngẫu nhiên. Để rõ hơn mình sẽ đưa ra 2 ví dụ sau:
+Dưới góc nhìn của chúng ta, hầu hết các sự kiện trong cuộc sống đều có tính ngẫu nhiên. Tính ngẫu nhiên này có thể là việc quan sát của chúng ta bị hạn chế, hoặc bản chất của việc đó là ngẫu nhiên. Để rõ hơn phát biểu này, mình sẽ đưa ra 2 ví dụ sau:
 
 Ví dụ đầu tiên để minh họa tính ngẫu nhiên là do việc quan sát của chúng ta bị hạn chế. 
-- Giả sử mình muốn tính vị trí sau 3 giây của hòn đá lăn trên một con dốc. Vì hạn chế của việc đo đếm các yếu tố tác động đến hòn đá như độ dốc, lực cản, hình dáng con dốc mà mình chỉ có thể tính toán được vị trí tương đối chính xác của hòn đá mà thôi. Vị trí của hòn đá sau 3 giây có thể nằm ở vị trí xung quanh vị trí mà mình ước lượng. Nếu mình có khả năng đo đếm các yếu tố ảnh hưởng chính xác tuyệt đối thì mình có thể tính toán vị trí chính xác theo các quy tăc vật lý.
+- Giả sử mình muốn tính vị trí sau 3 giây của hòn đá lăn trên một con dốc. Vì hạn chế của việc đo đếm các yếu tố tác động đến hòn đá như độ dốc, lực cản, hình dáng con dốc mà mình chỉ có thể tính toán được vị trí tương đối chính xác của hòn đá mà thôi. Vị trí của hòn đá sau 3 giây có thể nằm ở vị trí xung quanh vị trí mà mình ước lượng. Nếu mình có khả năng đo đếm các yếu tố ảnh hưởng chính xác tuyệt đối thì mình có thể tính toán vị trí chính xác theo các quy tắc vật lý. Do đó, vị trí của hòn đá dưới góc nhìn của một nhà quan sát bình thường có tính ngẫu nhiên.
 
 Ví dụ tiếp theo là minh họa bản chất của việc đó là ngẫu nhiên. 
 - (Cần bổ sung)
@@ -207,6 +207,28 @@ Bây giờ, nếu bạn nhìn vào tất cả những số đó và tìm ra trun
 Điều này có phần giống như ma thuật! Ngay cả khi mỗi lần tung xúc xắc đều cho bạn các số khác nhau, khi bạn nhìn vào trung bình của tất cả những lần tung, nó sẽ ngày càng tiến gần hơn đến 3.5 khi bạn thực hiện nhiều lần tung hơn. Mánh khóe ma thuật này được gọi là Định lý Giới hạn Trung tâm.
 
 Vậy nên, Định lý Giới hạn Trung tâm nói cho chúng ta biết rằng khi chúng ta thực hiện một việc gì đó nhiều, nhiều lần và nhìn vào trung bình của những gì xảy ra, thường thì nó sẽ trở nên rất dễ đoán, ngay cả khi các sự việc cá nhân không thể đoán trước được chút nào. Điều này giống như khi bạn kết hợp nhiều màu sắc của đất nặn - càng kết hợp nhiều, bạn càng tiến gần tới một màu cụ thể.
+## Quy trình thực hiện hypothesis testing:
+Kiểm định giả thuyết (Hypothesis testing) là một phương pháp trong thống kê dùng để đưa ra quyết định về một giả thuyết về dữ liệu dựa trên dữ liệu mẫu. Quá trình này giúp bạn xác định xem liệu có đủ bằng chứng để bác bỏ giả thuyết ban đầu hay không. Cách thực hiện kiểm định giả thuyết thường bao gồm các bước sau:
+
+1. **Xác định giả thuyết**:
+
+    * **Giả thuyết không (null hypothesis - H0)**: Đây là giả thuyết ban đầu, thường khẳng định rằng không có sự khác biệt hoặc không có hiệu ứng đáng kể. Ví dụ: Giá trị trung bình bằng một giá trị đã biết trước.
+    * **Giả thuyết thay thế (alternative hypothesis - H1)**: Đây là giả thuyết mà bạn muốn kiểm tra, thường khẳng định rằng có sự khác biệt hoặc có hiệu ứng đáng kể. Ví dụ: Giá trị trung bình không bằng giá trị đã biết trước.
+2. **Chọn mức ý nghĩa (significance level - α)**: Đây là ngưỡng quyết định để xác định liệu bạn sẽ bác bỏ giả thuyết không hay không. Mức ý nghĩa thường được chọn là 0.05 (5%) hoặc 0.01 (1%), nhưng bạn có thể chọn mức khác tùy theo nghiên cứu của bạn.
+
+3. **Thu thập và xử lý dữ liệu**: Thu thập dữ liệu từ tập mẫu và tiến hành các phép tính cần thiết như tính trung bình mẫu, độ lệch chuẩn, tỷ lệ, v.v.
+
+4. **Chọn kiểu kiểm định (one-tailed hoặc two-tailed)**: Tùy theo câu hỏi nghiên cứu và giả thuyết, bạn chọn kiểu kiểm định một chiều (one-tailed) hoặc hai chiều (two-tailed). Kiểm định một chiều tập trung vào một hướng khác biệt (lớn hơn hoặc nhỏ hơn), trong khi kiểm định hai chiều tập trung vào sự khác biệt tổng quát.
+
+5. **Tính toán giá trị thống kê**: Dựa trên dữ liệu mẫu và giả thuyết, tính giá trị thống kê cụ thể cho phương pháp kiểm định bạn sử dụng (như Z-score, t-score, chi-square, v.v.).
+
+6. **Tính giá trị p (p-value)**: Giá trị p đo lường xác suất tìm thấy kết quả mẫu hoặc kết quả cận biên (critical value) trong vùng từ chối dưới giả thuyết không. Tính giá trị p dựa trên giá trị thống kê và phân phối xác suất.
+
+7. **So sánh giá trị p và mức ý nghĩa**: Nếu giá trị p nhỏ hơn hoặc bằng mức ý nghĩa, bạn có thể bác bỏ giả thuyết không. Nếu giá trị p lớn hơn mức ý nghĩa, bạn không có đủ bằng chứng để bác bỏ giả thuyết không.
+
+8. **Đưa ra kết luận**: Dựa trên quyết định đã ra, bạn có thể kết luận về giả thuyết ban đầu và sự khác biệt dựa trên dữ liệu mẫu.
+
+Kiểm định giả thuyết giúp bạn đưa ra quyết định dựa trên dữ liệu mẫu và đánh giá xem có sự khác biệt đáng kể về mặt thống kê trong dữ liệu hay không.
 
 
 Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. 
