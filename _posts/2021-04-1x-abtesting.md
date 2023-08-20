@@ -139,6 +139,10 @@ thì
 và 
 * $` c*X \sim N(c\mu, c^2\sigma^2) `$
 
+Z-scores(còn gọi là standard scores) là độ đo cho biết giá trị quan sát bằng bao nhiêu độ lệch chuẩn tính từ trung bình của một phân bố. Thông thường Z-scores hay dùng trong phân bố chuẩn. Z-score được tính như sau: 
+$$ z-score = \frac{x - \mu}{\sigma}$$
+Chúng ta có thể dùng z-score so sánh tương đối giữ 2 điểm dữ liệu mà thuộc 2 phân bố khác nhau. z-score được dùng để tính nhanh p-value. 
+
 ### Mối quan hệ giữa binomial distribution và normal distribution
 Các bạn hãy nhớ rằng chúng ta có thể dùng phân phối chuẩn để sấp xỉ phân bố nhị thức khi phân bố nhị thức thỏa điều kiện: xác suất p sucess gần 0.5 hoặc số lần thí nghiệm n lớn. 
 
@@ -153,7 +157,11 @@ $` X \sim B(n, p) `$ với n đủ lớn thì X sẽ xấp xỉ $` \mathcal{N}(n
 
 
 
-Câu hỏi là tại sao chúng ta lại thích xấp xỉ phần bố nhị thức thành phân bố chuẩn làm gì ? bởi vì phân bố chuẩn được sử dụng rộng rãi, chúng ta dễ dàng ghi nhớ các tính chất của nó, cũng như z score và p value, nên chúng ta dễ tính nhẩm hơn. Ngày nay, chúng ta sài máy tính phổ biến nên việc tính nhẩm này cũng không cần thiết lắm. 
+Câu hỏi là tại sao chúng ta lại thích xấp xỉ phần bố nhị thức thành phân bố chuẩn làm gì ? bởi vì phân bố chuẩn được sử dụng rộng rãi, chúng ta dễ dàng ghi nhớ các tính chất của nó, cũng như z score và p value, nên chúng ta dễ tính nhẩm hơn và công thức được rút gọn đẹp hơn.
+
+### Mối quan hệ giữ proportion distribution và binomial distribution
+Proportion distribution và binomial distribution có mối quan hệ chặt chẽ với nhau. 
+Nếu $` X \sim B(n, p) `$ thì Y=X/n sẽ là proportion distribution. Khi n đủ lớn thì $` Y \sim N(p, p(1-p)/n) `$. Mình nói đến proportion distribution là bởi vì khi chạy ABTest chúng ta thường tính tỉ lệ conversion rate, tỉ lệ này chính là proportion distribution, nếu chúng ta biết được phân bố của nó thì sẽ đơn giản tính được z_score và p_value. Dựa vào p_value là chúng ta kết luận được version B có tốt hơn A hay không?
 
 # Các điều quan trọng khi làm ABTest 
 AB testing chia ngẫu nhiên user thành 2 tập có kích thước tương đương nhau:
