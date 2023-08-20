@@ -135,6 +135,15 @@ Các bạn hãy nhớ rằng chúng ta có thể dùng phân phối chuẩn đ�
 
 Khi p càng lệch về 2 phía (xấp xỉ 1 hoặc 0 ) thì càng cần nhiều lần thí nghiệm hơn để phân bố nhị thức xấp xỉ phân bố chuẩn. hoặc đơn giản ghi nhớ công thức np > 10 và n(1-p)>10 
 
+Phát biểu lại như sau 
+$` X \sim B(n, p) `$ với n đủ lớn thì X sẽ xấp xỉ $` \mathcal{N}(np, np(1-p)) `$
+<div class="img-div" markdown="0">
+    <img src="/images/abtest/binomial_approximation.png" />
+    <em>Normal approximation to the Binomial</em>
+</div>
+
+
+
 Câu hỏi là tại sao chúng ta lại thích xấp xỉ phần bố nhị thức thành phân bố chuẩn làm gì ? bởi vì phân bố chuẩn được sử dụng rộng rãi, chúng ta dễ dàng ghi nhớ các tính chất của nó, cũng như z score và p value, nên chúng ta dễ tính nhẩm hơn. Ngày nay, chúng ta sài máy tính phổ biến nên việc tính nhẩm này cũng không cần thiết lắm. 
 
 # Các điều quan trọng khi làm ABTest 
@@ -238,7 +247,6 @@ Liệu có giá trị p=0.051 có khác biệt nhiều so với 0.0499 hay khôn
 Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. Về cơ bản, hypothesis testing cho tỉ lệ và trung bình đều theo quy trình ở trên, sự khác biệt là ở cách tính p_value. 
 ## Tính p_value cho kiểm định tỉ lệ. 
 Để dể hiểu mình thấy một ví dụ thực tiễn như sau: TIKI muốn kiểm ra giao diện mới có tỉ lệ user mua hàng cao hơn hay không? ... dựa vào từ `tỉ lệ` chúng ta biết ngay là dùng kiểm định giả thuyết của propotion rồi đó. Thực tế thì kiểm định này dùng cho các biến ngẫu nhiên có phân bố binomial. Nếu các bạn có thắc mắc tại sao tỉ lệ này lại tuân theo phân bố binomial thì mình sẽ giải thích như sau: xác suất khách hàng có mua sản phẩm hay không thì theo định nghĩa nó là phân bố bernoulli, và câu hỏi trong n người mà có m người mua hàng, tức là thực hiện nhiều lần bernoulli trial, thì theo định nghĩa nó là phân binomial. Giờ chúng ta, đã biết cái `tỉ lệ` đó tuân theo phân bố binomial (thực tế, chính xác hơn là sự kiện có m người mua trong tổng n người, vì 2/4=0.5 mà 1/2 cũng là 0.5 mà, nên nói tỉ lệ nó chưa đủ chi tiết). Vậy thì hãy áp dụng chút toán thống kê vô để giúp kiểm định nhanh hơn. 
-
 
 
 ## Tính p_value cho kiểm định trung bình. 
