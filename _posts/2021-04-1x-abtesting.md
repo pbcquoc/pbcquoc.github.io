@@ -263,9 +263,14 @@ Liệu có giá trị p=0.051 có khác biệt nhiều so với 0.0499 hay khôn
 
 Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. Về cơ bản, hypothesis testing cho tỉ lệ và trung bình đều theo quy trình ở trên, sự khác biệt là ở cách tính p_value. 
 ## Tính p_value cho kiểm định tỉ lệ. 
-Để dể hiểu mình thấy một ví dụ thực tiễn như sau: TIKI muốn kiểm ra giao diện mới có tỉ lệ user mua hàng cao hơn hay không? ... dựa vào từ `tỉ lệ` chúng ta biết ngay là dùng kiểm định giả thuyết của propotion rồi đó. Thực tế thì kiểm định này dùng cho các biến ngẫu nhiên có phân bố binomial. Nếu các bạn có thắc mắc tại sao tỉ lệ này lại tuân theo phân bố binomial thì mình sẽ giải thích như sau: xác suất khách hàng có mua sản phẩm hay không thì theo định nghĩa nó là phân bố bernoulli, và câu hỏi trong n người mà có m người mua hàng, tức là thực hiện nhiều lần bernoulli trial, thì theo định nghĩa nó là phân binomial. Giờ chúng ta, đã biết cái `tỉ lệ` đó tuân theo phân bố binomial (thực tế, chính xác hơn là sự kiện có m người mua trong tổng n người, vì 2/4=0.5 mà 1/2 cũng là 0.5 mà, nên nói tỉ lệ nó chưa đủ chi tiết). Vậy thì hãy áp dụng chút toán thống kê vô để giúp kiểm định nhanh hơn. 
+Ví dụ TIKI muốn kiểm ra giao diện mới có tỉ lệ user mua hàng cao hơn hay không? ... dựa vào từ `tỉ lệ` chúng ta biết ngay là dùng kiểm định giả thuyết của propotion rồi đó. Vậy chúng ta xây dựng 2 giả thuyết cho bài này như sau:
 
-
+- Giải thuyết không $` H_{0} `$: Tỉ lệ của sự kiện của tập baseline và variant bằng nhau.
+- Giải thuyết thay thế $` H_{a} `$: Tỉ lệ của sự kiện tập variant lớn hơn trong tập baseline.
+Và chúng ta tính z_score như sau:
+khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với kì vọng $\mu=p_0$ và độ lệch chuẩn $\sigma =  \sqrt{\frac{p_0(1-p_0)}{n}}$. đo đó z_score =  $` \frac{(\widehat{p} - p_{0})}{\sqrt{\frac{p_0(1-p_0)}{n}}} `$. Trong đó $p_0$ là tỉ lệ trong tập baseline, n là kích thước tập baseline, $\widehat{p}$ là tỉ lệ trong tập variant. 
+```
+```
 ## Tính p_value cho kiểm định trung bình. 
 
 # ABTest khi không biết phân bố của biến ngẫu nhiên là 
