@@ -120,7 +120,11 @@ Phân bố nhị thức có mối quan hệ tuyệt vời với phân bố chu�
 
 ### Phân bố chuẩn (Normal distribution)
 Phân bố này hơi được kí hiệu $$ \mathcal{N}(\mu, \sigma^{2}) $$ và có công thức như dưới đây 
-$$ f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})} $$ 
+
+<div class='row'>
+<span class="col-sm-12 text-center" style="font-size:120%">$$ f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})} $$ </span>
+</div>
+
 .Bạn có thể tưởng tượng phân bố chuẩn là phân bố có hình dạng cái chuông (bell curve), đối xứng qua trung tâm. Phân bố này có tính chất rất hay đó là xác suất 1 điểm nằm trong 1std, 2std, 3std (std: là độ lệnh chuẩn) tương ứng là 68%, 95% và 99.8%. Tính chất này gọi là quy tắc 68-95-99.7 . Quy tắc này thường dùng để kiếm tra nhẹ nhàng xem một phân bố dạng bell curve có phải là phân bố chuẩn hay không?  Do đó không phải phân bố nào đối xứng 2 bên và có hình chuông thì cũng là phân bố chuẩn đâu nhé
 
 <div class="img-div" markdown="0">
@@ -136,11 +140,11 @@ Một số biến ngẫu nhiên có phân bố chuẩn là:
 
 Ngoài ra, khi cộng hoặc nhân X với một hằng số C thì ta sẽ có một phân bố chuẩn mới như dưới đây. 
 
-Cho $` X \sim N(\mu, \sigma^2) `$
+Cho $$ X \sim N(\mu, \sigma^2) $$
 thì 
-* $` X + c \sim N(\mu + c, \sigma^2)`$
+* $$ X + c \sim N(\mu + c, \sigma^2)$$
 và 
-* $` c*X \sim N(c\mu, c^2\sigma^2) `$
+* $$ c*X \sim N(c\mu, c^2\sigma^2) $$
 
 Z-scores(còn gọi là standard scores) là độ đo cho biết giá trị quan sát bằng bao nhiêu độ lệch chuẩn tính từ trung bình của một phân bố. Thông thường Z-scores hay dùng trong phân bố chuẩn. Z-score được tính như sau: 
 $$ z-score = \frac{x - \mu}{\sigma}$$
@@ -152,7 +156,7 @@ Các bạn hãy nhớ rằng chúng ta có thể dùng phân phối chuẩn đ�
 Khi p càng lệch về 2 phía (xấp xỉ 1 hoặc 0 ) thì càng cần nhiều lần thí nghiệm hơn để phân bố nhị thức xấp xỉ phân bố chuẩn. hoặc đơn giản ghi nhớ công thức np > 10 và n(1-p)>10 
 
 Phát biểu lại như sau 
-$` X \sim B(n, p) `$ với n đủ lớn thì X sẽ xấp xỉ $` \mathcal{N}(np, np(1-p)) `$
+$$ X \sim B(n, p) `$ với n đủ lớn thì X sẽ xấp xỉ $` \mathcal{N}(np, np(1-p)) $$
 <div class="img-div" markdown="0">
     <img src="/images/abtest/binomial_approximation.png" />
     <em>Normal approximation to the Binomial</em>
@@ -164,7 +168,7 @@ Câu hỏi là tại sao chúng ta lại thích xấp xỉ phần bố nhị th�
 
 ### Mối quan hệ giữ proportion distribution và binomial distribution
 Proportion distribution và binomial distribution có mối quan hệ chặt chẽ với nhau. 
-Nếu $` X \sim B(n, p) `$ thì Y=X/n sẽ là proportion distribution. Khi n đủ lớn thì $` Y \sim N(p, p(1-p)/n) `$. Mình nói đến proportion distribution là bởi vì khi chạy ABTest chúng ta thường tính tỉ lệ conversion rate, tỉ lệ này chính là proportion distribution, nếu chúng ta biết được phân bố của nó thì sẽ đơn giản tính được z_score và p_value. Dựa vào p_value là chúng ta kết luận được version B có tốt hơn A hay không?
+Nếu $$ X \sim B(n, p) $$ thì Y=X/n sẽ là proportion distribution. Khi n đủ lớn thì $$ Y \sim N(p, p(1-p)/n) $$. Mình nói đến proportion distribution là bởi vì khi chạy ABTest chúng ta thường tính tỉ lệ conversion rate, tỉ lệ này chính là proportion distribution, nếu chúng ta biết được phân bố của nó thì sẽ đơn giản tính được z_score và p_value. Dựa vào p_value là chúng ta kết luận được version B có tốt hơn A hay không?
 
 # Các điều quan trọng khi làm ABTest 
 AB testing chia ngẫu nhiên user thành 2 tập có kích thước tương đương nhau:
@@ -220,10 +224,10 @@ Chúng ta biết ý tưởng của việc so sánh chỉ số của 2 tập A v�
 Do đó phần dưới này là lý thuyết trình bày cách so sánh chỉ số trên tập A và B với một lần thực nghiệm. 
 ## Central Limit Theorem
 Phát biểu cơ bản của định lý CLT như sau: 
-Cho $` X_{1}, X_{2},... X_{n} `$ là các random sample của n lần thử độc lập thuộc phân bố có kì vọng $` \mu `$ và variance hữu hạn $` \sigma^{2} `$, thì khi $` n \to  \infty  `$ vô cùng, 
+Cho $$ X_{1}, X_{2},... X_{n} $$ là các random sample của n lần thử độc lập thuộc phân bố có kì vọng $$ \mu $$ và variance hữu hạn $$ \sigma^{2} $$, thì khi $$ n \to  \infty  $$ vô cùng, 
 
-$` X_{n} \to  N(\mu, \frac{\sigma^{2}}{n}) `$
-với $` \bar{X}_{n} = \frac{X_{1} + ...  + X_{n} }{n} `$
+$$ X_{n} \to  N(\mu, \frac{\sigma^{2}}{n}) $$
+với $$ \bar{X}_{n} = \frac{X_{1} + ...  + X_{n} }{n} $$
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/IllustrationCentralTheorem.png/620px-IllustrationCentralTheorem.png)
 
@@ -268,10 +272,10 @@ Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lư�
 ## Tính p_value cho kiểm định tỉ lệ. 
 Ví dụ TIKI muốn kiểm ra giao diện mới có tỉ lệ user mua hàng cao hơn hay không? ... dựa vào từ `tỉ lệ` chúng ta biết ngay là dùng kiểm định giả thuyết của propotion rồi đó. Vậy chúng ta xây dựng 2 giả thuyết cho bài này như sau:
 
-- Giải thuyết không $` H_{0} `$: Tỉ lệ của sự kiện của tập baseline và variant bằng nhau.
-- Giải thuyết thay thế $` H_{a} `$: Tỉ lệ của sự kiện tập variant lớn hơn trong tập baseline.
+- Giải thuyết không $$ H_{0} $$: Tỉ lệ của sự kiện của tập baseline và variant bằng nhau.
+- Giải thuyết thay thế $$ H_{a} $$: Tỉ lệ của sự kiện tập variant lớn hơn trong tập baseline.
 Và chúng ta tính z_score như sau:
-khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với kì vọng $\mu=p_0$ và độ lệch chuẩn $\sigma =  \sqrt{\frac{p_0(1-p_0)}{n}}$. đo đó z_score =  $` \frac{(\widehat{p} - p_{0})}{\sqrt{\frac{p_0(1-p_0)}{n}}} `$. Trong đó $p_0$ là tỉ lệ trong tập baseline, n là kích thước tập baseline, $\widehat{p}$ là tỉ lệ trong tập variant. 
+khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với kì vọng $\mu=p_0$ và độ lệch chuẩn $$ \sigma =  \sqrt{\frac{p_0(1-p_0)}{n}} $$. đo đó z_score =  $$ \frac{(\widehat{p} - p_{0})}{\sqrt{\frac{p_0(1-p_0)}{n}}} $$. Trong đó $$p_0$$ là tỉ lệ trong tập baseline, n là kích thước tập baseline, $$\widehat{p}$$ là tỉ lệ trong tập variant. 
 ```
 ```
 
@@ -280,13 +284,13 @@ khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với 
 ## Tính p_value cho kiểm định trung bình. 
 Ví dụ TIKI muốn kiểm định xem chương trình mua kèm giảm thêm có thực sự tăng giá trị đơn hàng mà khách hàng mua hay không? Lúc đó, chúng ta muốn chạy kiểm định giả thiết trung bình để xem tập variant có giá trị đơn hàng trung bình lớn hơn tập baseline hay không?
 
-- Giải thuyết không $` H_{0} `$: Trung bình giá trị đơn hàng của tập baseline và variant bằng nhau.
-- Giải thuyết thay thế $` H_{a} `$: Trung bình giá trị đơn hàng của tập variant lớn hơn tập baseline.
+- Giải thuyết không $$ H_{0} $$: Trung bình giá trị đơn hàng của tập baseline và variant bằng nhau.
+- Giải thuyết thay thế $$ H_{a} $$: Trung bình giá trị đơn hàng của tập variant lớn hơn tập baseline.
 Chúng ta tính z_score như sau:
-khi n đủ lớn thì trung bình giá trị đơn hàng có phân bố chuẩn với kì vọng $` \mu `$ và độ lệnh chuẩn $` \frac{\sigma}{\sqrt{n}} `$. Do đó, z_score = $` \frac{\widehat{X} - \mu_{0}}{\frac{\sigma}{\sqrt(n}} `$.
+khi n đủ lớn thì trung bình giá trị đơn hàng có phân bố chuẩn với kì vọng $$ \mu $$ và độ lệnh chuẩn $$ \frac{\sigma}{\sqrt{n}} $$. Do đó, z_score = $$ \frac{\widehat{X} - \mu_{0}}{\frac{\sigma}{\sqrt(n}} $$.
 Trong đó
-- $`\widehat{X}`$: là trung bình tập variant
-- $`\mu_{0}`$: trung bình tập baseline, $`\sigma`$: độ lệch chuẩn tập baseline, $`n`$: kích thước mẫu.
+- $$\widehat{X}$$: là trung bình tập variant
+- $$\mu_{0}$$: trung bình tập baseline, $$\sigma$$: độ lệch chuẩn tập baseline, $$n$$: kích thước mẫu.
 Dựa vào z_score để tính p_value để đưa ra kết luận.
 
 # ABTest khi không biết phân bố của biến ngẫu nhiên là 
