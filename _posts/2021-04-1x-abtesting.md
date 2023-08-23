@@ -272,6 +272,18 @@ khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với 
 ```
 ```
 ## Tính p_value cho kiểm định trung bình. 
+Ví dụ TIKI muốn kiểm định xem chương trình mua kèm giảm thêm có thực sự tăng giá trị đơn hàng mà khách hàng mua hay không? Lúc đó, chúng ta muốn chạy kiểm định giả thiết trung bình để xem tập variant có giá trị đơn hàng trung bình lớn hơn tập baseline hay không?
+
+- Giải thuyết không $` H_{0} `$: Trung bình giá trị đơn hàng của tập baseline và variant bằng nhau.
+- Giải thuyết thay thế $` H_{a} `$: Trung bình giá trị đơn hàng của tập variant lớn hơn tập baseline.
+Chúng ta tính z_score như sau:
+khi n đủ lớn thì trung bình giá trị đơn hàng có phân bố chuẩn với kì vọng $` \mu `$ và độ lệnh chuẩn $` \frac{\sigma}{\sqrt{n}} `$. Do đó, z_score = $` \frac{\widehat{X} - \mu_{0}}{\frac{\sigma}{\sqrt(n}} `$.
+Trong đó
+- $`\widehat{X}`$: là trung bình tập variant
+- $`\mu_{0}`$: trung bình tập baseline, $`\sigma`$: độ lệch chuẩn tập baseline, $`n`$: kích thước mẫu.
+Dựa vào z_score để tính p_value để đưa ra kết luận.
+
+## Minimum Detectable Effect
 
 # ABTest khi không biết phân bố của biến ngẫu nhiên là 
 
@@ -281,7 +293,7 @@ khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với 
 # Một số quan điểm sai lầm
 3) Saying “We accept the Null hypothesis”
 You either reject the null hypothesis or fail to reject the null hypothesis.
-
+(continuted)
 
 
 
