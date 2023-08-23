@@ -10,9 +10,9 @@ Ví dụ đầu tiên để minh họa tính ngẫu nhiên là do việc quan s�
 - Giả sử mình muốn tính vị trí sau 3 giây của hòn đá lăn trên một con dốc. Vì hạn chế của việc đo đếm các yếu tố tác động đến hòn đá như độ dốc, lực cản, hình dáng con dốc mà mình chỉ có thể tính toán được vị trí tương đối chính xác của hòn đá mà thôi. Vị trí của hòn đá sau 3 giây có thể nằm ở vị trí xung quanh vị trí mà mình ước lượng. Nếu mình có khả năng đo đếm các yếu tố ảnh hưởng chính xác tuyệt đối thì mình có thể tính toán vị trí chính xác theo các quy tắc vật lý. Do đó, vị trí của hòn đá dưới góc nhìn của một nhà quan sát bình thường có tính ngẫu nhiên.
 
 Ví dụ tiếp theo là minh họa bản chất của việc đó là ngẫu nhiên. 
-- (Cần bổ sung)
+- Theo mình được biết thì ở thế giới lượng tử, hành vi của hạt nguyên từ và hạ nguyên tử bị ngự trị bởi sự ngẫu nhiên, sự ngẫu nhiên đến từ bản chất của chúng, chứ không phải là do việc quan sát của chúng ta bị hạn chế như ví dụ ở trên. Nguyên lý tất định Heisenberg mô tả rằng một số thuộc tính vật lý như `vị trí` và `vận tốc` không thể đồng thời mô tả chính xác dẫn đến kết quả quan sát không tất định. Ví dụ như, khi chơi bóng bàn, để có thể chơi trò này, chúng ta cần biết vị trí và tốc độ của quả bóng. Từ đó mới phán đoán được nên hành xử như thế nào tiếp theo. Nếu biết vị trí mà không biết vận tốc thì làm sao mà đánh lại chớ. Cái sư ngẫu nhiên này đến từ bản chất của các hạt. Kì lạ nhỉ. (Phần này mình không hiểu rõ, chỉ muốn đưa ra một số ví dụ cho mọi người có cái nhìn thêm)
 
-Dưới góc độ của chúng ta, việc ngẫu nhiên cho dù đến từ bản chất của sự việc hay do hạn chế quan sát, thường không quan trọng, cái chúng ta cần là công cụ để xem xét, đánh giá, so sánh giữ các sự kiện này. 
+Dưới góc độ của mình (chúng ta), việc ngẫu nhiên cho dù đến từ bản chất của sự việc hay do hạn chế quan sát, thường không quan trọng, cái chúng ta cần là công cụ để xem xét, đánh giá, so sánh giữ các sự kiện này. 
 
 Quay lại với các vấn đề thực tế của chúng ta, thông thường trong các công ty có phát triển sản phẩm các sản phẩm riêng như Zalo, Tiki, Momo, ..., những ứng dụng của công ty này thường được phát triển lên từ từ, được thêm nhiều tính năng mới, cải thiện tính năng cũ, cải thiện tốc độ phản hồi. Việc bổ sung, cải thiện những tính năng này là hành động chủ quan, có thể làm cho ứng dụng tệ đi hoặc tốt hơn theo nghĩa nào đó ví dụ như ít hoặc nhiều người sử dụng app hàng ngày, ít hoặc nhiều giao dịch. Do đó, chúng ta cần có cách nào đó để kiểm tra xem liệu tính năng mới đó có thực sự tốt hơn như chúng ta nghĩ hay không?
 
@@ -271,6 +271,9 @@ Và chúng ta tính z_score như sau:
 khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với kì vọng $\mu=p_0$ và độ lệch chuẩn $\sigma =  \sqrt{\frac{p_0(1-p_0)}{n}}$. đo đó z_score =  $` \frac{(\widehat{p} - p_{0})}{\sqrt{\frac{p_0(1-p_0)}{n}}} `$. Trong đó $p_0$ là tỉ lệ trong tập baseline, n là kích thước tập baseline, $\widehat{p}$ là tỉ lệ trong tập variant. 
 ```
 ```
+
+## Minimum Detectable Effect
+
 ## Tính p_value cho kiểm định trung bình. 
 Ví dụ TIKI muốn kiểm định xem chương trình mua kèm giảm thêm có thực sự tăng giá trị đơn hàng mà khách hàng mua hay không? Lúc đó, chúng ta muốn chạy kiểm định giả thiết trung bình để xem tập variant có giá trị đơn hàng trung bình lớn hơn tập baseline hay không?
 
@@ -283,19 +286,13 @@ Trong đó
 - $`\mu_{0}`$: trung bình tập baseline, $`\sigma`$: độ lệch chuẩn tập baseline, $`n`$: kích thước mẫu.
 Dựa vào z_score để tính p_value để đưa ra kết luận.
 
-## Minimum Detectable Effect
-
 # ABTest khi không biết phân bố của biến ngẫu nhiên là 
 
-# 2 tail-test, one-tail test
-2 tail-test, 1-tail test là gì? liệu nó có liên quan đến ý tưởng so sánh 2 biến ngẫu nhiên bằng phân bố chúng ta được nếu ở trên hay không?
 
 # Một số quan điểm sai lầm
 3) Saying “We accept the Null hypothesis”
 You either reject the null hypothesis or fail to reject the null hypothesis.
-(continuted)
-
-
 
 # Tham khảo
 - https://math.stackexchange.com/questions/845769/why-does-the-normalized-z-score-introduce-a-square-root-and-some-more-confusio
+(continuted)
