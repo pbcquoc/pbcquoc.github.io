@@ -88,10 +88,6 @@ Mình họa của phân bố đều trong thực tế mà bạn có thể quan s
 - Phân bố xác suất của biễn ngẫu nhiên là giá trị mặt xúc sắc mà bạn quan sát được khi tung con xúc sắc 1 lần. 
 - hoặc là 1 con bài mà bạn có thể nhận được trong bộ bài tây 54 lá
 
-<div class='row'>
-<span class="col-sm-12 text-center" style="font-size:120%">$$a=softmax(e)$$</span>
-</div>
-
 ### Phân bố Bernoulli (Bernoulli Distribution)
 Là phân bố rời rạc, trong đó, tập giá trị mà biến ngẫu nhiên có thể nhận được chỉ gồm 2 giá trị **Success** họăc **Fail**. Nếu xác suất của success là p thì xác suất của fail là 1 - p. Thông thường, các câu hỏi dạng yes/no (yes/no question) thuộc phân bố  bernoulli. Bernoulli là tên của Jacob Bernoulli người Thụy Sĩ. 
 
@@ -142,8 +138,7 @@ Ngoài ra, khi cộng hoặc nhân X với một hằng số C thì ta sẽ có 
 
 Cho $$ X \sim N(\mu, \sigma^2) $$
 thì 
-* $$ X + c \sim N(\mu + c, \sigma^2)$$
-và 
+* $$ X + c \sim N(\mu + c, \sigma^2)$$ và
 * $$ c*X \sim N(c\mu, c^2\sigma^2) $$
 
 Z-scores(còn gọi là standard scores) là độ đo cho biết giá trị quan sát bằng bao nhiêu độ lệch chuẩn tính từ trung bình của một phân bố. Thông thường Z-scores hay dùng trong phân bố chuẩn. Z-score được tính như sau: 
@@ -156,7 +151,7 @@ Các bạn hãy nhớ rằng chúng ta có thể dùng phân phối chuẩn đ�
 Khi p càng lệch về 2 phía (xấp xỉ 1 hoặc 0 ) thì càng cần nhiều lần thí nghiệm hơn để phân bố nhị thức xấp xỉ phân bố chuẩn. hoặc đơn giản ghi nhớ công thức np > 10 và n(1-p)>10 
 
 Phát biểu lại như sau 
-$$ X \sim B(n, p) `$ với n đủ lớn thì X sẽ xấp xỉ $` \mathcal{N}(np, np(1-p)) $$
+$$ X \sim B(n, p) $$ với n đủ lớn thì X sẽ xấp xỉ $$ \mathcal{N}(np, np(1-p)) $$
 <div class="img-div" markdown="0">
     <img src="/images/abtest/binomial_approximation.png" />
     <em>Normal approximation to the Binomial</em>
@@ -230,7 +225,7 @@ $$ X_{n} \to  N(\mu, \frac{\sigma^{2}}{n}) $$
 với $$ \bar{X}_{n} = \frac{X_{1} + ...  + X_{n} }{n} $$
 
 <div class="img-div" markdown="0">
-    <img src="[/images/abtest/ab_banner.png](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/IllustrationCentralTheorem.png/620px-IllustrationCentralTheorem.png)" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/IllustrationCentralTheorem.png/620px-IllustrationCentralTheorem.png" />
 </div>
 
 Để dễ hiểu hơn, bạn hãy tưởng tượng đang chơi một trò chơi trong đó bạn tung một con xúc xắc có sáu mặt thường. Mỗi lần bạn tung nó, bạn nhận được một số từ 1 đến 6. Bây giờ, hãy nói rằng bạn chỉ tung xúc xắc một lần duy nhất. Bạn có thể nhận được bất kỳ số nào từ 1 đến 6 và điều đó là bình thường.
@@ -277,7 +272,9 @@ Ví dụ TIKI muốn kiểm ra giao diện mới có tỉ lệ user mua hàng ca
 - Giải thuyết không $$ H_{0} $$: Tỉ lệ của sự kiện của tập baseline và variant bằng nhau.
 - Giải thuyết thay thế $$ H_{a} $$: Tỉ lệ của sự kiện tập variant lớn hơn trong tập baseline.
 Và chúng ta tính z_score như sau:
-khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với kì vọng $\mu=p_0$ và độ lệch chuẩn $$ \sigma =  \sqrt{\frac{p_0(1-p_0)}{n}} $$. đo đó z_score =  $$ \frac{(\widehat{p} - p_{0})}{\sqrt{\frac{p_0(1-p_0)}{n}}} $$. Trong đó $$p_0$$ là tỉ lệ trong tập baseline, n là kích thước tập baseline, $$\widehat{p}$$ là tỉ lệ trong tập variant. 
+khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với kì vọng $$\mu=p_0$$ và độ lệch chuẩn $$ \sigma =  \sqrt{\frac{p_0(1-p_0)}{n}} $$. đo đó z_score =  $$ \frac{(\widehat{p} - p_{0})}{\sqrt{\frac{p_0(1-p_0)}{n}}} $$.
+
+Trong đó $$p_0$$ là tỉ lệ trong tập baseline, n là kích thước tập baseline, $$\widehat{p}$$ là tỉ lệ trong tập variant. 
 ```
 ```
 
@@ -288,6 +285,7 @@ Ví dụ TIKI muốn kiểm định xem chương trình mua kèm giảm thêm c�
 
 - Giải thuyết không $$ H_{0} $$: Trung bình giá trị đơn hàng của tập baseline và variant bằng nhau.
 - Giải thuyết thay thế $$ H_{a} $$: Trung bình giá trị đơn hàng của tập variant lớn hơn tập baseline.
+  
 Chúng ta tính z_score như sau:
 khi n đủ lớn thì trung bình giá trị đơn hàng có phân bố chuẩn với kì vọng $$ \mu $$ và độ lệnh chuẩn $$ \frac{\sigma}{\sqrt{n}} $$. Do đó, z_score = $$ \frac{\widehat{X} - \mu_{0}}{\frac{\sigma}{\sqrt(n}} $$.
 Trong đó
