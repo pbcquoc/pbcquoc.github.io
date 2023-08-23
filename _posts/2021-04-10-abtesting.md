@@ -119,7 +119,7 @@ Vậy phân bố nhị thức là phân bố của biến ngẫu nhiên mà khi 
 Phân bố nhị thức có mối quan hệ tuyệt vời với phân bố chuẩn mà chúng ta sẽ nói đến ở các phân tiếp theo. 
 
 ### Phân bố chuẩn (Normal distribution)
-Phân bố này hơi được kí hiệu $` \mathcal{N}(\mu, \sigma^{2}) `$ và có công thức như dưới đây 
+Phân bố này hơi được kí hiệu $ \mathcal{N}(\mu, \sigma^{2}) $ và có công thức như dưới đây 
 $$ f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})} $$ 
 .Bạn có thể tưởng tượng phân bố chuẩn là phân bố có hình dạng cái chuông (bell curve), đối xứng qua trung tâm. Phân bố này có tính chất rất hay đó là xác suất 1 điểm nằm trong 1std, 2std, 3std (std: là độ lệnh chuẩn) tương ứng là 68%, 95% và 99.8%. Tính chất này gọi là quy tắc 68-95-99.7 . Quy tắc này thường dùng để kiếm tra nhẹ nhàng xem một phân bố dạng bell curve có phải là phân bố chuẩn hay không?  Do đó không phải phân bố nào đối xứng 2 bên và có hình chuông thì cũng là phân bố chuẩn đâu nhé
 
