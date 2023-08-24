@@ -149,7 +149,7 @@ Chúng ta có thể dùng z-score so sánh tương đối giữ 2 điểm dữ l
 ### Mối quan hệ giữa binomial distribution và normal distribution
 Các bạn hãy nhớ rằng chúng ta có thể dùng phân phối chuẩn để sấp xỉ phân bố nhị thức khi phân bố nhị thức thỏa điều kiện: xác suất p sucess gần 0.5 hoặc số lần thí nghiệm n lớn. 
 
-Khi p càng lệch về 2 phía (xấp xỉ 1 hoặc 0 ) thì càng cần nhiều lần thí nghiệm hơn để phân bố nhị thức xấp xỉ phân bố chuẩn. hoặc đơn giản ghi nhớ công thức np > 10 và n(1-p)>10 
+Khi p càng lệch về 2 phía (xấp xỉ 1 hoặc 0 ) thì càng cần nhiều lần thí nghiệm hơn để phân bố nhị thức xấp xỉ phân bố chuẩn, hoặc đơn giản ghi nhớ rule này np > 10 và n(1-p)>10
 
 Phát biểu lại như sau 
 $$ X \sim B(n, p) $$ với n đủ lớn thì X sẽ xấp xỉ $$ \mathcal{N}(np, np(1-p)) $$
@@ -158,9 +158,7 @@ $$ X \sim B(n, p) $$ với n đủ lớn thì X sẽ xấp xỉ $$ \mathcal{N}(n
     <em>Normal approximation to the Binomial</em>
 </div>
 
-
-
-Câu hỏi là tại sao chúng ta lại thích xấp xỉ phần bố nhị thức thành phân bố chuẩn làm gì ? bởi vì phân bố chuẩn được sử dụng rộng rãi, chúng ta dễ dàng ghi nhớ các tính chất của nó, cũng như z score và p value, nên chúng ta dễ tính nhẩm hơn và công thức được rút gọn đẹp hơn.
+Câu hỏi là tại sao chúng ta lại thích xấp xỉ phần bố nhị thức thành phân bố chuẩn làm gì? bởi vì phân bố chuẩn được sử dụng rộng rãi, chúng ta dễ dàng ghi nhớ các tính chất của nó, cũng như z score và p value, nên chúng ta dễ tính nhẩm hơn và công thức được rút gọn đẹp hơn.
 
 ### Mối quan hệ giữ proportion distribution và binomial distribution
 Proportion distribution và binomial distribution có mối quan hệ chặt chẽ với nhau. 
