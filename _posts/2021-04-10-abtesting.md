@@ -13,11 +13,11 @@ Ví dụ đầu tiên để minh họa tính ngẫu nhiên là do việc quan s�
 - Giả sử mình muốn tính vị trí sau 3 giây của hòn đá lăn trên một con dốc. Vì hạn chế của việc đo đếm các yếu tố tác động đến hòn đá như độ dốc, lực cản, hình dáng con dốc mà mình chỉ có thể tính toán được vị trí tương đối chính xác của hòn đá mà thôi. Vị trí của hòn đá sau 3 giây có thể nằm ở vị trí xung quanh vị trí mà mình ước lượng. Nếu mình có khả năng đo đếm các yếu tố ảnh hưởng chính xác tuyệt đối thì mình có thể tính toán vị trí chính xác theo các quy tắc vật lý. Do đó, vị trí của hòn đá dưới góc nhìn của một nhà quan sát bình thường có tính ngẫu nhiên.
 
 Ví dụ tiếp theo là minh họa bản chất của việc đó là ngẫu nhiên. 
-- Theo mình được biết thì ở thế giới lượng tử, hành vi của hạt nguyên từ và hạ nguyên tử bị ngự trị bởi sự ngẫu nhiên, sự ngẫu nhiên đến từ bản chất của chúng, chứ không phải là do việc quan sát của chúng ta bị hạn chế như ví dụ ở trên. Nguyên lý tất định Heisenberg mô tả rằng một số thuộc tính vật lý như **vị trí** và **vận tốc** không thể đồng thời mô tả chính xác dẫn đến kết quả quan sát không tất định. Ví dụ như, khi chơi bóng bàn, để có thể chơi trò này, chúng ta cần biết vị trí và tốc độ của quả bóng. Từ đó mới phán đoán được nên hành xử như thế nào tiếp theo. Nếu biết vị trí mà không biết vận tốc thì làm sao mà đánh lại chớ. Cái sư ngẫu nhiên này đến từ bản chất của các hạt. Kì lạ nhỉ. (Phần này mình không hiểu rõ, chỉ muốn đưa ra một số ví dụ cho mọi người có cái nhìn thêm)
+- Theo mình được biết thì ở thế giới lượng tử, hành vi của hạt nguyên từ và hạ nguyên tử bị ngự trị bởi sự ngẫu nhiên, sự ngẫu nhiên đến từ bản chất của chúng, chứ không phải là do việc quan sát của chúng ta bị hạn chế như ví dụ ở trên. Nguyên lý tất định Heisenberg mô tả rằng một số thuộc tính vật lý như **vị trí** và **vận tốc** không thể đồng thời mô tả chính xác dẫn đến kết quả quan sát không tất định. Ví dụ như, khi chơi bóng bàn, để có thể chơi trò này, chúng ta cần biết vị trí và tốc độ của quả bóng. Từ đó mới phán đoán được nên hành xử như thế nào tiếp theo. Nếu biết vị trí mà không biết vận tốc thì làm sao mà đánh lại chớ. Cái sự ngẫu nhiên này đến từ bản chất của các hạt. Kì lạ nhỉ. Thế giới vi mô là nền tảng để cấu tạo nên thế giới vĩ mô. Tuy nhiên ở thế giới vi mô, các hạt lại có bản chất ngẫu nhiên, nhưng ngược lại ở thế giới vi mô, hành vi của các vật lại được mô tả tất định theo nguyên tắc vật lý. Cái bản chất ngẫu nhiên lại tạo nên cái tất định. (Phần này mình không hiểu rõ, chỉ muốn đưa ra một số ví dụ cho mọi người có cái nhìn thêm)
 
 Dưới góc độ của mình (chúng ta), việc ngẫu nhiên cho dù đến từ bản chất của sự việc hay do hạn chế quan sát, thường không quan trọng, cái chúng ta cần là công cụ để xem xét, đánh giá, so sánh giữ các sự kiện này. 
 
-Quay lại với các vấn đề thực tế của chúng ta, thông thường trong các công ty có phát triển sản phẩm các sản phẩm riêng như Zalo, Tiki, Momo, ..., những ứng dụng của công ty này thường được phát triển lên từ từ, được thêm nhiều tính năng mới, cải thiện tính năng cũ, cải thiện tốc độ phản hồi. Việc bổ sung, cải thiện những tính năng này là hành động chủ quan, có thể làm cho ứng dụng tệ đi hoặc tốt hơn theo nghĩa nào đó ví dụ như ít hoặc nhiều người sử dụng app hàng ngày, ít hoặc nhiều giao dịch. Do đó, chúng ta cần có cách nào đó để kiểm tra xem liệu tính năng mới đó có thực sự tốt hơn như chúng ta nghĩ hay không?
+Quay lại với các vấn đề thực tế của chúng ta, thông thường trong các công ty có phát triển sản phẩm như Zalo, Tiki, Momo, ..., những ứng dụng của công ty này thường được phát triển lên từ từ, được thêm nhiều tính năng mới, cải thiện tính năng cũ, cải thiện tốc độ phản hồi. Việc bổ sung, cải thiện những tính năng này là hành động chủ quan, có thể làm cho ứng dụng tệ đi hoặc tốt hơn theo nghĩa nào đó ví dụ như ít hoặc nhiều người sử dụng app hàng ngày, ít hoặc nhiều giao dịch. Do đó, chúng ta cần có cách nào đó để kiểm tra xem liệu tính năng mới đó có thực sự tốt hơn như chúng ta nghĩ hay không?
 
 # Một phương pháp kiểm tra đơn giản và không chính xác.
 Để giải quyết câu hỏi liệu tính năng mới có thực sự tốt hơn hay không? Chúng ta thường nghĩ đến phương pháp kiểm tra sai lầm như sau: Cứ mở tính năng mới cho tất cả khách hàng sử dụng, sau đó quan sát xem liệu các chỉ số như số khách sử dụng hằng ngày có tăng hay không, (và các chỉ số quan trọng khác tùy mô hình kinh doanh). Nếu thấy tăng thì chúng ta bảo là tốt hơn, và cứ thế tự tin rằng mình đang làm điều tốt đẹp. 
@@ -25,7 +25,7 @@ Quay lại với các vấn đề thực tế của chúng ta, thông thường 
 Phương pháp này tuy sai, nhưng lại đơn giản nên hầu như ai cũng nghĩ được và vì thế nên lại thường được sử dụng (vì người đó không biết sai ở chỗ nào). Nhưng mình nhấn mạnh lại một lần nữa là phương pháp này sai vì những vấn đề không được giải quyết sau:
 - Trong thời gian bạn chạy tính năng mới, nhưng yếu tố khác tác động vào làm tăng chỉ số mà bạn đang đo. Ví dụ như bạn đang kiểm tra xem giao diện mới có làm tăng lượt click vào sản phẩm so với giao diện cũ hay không thì bộ phận khác của công ty tăng tiền quảng cáo, tạo ra các mã giảm giá, khuyến mãi cho khách hàng thì có thể chỉ số bạn đang theo dõi cũng tăng theo mặc dù cái giao diện mới chả tạo ra thêm lượt click so với cái giao diện cũ, hoặc các yếu tố ngoài xã hội như dịch bệnh, thời tiết, chính sách nhà nước tác động vào làm tăng hoặc giảm chỉ số đó. Tóm lại có quá nhiều yếu tố khác tác động vào đúng lúc mà bạn đang kiểm định tính năng mới làm cho việc tăng hoặc giảm chỉ số theo phương pháp này không đáng tin cậy. 
 
-Hậu quả của việc các chỉ số thống kê không đúng là chúng ta không có có sở đánh giá mức độ cải tiến, chọn nhầm các tính năng tệ hại thay vì tốt thực sự, những ý tưởng rác lại được hoang nghênh.
+Hậu quả của việc các chỉ số thống kê không đúng là chúng ta không có có sở đánh giá mức độ cải tiến, chọn nhầm các tính năng tệ hại thay vì tốt thực sự, những ý tưởng rác lại được hoan nghênh.
 
 # Chiến lượt ABtest ngây thơ - Cứ nghĩ là AB Test, những lại không phải !
 Có nhiều bạn cứ nghĩ rằng AB Test là việc chia tập khách hàng thành 2 tập baseline và variant theo cách ngẫu nhiên có kích thước tương đương nhau. Rồi chạy thí nghiệm, tập baseline thì vẫn giữ model gốc, còn tập variant thì chạy model cải tiến. Rồi sau đó, chỉ cần đơn giản là so sánh các chỉ số business quan trọng trên 2 tập đó là xong, nếu thấy tập variant có giá trị tốt hơn thì chứng tỏ model cải tiến tốt hơn thật, ngược lại thì model cải tiến tệ hơn. 
@@ -51,10 +51,10 @@ Và để trả lời cho tại sao **Chiến lượt ABTest ngây thơ** là sa
 
 
 # Các khái niệm về xác suất cơ bản liên quan đến A/B Testing
-
+Phần này giới thiệu một số khái niệm về xác suất thống kê để làm vững chắc nền tảng cho bạn đọc. 
 
 ## Random process
-Các bạn có thể suy nghĩ random process là một process là kết quả (outcome) là ngẫu nhiên hay chứ không phải tất định. Một số ví dụ về random process như sau:
+Các bạn có thể suy nghĩ random process là một process mà kết quả (outcome) là ngẫu nhiên hay chứ không phải tất định. Một số ví dụ về random process như sau:
 - Tung đồng xu
 - Tung xúc xắc 
 - Lắc một hộp chưa các loại viên bi xanh,đỏ, ... sau đó bốc một viên mà không được nhìn. 
@@ -62,7 +62,7 @@ Các bạn có thể suy nghĩ random process là một process là kết quả 
 
 ## event
 ## Biến ngẫu nhiên (random variable)
-Có thể tưởng tượng biễn ngẫu nhiên là biến phụ thuộc vào quá trình ngẫu nhiên. Ví dụ
+Có thể tưởng tượng biến ngẫu nhiên là biến phụ thuộc vào quá trình ngẫu nhiên. Ví dụ
 - Giá trị của mặt xuất hiện trên xúc xắc khi chúng ta tung xúc xắc. 
 - Tung 2 con xúc xắc và tính tổng của 2 mặt xuất hiện. 
 
@@ -81,19 +81,20 @@ Phân bố xác suất có rất nhiều loại khác nhau, mỗi loại có và
 </div>
 
 Mình sẽ giải thích vài loại phân bố xác suất phổ biến cơ bản.
-### Phân bố đều (Uniform distribution)
+### Phân bố đều (Uniform Distribution)
 Là phân bố mà xác suất xuất hiện của các giá trị mà biến ngẫu nhận được là bằng nhau 
 
 Mình họa của phân bố đều trong thực tế mà bạn có thể quan sát được là:
-- Phân bố xác suất của biễn ngẫu nhiên là giá trị mặt xúc sắc mà bạn quan sát được khi tung con xúc sắc 1 lần. 
+- Phân bố xác suất của biến ngẫu nhiên là giá trị mặt xúc sắc mà bạn quan sát được khi tung con xúc sắc 1 lần. 
 - hoặc là 1 con bài mà bạn có thể nhận được trong bộ bài tây 54 lá
 
 ### Phân bố Bernoulli (Bernoulli Distribution)
-Là phân bố rời rạc, trong đó, tập giá trị mà biến ngẫu nhiên có thể nhận được chỉ gồm 2 giá trị **Success** họăc **Fail**. Nếu xác suất của success là p thì xác suất của fail là 1 - p. Thông thường, các câu hỏi dạng yes/no (yes/no question) thuộc phân bố  bernoulli. Bernoulli là tên của Jacob Bernoulli người Thụy Sĩ. 
+Là phân bố rời rạc, trong đó, tập giá trị mà biến ngẫu nhiên có thể nhận được chỉ gồm 2 giá trị **Success** hoặc **Fail**. Nếu xác suất của success là p thì xác suất của fail là 1 - p. Thông thường, các câu hỏi dạng yes/no (yes/no question) thuộc phân bố  bernoulli. Bernoulli là tên của Jacob Bernoulli người Thụy Sĩ. 
 
 Các ví dụ minh họa biến ngẫu nhiên có phân bố Bernoulli là:
 - có xuất hiện mặt ngửa khi tung đồng xu 1 lần hay không?
-và 2 ví dụ sau rất phổ biến trong thực tế mà mình gặp phải khi làm việc tại các công ty
+  
+và các ví dụ sau rất phổ biến trong thực tế mà mình gặp phải khi làm việc tại các công ty
 - 1 khách hàng có click hay không vào quảng cáo?
 - 1 khách hàng có mua sản phẩm hay không? 
 - 1 khách hàng có kết bạn khi mình gợi ý hay không?
@@ -115,13 +116,13 @@ Vậy phân bố nhị thức là phân bố của biến ngẫu nhiên mà khi 
 Phân bố nhị thức có mối quan hệ tuyệt vời với phân bố chuẩn mà chúng ta sẽ nói đến ở các phân tiếp theo. 
 
 ### Phân bố chuẩn (Normal distribution)
-Phân bố này hơi được kí hiệu $$ \mathcal{N}(\mu, \sigma^{2}) $$ và có công thức như dưới đây 
+Phân bố này được kí hiệu $$ \mathcal{N}(\mu, \sigma^{2}) $$ và có công thức như dưới đây 
 
 <div class='row'>
 <span class="col-sm-12 text-center" style="font-size:120%">$$ f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})} $$ </span>
 </div>
 
-.Bạn có thể tưởng tượng phân bố chuẩn là phân bố có hình dạng cái chuông (bell curve), đối xứng qua trung tâm. Phân bố này có tính chất rất hay đó là xác suất 1 điểm nằm trong 1std, 2std, 3std (std: là độ lệnh chuẩn) tương ứng là 68%, 95% và 99.8%. Tính chất này gọi là quy tắc 68-95-99.7 . Quy tắc này thường dùng để kiếm tra nhẹ nhàng xem một phân bố dạng bell curve có phải là phân bố chuẩn hay không?  Do đó không phải phân bố nào đối xứng 2 bên và có hình chuông thì cũng là phân bố chuẩn đâu nhé
+Bạn có thể tưởng tượng phân bố chuẩn là phân bố có hình dạng cái chuông (bell curve), đối xứng qua trung tâm. Phân bố này có tính chất rất hay đó là xác suất 1 điểm nằm trong 1std, 2std, 3std (std: là độ lệnh chuẩn) tương ứng là 68%, 95% và 99.8%. Tính chất này gọi là quy tắc 68-95-99.7 . Quy tắc này thường dùng để kiếm tra nhẹ nhàng xem một phân bố dạng bell curve có phải là phân bố chuẩn hay không? và không phải phân bố nào đối xứng 2 bên và có hình chuông thì cũng là phân bố chuẩn đâu nhé
 
 <div class="img-div" markdown="0">
     <img src="/images/abtest/normal_distribution.png" />
@@ -134,12 +135,11 @@ Một số biến ngẫu nhiên có phân bố chuẩn là:
 - Chiều cao của dân số 
 - Chỉ số IQ
 
-Ngoài ra, khi cộng hoặc nhân X với một hằng số C thì ta sẽ có một phân bố chuẩn mới như dưới đây. 
+Ngoài ra, khi cộng hoặc nhân $$ X \sim N(\mu, \sigma^2) $$với một hằng số C thì ta sẽ có một phân bố chuẩn mới như dưới đây. 
 
 Cho $$ X \sim N(\mu, \sigma^2) $$
 thì 
 * $$ X + c \sim N(\mu + c, \sigma^2) $$ và
-  
 * $$ c*X \sim N(c\mu, c^2\sigma^2) $$
 
 Z-scores(còn gọi là standard scores) là độ đo cho biết giá trị quan sát bằng bao nhiêu độ lệch chuẩn tính từ trung bình của một phân bố. Thông thường Z-scores hay dùng trong phân bố chuẩn. Z-score được tính như sau: 
