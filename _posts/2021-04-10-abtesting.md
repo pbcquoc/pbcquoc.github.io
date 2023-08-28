@@ -262,9 +262,13 @@ Liệu có giá trị p=0.051 có khác biệt nhiều so với 0.0499 hay khôn
 
 9. **Đưa ra kết luận**: Dựa trên quyết định đã ra, bạn có thể kết luận về giả thuyết ban đầu và sự khác biệt dựa trên dữ liệu mẫu.
 
+## Minimum Detectable Effect
+## Statistical Power
+
 ##  
 
 Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. Về cơ bản, hypothesis testing cho tỉ lệ và trung bình đều theo quy trình ở trên, sự khác biệt là ở cách tính p_value. 
+
 ## Tính p_value cho kiểm định tỉ lệ. 
 Ví dụ TIKI muốn kiểm ra giao diện mới có tỉ lệ user mua hàng cao hơn hay không? ... dựa vào từ `tỉ lệ` chúng ta biết ngay là dùng kiểm định giả thuyết của propotion rồi đó. Vậy chúng ta xây dựng 2 giả thuyết cho bài này như sau:
 
@@ -276,8 +280,6 @@ khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với 
 Trong đó $$p_0$$ là tỉ lệ trong tập baseline, n là kích thước tập baseline, $$\widehat{p}$$ là tỉ lệ trong tập variant. 
 ```
 ```
-
-## Minimum Detectable Effect
 
 ## Tính p_value cho kiểm định trung bình. 
 Ví dụ TIKI muốn kiểm định xem chương trình mua kèm giảm thêm có thực sự tăng giá trị đơn hàng mà khách hàng mua hay không? Lúc đó, chúng ta muốn chạy kiểm định giả thiết trung bình để xem tập variant có giá trị đơn hàng trung bình lớn hơn tập baseline hay không?
