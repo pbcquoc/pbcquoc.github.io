@@ -264,7 +264,7 @@ Liệu có giá trị p=0.051 có khác biệt nhiều so với 0.0499 hay khôn
 
 ## Minimum Detectable Effect
 ## Statistical Power
-
+Power là xác suất mà chúng ta xác định . Ví dụ power=80% có nghĩa là 
 ##  
 
 Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. Về cơ bản, hypothesis testing cho tỉ lệ và trung bình đều theo quy trình ở trên, sự khác biệt là ở cách tính p_value. 
