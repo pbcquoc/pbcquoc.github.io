@@ -262,9 +262,12 @@ Liệu có giá trị p=0.051 có khác biệt nhiều so với 0.0499 hay khôn
 
 9. **Đưa ra kết luận**: Dựa trên quyết định đã ra, bạn có thể kết luận về giả thuyết ban đầu và sự khác biệt dựa trên dữ liệu mẫu.
 
+Một số khái niệm liên quan cần biết trước khi thiết kế ABTest
 ## Minimum Detectable Effect
+Minimum Detectable Effect (MDE) liên quan đến việc xác định số lượng user cần thiết để có thể detect được improvement. Ví dụ, chúng ta muốn cái test hiện tại có thể xác định được 2% relative improvement so với tập baseline với tham số p_value=0.05 và power=0.8 thì cần tối thiếu số lượng bao nhiêu để có thế detect được  
+
 ## Statistical Power
-Power là xác suất mà chúng ta xác định . Ví dụ power=80% có nghĩa là 
+Power là xác suất mà chúng ta xác định có real effect trong thí nghiệm đang chạy. Ví dụ power=80% có nghĩa là chúng ta mong muốn test đang chạy sẽ statistical significant nếu bản variant thực sự có sự cải thiện. 
 ##  
 
 Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. Về cơ bản, hypothesis testing cho tỉ lệ và trung bình đều theo quy trình ở trên, sự khác biệt là ở cách tính p_value. 
