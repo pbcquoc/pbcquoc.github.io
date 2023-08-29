@@ -140,6 +140,7 @@ Ngoài ra, khi cộng hoặc nhân $$ X \sim N(\mu, \sigma^2) $$với một hằ
 Cho $$ X \sim N(\mu, \sigma^2) $$
 thì 
 * $$ X + c \sim N(\mu + c, \sigma^2) $$ và
+  
 * $$ c*X \sim N(c\mu, c^2\sigma^2) $$
 
 Z-scores(còn gọi là standard scores) là độ đo cho biết giá trị quan sát bằng bao nhiêu độ lệch chuẩn tính từ trung bình của một phân bố. Thông thường Z-scores hay dùng trong phân bố chuẩn. Z-score được tính như sau: 
