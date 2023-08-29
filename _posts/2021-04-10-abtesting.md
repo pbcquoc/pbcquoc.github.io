@@ -227,6 +227,7 @@ với $$ \bar{X}_{n} = \frac{X_{1} + ...  + X_{n} }{n} $$
 
 <div class="img-div" markdown="0">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/IllustrationCentralTheorem.png/620px-IllustrationCentralTheorem.png" />
+    <em>Minh hoạ CLT</em>
 </div>
 
 Để dễ hiểu hơn, bạn hãy tưởng tượng đang chơi một trò chơi trong đó bạn tung một con xúc xắc có sáu mặt thường. Mỗi lần bạn tung nó, bạn nhận được một số từ 1 đến 6. Bây giờ, hãy nói rằng bạn chỉ tung xúc xắc một lần duy nhất. Bạn có thể nhận được bất kỳ số nào từ 1 đến 6 và điều đó là bình thường.
