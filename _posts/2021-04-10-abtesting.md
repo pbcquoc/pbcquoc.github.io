@@ -277,6 +277,11 @@ Power là xác suất mà chúng ta xác định có real effect trong thí nghi
 ## P_value
 P_value (probability value) là xác suất chúng ta thu được kết quả kiếm tra ít nhất bằng cái test result của tập variant dưới điều kiện giả thuyết không đúng. 
 
+<div class="img-div" markdown="0">
+    <img src="/images/abtest/p_value.jpeg" />
+    <em>Minh hoặc p_value cho left tailed test, right tailed test và 2 sided test</em>
+</div>
+
 ### Tính p_value cho kiểm định tỉ lệ. 
 Ví dụ TIKI muốn kiểm ra giao diện mới có tỉ lệ user mua hàng cao hơn hay không? ... dựa vào từ `tỉ lệ` chúng ta biết ngay là dùng kiểm định giả thuyết của propotion rồi đó. Vậy chúng ta xây dựng 2 giả thuyết cho bài này như sau:
 
