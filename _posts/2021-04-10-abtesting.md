@@ -259,14 +259,15 @@ Liệu có giá trị p=0.051 có khác biệt nhiều so với 0.0499 hay khôn
 5. **Chọn kiểu kiểm định (one-tailed hoặc two-tailed)**: Tùy theo câu hỏi nghiên cứu và giả thuyết, bạn chọn kiểu kiểm định một chiều (one-tailed) hoặc hai chiều (two-tailed). Kiểm định một chiều tập trung vào một hướng khác biệt (lớn hơn hoặc nhỏ hơn), trong khi kiểm định hai chiều tập trung vào sự khác biệt tổng quát. Thông thường trong ABTest, chúng ta kiểm định một chiều tập variant có performance tốt hơn so với tập basline hay không? 
 
 6. **Tính toán giá trị thống kê**: Dựa trên dữ liệu mẫu và giả thuyết, tính giá trị thống kê cụ thể cho phương pháp kiểm định bạn sử dụng (như Z-score, t-score, chi-square, v.v.).
+   
+8. **Tính giá trị p (p-value)**: Giá trị p đo lường xác suất tìm thấy kết quả mẫu hoặc kết quả cận biên (critical value) trong vùng từ chối dưới giả thuyết không. Tính giá trị p dựa trên giá trị thống kê và phân phối xác suất.
 
-7. **Tính giá trị p (p-value)**: Giá trị p đo lường xác suất tìm thấy kết quả mẫu hoặc kết quả cận biên (critical value) trong vùng từ chối dưới giả thuyết không. Tính giá trị p dựa trên giá trị thống kê và phân phối xác suất.
+9. **So sánh giá trị p và mức ý nghĩa**: Nếu giá trị p nhỏ hơn hoặc bằng mức ý nghĩa, bạn có thể bác bỏ giả thuyết không. Nếu giá trị p lớn hơn mức ý nghĩa, bạn không có đủ bằng chứng để bác bỏ giả thuyết không.
 
-8. **So sánh giá trị p và mức ý nghĩa**: Nếu giá trị p nhỏ hơn hoặc bằng mức ý nghĩa, bạn có thể bác bỏ giả thuyết không. Nếu giá trị p lớn hơn mức ý nghĩa, bạn không có đủ bằng chứng để bác bỏ giả thuyết không.
+10. **Đưa ra kết luận**: Dựa trên quyết định đã ra, bạn có thể kết luận về giả thuyết ban đầu và sự khác biệt dựa trên dữ liệu mẫu.
 
-9. **Đưa ra kết luận**: Dựa trên quyết định đã ra, bạn có thể kết luận về giả thuyết ban đầu và sự khác biệt dựa trên dữ liệu mẫu.
+## Một số khái niệm liên quan cần biết trước khi thiết kế ABTest
 
-Một số khái niệm liên quan cần biết trước khi thiết kế ABTest
 ## Minimum Detectable Effect
 Minimum Detectable Effect (MDE) liên quan đến việc xác định số lượng user cần thiết để có thể detect được improvement. Ví dụ, chúng ta muốn cái test hiện tại có thể xác định được 2% relative improvement so với tập baseline với tham số p_value=0.05 và power=0.8 thì cần tối thiếu số lượng bao nhiêu để có thế detect được  
 Công thức tính số lượng user tối thiếu phụ thuộc vào significant level
@@ -276,10 +277,7 @@ Power là xác suất mà chúng ta xác định có real effect trong thí nghi
 ## P_value
 P_value (probability value) là xác suất chúng ta thu được kết quả kiếm tra ít nhất bằng cái test result của tập variant dưới điều kiện giả thuyết không đúng. 
 
-
-Chúng ta sẽ đi qua cách hypothesis testing hoạt động cho 2 đại lượng phổ biến đó là tỉ lệ và trung bình. Về cơ bản, hypothesis testing cho tỉ lệ và trung bình đều theo quy trình ở trên, sự khác biệt là ở cách tính p_value. 
-
-## Tính p_value cho kiểm định tỉ lệ. 
+### Tính p_value cho kiểm định tỉ lệ. 
 Ví dụ TIKI muốn kiểm ra giao diện mới có tỉ lệ user mua hàng cao hơn hay không? ... dựa vào từ `tỉ lệ` chúng ta biết ngay là dùng kiểm định giả thuyết của propotion rồi đó. Vậy chúng ta xây dựng 2 giả thuyết cho bài này như sau:
 
 - Giải thuyết không $$ H_{0} $$: Tỉ lệ của sự kiện của tập baseline và variant bằng nhau.
@@ -291,7 +289,7 @@ Trong đó $$p_0$$ là tỉ lệ trong tập baseline, n là kích thước tậ
 ```
 ```
 
-## Tính p_value cho kiểm định trung bình. 
+### Tính p_value cho kiểm định trung bình. 
 Ví dụ TIKI muốn kiểm định xem chương trình mua kèm giảm thêm có thực sự tăng giá trị đơn hàng mà khách hàng mua hay không? Lúc đó, chúng ta muốn chạy kiểm định giả thiết trung bình để xem tập variant có giá trị đơn hàng trung bình lớn hơn tập baseline hay không?
 
 - Giải thuyết không $$ H_{0} $$: Trung bình giá trị đơn hàng của tập baseline và variant bằng nhau.
