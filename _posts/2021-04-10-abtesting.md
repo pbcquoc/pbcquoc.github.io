@@ -220,7 +220,9 @@ Do đó phần dưới này là lý thuyết trình bày cách so sánh chỉ s�
 Phát biểu cơ bản của định lý CLT như sau: 
 Cho $$ X_{1}, X_{2},... X_{n} $$ là các random sample của n lần thử độc lập thuộc phân bố có kì vọng $$ \mu $$ và variance hữu hạn $$ \sigma^{2} $$, thì khi $$ n \to  \infty  $$ vô cùng, 
 
-$$ X_{n} \to  N(\mu, \frac{\sigma^{2}}{n}) $$
+<div class='row'>
+<span class="col-sm-12 text-center" style="font-size:120%">$$ X_{n} \to  N(\mu, \frac{\sigma^{2}}{n}) $$ </span>
+</div>
 với $$ \bar{X}_{n} = \frac{X_{1} + ...  + X_{n} }{n} $$
 
 <div class="img-div" markdown="0">
