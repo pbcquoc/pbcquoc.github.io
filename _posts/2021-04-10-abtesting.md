@@ -5,6 +5,7 @@ title: A/B Testing - Lý thuyết cơ bản và cách áp dụng
 <div class="img-div" markdown="0">
     <img src="/images/abtest/ab_banner.png" />
 </div>
+
 # Tại sao chúng ta cần A/B Testing
 Dưới góc nhìn của chúng ta, hầu hết các sự kiện trong cuộc sống đều có tính ngẫu nhiên. Tính ngẫu nhiên này có thể là việc quan sát của chúng ta bị hạn chế, hoặc bản chất của việc đó là ngẫu nhiên. Để rõ hơn phát biểu này, mình sẽ đưa ra 2 ví dụ sau:
 
