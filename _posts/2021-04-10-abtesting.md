@@ -2,7 +2,6 @@
 layout: post
 title: A/B Testing - Lý thuyết cơ bản và cách áp dụng
 ---
-(draft version)
 <div class="img-div" markdown="0">
     <img src="/images/abtest/ab_banner.png" />
 </div>
@@ -306,8 +305,9 @@ Trong đó
 - $$\mu_{0}$$: trung bình tập baseline, $$\sigma$$: độ lệch chuẩn tập baseline, $$n$$: kích thước mẫu.
 Dựa vào z_score để tính p_value để đưa ra kết luận.
 
-# ABTest khi không biết phân bố của biến ngẫu nhiên là 
-
+# ABTest khi không biết phân bố của biến ngẫu nhiên
+# Tính prob của (B tốt hơn A)
+# Bayesian hypothesis testing là gì?
 
 # Một số quan điểm sai lầm
 3) Saying “We accept the Null hypothesis”
@@ -315,4 +315,3 @@ You either reject the null hypothesis or fail to reject the null hypothesis.
 
 # Tham khảo
 - https://math.stackexchange.com/questions/845769/why-does-the-normalized-z-score-introduce-a-square-root-and-some-more-confusio
-(continuted)
