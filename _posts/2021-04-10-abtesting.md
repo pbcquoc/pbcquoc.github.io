@@ -175,11 +175,12 @@ Có 3 điểm cần lưu ý khi làm ABTest.
 Có nhiều tài liệu tham khảo trên internet nói về ABtest nhưng họ lại không đề cập việc phải dùng kiểm định giả thuyết để so sánh các chỉ số do đó thường gây ra hiểu lầm cho rất nhiều người. Ở phần tiếp theo, mình sẽ trình bày chi tiết cách sử dụng kiểm định giả thuyết trong ABTest như thế nào.
 
 # Chúng ta có thể so sánh 2 biến ngẫu nhiên như thế ?
-Khi 2 biến ngẫu nhiên có cùng ý nghĩa, chúng ta có thể dùng ý tướng sau đây để so sánh 2 phân bố của chúng để từ đó kết luận biến x có lớn hơn y hay không?. Cụ thể hơn là 
+Khi 2 biến ngẫu nhiên có cùng ý nghĩa, chúng ta có thể dùng ý tưởng sau đây để so sánh 2 phân bố của biến ngẫu nhiên rời rạc để từ đó kết luận biến x có lớn hơn y hay không?. Cụ thể hơn là 
 - Chúng ta có thể nói x > y khi 95% các giá trị mà x nhận được lớn hơn tất cả 95% các giá trị mà y nhận được. 
 - Chúng ta có thể nói x < y khi mà 95% các giá trị x nhận được bé hơn tất cả 95% các giá trị y nhận được.
 - Chúng ta có thể nói x = y khi mà 95% các giá trị x nhận được bằng với một phần tử nào đó trong tập 95% các giá trị của y
 - Chúng ta có thể nói x!= y khi mà 95% các giá trị x nhận được không bằng với bất kì phần tử trong tập 95% các giá trị của y
+
 Để dễ hiểu hơn ý tưởng này, các bạn hãy xem minh họa dưới đây.
 (minh họa)
 
