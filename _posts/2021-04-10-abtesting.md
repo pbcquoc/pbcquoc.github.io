@@ -210,7 +210,7 @@ Sau khi, chúng ta thu thập đủ dữ liệu bằng việc đợi cho thí ng
 ## Cách kiểm định của người không biết lý thuyết ... toán 
 Chúng ta biết ý tưởng của việc so sánh chỉ số của 2 tập A và B đó là so sánh 2 phân bố của chỉ số này. Đến lúc này, chúng ta lại hỏi, chúng ta chỉ thực hiện một lần thí nghiệm trong n ngày thôi thì lấy đâu ra nguyên cái phân bố để so sánh chứ? Cách dễ nhất là... cứ thực hiện thêm m lần nữa là được mà :) Trong thực tế thì việc này khá tốn công sức, thay vào đó, chúng ta sử dụng một chút lý thuyết của các tiền bối để có thể đưa ra kết luận nhanh chóng và chính xác với 1 lần thực hiện thí nghiệm. 
 
-Do đó phần dưới này là lý thuyết trình bày cách so sánh chỉ số trên tập A và B với một lần thực nghiệm. 
+Do đó phần dưới này là lý thuyết trình bày cách so sánh chỉ số trên tập A và B với hypothesis testing. Ý tưởng chung của hypothesis testing là tính p_value, cái mà được định nghĩa là xác suất chúng ta quan sát được sự kiện trong thí nghiệm dưới trường hợp giả thiết H_null là chính xác. 
 ## Central Limit Theorem
 Phát biểu cơ bản của định lý CLT như sau: 
 Cho $$ X_{1}, X_{2},... X_{n} $$ là các random sample của n lần thử độc lập thuộc phân bố có kì vọng $$ \mu $$ và variance hữu hạn $$ \sigma^{2} $$, thì khi $$ n \to  \infty  $$ vô cùng, 
