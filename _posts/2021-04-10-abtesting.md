@@ -211,6 +211,8 @@ Sau khi, chúng ta thu thập đủ dữ liệu bằng việc đợi cho thí ng
 Chúng ta biết ý tưởng của việc so sánh chỉ số của 2 tập A và B đó là so sánh 2 phân bố của chỉ số này. Đến lúc này, chúng ta lại hỏi, chúng ta chỉ thực hiện một lần thí nghiệm trong n ngày thôi thì lấy đâu ra nguyên cái phân bố để so sánh chứ? Cách dễ nhất là... cứ thực hiện thêm m lần nữa là được mà :) Trong thực tế thì việc này khá tốn công sức, thay vào đó, chúng ta sử dụng một chút lý thuyết của các tiền bối để có thể đưa ra kết luận nhanh chóng và chính xác với 1 lần thực hiện thí nghiệm. 
 
 Do đó phần dưới này là lý thuyết trình bày cách so sánh chỉ số trên tập A và B với hypothesis testing. Ý tưởng chung của hypothesis testing là tính p_value, cái mà được định nghĩa là xác suất chúng ta quan sát được sự kiện trong thí nghiệm dưới trường hợp giả thiết H_null là chính xác. 
+
+Tuy nhiên trước khi đi vào giới thiệu 2 kiểm định giả thiết phổ biến, mình sẽ nhắc lại định lý giới hạn trung tâm, một trong những định lý cốt lõi của lý thuyết thống kê. 
 ## Central Limit Theorem
 Phát biểu cơ bản của định lý CLT như sau: 
 Cho $$ X_{1}, X_{2},... X_{n} $$ là các random sample của n lần thử độc lập thuộc phân bố có kì vọng $$ \mu $$ và variance hữu hạn $$ \sigma^{2} $$, thì khi $$ n \to  \infty  $$ vô cùng, 
@@ -234,6 +236,8 @@ Bây giờ, nếu bạn nhìn vào tất cả những số đó và tìm ra trun
 Điều này có phần giống như ma thuật! Ngay cả khi mỗi lần tung xúc xắc đều cho bạn các số khác nhau, khi bạn nhìn vào trung bình của tất cả những lần tung, nó sẽ ngày càng tiến gần hơn đến 3.5 khi bạn thực hiện nhiều lần tung hơn. Mánh khóe ma thuật này được gọi là Định lý Giới hạn Trung tâm.
 
 Vậy nên, Định lý Giới hạn Trung tâm nói cho chúng ta biết rằng khi chúng ta thực hiện một việc gì đó nhiều, nhiều lần và nhìn vào trung bình của những gì xảy ra, thường thì nó sẽ trở nên rất dễ đoán, ngay cả khi các sự việc cá nhân không thể đoán trước được chút nào. Điều này giống như khi bạn kết hợp nhiều màu sắc của đất nặn - càng kết hợp nhiều, bạn càng tiến gần tới một màu cụ thể.
+
+CLT quan trọng bởi vì nó cho phép chúng ta inference about population based on a sample bằng phát biểu 
 ## Quy trình thực hiện hypothesis testing:
 Kiểm định giả thuyết (Hypothesis testing) là một phương pháp trong thống kê dùng để đưa ra quyết định về một giả thuyết về dữ liệu dựa trên dữ liệu mẫu. Quá trình này giúp bạn xác định xem liệu có đủ bằng chứng để bác bỏ giả thuyết ban đầu hay không. Cách thực hiện kiểm định giả thuyết thường bao gồm các bước sau:
 
