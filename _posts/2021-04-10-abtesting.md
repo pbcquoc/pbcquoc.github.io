@@ -175,11 +175,9 @@ Có 3 điểm cần lưu ý khi làm ABTest.
 Có nhiều tài liệu tham khảo trên internet nói về ABtest nhưng họ lại không đề cập việc phải dùng kiểm định giả thuyết để so sánh các chỉ số do đó thường gây ra hiểu lầm cho rất nhiều người. Ở phần tiếp theo, mình sẽ trình bày chi tiết cách sử dụng kiểm định giả thuyết trong ABTest như thế nào.
 
 # Chúng ta có thể so sánh 2 biến ngẫu nhiên như thế ?
-Khi 2 biến ngẫu nhiên có cùng ý nghĩa, chúng ta có thể dùng ý tưởng sau đây để so sánh 2 phân bố của biến ngẫu nhiên rời rạc để từ đó kết luận biến x có lớn hơn y hay không?. Cụ thể hơn là 
-- Chúng ta có thể nói x > y khi 95% các giá trị mà x nhận được lớn hơn tất cả 95% các giá trị mà y nhận được. 
-- Chúng ta có thể nói x < y khi mà 95% các giá trị x nhận được bé hơn tất cả 95% các giá trị y nhận được.
-- Chúng ta có thể nói x = y khi mà 95% các giá trị x nhận được bằng với một phần tử nào đó trong tập 95% các giá trị của y
-- Chúng ta có thể nói x!= y khi mà 95% các giá trị x nhận được không bằng với bất kì phần tử trong tập 95% các giá trị của y
+Khi 2 biến ngẫu nhiên có cùng ý nghĩa, mình nghĩ rằng chúng ta có thể dùng ý tưởng sau đây để so sánh 2 phân bố của biến ngẫu nhiên rời rạc để từ đó kết luận biến ngẫu nhiên x có lớn hơn y hay không?. Cụ thể hơn là 
+- Chúng ta có thể nói x > y khi các giá trị mà x nhận được lớn hơn tất cả các giá trị mà y nhận được. 
+- Chúng ta có thể nói x < y khi các giá trị x nhận được bé hơn tất cả các giá trị y nhận được.
 
 Để dễ hiểu hơn ý tưởng này, các bạn hãy xem minh họa dưới đây.
 (minh họa)
@@ -303,11 +301,11 @@ Trong đó
 - $$\mu_{0}$$: trung bình tập baseline, $$\sigma$$: độ lệch chuẩn tập baseline, $$n$$: kích thước mẫu.
 Dựa vào z_score để tính p_value để đưa ra kết luận.
 
-# ABTest khi không biết phân bố của biến ngẫu nhiên
-# Tính prob của (B tốt hơn A)
-# Bayesian hypothesis testing là gì?
-
-# Một số quan điểm sai lầm
+## ABTest khi không biết phân bố của biến ngẫu nhiên
+## Tính prob của (B tốt hơn A)
+## Bayesian hypothesis testing là gì?
+## How to user hypotheis testing to lie 
+## Một số quan điểm sai lầm
 3) Saying “We accept the Null hypothesis”
 You either reject the null hypothesis or fail to reject the null hypothesis.
 
