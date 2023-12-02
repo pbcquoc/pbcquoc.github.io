@@ -237,7 +237,7 @@ Bây giờ, nếu bạn nhìn vào tất cả những số đó và tìm ra trun
 
 Vậy nên, Định lý Giới hạn Trung tâm nói cho chúng ta biết rằng khi chúng ta thực hiện một việc gì đó nhiều, nhiều lần và nhìn vào trung bình của những gì xảy ra, thường thì nó sẽ trở nên rất dễ đoán, ngay cả khi các sự việc cá nhân không thể đoán trước được chút nào. Điều này giống như khi bạn kết hợp nhiều màu sắc của đất nặn - càng kết hợp nhiều, bạn càng tiến gần tới một màu cụ thể.
 
-CLT quan trọng bởi vì nó cho phép chúng ta inference about population based on a sample bằng phát biểu 
+CLT quan trọng bởi vì nó cho phép chúng ta inference about population based on a sample bằng phát biểu distribution sample mean sẽ sấp xỉ normal distribution khi sample size lớn bất kể phân bố gốc là gì, bên cạnh đó nhiều phương pháp kiểm định giải thuyết đều dựa vào tính normality của dữ liệu. 
 ## Quy trình thực hiện hypothesis testing:
 Kiểm định giả thuyết (Hypothesis testing) là một phương pháp trong thống kê dùng để đưa ra quyết định về một giả thuyết về dữ liệu dựa trên dữ liệu mẫu. Quá trình này giúp bạn xác định xem liệu có đủ bằng chứng để bác bỏ giả thuyết ban đầu hay không. Cách thực hiện kiểm định giả thuyết thường bao gồm các bước sau:
 
