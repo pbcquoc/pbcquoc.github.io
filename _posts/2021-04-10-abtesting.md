@@ -306,7 +306,7 @@ Trong đó
 - $$\mu_{0}$$: trung bình tập baseline, $$\sigma$$: độ lệch chuẩn tập baseline, $$n$$: kích thước mẫu.
 Dựa vào z_score để tính p_value để đưa ra kết luận.
 
-Hiện tại, mình sẽ kết thúc bài viết về ABTest ở đây, với kiến thực hạn hẹn của một engineer, mình hy vọng sẽ đón nhận các feedback để sửa lại bài viết tốt hơn. 
+Hiện tại, mình sẽ kết thúc bài viết về ABTest ở đây, với kiến thức hạn hẹn của một engineer, mình hy vọng sẽ đón nhận các feedback để sửa lại bài viết tốt hơn. 
 Các topics ở dưới sẽ không được cover trong bài viết này, tuy nhiên mình sẽ liệt kê ở đây để bạn có thể tự tìm hiểu thêm. 
 ## ABTest khi không biết phân bố của biến ngẫu nhiên
 ## Tính prob của (B tốt hơn A)
