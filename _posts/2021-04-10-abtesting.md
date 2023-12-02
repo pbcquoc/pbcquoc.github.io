@@ -304,11 +304,11 @@ Dựa vào z_score để tính p_value để đưa ra kết luận.
 ## ABTest khi không biết phân bố của biến ngẫu nhiên
 ## Tính prob của (B tốt hơn A)
 ## Bayesian hypothesis testing là gì?
-## How to user hypotheis testing to lie 
+## How to use hypotheis testing to lie 
 ## Một số quan điểm sai lầm
-3) Saying “We accept the Null hypothesis”
-You either reject the null hypothesis or fail to reject the null hypothesis.
+* Saying “We accept the Null hypothesis”: You either reject the null hypothesis or fail to reject the null hypothesis.
 
 # Tham khảo
 - https://math.stackexchange.com/questions/845769/why-does-the-normalized-z-score-introduce-a-square-root-and-some-more-confusio
+  
 (1): (Phần này mình không hiểu rõ, chỉ muốn đưa ra một số ví dụ cho mọi người có cái nhìn thêm)
