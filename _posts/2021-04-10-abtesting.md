@@ -24,17 +24,17 @@ Quay lại với các vấn đề thực tế của chúng ta, thông thường 
 Phương pháp này tuy sai, nhưng lại đơn giản nên hầu như ai cũng nghĩ được và vì thế nên lại thường được sử dụng (vì người đó không biết sai ở chỗ nào). Nhưng mình nhấn mạnh lại một lần nữa là phương pháp này sai vì những vấn đề không được giải quyết sau:
 - Trong thời gian bạn chạy tính năng mới, nhưng yếu tố khác tác động vào làm tăng chỉ số mà bạn đang đo. Ví dụ như bạn đang kiểm tra xem giao diện mới có làm tăng lượt click vào sản phẩm so với giao diện cũ hay không thì bộ phận khác của công ty tăng tiền quảng cáo, tạo ra các mã giảm giá, khuyến mãi cho khách hàng thì có thể chỉ số bạn đang theo dõi cũng tăng theo mặc dù cái giao diện mới chả tạo ra thêm lượt click so với cái giao diện cũ, hoặc các yếu tố ngoài xã hội như dịch bệnh, thời tiết, chính sách nhà nước tác động vào làm tăng hoặc giảm chỉ số đó. Tóm lại có quá nhiều yếu tố khác tác động vào đúng lúc mà bạn đang kiểm định tính năng mới làm cho việc tăng hoặc giảm chỉ số theo phương pháp này không đáng tin cậy. 
 
-Hậu quả của việc các chỉ số thống kê không đúng là chúng ta không có có sở đánh giá mức độ cải tiến, chọn nhầm các tính năng tệ hại thay vì tốt thực sự, những ý tưởng rác lại được hoan nghênh.
+Hậu quả của việc các chỉ số thống kê không đúng là chúng ta không có có sở đánh giá mức độ cải tiến, chọn nhầm các tính năng tệ hại thay vì tốt thực sự, những ý tưởng kì lạ được hoan nghênh.
 
 # Chiến lượt ABtest ngây thơ - Cứ nghĩ là AB Test, những lại không phải !
-Có nhiều bạn cứ nghĩ rằng AB Test là việc chia tập khách hàng thành 2 tập baseline và variant theo cách ngẫu nhiên có kích thước tương đương nhau. Rồi chạy thí nghiệm, tập baseline thì vẫn giữ model gốc, còn tập variant thì chạy model cải tiến. Rồi sau đó, chỉ cần đơn giản là so sánh các chỉ số business quan trọng trên 2 tập đó là xong, nếu thấy tập variant có giá trị tốt hơn thì chứng tỏ model cải tiến tốt hơn thật, ngược lại thì model cải tiến tệ hơn. 
+Chúng ta cứ nghĩ rằng AB Test là việc chia tập khách hàng thành 2 tập baseline và variant theo cách ngẫu nhiên có kích thước tương đương nhau. Rồi chạy thí nghiệm, tập baseline thì vẫn giữ model gốc, còn tập variant thì chạy model cải tiến. Rồi sau đó, chỉ cần đơn giản là so sánh các chỉ số business quan trọng trên 2 tập đó là xong, nếu thấy tập variant có giá trị tốt hơn thì chứng tỏ model cải tiến tốt hơn thật, ngược lại thì model cải tiến tệ hơn. 
 
-**Điều này là một sự sai lầm tệ hại!**
+**Điều này là một sự sai lầm!**
 
-Để hiểu tại sao lại sai lầm, mình sẽ chuyển sang phần tiếp theo để mục tiêu thật sự của ABTest là gì? và thấy được cách mình vừa trình bày ở trên là sai lầm tệ hại. 
+Để hiểu tại sao lại sai lầm, mình sẽ chuyển sang phần tiếp theo để mục tiêu thật sự của ABTest là gì? và thấy được cách mình vừa trình bày ở trên là sai lầm. 
 
 # Làm rõ mục tiêu của việc ABTest
-Bạn đã quên mất 2 điều mà khi bạn quên 2 điều này làm cho bạn cứ nghĩ rằng mình vẫn đang làm đúng.
+Chúng ta đã quên mất 2 điều mà khi quên 2 điều này làm cho chúng ta cứ nghĩ rằng mình vẫn đang làm đúng.
 - Mục tiêu của việc kiểm định là để chứng minh model cải tiến tốt hơn trên toàn bộ tập khách hàng. Tập khách hàng này là tập khách hàng tại mọi thời điểm, tại tương lai, hiện tại, và quá khứ. 
 Câu phát biểu này phát sinh vấn đề là vậy thì tập khách hàng tương lai ở đâu chứ? Chúng ta chưa có. Vậy thì làm sao để có tập khách hàng tương lai này chứ? chúng ta sẽ chờ cho công này phá sản. Vậy thì toàn bộ tập khách hàng của công ty là từ lúc công ty khởi nghiệp đến lúc phá sản. Lúc này đây, bạn dùng **chiến lượt ABTest ngây thơ** ở trên để tính toán thì bạn làm đúng. 
 
@@ -42,12 +42,11 @@ Nhưng mà công ty này phá sản thì ai cần bạn làm gì nữa chứ? V�
 
 Chắc chắn rằng chúng ta vẫn phải đạt được mục tiêu là chứng minh rằng model cải tiển tốt hơn trên toàn bộ tập khách hàng, nhưng thay vì phải đợi công ty phá sản để có được toàn bộ tập khách hành, chúng ta sẽ **sampling** tập khách hàng để đem ra kiểm định, và đó chính là tập khách hàng hiện tại và cũng vì chúng ta **sampling** một tập nhỏ hơn nên các con số chúng ta tính toán là biến ngẫu nhiên. Vì là biến ngẫu nhiên nên chúng ta có thể thấy chỉ số của mô hình cải tiến tốt hơn, hoặc tệ hơn nhưng không có nghĩa là chúng tốt/tệ hơn thật. Đơn giản chỉ vì ngẫu nhiên!. 
 
-Có bạn sẽ thắc mắc, sao lại phải kết luận trên toàn bộ tập khách hàng cơ chứ! (Mình xin nhắc lại là kết luận trên toàn bộ tập khách hàng, không có nghĩa là bạn cần tính toán trên toàn bộ tập khách hàng). Vậy mình sẽ lấy ví dụ minh họa như sau. 
+Có bạn sẽ thắc mắc, sao lại phải kết luận trên toàn bộ tập khách hàng cơ chứ!. Vậy mình sẽ lấy ví dụ minh họa như sau. 
 
-Bạn chế tạo ra vacxin Prizer để ngừa COVID-19. Và một số người lanh lợi sẽ hỏi rằng, vacxin này có thể giảm tỉ lệ tử vong bao nhiêu cho người được tiêm, những người này có thể là bây giờ, hoặc sau 1 năm nữa. Bạn phải kết luận cho tập người sau 1 năm nữa tiêm vacxin cũng phải có hiệu quả chứ? không lẽ bạn chỉ kết luận cho tập người được tiêm trong năm nay không thôi sao? Nhỡ đâu tập người tiêm 1 năm sau bị biến chứng nặng hơn sau khi tiêm vacxin thì sao? Ai sẽ chịu trách nhiệm cho những người 1 năm sau đó. Đó là lý do tại sao chúng ta cần kết luận trên toàn bộ quần thể (population), toàn bộ tập khách hàng. 
+Bạn chế tạo ra vacxin Prizer để ngừa COVID-19. Và một số người lanh lợi sẽ hỏi rằng, vacxin này có thể giảm tỉ lệ tử vong bao nhiêu cho người được tiêm, những người này có thể là bây giờ, hoặc sau 1 năm nữa. Bạn phải kết luận cho tập người sau 1 năm nữa tiêm vacxin cũng phải có hiệu quả chứ? không lẽ bạn chỉ kết luận cho tập người được tiêm trong năm nay không thôi sao? Nhỡ đâu tập người tiêm 1 năm sau bị biến chứng nặng hơn sau khi tiêm vacxin thì sao? Đó là lý do tại sao chúng ta cần kết luận trên toàn bộ quần thể (population), toàn bộ tập khách hàng. 
 
 Và để trả lời cho tại sao **Chiến lượt ABTest ngây thơ** là sai thì đó là việc bạn chỉ đơn giản tính các chỉ số trên tập sampling rồi so sánh 2 số đó như là 2 biến bình thường thì bạn chỉ kết luận được trên tập sampling đó mà thôi. Ko trả lời được liệu trên toàn bộ population có tốt hơn thật hay không?
-
 
 # Các khái niệm về xác suất cơ bản liên quan đến A/B Testing
 Phần này giới thiệu một số khái niệm về xác suất thống kê để làm vững chắc nền tảng cho bạn đọc. 
@@ -85,7 +84,7 @@ Là phân bố mà xác suất xuất hiện của các giá trị mà biến ng
 
 Mình họa của phân bố đều trong thực tế mà bạn có thể quan sát được là:
 - Phân bố xác suất của biến ngẫu nhiên là giá trị mặt xúc sắc mà bạn quan sát được khi tung con xúc sắc 1 lần. 
-- hoặc là 1 con bài mà bạn có thể nhận được trong bộ bài tây 54 lá
+- hoặc là 1 con bài mà bạn có thể nhận được trong bộ bài 54 lá
 
 ### Phân bố Bernoulli (Bernoulli Distribution)
 Là phân bố rời rạc, trong đó, tập giá trị mà biến ngẫu nhiên có thể nhận được chỉ gồm 2 giá trị **Success** hoặc **Fail**. Nếu xác suất của success là p thì xác suất của fail là 1 - p. Thông thường, các câu hỏi dạng yes/no (yes/no question) thuộc phân bố  bernoulli. Bernoulli là tên của Jacob Bernoulli người Thụy Sĩ. 
@@ -121,7 +120,7 @@ Phân bố này được kí hiệu $$ \mathcal{N}(\mu, \sigma^{2}) $$ và có c
 <span class="col-sm-12 text-center" style="font-size:120%">$$ f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})} $$ </span>
 </div>
 
-Bạn có thể tưởng tượng phân bố chuẩn là phân bố có hình dạng cái chuông (bell curve), đối xứng qua trung tâm. Phân bố này có tính chất rất hay đó là xác suất 1 điểm nằm trong 1std, 2std, 3std (std: là độ lệnh chuẩn) tương ứng là 68%, 95% và 99.8%. Tính chất này gọi là quy tắc 68-95-99.7 . Quy tắc này thường dùng để kiếm tra nhẹ nhàng xem một phân bố dạng bell curve có phải là phân bố chuẩn hay không? và không phải phân bố nào đối xứng 2 bên và có hình chuông thì cũng là phân bố chuẩn đâu nhé
+Bạn có thể tưởng tượng phân bố chuẩn là phân bố có hình dạng cái chuông (bell curve), đối xứng qua trung tâm. Phân bố này có tính chất là xác suất 1 điểm nằm trong 1std, 2std, 3std (std: là độ lệnh chuẩn) tương ứng là 68%, 95% và 99.8%. Tính chất này gọi là quy tắc 68-95-99.7 . Quy tắc này thường dùng để kiếm tra nhẹ nhàng xem một phân bố dạng bell curve có phải là phân bố chuẩn hay không? và không phải phân bố nào đối xứng 2 bên và có hình chuông thì cũng là phân bố chuẩn đâu nhé
 
 <div class="img-div" markdown="0">
     <img src="/images/abtest/normal_distribution.png" />
