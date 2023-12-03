@@ -56,7 +56,6 @@ Các bạn có thể suy nghĩ random process là một process mà kết quả 
 - Lắc một hộp chưa các loại viên bi xanh,đỏ, ... sau đó bốc một viên mà không được nhìn. 
 - Sampling ngẫu nhiên tập khách hàng của chúng ta
 
-## event
 ## Biến ngẫu nhiên (random variable)
 Có thể tưởng tượng biến ngẫu nhiên là biến phụ thuộc vào quá trình ngẫu nhiên. Ví dụ
 - Giá trị của mặt xuất hiện trên xúc xắc khi chúng ta tung xúc xắc. 
@@ -179,11 +178,9 @@ Khi 2 biến ngẫu nhiên có cùng ý nghĩa, mình nghĩ rằng chúng ta có
 - Chúng ta có thể nói x > y khi các giá trị mà x nhận được lớn hơn tất cả các giá trị mà y nhận được. 
 - Chúng ta có thể nói x < y khi các giá trị x nhận được bé hơn tất cả các giá trị y nhận được.
 
-Để dễ hiểu hơn ý tưởng này, các bạn hãy xem minh họa dưới đây.
-(minh họa)
 
-# Cách tính conversion rate chính xác.
-Có thể chúng ta đã hiểu được cần chia tập khách hàng thành 2 tập a,b ngẫu nhiên bằng nhau, chúng ta cũng hiểu cần so sánh 2 biến ngẫu nhiên dựa vào phân bố của chúng chứ không phải so sánh giá trị tuyệt đối. Nhưng mà đến lúc này, chúng ta vẫn có thể vẫn mắc một sai lầm chết người nữa là **chúng ta lại đi cân đo đong đếm 2 biến ngẫu nhiên mà kết quả việc này lại không trả lời chính xác được câu hỏi của business**. Lý dó là thứ nhất câu hỏi của business lỏng lẻo, thứ 2 là chúng ta tính toán không chuẩn xác.  
+# Sự nhọc nhằn trong cách tính conversion rate trong thực tế.
+Có thể chúng ta đã hiểu được cần chia tập khách hàng thành 2 tập a,b ngẫu nhiên bằng nhau, chúng ta cũng hiểu cần so sánh 2 biến ngẫu nhiên dựa vào phân bố của chúng chứ không phải so sánh giá trị tuyệt đối. Nhưng mà đến lúc này, chúng ta vẫn có thể vẫn mắc một sai lầm nữa là chúng ta lại đi cân đo đong đếm 2 biến ngẫu nhiên mà kết quả việc này lại không trả lời chính xác được câu hỏi của business. Lý dó là thứ nhất câu hỏi của business lỏng lẻo, thứ 2 là chúng ta tính toán không chuẩn xác.  
 Ví dụ dưới này sẽ làm cho các bạn dễ hình dung  
 
 Vào một ngày đẹp trời, có một bạn team business muốn chúng ta cải thiện giao diện hiển thị sản phẩm để tăng tỉ lệ conversion khi user mua hàng? Vậy thì câu hỏi đầu tiên xuất hiện trong đầu chúng ta là? tỉ lệ conversion của user khi mua hàng được định lượng như thế nào? Chúng ta sẽ nhiều cách 
@@ -193,11 +190,11 @@ Vào một ngày đẹp trời, có một bạn team business muốn chúng ta c
 - số lần hiển thị sản phẩm có lượt mua / số lần hiển thị sản phẩm (một lần refresh page là 1 lần hiển thị)
 - và nhiều cách tính khác.
 
-Có lẽ, các bạn đang quan tâm cách tính nào đúng? Nhưng mà trước khi phân tích cách nào đúng theo tiêu chuẩn của mình, mình muốn chỉ ra sai lầm trong cách tính xuất phát từ nguyên nhân nào? Thực tế, khi business đến nói với bạn vấn đề họ cần giải quyết họ cũng thực tế chỉ hiểu sơ sơ, không cụ thể cái họ muốn chính xác là gì đâu. Bên cạnh đó, bạn DS hay DA đó cũng thực tế là không hiểu những cạm bẫy trong công thức tính của mình.
+Cách đúng có lẽ phụ thuộc vào việc bạn hiểu business và hiểu những rủi ro trong các các tính khác nhau. 
 
 ## Chọn success event
 
-Vậy thì trước khi bắt đầu ABTest cho những đại lượng là  tỉ lệ thì chúng ta cần xác định được success event là gì trước nhất, tuy nhiên việc chọn success event cũng khá là không rõ ràng, vì có nhiều cách tính cho cùng một khái niệm như đã nói ở trên, và hơn nữa vì có nhiều cách tính cho cùng một khái niệm nên kết quả từ việc so sánh các chỉ số đó lại mâu thuẫn với nhau. ví dụ, bạn muốn chọn một chỉ số để đo performance của widget mới trên website TIKI, chúng ta bịa... ra 2 chỉ số sau. 
+Vậy thì trước khi bắt đầu ABTest cho những đại lượng là tỉ lệ thì chúng ta cần xác định được success event là gì trước nhất, tuy nhiên việc chọn success event cũng khá là không rõ ràng, vì có nhiều cách tính cho cùng một khái niệm như đã nói ở trên, và hơn nữa vì có nhiều cách tính cho cùng một khái niệm nên kết quả từ việc so sánh các chỉ số đó lại mâu thuẫn với nhau. ví dụ, bạn muốn chọn một chỉ số để đo performance của widget mới trên website TIKI, chúng ta bịa... ra 2 chỉ số sau. 
 
 - tỉ lệ A = user click/tỉ lệ user view
 - tỉ lệ B = user mua hàng / tỉ lệ user view
@@ -207,8 +204,8 @@ nếu cả 2 chỉ số cùng tốt , hoặc cùng tệ hơn thì không có gì
 # Hypothesis testing
 Sau khi, chúng ta thu thập đủ dữ liệu bằng việc đợi cho thí nghiệm của chúng ta hoàn thành. 
 
-## Cách kiểm định của người không biết lý thuyết ... toán 
-Chúng ta biết ý tưởng của việc so sánh chỉ số của 2 tập A và B đó là so sánh 2 phân bố của chỉ số này. Đến lúc này, chúng ta lại hỏi, chúng ta chỉ thực hiện một lần thí nghiệm trong n ngày thôi thì lấy đâu ra nguyên cái phân bố để so sánh chứ? Cách dễ nhất là... cứ thực hiện thêm m lần nữa là được mà :) Trong thực tế thì việc này khá tốn công sức, thay vào đó, chúng ta sử dụng một chút lý thuyết của các tiền bối để có thể đưa ra kết luận nhanh chóng và chính xác với 1 lần thực hiện thí nghiệm. 
+## Cách kiểm định ngây thơ 
+Chúng ta biết ý tưởng của việc so sánh chỉ số của 2 tập A và B đó là so sánh 2 phân bố của chỉ số này. Đến lúc này, chúng ta lại hỏi, chúng ta chỉ thực hiện một lần thí nghiệm trong n ngày thôi thì lấy đâu ra nguyên cái phân bố để so sánh chứ? Cách dễ nhất là... cứ thực hiện thêm m lần nữa là được mà :) Trong thực tế thì việc này khá tốn công sức, thay vào đó, chúng ta sử dụng một sử dụng một phương pháp thay thế khác. 
 
 Do đó phần dưới này là lý thuyết trình bày cách so sánh chỉ số trên tập A và B với hypothesis testing. Ý tưởng chung của hypothesis testing là tính p_value, cái mà được định nghĩa là xác suất chúng ta quan sát được sự kiện trong thí nghiệm dưới trường hợp giả thiết H_null là chính xác. 
 
