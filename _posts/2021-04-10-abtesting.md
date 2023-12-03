@@ -290,8 +290,7 @@ Và chúng ta tính z_score như sau:
 khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với kì vọng $$\mu=p_0$$ và độ lệch chuẩn $$ \sigma =  \sqrt{\frac{p_0(1-p_0)}{n}} $$. đo đó z_score =  $$ \frac{(\widehat{p} - p_{0})}{\sqrt{\frac{p_0(1-p_0)}{n}}} $$.
 
 Trong đó $$p_0$$ là tỉ lệ trong tập baseline, n là kích thước tập baseline, $$\widehat{p}$$ là tỉ lệ trong tập variant. 
-```
-```
+
 
 ### Tính p_value cho kiểm định trung bình. 
 Ví dụ TIKI muốn kiểm định xem chương trình mua kèm giảm thêm có thực sự tăng giá trị đơn hàng mà khách hàng mua hay không? Lúc đó, chúng ta muốn chạy kiểm định giả thiết trung bình để xem tập variant có giá trị đơn hàng trung bình lớn hơn tập baseline hay không?
