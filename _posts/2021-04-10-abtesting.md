@@ -205,7 +205,7 @@ nếu cả 2 chỉ số cùng tốt , hoặc cùng tệ hơn thì không có gì
 Sau khi, chúng ta thu thập đủ dữ liệu bằng việc đợi cho thí nghiệm của chúng ta hoàn thành. 
 
 ## Cách kiểm định ngây thơ 
-Chúng ta biết ý tưởng của việc so sánh chỉ số của 2 tập A và B đó là so sánh 2 phân bố của chỉ số này. Đến lúc này, chúng ta lại hỏi, chúng ta chỉ thực hiện một lần thí nghiệm trong n ngày thôi thì lấy đâu ra nguyên cái phân bố để so sánh chứ? Cách dễ nhất là... cứ thực hiện thêm m lần nữa là được mà :) Trong thực tế thì việc này khá tốn công sức, thay vào đó, chúng ta sử dụng một sử dụng một phương pháp thay thế khác. 
+Chúng ta biết ý tưởng của việc so sánh chỉ số của 2 tập A và B đó là so sánh 2 phân bố của chỉ số này. Đến lúc này, chúng ta lại hỏi, chúng ta chỉ thực hiện một lần thí nghiệm trong n ngày thôi thì lấy đâu ra nguyên cái phân bố để so sánh chứ? Cách dễ nhất là... cứ thực hiện thêm m lần nữa là được mà :) Trong thực tế thì việc này khá tốn công sức, thay vào đó, chúng ta sử dụng một sử dụng ý tưởng kiểu như: giả sử phân bố của tập control là phân bố đúng, vậy thì dữ liệu chúng ta quan sát thấy trong thí nghiệm có xác suất bao nhiêu, nếu xác suất đó hiếm thì chúng ta có thể đưa ra một số kết luận. Idea mình vừa nói chính là ý tưởng tổng quan của hypothesis testing. 
 
 Do đó phần dưới này là lý thuyết trình bày cách so sánh chỉ số trên tập A và B với hypothesis testing. Ý tưởng chung của hypothesis testing là tính p_value, cái mà được định nghĩa là xác suất chúng ta quan sát được sự kiện trong thí nghiệm dưới trường hợp giả thiết H_null là chính xác. 
 
