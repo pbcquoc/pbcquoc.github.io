@@ -12,7 +12,7 @@ Ví dụ đầu tiên để minh họa tính ngẫu nhiên là do việc quan s�
 Ví dụ tiếp theo là minh họa bản chất của việc đó là ngẫu nhiên. <br />
 - Theo mình được biết thì ở thế giới lượng tử, hành vi của hạt nguyên từ và hạ nguyên tử bị ngự trị bởi sự ngẫu nhiên, sự ngẫu nhiên đến từ bản chất của chúng, chứ không phải là do việc quan sát của chúng ta bị hạn chế như ví dụ ở trên. Nguyên lý tất định Heisenberg mô tả rằng một số thuộc tính vật lý như **vị trí** và **vận tốc** không thể đồng thời mô tả chính xác dẫn đến kết quả quan sát không tất định. Ví dụ như, khi chơi bóng bàn, để có thể chơi trò này, chúng ta cần biết vị trí và tốc độ của quả bóng. Từ đó mới phán đoán được nên hành xử như thế nào tiếp theo. Nếu biết vị trí mà không biết vận tốc thì làm sao mà đánh lại chớ. Cái sự ngẫu nhiên này đến từ bản chất của các hạt. Kì lạ nhỉ. Thế giới vi mô là nền tảng để cấu tạo nên thế giới vĩ mô. Tuy nhiên ở thế giới vi mô, các hạt lại có bản chất ngẫu nhiên, nhưng ngược lại ở thế giới vi mô, hành vi của các vật lại được mô tả tất định theo nguyên tắc vật lý. Cái bản chất ngẫu nhiên lại tạo nên cái tất định(1).
 
-Dưới góc độ của mình (chúng ta), việc ngẫu nhiên cho dù đến từ bản chất của sự việc hay do hạn chế quan sát, thường không quan trọng, cái chúng ta cần là công cụ để xem xét, đánh giá, so sánh giữ các sự kiện này. 
+Dưới góc độ của mình (chúng ta), việc ngẫu nhiên cho dù đến từ bản chất của sự việc hay do hạn chế quan sát, thường không quan trọng, cái chúng ta cần là công cụ để xem xét, đánh giá, so sánh giữa các sự kiện này. 
 
 Quay lại với các vấn đề thực tế của chúng ta, thông thường trong các công ty có phát triển sản phẩm như Zalo, Tiki, Momo, ..., những ứng dụng của công ty này thường được phát triển lên từ từ, được thêm nhiều tính năng mới, cải thiện tính năng cũ, cải thiện tốc độ phản hồi. Việc bổ sung, cải thiện những tính năng này là hành động chủ quan, có thể làm cho ứng dụng tệ đi hoặc tốt hơn theo nghĩa nào đó ví dụ như ít hoặc nhiều người sử dụng app hàng ngày, ít hoặc nhiều giao dịch. Do đó, chúng ta cần có cách nào đó để kiểm tra xem liệu tính năng mới đó có thực sự tốt hơn như chúng ta nghĩ hay không?
 
@@ -24,7 +24,7 @@ Phương pháp này tuy sai, nhưng lại đơn giản nên hầu như ai cũng 
 
 Hậu quả của việc các chỉ số thống kê không đúng là chúng ta không có có sở đánh giá mức độ cải tiến, chọn nhầm các tính năng tệ hại thay vì tốt thực sự, những ý tưởng kì lạ được hoan nghênh.
 
-# Chiến lượt ABtest ngây thơ - Cứ nghĩ là AB Test, những lại không phải !
+# Chiến lược ABtest ngây thơ - Cứ nghĩ là AB Test, những lại không phải !
 Chúng ta cứ nghĩ rằng AB Test là việc chia tập khách hàng thành 2 tập baseline và variant theo cách ngẫu nhiên có kích thước tương đương nhau. Rồi chạy thí nghiệm, tập baseline thì vẫn giữ model gốc, còn tập variant thì chạy model cải tiến. Rồi sau đó, chỉ cần đơn giản là so sánh các chỉ số business quan trọng trên 2 tập đó là xong, nếu thấy tập variant có giá trị tốt hơn thì chứng tỏ model cải tiến tốt hơn thật, ngược lại thì model cải tiến tệ hơn. 
 
 **Điều này là một sự sai lầm!**
@@ -34,17 +34,17 @@ Chúng ta cứ nghĩ rằng AB Test là việc chia tập khách hàng thành 2 
 # Làm rõ mục tiêu của việc ABTest
 Chúng ta đã quên mất 2 điều mà khi quên 2 điều này làm cho chúng ta cứ nghĩ rằng mình vẫn đang làm đúng.
 - Mục tiêu của việc kiểm định là để chứng minh model cải tiến tốt hơn trên toàn bộ tập khách hàng. Tập khách hàng này là tập khách hàng tại mọi thời điểm, tại tương lai, hiện tại, và quá khứ. 
-Câu phát biểu này phát sinh vấn đề là vậy thì tập khách hàng tương lai ở đâu chứ? Chúng ta chưa có. Vậy thì làm sao để có tập khách hàng tương lai này chứ? chúng ta sẽ chờ cho công này phá sản. Vậy thì toàn bộ tập khách hàng của công ty là từ lúc công ty khởi nghiệp đến lúc phá sản. Lúc này đây, bạn dùng **chiến lượt ABTest ngây thơ** ở trên để tính toán thì bạn làm đúng. 
+Câu phát biểu này phát sinh vấn đề là vậy thì tập khách hàng tương lai ở đâu chứ? Chúng ta chưa có. Vậy thì làm sao để có tập khách hàng tương lai này chứ? chúng ta sẽ chờ cho công này phá sản. Vậy thì toàn bộ tập khách hàng của công ty là từ lúc công ty khởi nghiệp đến lúc phá sản. Lúc này đây, bạn dùng chiến lược ABTest ngây thơ ở trên để tính toán thì bạn làm đúng. 
 
 Nhưng mà công ty này phá sản thì ai cần bạn làm gì nữa chứ? Vậy giải pháp là gì?
 
-Chắc chắn rằng chúng ta vẫn phải đạt được mục tiêu là chứng minh rằng model cải tiển tốt hơn trên toàn bộ tập khách hàng, nhưng thay vì phải đợi công ty phá sản để có được toàn bộ tập khách hành, chúng ta sẽ **sampling** tập khách hàng để đem ra kiểm định, và đó chính là tập khách hàng hiện tại và cũng vì chúng ta **sampling** một tập nhỏ hơn nên các con số chúng ta tính toán là biến ngẫu nhiên. Vì là biến ngẫu nhiên nên chúng ta có thể thấy chỉ số của mô hình cải tiến tốt hơn, hoặc tệ hơn nhưng không có nghĩa là chúng tốt/tệ hơn thật. Đơn giản chỉ vì ngẫu nhiên!. 
+Chắc chắn rằng chúng ta vẫn phải đạt được mục tiêu là chứng minh rằng model cải tiến tốt hơn trên toàn bộ tập khách hàng, nhưng thay vì phải đợi công ty phá sản để có được toàn bộ tập khách hành, chúng ta sẽ **sampling** tập khách hàng để đem ra kiểm định, và đó chính là tập khách hàng hiện tại và cũng vì chúng ta **sampling** một tập nhỏ hơn nên các con số chúng ta tính toán là biến ngẫu nhiên. Vì là biến ngẫu nhiên nên chúng ta có thể thấy chỉ số của mô hình cải tiến tốt hơn, hoặc tệ hơn nhưng không có nghĩa là chúng tốt/tệ hơn thật. Đơn giản chỉ vì ngẫu nhiên!. 
 
 Có bạn sẽ thắc mắc, sao lại phải kết luận trên toàn bộ tập khách hàng cơ chứ!. Vậy mình sẽ lấy ví dụ minh họa như sau. 
 
-Bạn chế tạo ra vacxin Prizer để ngừa COVID-19. Và một số người lanh lợi sẽ hỏi rằng, vacxin này có thể giảm tỉ lệ tử vong bao nhiêu cho người được tiêm, những người này có thể là bây giờ, hoặc sau 1 năm nữa. Bạn phải kết luận cho tập người sau 1 năm nữa tiêm vacxin cũng phải có hiệu quả chứ? không lẽ bạn chỉ kết luận cho tập người được tiêm trong năm nay không thôi sao? Nhỡ đâu tập người tiêm 1 năm sau bị biến chứng nặng hơn sau khi tiêm vacxin thì sao? Đó là lý do tại sao chúng ta cần kết luận trên toàn bộ quần thể (population), toàn bộ tập khách hàng. 
+Bạn chế tạo ra vacxin Pfizer để ngừa COVID-19. Và một số người lanh lợi sẽ hỏi rằng, vacxin này có thể giảm tỉ lệ tử vong bao nhiêu cho người được tiêm, những người này có thể là bây giờ, hoặc sau 1 năm nữa. Bạn phải kết luận cho tập người sau 1 năm nữa tiêm vacxin cũng phải có hiệu quả chứ? không lẽ bạn chỉ kết luận cho tập người được tiêm trong năm nay không thôi sao? Nhỡ đâu tập người tiêm 1 năm sau bị biến chứng nặng hơn sau khi tiêm vacxin thì sao? Đó là lý do tại sao chúng ta cần kết luận trên toàn bộ quần thể (population), toàn bộ tập khách hàng. 
 
-Và để trả lời cho tại sao **Chiến lượt ABTest ngây thơ** là sai thì đó là việc bạn chỉ đơn giản tính các chỉ số trên tập sampling rồi so sánh 2 số đó như là 2 biến bình thường thì bạn chỉ kết luận được trên tập sampling đó mà thôi. Ko trả lời được liệu trên toàn bộ population có tốt hơn thật hay không?
+Và để trả lời cho tại sao **Chiến lược ABTest ngây thơ** là sai thì đó là việc bạn chỉ đơn giản tính các chỉ số trên tập sampling rồi so sánh 2 số đó như là 2 biến bình thường thì bạn chỉ kết luận được trên tập sampling đó mà thôi. Ko trả lời được liệu trên toàn bộ population có tốt hơn thật hay không?
 
 # Các khái niệm về xác suất cơ bản liên quan đến A/B Testing
 Phần này giới thiệu một số khái niệm về xác suất thống kê để làm vững chắc nền tảng cho bạn đọc. 
@@ -53,7 +53,7 @@ Phần này giới thiệu một số khái niệm về xác suất thống kê 
 Các bạn có thể suy nghĩ random process là một process mà kết quả (outcome) là ngẫu nhiên hay chứ không phải tất định. Một số ví dụ về random process như sau:
 - Tung đồng xu
 - Tung xúc xắc 
-- Lắc một hộp chưa các loại viên bi xanh,đỏ, ... sau đó bốc một viên mà không được nhìn. 
+- Lắc một hộp chứa các loại viên bi xanh,đỏ, ... sau đó bốc một viên mà không được nhìn. 
 - Sampling ngẫu nhiên tập khách hàng của chúng ta
 
 ## Biến ngẫu nhiên (random variable)
@@ -117,7 +117,7 @@ Phân bố này được kí hiệu $$ \mathcal{N}(\mu, \sigma^{2}) $$ và có c
 <span class="col-sm-12 text-center" style="font-size:120%">$$ f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})} $$ </span>
 </div>
 
-Bạn có thể tưởng tượng phân bố chuẩn là phân bố có hình dạng cái chuông (bell curve), đối xứng qua trung tâm. Phân bố này có tính chất là xác suất 1 điểm nằm trong 1std, 2std, 3std (std: là độ lệnh chuẩn) tương ứng là 68%, 95% và 99.8%. Tính chất này gọi là quy tắc 68-95-99.7 . Quy tắc này thường dùng để kiếm tra nhẹ nhàng xem một phân bố dạng bell curve có phải là phân bố chuẩn hay không? và không phải phân bố nào đối xứng 2 bên và có hình chuông thì cũng là phân bố chuẩn đâu nhé
+Bạn có thể tưởng tượng phân bố chuẩn là phân bố có hình dạng cái chuông (bell curve), đối xứng qua trung tâm. Phân bố này có tính chất là xác suất 1 điểm nằm trong 1std, 2std, 3std (std: là độ lệch chuẩn) tương ứng là 68%, 95% và 99.8%. Tính chất này gọi là quy tắc 68-95-99.7 . Quy tắc này thường dùng để kiểm tra nhẹ nhàng xem một phân bố dạng bell curve có phải là phân bố chuẩn hay không? và không phải phân bố nào đối xứng 2 bên và có hình chuông thì cũng là phân bố chuẩn đâu nhé
 
 <div class="img-div" markdown="0">
     <img src="/images/abtest/normal_distribution.png" />
@@ -139,10 +139,10 @@ thì
 
 Z-scores(còn gọi là standard scores) là độ đo cho biết giá trị quan sát bằng bao nhiêu độ lệch chuẩn tính từ trung bình của một phân bố. Thông thường Z-scores hay dùng trong phân bố chuẩn. Z-score được tính như sau: 
 $$ z-score = \frac{x - \mu}{\sigma}$$
-Chúng ta có thể dùng z-score so sánh tương đối giữ 2 điểm dữ liệu mà thuộc 2 phân bố khác nhau. z-score được dùng để tính nhanh p-value. 
+Chúng ta có thể dùng z-score so sánh tương đối giữa 2 điểm dữ liệu mà thuộc 2 phân bố khác nhau. z-score được dùng để tính nhanh p-value. 
 
 ### Mối quan hệ giữa binomial distribution và normal distribution
-Các bạn hãy nhớ rằng chúng ta có thể dùng phân phối chuẩn để sấp xỉ phân bố nhị thức khi phân bố nhị thức thỏa điều kiện: xác suất p sucess gần 0.5 hoặc số lần thí nghiệm n lớn. 
+Các bạn hãy nhớ rằng chúng ta có thể dùng phân phối chuẩn để xấp xỉ phân bố nhị thức khi phân bố nhị thức thỏa điều kiện: xác suất p success gần 0.5 hoặc số lần thí nghiệm n lớn. 
 
 Khi p càng lệch về 2 phía (xấp xỉ 1 hoặc 0 ) thì càng cần nhiều lần thí nghiệm hơn để phân bố nhị thức xấp xỉ phân bố chuẩn, hoặc đơn giản ghi nhớ rule này np > 10 và n(1-p)>10
 
@@ -153,9 +153,9 @@ $$ X \sim B(n, p) $$ với n đủ lớn thì X sẽ xấp xỉ $$ \mathcal{N}(n
     <em>Normal approximation to the Binomial</em>
 </div>
 
-Câu hỏi là tại sao chúng ta lại thích xấp xỉ phần bố nhị thức thành phân bố chuẩn làm gì? bởi vì phân bố chuẩn được sử dụng rộng rãi, chúng ta dễ dàng ghi nhớ các tính chất của nó, cũng như z score và p value, nên chúng ta dễ tính nhẩm hơn và công thức được rút gọn đẹp hơn.
+Câu hỏi là tại sao chúng ta lại thích xấp xỉ phân bố nhị thức thành phân bố chuẩn làm gì? bởi vì phân bố chuẩn được sử dụng rộng rãi, chúng ta dễ dàng ghi nhớ các tính chất của nó, cũng như z score và p value, nên chúng ta dễ tính nhẩm hơn và công thức được rút gọn đẹp hơn.
 
-### Mối quan hệ giữ proportion distribution và binomial distribution
+### Mối quan hệ giữa proportion distribution và binomial distribution
 Proportion distribution và binomial distribution có mối quan hệ chặt chẽ với nhau. 
 Nếu $$ X \sim B(n, p) $$ thì Y=X/n sẽ là proportion distribution. Khi n đủ lớn thì $$ Y \sim N(p, p(1-p)/n) $$. Mình nói đến proportion distribution là bởi vì khi chạy ABTest chúng ta thường tính tỉ lệ conversion rate, tỉ lệ này chính là proportion distribution, nếu chúng ta biết được phân bố của nó thì sẽ đơn giản tính được z_score và p_value. Dựa vào p_value là chúng ta kết luận được version B có tốt hơn A hay không?
 
@@ -169,7 +169,7 @@ Sử dụng kiểm định giả thuyết để  so sánh chỉ số cần quan 
 Có 3 điểm cần lưu ý khi làm ABTest. 
 - Cần chia user thành 2 tập ngẫu nhiên. Việc chia ngẫu nhiên làm cho các tác động khác (ngoại trừ cải tiến mà chúng ta định áp dụng cho tâp control) phân bố đều vô 2 tập. Từ đó đảm bảo không có bias khi chúng ta thực hiện thí nghiệm. 
 - 2 tập user không cần có kích thước giống nhau, tuy nhiên mình khuyến khị nên số lượng bằng nhau, điều này giúp chúng ta tiết kiệm thời gian chạy test hơn là khi chia tập user không đều nhau.  
-- và điều quan trọng nhất đó là so sánh các chỉ số bằng `kiểm định giả thuyết`. Do chúng ta so sánh các chỉ số có tính ngẫu nhiên như phân tích ở trên, nên không tể nào so sánh kiểu tuyệt đối như 2 > 1... mà chúng ta phải so sánh phân bố của các giá trị mà biến ngẫu nhiên có thể nhận được. 
+- và điều quan trọng nhất đó là so sánh các chỉ số bằng `kiểm định giả thuyết`. Do chúng ta so sánh các chỉ số có tính ngẫu nhiên như phân tích ở trên, nên không thể nào so sánh kiểu tuyệt đối như 2 > 1... mà chúng ta phải so sánh phân bố của các giá trị mà biến ngẫu nhiên có thể nhận được. 
 
 Có nhiều tài liệu tham khảo trên internet nói về ABtest nhưng họ lại không đề cập việc phải dùng kiểm định giả thuyết để so sánh các chỉ số do đó thường gây ra hiểu lầm cho rất nhiều người. Ở phần tiếp theo, mình sẽ trình bày chi tiết cách sử dụng kiểm định giả thuyết trong ABTest như thế nào.
 
@@ -234,7 +234,7 @@ Bây giờ, nếu bạn nhìn vào tất cả những số đó và tìm ra trun
 
 Vậy nên, Định lý Giới hạn Trung tâm nói cho chúng ta biết rằng khi chúng ta thực hiện một việc gì đó nhiều, nhiều lần và nhìn vào trung bình của những gì xảy ra, thường thì nó sẽ trở nên rất dễ đoán, ngay cả khi các sự việc cá nhân không thể đoán trước được chút nào. Điều này giống như khi bạn kết hợp nhiều màu sắc của đất nặn - càng kết hợp nhiều, bạn càng tiến gần tới một màu cụ thể.
 
-CLT quan trọng bởi vì nó cho phép chúng ta inference about population based on a sample bằng phát biểu distribution sample mean sẽ sấp xỉ normal distribution khi sample size lớn bất kể phân bố gốc là gì, bên cạnh đó nhiều phương pháp kiểm định giải thuyết đều dựa vào tính normality của dữ liệu. 
+CLT quan trọng bởi vì nó cho phép chúng ta inference about population based on a sample bằng phát biểu distribution sample mean sẽ xấp xỉ normal distribution khi sample size lớn bất kể phân bố gốc là gì, bên cạnh đó nhiều phương pháp kiểm định giả thuyết đều dựa vào tính normality của dữ liệu. 
 
 ## Quy trình thực hiện hypothesis testing:
 Kiểm định giả thuyết (Hypothesis testing) là một phương pháp trong thống kê dùng để đưa ra quyết định về một giả thuyết về dữ liệu dựa trên dữ liệu mẫu. Quá trình này giúp bạn xác định xem liệu có đủ bằng chứng để bác bỏ giả thuyết ban đầu hay không. Cách thực hiện kiểm định giả thuyết thường bao gồm các bước sau:
@@ -244,15 +244,15 @@ Kiểm định giả thuyết (Hypothesis testing) là một phương pháp tron
     * **Giả thuyết không (null hypothesis - H0)**: Đây là giả thuyết ban đầu, thường khẳng định rằng không có sự khác biệt hoặc không có hiệu ứng đáng kể. Ví dụ: Giá trị trung bình bằng một giá trị đã biết trước.
     * **Giả thuyết thay thế (alternative hypothesis - H1)**: Đây là giả thuyết mà bạn muốn kiểm tra, thường khẳng định rằng có sự khác biệt hoặc có hiệu ứng đáng kể. Ví dụ: Giá trị trung bình không bằng giá trị đã biết trước.
       
-2. **Chọn mức ý nghĩa (significance level - α)**: Đây là ngưỡng quyết định để xác định liệu bạn sẽ bác bỏ giả thuyết không hay không. Mức ý nghĩa thường được chọn là 0.05 (5%), nhưng bạn có thể chọn mức khác tùy theo nghiên cứu của bạn. Lý do, mọi người hay chọn p_value=0.05 có thể là do giá trị 0.05 được chọn bởi Fisher ( người được coi là cha để của thống kê hiện đại). Ông đã thuyết trình và đơn giản là đưa ra giá trị 0.05 là ngưỡng để phân biệt một với kiện hiếm có đến mức có thể không phải chỉ do ngẫu nhiên mà còn do những yếu tố khác.
-Liệu có giá trị p=0.051 có khác biệt nhiều so với 0.0499 hay không?. Câu trả lời là không. Cuộc sống có nhiều sắc thái xám, và đôi khi chúng ta phải đựa ra quyết định có/không và chúng ta phải chọn một đường chia ở đâu đó. Liệu một bác sĩ có quyết định cho bệnh nhân dùng thuốc mới hay không, một không cty có nên chấp nhận thay đổi mới hay không? Đôi khi, bạn phải chọn. Vậy đó!
+2. **Chọn mức ý nghĩa (significance level - α)**: Đây là ngưỡng quyết định để xác định liệu bạn sẽ bác bỏ giả thuyết không hay không. Mức ý nghĩa thường được chọn là 0.05 (5%), nhưng bạn có thể chọn mức khác tùy theo nghiên cứu của bạn. Lý do, mọi người hay chọn p_value=0.05 có thể là do giá trị 0.05 được chọn bởi Fisher ( người được coi là cha đẻ của thống kê hiện đại). Ông đã thuyết trình và đơn giản là đưa ra giá trị 0.05 là ngưỡng để phân biệt một với kiện hiếm có đến mức có thể không phải chỉ do ngẫu nhiên mà còn do những yếu tố khác.
+Liệu có giá trị p=0.051 có khác biệt nhiều so với 0.0499 hay không?. Câu trả lời là không. Cuộc sống có nhiều sắc thái xám, và đôi khi chúng ta phải đưa ra quyết định có/không và chúng ta phải chọn một đường chia ở đâu đó. Liệu một bác sĩ có quyết định cho bệnh nhân dùng thuốc mới hay không, một không cty có nên chấp nhận thay đổi mới hay không? Đôi khi, bạn phải chọn. Vậy đó!
 <div class="img-div" markdown="0">
     <img src="https://arbor-analytics.com/post/2022-10-10-p-ing-in-the-woods-p-values-in-forest-science/cena_Pvalue.png" />
 </div>
 
 4. **Thu thập và xử lý dữ liệu**: Thu thập dữ liệu từ tập mẫu và tiến hành các phép tính cần thiết như tính trung bình mẫu, độ lệch chuẩn, tỷ lệ, v.v.
 
-5. **Chọn kiểu kiểm định (one-tailed hoặc two-tailed)**: Tùy theo câu hỏi nghiên cứu và giả thuyết, bạn chọn kiểu kiểm định một chiều (one-tailed) hoặc hai chiều (two-tailed). Kiểm định một chiều tập trung vào một hướng khác biệt (lớn hơn hoặc nhỏ hơn), trong khi kiểm định hai chiều tập trung vào sự khác biệt tổng quát. Thông thường trong ABTest, chúng ta kiểm định một chiều tập variant có performance tốt hơn so với tập basline hay không? 
+5. **Chọn kiểu kiểm định (one-tailed hoặc two-tailed)**: Tùy theo câu hỏi nghiên cứu và giả thuyết, bạn chọn kiểu kiểm định một chiều (one-tailed) hoặc hai chiều (two-tailed). Kiểm định một chiều tập trung vào một hướng khác biệt (lớn hơn hoặc nhỏ hơn), trong khi kiểm định hai chiều tập trung vào sự khác biệt tổng quát. Thông thường trong ABTest, chúng ta kiểm định một chiều tập variant có performance tốt hơn so với tập baseline hay không? 
 
 6. **Tính toán giá trị thống kê**: Dựa trên dữ liệu mẫu và giả thuyết, tính giá trị thống kê cụ thể cho phương pháp kiểm định bạn sử dụng (như Z-score, t-score, chi-square, v.v.).
    
@@ -266,12 +266,12 @@ Liệu có giá trị p=0.051 có khác biệt nhiều so với 0.0499 hay khôn
 
 ## Minimum Detectable Effect
 Minimum Detectable Effect (MDE) liên quan đến việc xác định số lượng user cần thiết để có thể detect được improvement. Ví dụ, chúng ta muốn cái test hiện tại có thể xác định được 2% relative improvement so với tập baseline với tham số p_value=0.05 và power=0.8 thì cần tối thiếu số lượng bao nhiêu để có thế detect được  
-Công thức tính số lượng user tối thiếu phụ thuộc vào significant level
+Công thức tính số lượng user tối thiểu phụ thuộc vào significant level
 ## Statistical Power
 Power là xác suất mà chúng ta xác định có real effect trong thí nghiệm đang chạy. Ví dụ power=80% có nghĩa là chúng ta mong muốn test đang chạy sẽ statistical significant nếu bản variant thực sự có sự cải thiện.
 
 ## P_value
-P_value (probability value) là xác suất chúng ta thu được kết quả kiếm tra ít nhất bằng cái test result của tập variant dưới điều kiện giả thuyết không đúng. 
+P_value (probability value) là xác suất chúng ta thu được kết quả kiểm tra ít nhất bằng cái test result của tập variant dưới điều kiện giả thuyết không đúng. 
 
 <div class="img-div" markdown="0">
     <img src="/images/abtest/p_value.jpeg" />
@@ -279,12 +279,12 @@ P_value (probability value) là xác suất chúng ta thu được kết quả k
 </div>
 
 ### Tính p_value cho kiểm định tỉ lệ. 
-Ví dụ TIKI muốn kiểm ra giao diện mới có tỉ lệ user mua hàng cao hơn hay không? ... dựa vào từ `tỉ lệ` chúng ta biết ngay là dùng kiểm định giả thuyết của propotion rồi đó. Vậy chúng ta xây dựng 2 giả thuyết cho bài này như sau:
+Ví dụ TIKI muốn kiểm tra giao diện mới có tỉ lệ user mua hàng cao hơn hay không? ... dựa vào từ `tỉ lệ` chúng ta biết ngay là dùng kiểm định giả thuyết của propotion rồi đó. Vậy chúng ta xây dựng 2 giả thuyết cho bài này như sau:
 
 - Giải thuyết không $$ H_{0} $$: Tỉ lệ của sự kiện của tập baseline và variant bằng nhau.
 - Giải thuyết thay thế $$ H_{a} $$: Tỉ lệ của sự kiện tập variant lớn hơn trong tập baseline.
 Và chúng ta tính z_score như sau:
-khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với kì vọng $$\mu=p_0$$ và độ lệch chuẩn $$ \sigma =  \sqrt{\frac{p_0(1-p_0)}{n}} $$. đo đó z_score =  $$ \frac{(\widehat{p} - p_{0})}{\sqrt{\frac{p_0(1-p_0)}{n}}} $$.
+khi n đủ lớn thì tỉ lệ của sự kiện có phân bố chuẩn với kì vọng $$\mu=p_0$$ và độ lệch chuẩn $$ \sigma =  \sqrt{\frac{p_0(1-p_0)}{n}} $$. Do đó z_score =  $$ \frac{(\widehat{p} - p_{0})}{\sqrt{\frac{p_0(1-p_0)}{n}}} $$.
 
 Trong đó $$p_0$$ là tỉ lệ trong tập baseline, n là kích thước tập baseline, $$\widehat{p}$$ là tỉ lệ trong tập variant. 
 
@@ -296,7 +296,7 @@ Ví dụ TIKI muốn kiểm định xem chương trình mua kèm giảm thêm c�
 - Giải thuyết thay thế $$ H_{a} $$: Trung bình giá trị đơn hàng của tập variant lớn hơn tập baseline.
   
 Chúng ta tính z_score như sau:
-khi n đủ lớn thì trung bình giá trị đơn hàng có phân bố chuẩn với kì vọng $$ \mu $$ và độ lệnh chuẩn $$ \frac{\sigma}{\sqrt{n}} $$. Do đó, z_score = $$ \frac{\widehat{X} - \mu_{0}}{\frac{\sigma}{\sqrt(n}} $$.
+khi n đủ lớn thì trung bình giá trị đơn hàng có phân bố chuẩn với kì vọng $$ \mu $$ và độ lệch chuẩn $$ \frac{\sigma}{\sqrt{n}} $$. Do đó, z_score = $$ \frac{\widehat{X} - \mu_{0}}{\frac{\sigma}{\sqrt(n}} $$.
 Trong đó
 - $$\widehat{X}$$: là trung bình tập variant
 - $$\mu_{0}$$: trung bình tập baseline, $$\sigma$$: độ lệch chuẩn tập baseline, $$n$$: kích thước mẫu.
@@ -307,7 +307,7 @@ Các topics ở dưới sẽ không được cover trong bài viết này, tuy n
 ## ABTest khi không biết phân bố của biến ngẫu nhiên
 ## Tính prob của (B tốt hơn A)
 ## Bayesian hypothesis testing là gì?
-## How to use hypotheis testing to lie 
+## How to use hypothesis testing to lie 
 ## Một số quan điểm sai lầm
 * Saying “We accept the Null hypothesis”: You either reject the null hypothesis or fail to reject the null hypothesis.
 
