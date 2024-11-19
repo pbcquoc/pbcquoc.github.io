@@ -2,12 +2,12 @@
 layout: post
 title: Hướng dẫn sử dụng Dori để nhận dạng các Key Information
 ---
-Trong bài viết này, chúng tôi sẽ hướng dẫn bạn cách sử dụng Dori để nhận dạng và rút trích các thông tin chính (Key Information). Ví dụ, nếu bạn cần nhận dạng thông tin như `họ tên` và `ID` trên căn cước công dân, thì `họ tên` và `ID` chính là những thông tin cần được rút trích. Để thực hiện điều này, bạn sẽ cần trải qua các bước sau:
+Trong bài viết này, chúng tôi sẽ hướng dẫn bạn cách sử dụng Dori để nhận dạng và rút trích các thông tin chính (Key Information). Ví dụ, nếu bạn cần nhận dạng thông tin như `họ tên` và `ID` trên căn cước công dân, thì `họ tên` và `ID` chính là những thông tin cần được rút trích. Để thực hiện điều này, bạn sẽ cần trải qua các bước sau:-
 - Phát hiện văn bản
 - nhận dạng văn bản
 - xác định thứ tự đọc
 - rút trích thông tin chính
-
+  
 Các bước trên các bạn có thể làm dễ dàng bằng cách thao tác trên dori, dori cung cấp sẵn các chức năng đánh nhãn, huấn luyện, deploy, test model, tăng tốc quá trình đánh nhãn, huấn luyện, bằng những mô hình có sẵn cho tiếng việt. Mình sẽ mô tả các bước thực hiện cụ thể ở phần sau, trước mắt các bạn cần tạo một project mới trên dori bằng cách click vào `Create Project`, sau đó điền thông tin tên project, mô tả, phân loại, các chọn 2 tool cơ bản là `text detection` và `key information extraction`, sau đó click vào upload ảnh và chọn các ảnh cần đánh nhãn lên. Mình gợi ý là nên upload tầm 20 ảnh cho toy project, 100-300 ảnh để có bắt đầu huấn luyện mô hình tốt cho chạy thực tế. Các bạn không cần phải upload hết các ảnh từ đầu mà có thể bổ sung sau này trong phần `setting` của project. Sau khi upload ảnh xong, hệ thống sẽ tự chạy mô hình text detection mặt định để hỗ trợ các bạn giảm thời gian đánh nhãn. 
 
 <img width="1424" alt="Screenshot 2024-11-19 at 15 20 06" src="https://github.com/user-attachments/assets/f3e2d424-9cf0-46e1-9580-6d4a2010c85d">
