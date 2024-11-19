@@ -32,17 +32,13 @@ Sau khi xác định vùng chứa văn bản, bước tiếp theo là nhận d�
 Trong nhiều tài liệu, thứ tự đọc của văn bản không phải lúc nào cũng rõ ràng, đặc biệt khi có nhiều cột, bảng, hoặc bố cục phức tạp. Việc xác định thứ tự đọc đảm bảo rằng thông tin sẽ được xử lý theo đúng thứ tự mong muốn, giúp việc rút trích dữ liệu chính xác hơn.
 
 
-
 Trong dori 3 bước text detection, text recognition, reading order detection được gọp chung trong một tool gọi là text detection như hình dưới. Ở tool này, sẽ hiển thị các từ và vị trí box của từ đó. Dori mặc định sẽ xứ lý văn bản của bạn theo đơn vị là từng từ. Do đó các bạn cần đánh nhãn theo từng từ, các bạn cần sửa lại, hay xoá hay vẽ thêm các box và text đã có sẵn cho chính xác và xác định lại thứ tự đọc cho chính xác (nếu cần thiết). Dori cung cấp 2 loại box chính là rectangle và polygon để vẽ box, thông thường chỉ cần chọn rectangle box là đủ, các chữ phức tạp mới cần pology, sau khi vẽ box xong, dori sẽ yêu cầu nhập text, các bạn cần nhập chính xác text hiển thị, phần text này sẽ hiển thị lên phần document bên trái và reading order bên phải để các bạn theo dõi. 
 
 https://github.com/user-attachments/assets/57cc6990-0865-40dd-96db-64015fa07f3d
 
 Các từ sau khi nhận dạng có thể cần được sắp xếp lại theo đúng thứ tự đọc để giúp rút trích key information chính xác hơn, để sắp xếp lại các từ các bạn cần select từ cần đổi vị trí trên pannel bên phải drag & drop đến vị trí chính xác.
 
-
-
 https://github.com/user-attachments/assets/833b00f1-a228-4474-b614-aeaaa747fae8
-
 
 ### 4. Rút Trích Thông Tin Chính (Key Information Extraction)
 **Rút trích thông tin chính là gì?**  
@@ -51,7 +47,8 @@ Sau khi văn bản được nhận diện và sắp xếp, bạn cần xác đ�
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7hs8inkl2CE?si=XpVReG2fPNvpTtwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**Cách sử dụng dori cho rút trích thông tin**
----
+## Sử dụng tính năng self train để tăng tốc quá trình đánh nhãn
 
-Với các bước này, bạn có thể sử dụng Dori để xử lý và rút trích thông tin từ nhiều loại tài liệu khác nhau. Hãy thử áp dụng để tăng hiệu suất làm việc và giảm thiểu các thao tác thủ công!
+## Huấn luyện mô hình 
+
+## Kiểm tra mô hình 
