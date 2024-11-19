@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [DRAFT]Hướng dẫn sử dụng Dori để nhận dạng các Key Information
+title: DRAFT_Hướng dẫn sử dụng Dori để nhận dạng các Key Information
 ---
 <iframe width="1000" height="600" src="https://www.youtube.com/embed/7hs8inkl2CE?si=XpVReG2fPNvpTtwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 Trong bài viết này, chúng tôi sẽ hướng dẫn bạn cách sử dụng Dori để nhận dạng và trích xuất các thông tin chính. Ví dụ, nếu bạn cần nhận dạng các thông tin như `họ tên` và `ID` trên căn cước công dân, thì `họ tên` và `ID` là những thông tin cần được trích xuất. Để thực hiện điều này, bạn sẽ cần trải qua các bước sau:  
