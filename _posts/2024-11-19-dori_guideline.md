@@ -2,6 +2,9 @@
 layout: post
 title: Hướng dẫn sử dụng Dori để nhận dạng các Key Information
 ---
+
+![Text detection](https://github.com/user-attachments/assets/09195ae2-80ae-4e3b-8f40-9237f812ff1c)
+
 Trong bài viết này, chúng tôi sẽ hướng dẫn bạn cách sử dụng Dori để nhận dạng và rút trích các thông tin chính (Key Information). Ví dụ, nếu bạn cần nhận dạng thông tin như `họ tên` và `ID` trên căn cước công dân, thì `họ tên` và `ID` chính là những thông tin cần được rút trích. Để thực hiện điều này, bạn sẽ cần trải qua các bước sau:-
 - Phát hiện văn bản
 - nhận dạng văn bản
