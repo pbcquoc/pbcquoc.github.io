@@ -3,7 +3,7 @@ layout: post
 title: DRAFT_Hướng dẫn sử dụng Dori để nhận dạng các Key Information
 ---
 <iframe width="1000" height="600" src="https://www.youtube.com/embed/7hs8inkl2CE?si=XpVReG2fPNvpTtwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-Trong bài viết này, chúng tôi sẽ hướng dẫn bạn cách sử dụng Dori để nhận dạng và trích xuất các thông tin chính. Ví dụ, nếu bạn cần nhận dạng các thông tin như `họ tên` và `ID` trên căn cước công dân, thì `họ tên` và `ID` là những thông tin cần được trích xuất. Để thực hiện điều này, bạn sẽ cần trải qua các bước sau:  
+Trong bài viết này, Mình sẽ hướng dẫn bạn cách sử dụng Dori để nhận dạng và trích xuất các thông tin chính. Ví dụ, nếu bạn cần nhận dạng các thông tin như `Họ Tên` và `ID` trên căn cước công dân, thì `Họ Tên` và `ID` là những thông tin cần được trích xuất. Để thực hiện điều này, bạn sẽ cần trải qua các bước sau:  
 - Phát hiện văn bản  
 - Nhận dạng văn bản  
 - Xác định thứ tự đọc  
@@ -41,7 +41,7 @@ Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập văn bản, nội dun
 
 ### 4. Trích xuất Thông tin Chính (Key Information Extraction)  
 **Trích xuất thông tin chính là gì?**  
-Sau khi văn bản được nhận dạng và sắp xếp, bạn cần xác định thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích `họ tên` và `ID`, hãy gắn nhãn cho hai loại thông tin này và chọn cụm từ tương ứng trong văn bản. Bạn có thể tham khảo video dưới để biết thêm chi tiết. 
+Sau khi văn bản được nhận dạng và sắp xếp, bạn cần xác định thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích `Họ Tên` và `ID`, hãy gắn nhãn cho hai loại thông tin này và chọn cụm từ tương ứng trong văn bản. Bạn có thể tham khảo video dưới để biết thêm chi tiết. 
 
 <iframe width="1000" height="600" src="https://www.youtube.com/embed/7hs8inkl2CE?si=XpVReG2fPNvpTtwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -51,7 +51,13 @@ Quá trình đánh nhãn thường mất nhiều thời gian và công sức, nh
 ## Huấn luyện Mô Hình  
 Huấn luyện mô hình là quá trình sử dụng tập dữ liệu đã được đánh nhãn để xây dựng mô hình nhận dạng. Trên Dori, bạn có thể huấn luyện mô hình trên tập dữ liệu của mình bất cứ khi nào cần. Việc huấn luyện có thể được thực hiện sau mỗi 10, 50, 100, hoặc 1000 mẫu dữ liệu để theo dõi độ chính xác của mô hình, sau khi cập nhật hoặc bổ sung dữ liệu, hoặc khi muốn nhận dạng thêm trường thông tin mới.
 
-Để bắt đầu huấn luyện trên Dori, bạn cần vào phần `Setting`, chọn `Train`, sau đó chọn mô hình phù hợp và cấu hình các tham số huấn luyện. Nhấn `Add` để khởi động quá trình huấn luyện mô hình. Hệ thống sẽ gửi email thông báo khi quá trình huấn luyện bắt đầu và kết thúc. Bạn có thể theo dõi lịch sử và độ chính xác của mô hình trong phần log. Để hiểu rõ hơn, vui lòng tham khảo video dưới đây.
+Để bắt đầu huấn luyện trên Dori, bạn cần vào phần `Setting`, chọn `Train`, sau đó chọn mô hình phù hợp và cấu hình các tham số huấn luyện. Nhấn `Add` để khởi động quá trình huấn luyện mô hình. Hệ thống sẽ gửi email thông báo khi quá trình huấn luyện bắt đầu và kết thúc. Bạn có thể theo dõi lịch sử và độ chính xác của mô hình trong phần log.
+
+### Huấn luyện Mô Hình để rút trích thông tin chính. 
+Để huấn luyện mô hình rút trích thông tin chính, các bạn cần phải huấn luyện trước các mô hình sau text detection, text recognition, reading order detection ( nếu cần), và sau đó mới huấn luyện mô hình cuối cùng là key information extraction. Điều quan trọng là 4 mô hình này cần phải huấn luyện tuần tự, tức là mô hình text detection cần huấn luyện xong trước rồi mới tới mô hình recognition, sau khi mô hình này xong thì mới huấn luyện tuần tự 2 mô hình còn lại. Thứ tự huấn luyện là qua trọng và chỉ bắt đầu huấn luyện mô hình tiếp theo nếu mô hình trước đó đã chạy xong. 
+
+Để hiểu rõ hơn, vui lòng tham khảo video dưới đây.
+
 
 ## Kiểm Tra Mô Hình  
 Sau khi mô hình được huấn luyện xong, hệ thống sẽ tự động triển khai (deploy) mô hình để cho phép bạn kiểm tra và sử dụng. Hãy chuyển sang tab `API`, chọn mô hình tương ứng, tải lên hình ảnh và nhấn `Done`. Kết quả sẽ hiển thị ở bên phải để bạn tham khảo. Đồng thời, bạn cũng có thể sử dụng lệnh `curl` để kiểm tra mô hình. Để rõ hơn, vui lòng tham khảo video dưới đây.
