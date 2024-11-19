@@ -38,6 +38,10 @@ https://github.com/user-attachments/assets/57cc6990-0865-40dd-96db-64015fa07f3d
 Các từ sau khi nhận dạng có thể cần được sắp xếp lại theo đúng thứ tự đọc để giúp rút trích key information chính xác hơn, để sắp xếp lại các từ các bạn cần select từ cần đổi vị trí trên pannel bên phải drag & drop đến vị trí chính xác.
 
 
+
+https://github.com/user-attachments/assets/833b00f1-a228-4474-b614-aeaaa747fae8
+
+
 ### 4. Rút Trích Thông Tin Chính (Key Information Extraction)
 **Rút trích thông tin chính là gì?**  
 Đây là bước cuối cùng và quan trọng nhất. Sau khi văn bản được nhận diện và sắp xếp, Dori sẽ rút trích các thông tin chính theo các trường bạn cần. Ví dụ, bạn có thể cấu hình để Dori tìm và trích xuất `họ tên` và `ID` từ nội dung đã được nhận diện, giúp bạn nhanh chóng thu thập được dữ liệu cần thiết.
