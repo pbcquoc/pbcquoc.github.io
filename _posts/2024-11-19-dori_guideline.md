@@ -48,7 +48,10 @@ https://github.com/user-attachments/assets/833b00f1-a228-4474-b614-aeaaa747fae8
 
 ### 4. Rút Trích Thông Tin Chính (Key Information Extraction)
 **Rút trích thông tin chính là gì?**  
-Đây là bước cuối cùng và quan trọng nhất. Sau khi văn bản được nhận diện và sắp xếp, Dori sẽ rút trích các thông tin chính theo các trường bạn cần. Ví dụ, bạn có thể cấu hình để Dori tìm và trích xuất `họ tên` và `ID` từ nội dung đã được nhận diện, giúp bạn nhanh chóng thu thập được dữ liệu cần thiết.
+Sau khi văn bản được nhận diện và sắp xếp, bạn cần xác định các thông tin chính mà bạn cần. Ví dụ, bạn cần rút trích `họ tên` và `ID` thì cần 2 loại nhãn này như bên dưới. sau đó select cụm từ là `họ tên` và `ID` trong văn bản trên trái. 
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7hs8inkl2CE?si=XpVReG2fPNvpTtwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **Cách sử dụng dori cho rút trích thông tin**
 ---
