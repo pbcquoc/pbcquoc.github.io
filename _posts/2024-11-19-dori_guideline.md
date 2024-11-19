@@ -11,7 +11,6 @@ Các bước trên các bạn có thể làm dễ dàng bằng cách thao tác t
 <img width="1424" alt="Screenshot 2024-11-19 at 15 20 06" src="https://github.com/user-attachments/assets/f3e2d424-9cf0-46e1-9580-6d4a2010c85d">
 
 
-https://github.com/user-attachments/assets/57cc6990-0865-40dd-96db-64015fa07f3d
 
 
 Sau khi tạo xong project, các bạn cần click vào nút `label` để tạo phần đánh nhãn cho các ảnh vừa upload. 
@@ -34,7 +33,7 @@ Trong nhiều tài liệu, thứ tự đọc của văn bản không phải lúc
 
 Trong dori 3 bước text detection, text recognition, reading order detection được gọp chung trong một tool gọi là text detection như hình dưới. Ở tool này, sẽ hiển thị các từ và vị trí box của từ đó. Dori mặc định sẽ xứ lý văn bản của bạn theo đơn vị là từng từ. Do đó các bạn cần đánh nhãn theo từng từ, các bạn cần sửa lại, hay xoá hay vẽ thêm các box và text đã có sẵn cho chính xác và xác định lại thứ tự đọc cho chính xác (nếu cần thiết). Dori cung cấp 2 loại box chính là rectangle và polygon để vẽ box, thông thường chỉ cần chọn rectangle box là đủ, các chữ phức tạp mới cần pology, sau khi vẽ box xong, dori sẽ yêu cầu nhập text, các bạn cần nhập chính xác text hiển thị, phần text này sẽ hiển thị lên phần document bên trái và reading order bên phải để các bạn theo dõi. 
 
-![image](https://github.com/user-attachments/assets/33abc7ab-09a3-4471-88e6-946ebb58842e)
+https://github.com/user-attachments/assets/57cc6990-0865-40dd-96db-64015fa07f3d
 
 Các từ sau khi nhận dạng có thể cần được sắp xếp lại theo đúng thứ tự đọc để giúp rút trích key information chính xác hơn, để sắp xếp lại các từ các bạn cần select từ cần đổi vị trí trên pannel bên phải drag & drop đến vị trí chính xác.
 
