@@ -45,7 +45,7 @@ https://github.com/user-attachments/assets/833b00f1-a228-4474-b614-aeaaa747fae8
 Sau khi văn bản được nhận diện và sắp xếp, bạn cần xác định các thông tin chính mà bạn cần. Ví dụ, bạn cần rút trích `họ tên` và `ID` thì cần 2 loại nhãn này như bên dưới. sau đó select cụm từ là `họ tên` và `ID` trong văn bản trên trái. 
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7hs8inkl2CE?si=XpVReG2fPNvpTtwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1000" height="600" src="https://www.youtube.com/embed/7hs8inkl2CE?si=XpVReG2fPNvpTtwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Sử dụng tính năng self train để tăng tốc quá trình đánh nhãn
 
