@@ -61,6 +61,11 @@ Huấn luyện mô hình là quá trình sử dụng tập dữ liệu đã đư
 
 Để bắt đầu huấn luyện trên Dori, bạn cần vào phần **Setting**, chọn **Train**, sau đó chọn mô hình phù hợp và cấu hình các tham số huấn luyện. Nhấn **Add** để khởi động quá trình huấn luyện mô hình. Hệ thống sẽ gửi email thông báo khi quá trình huấn luyện bắt đầu và kết thúc. Bạn có thể theo dõi lịch sử và độ chính xác của mô hình trong phần log.
 
+### Huấn luyện text detection như nào?
+## Huấn luyện text recognition như nào?
+## Huấn luyện reading order detection như nào?
+## Huấn luyện key information extraction như nào?
+
 ### Huấn luyện Mô Hình để rút trích thông tin chính. 
 Để huấn luyện mô hình rút trích thông tin chính, các bạn cần phải huấn luyện trước các mô hình sau **text detection**, **text recognition**, **reading order detection** ( nếu cần), và sau đó mới huấn luyện mô hình cuối cùng là **key information extraction**. Điều quan trọng là 4 mô hình này cần phải huấn luyện tuần tự, tức là mô hình **text detection** cần huấn luyện xong trước rồi mới tới mô hình **text recognition**, sau khi mô hình này xong thì mới huấn luyện tuần tự 2 mô hình còn lại. Thứ tự huấn luyện là qua trọng và chỉ bắt đầu huấn luyện mô hình tiếp theo nếu mô hình trước đó đã chạy xong. 
 
