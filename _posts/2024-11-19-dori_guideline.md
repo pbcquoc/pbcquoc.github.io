@@ -2,13 +2,17 @@
 layout: post
 title: DRAFT_Hướng dẫn sử dụng Dori để nhận dạng các Key Information
 ---
-<iframe width="1000" height="600" src="https://www.youtube.com/embed/7hs8inkl2CE?si=XpVReG2fPNvpTtwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Trong bài viết này, Mình sẽ hướng dẫn bạn cách sử dụng Dori để nhận dạng và trích xuất các thông tin chính. Ví dụ, nếu bạn cần nhận dạng các thông tin như **Họ Tên** và **ID** trên căn cước công dân, thì **Họ Tên** và **ID** là những thông tin cần được trích xuất. Để thực hiện điều này, bạn sẽ cần trải qua các bước sau:  
+1. Thu Thập dữ liệu: mình giả sự bạn đã có dữ liệu muốn nhận dạng thông tin, nếu bạn không có dữ liệu vui lòng quay lại sau
+2. Đánh nhãn dữ liêu: là quá trình dùng con người để tạo ra các thông tin cần thiết mà bạn cần model học theo. Để rút trích thông tin chính, bạn cần đánh các loại nhãn sau:
 - Phát hiện văn bản  
 - Nhận dạng văn bản  
 - Xác định thứ tự đọc  
 - Trích xuất thông tin chính  
-
+3. Huấn luyện mô hình: là quá trình dạy mô hình máy học trên tập dữ liệu đã được gán nhãn ở bước trên
+4. Kiểm tra kết quả nhận dạng: bước này đơn giản là bạn kiểm tra mô hình đã tốt hơn để sử dụng hoặc đánh nhãn tiếp và huấn luyện lại.
+  
 Các bước trên có thể được thực hiện dễ dàng trên Dori, nơi cung cấp các chức năng sẵn có như đánh nhãn, huấn luyện, triển khai và kiểm tra mô hình. Dori còn tăng tốc quá trình đánh nhãn và huấn luyện bằng các mô hình pretrained sẵn cho tiếng Việt và tiếng Anh.
 
 ## Tạo Dự Án Mới  
@@ -39,14 +43,15 @@ Dori tích hợp ba bước này trong một công cụ gọi là **Text Detecti
 
 Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập văn bản, nội dung này sẽ hiển thị trong phần **document** bên trái và **reading order** bên phải để tiện theo dõi.
 ### Làm như nào để đánh nhãn ở bước này chính xác?
+Khi vẽ bounrady box cần phải vẽ cho từng từ, không phải vẽ cho từng kí tự, cũng ko phải vẽ cho từng câu hay đoạn. Boundary box cần bao phủ chính xác từng từ, ko đươc thiếu dấu câu hay nét, không được overlap với những boundary box khác. Các bạn xem thêm minh hoạ phía dưới
 
 ### 4. Trích xuất Thông tin Chính (Key Information Extraction)  
 **Trích xuất thông tin chính là gì?**  
 Sau khi văn bản được nhận dạng và sắp xếp, bạn cần xác định thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích **Họ Tên** và **ID**, hãy gắn nhãn cho hai loại thông tin này và chọn cụm từ tương ứng trong văn bản. Bạn có thể tham khảo video dưới để biết thêm chi tiết. 
 
-<iframe width="1000" height="600" src="https://www.youtube.com/embed/7hs8inkl2CE?si=XpVReG2fPNvpTtwx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Làm như nào để đánh nhãn ở bước này chính xác?
+Khi chọn các thông tin cần nhận dạng, các bạn phải select toàn bộ đối tượng đó trong văn bản. Ví dụ, bạn muốn đánh nhãn `Nguyễn Văn A` là tên thì phải bôi đen liên tục cụm từ này, không được select Nguyễn riêng, Văn riêng, A riêng. Nếu Nguyễn Văn A không nằm liên tục nhau trên văn bản, bạn cần quay lại bước text detection để thay đổi thứ tự đọc
 
 ## Sử dụng tính năng self train để tăng tốc quá trình đánh nhãn
 Quá trình đánh nhãn thường mất nhiều thời gian và công sức, nhưng Dori cung cấp tính năng **Self Train** để giúp bạn tận dụng mô hình được huấn luyện trên dữ liệu đã đánh nhãn để tự động áp dụng vào dữ liệu chưa đánh nhãn. Thông thường, bạn chỉ cần đánh nhãn 10-20 mẫu, sau đó huấn luyện mô hình trên dữ liệu này. Khi huấn luyện xong, bạn chỉ cần nhấn **Self Train** để áp dụng mô hình lên phần dữ liệu còn lại.
