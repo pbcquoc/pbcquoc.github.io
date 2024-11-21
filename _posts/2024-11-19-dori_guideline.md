@@ -70,3 +70,5 @@ Huấn luyện mô hình là quá trình sử dụng tập dữ liệu đã đư
 ## Kiểm Tra Mô Hình  
 Sau khi mô hình được huấn luyện xong, hệ thống sẽ tự động triển khai (deploy) mô hình để cho phép bạn kiểm tra và sử dụng. Hãy chuyển sang tab **API**, chọn mô hình tương ứng, tải lên hình ảnh và nhấn **Done**. Kết quả sẽ hiển thị ở bên phải để bạn tham khảo. Đồng thời, bạn cũng có thể sử dụng lệnh **curl** để kiểm tra mô hình. Để rõ hơn, vui lòng tham khảo video dưới đây.
 
+### Quy trình kiểm tra mô hình 
+Thông thường sau khi train xong mô hình text detection và text recognition bạn đã có thể kiểm tra kết quả nhận dạng của mô hình bằng cách chon tab **API** sau đó chọn loại mô hình là **text recognition** sau đó upload một ảnh bạn muốn kiểm tra, chọn mô hình đã được huấn luyện, nhấn nút **Done** và đợi kết quả hiển thị bên phải. 
