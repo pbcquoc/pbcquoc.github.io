@@ -1,9 +1,9 @@
 ---
 layout: post
-title: DRAFT_Hướng dẫn sử dụng Dori để nhận dạng các Key Information
+title: DRAFT_Hướng dẫn sử dụng DORI để nhận dạng các Key Information
 ---
 
-Trong bài viết này, Mình sẽ hướng dẫn bạn cách sử dụng Dori để nhận dạng và trích xuất các thông tin chính. Ví dụ, nếu bạn cần nhận dạng các thông tin như **Họ Tên** và **ID** trên căn cước công dân, thì **Họ Tên** và **ID** là những thông tin cần được trích xuất. Để thực hiện điều này, bạn sẽ cần trải qua các bước sau:  
+Trong bài viết này, Mình sẽ hướng dẫn bạn cách sử dụng DORI để nhận dạng và trích xuất các thông tin chính. Ví dụ, nếu bạn cần nhận dạng các thông tin như **Họ Tên** và **ID** trên căn cước công dân, thì **Họ Tên** và **ID** là những thông tin cần được trích xuất. Để thực hiện điều này, bạn sẽ cần trải qua các bước sau:  
 1. Thu Thập dữ liệu: mình giả sự bạn đã có dữ liệu muốn nhận dạng thông tin, nếu bạn không có dữ liệu vui lòng quay lại sau
 2. Đánh nhãn dữ liêu: là quá trình dùng con người để tạo ra các thông tin cần thiết mà bạn cần model học theo. Để rút trích thông tin chính, bạn cần đánh các loại nhãn sau:
 - Phát hiện văn bản  
