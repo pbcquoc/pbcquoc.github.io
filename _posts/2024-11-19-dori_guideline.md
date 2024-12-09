@@ -26,16 +26,18 @@ Hơn thế nữa, DORI không chỉ là một công cụ mà còn có thể đư
 Với DORI, bạn có thể tối ưu hoá quy trình xây dựng mô hình nhận dạng văn bản, giảm thiểu chi phí, công sức, và thời gian, đồng thời nâng cao chất lượng và tiêu chuẩn cho các giải pháp OCR trong ngôn ngữ tiếng Việt.
 
 ## Tạo Dự Án Mới  
-Đầu tiên, hãy tạo một dự án mới trên Dori bằng cách nhấn vào **Create Project**, sau đó điền tên dự án, mô tả và phân loại. Hãy chọn hai công cụ cơ bản là **text detection** và **key information extraction**. Tiếp theo, nhấn vào **Upload Image** để chọn các ảnh cần đánh nhãn.  
+Đầu tiên, hãy tạo một dự án mới trên DORI bằng cách nhấn vào **Create Project**, sau đó điền tên dự án, mô tả và phân loại. Hãy chọn hai công cụ cơ bản là **text detection** và **key information extraction**, ngoài 2 công cụ cơ bản ngoài DORI, còn cung cấp các công cụ khác như **Phân loại văn bản**, **Phân tích bố cục**, **Xác định cấu trúc bảng**, **Rút trích mối quan hệ**, v.v. Tiếp theo, nhấn vào **Upload Image** để chọn các ảnh cần đánh nhãn.  
 
 **Gợi ý**: Bạn có thể bắt đầu với 20 ảnh cho dự án thử nghiệm nhỏ và từ 100-300 ảnh để huấn luyện mô hình phục vụ thực tế. Không cần tải lên tất cả ảnh ngay từ đầu, bạn có thể bổ sung thêm trong phần **Setting** của dự án sau này. Sau khi tải lên ảnh, hệ thống sẽ tự động chạy mô hình phát hiện văn bản mặc định để giúp giảm thời gian đánh nhãn.
 
 <img width="1424" alt="Screenshot 2024-11-19 at 15 20 06" src="https://github.com/user-attachments/assets/f3e2d424-9cf0-46e1-9580-6d4a2010c85d">
 
-Nhấn **Done** để hoàn tất bước tạo dự án. Sau đó, bạn nhấn vào **Label** để bắt đầu đánh nhãn các ảnh vừa tải lên.
+Nhấn **Done** để hoàn tất bước tạo dự án. 
+
+Sau đó, bạn nhấn vào **Label** để bắt đầu đánh nhãn các ảnh vừa tải lên, do bạn đã chọn 2 tool **text detection** và **key information extraction** nên trên giao diện đánh nhãn sẽ hiển thị 2 công cụ để giúp bạn đánh nhãn cho các bài toán này. Cụ thể về chức năng của 2 công cụ này sẽ mô tả chi tiết ở phần tiếp theo. 
 
 ## Đánh Nhãn  
-Đánh nhãn là quá trình tạo dữ liệu mẫu để huấn luyện mô hình.  
+Đánh nhãn là quá trình tạo dữ liệu mẫu để huấn luyện mô hình, tuỳ mỗi mô hình và bài toán khác nhau mà có cách đánh nhãn khác nhau. Đồng thời công cụ đánh nhãn chuyên biệt sẽ giảm rất nhiều công sức đãnh nhãn. ở DORI, mình thiết kế công cụ đánh nhãn để tối ưu cho bài toán văn bản đồng thời học hỏi và khắc phục những hạn chế của những công cụ có sẵn khác. 
 
 ### 1. Phát hiện và Nhận dạng Văn bản (Text Detection & Recognition)  
 Trước khi hướng dẫn sử dụng Dori, chúng tôi sẽ mô tả quy trình 3 bước trong việc phát hiện văn bản để giúp bạn hiểu mục đích của từng bước.
