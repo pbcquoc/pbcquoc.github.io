@@ -3,19 +3,27 @@ layout: post
 title: DRAFT_Hướng dẫn sử dụng DORI để nhận dạng các Key Information
 ---
 
-Trong bài viết này, Mình sẽ hướng dẫn bạn cách sử dụng DORI để nhận dạng và trích xuất các thông tin chính. Ví dụ, nếu bạn cần nhận dạng các thông tin như **Họ Tên** và **ID** trên căn cước công dân, thì **Họ Tên** và **ID** là những thông tin cần được trích xuất. Về cơ bản, để thực hiện điều này, bạn sẽ cần trải qua các bước sau:  
-1. Thu Thập dữ liệu: mình giả sử bạn đã có tập dữ liệu đủ lớn muốn nhận dạng thông tin, nếu bạn không có dữ liệu thì hãy tìm cách thu thập trước nhé.  
-2. Đánh nhãn dữ liêu: là quá trình dùng con người để tạo ra các thông tin cần thiết mà bạn cần model học theo. Để rút trích thông tin chính, bạn cần đánh các loại nhãn sau:
-- Phát hiện văn bản  
-- Nhận dạng văn bản  
-- Xác định thứ tự đọc (không bắt buột)
-- Trích xuất thông tin chính  
-3. Huấn luyện mô hình: là quá trình dạy mô hình máy học trên tập dữ liệu đã được gán nhãn ở bước trên
-4. Kiểm tra kết quả nhận dạng: bước này đơn giản là bạn kiểm tra mô hình đã tốt hơn để sử dụng hoặc đánh nhãn tiếp và huấn luyện lại.
+Trong bài viết này, mình sẽ hướng dẫn bạn cách sử dụng DORI để nhận dạng và trích xuất các thông tin quan trọng từ tài liệu. Chẳng hạn, nếu bạn cần xác định Họ Tên và ID trên căn cước công dân, thì hai thông tin đó chính là mục tiêu mà bạn muốn mô hình nhận dạng. Về cơ bản, quy trình thực hiện gồm các bước chính sau:
+1.	Thu thập dữ liệu: Giả sử bạn đã có sẵn tập dữ liệu đầy đủ. Nếu chưa, bạn cần tiến hành thu thập dữ liệu trước.
+2.	Đánh nhãn dữ liệu: Đây là quá trình con người can thiệp để gắn nhãn các thông tin mà mô hình cần học. Để trích xuất thông tin chính, bạn cần đánh nhãn các thành phần:
+ - Phát hiện văn bản
+ - Nhận dạng văn bản
+ - Xác định thứ tự đọc (không bắt buộc)
+ - Trích xuất thông tin chính
+3. Huấn luyện mô hình: Huấn luyện mô hình máy học trên tập dữ liệu đã được gán nhãn ở bước trên.
+4. Kiểm tra kết quả nhận dạng: Đánh giá mô hình sau khi huấn luyện để xem kết quả đã đạt yêu cầu chưa. Nếu chưa, có thể thực hiện gán nhãn bổ sung và huấn luyện lại.
 
-Các bước trên thực hiện thủ công sẽ tốn rất nhiều thời gian và chi phí, ví dụ như chi phí đánh nhãn, quản lý dữ liệu, phát triển giải pháp, huấn luyện mô hình, cập nhật khi có dữ liệu mới. Để phát triển giải pháp tốt, chắn chắn bạn cần rất nhiều thời gian và doanh nhiệp cũng tốn nhiều đầu tư tiền bạc. Mình cũng đã trải quan rất nhiều khó khăn khi phát triển các giải pháp nhận dạng cho các loại giấy tờ khác nhau theo cách thủ công như trên, cá biệt nếu bạn cần phải nhận dạng đến vài chục loại giấy tờ thì những khó khăn trên còn nhiều hơn gấp nhiều lần. Khi xây dựng những mô hình như vậy nhiều lần, mình nhận thấy rằng bài toán nhận dạng có một quy trình chuẩn, và đồng thời mình cũng pháp triển những mô hình độc quyền để giải quyết bài toán liên quan đến document ocr tốt, nhanh, nhẹ để đáp ứng các yêu cầu nghiêm ngặc để triển khai trên môi trường thực tế.
+Thực hiện thủ công các bước trên đòi hỏi rất nhiều thời gian, chi phí, và công sức—từ chi phí đánh nhãn, quản lý dữ liệu, phát triển giải pháp, đến huấn luyện mô hình và cập nhật khi dữ liệu mới xuất hiện. Nếu bạn muốn nhận dạng hàng chục loại giấy tờ khác nhau, khối lượng công việc và thách thức sẽ gia tăng đáng kể.
 
-Từ những khó khăn trên, mình đã ấp ủ để xây dựng DORI, về cơ bản DORI là một nền tảng end-to-end cung cấp giải pháp xây dựng các mô hình nhận dạng liên quan đến văn bản, giúp mình tiết kiệm thời gian xây dựng mô hình và cũng giúp các bạn có thể nhanh chóng xây dựng những giải pháp tốt nhất cho cá nhân hoặc doanh nghiệp. Đồng thời, mình hy vọng rằng bằng cách xây dựng DORI sẽ giúp nâng cao tiêu chuẩn cộng đồng cho các bài toàn nhận dạng văn bản tiếng việt bằng cách xem DORI như mô hình baseline, từ đó làm cơ sở phát triển các giải pháp khác. Cụ thể hơn, DORI cung cấp các chức năng sẵn có như đánh nhãn, huấn luyện, triển khai và kiểm tra mô hình, ngoài ra DORI còn giúp tăng tốc quá trình đánh nhãn và huấn luyện bằng các mô hình pretrained sẵn cho tiếng Việt và tiếng Anh.
+Trong quá trình phát triển nhiều mô hình nhận dạng khác nhau, mình nhận thấy các bài toán này luôn tuân theo một quy trình chuẩn. Dựa trên kinh nghiệm đó, mình đã phát triển DORI, một nền tảng end-to-end chuyên về các giải pháp nhận dạng liên quan đến văn bản. DORI giúp rút ngắn thời gian xây dựng mô hình, đồng thời hỗ trợ bạn nhanh chóng tạo ra các giải pháp chất lượng cao cho cá nhân hoặc doanh nghiệp.
+
+Hơn thế nữa, DORI không chỉ là một công cụ mà còn có thể được xem như một “baseline” để cộng đồng cùng tham khảo và nâng chuẩn chất lượng cho các bài toán nhận dạng tiếng Việt. Cụ thể, DORI cung cấp những tính năng sẵn có như:
+- Giao diện đánh nhãn dữ liệu trực quan
+- Quy trình huấn luyện tự động
+- Công cụ triển khai và kiểm thử mô hình
+- Mô hình pretrained cho tiếng Việt và tiếng Anh, giúp đẩy nhanh quá trình đánh nhãn và huấn luyện
+
+Với DORI, bạn có thể tối ưu hoá quy trình xây dựng mô hình nhận dạng văn bản, giảm thiểu chi phí, công sức, và thời gian, đồng thời nâng cao chất lượng và tiêu chuẩn cho các giải pháp OCR trong ngôn ngữ tiếng Việt.
 
 ## Tạo Dự Án Mới  
 Đầu tiên, hãy tạo một dự án mới trên Dori bằng cách nhấn vào **Create Project**, sau đó điền tên dự án, mô tả và phân loại. Hãy chọn hai công cụ cơ bản là **text detection** và **key information extraction**. Tiếp theo, nhấn vào **Upload Image** để chọn các ảnh cần đánh nhãn.  
