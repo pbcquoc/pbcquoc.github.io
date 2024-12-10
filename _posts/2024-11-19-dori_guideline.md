@@ -85,7 +85,9 @@ Ví dụ bên dưới minh hoạ cho bạn thấy thứ tự đúng của việc
 Với DORI, mình tích hợp ba bước này trong một công cụ gọi là **Text Detection**. Công cụ này hiển thị các từ cùng với vị trí box của chúng. DORI cung cấp hai loại box cơ bản: **rectangle** và **polygon**. Với các văn bản thông thường, chỉ cần chọn **rectangle** là đủ, còn các chữ phức tạp mới cần dùng **polygon**.
 <img width="1482" alt="Screenshot 2024-12-09 at 21 43 59" src="https://github.com/user-attachments/assets/d89cf111-1d2a-412a-91d0-c7923ab51e9e">
 
-Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập văn bản, nội dung này sẽ hiển thị trong phần **document** bên trái và **reading order** bên phải để tiện theo dõi, group các từ thành dòng, dòng thành đoạn, và thành page tương ứng. thay đổi vị trí các từ để xác định đúng thứ tự đọc.  
+Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập văn bản, nội dung này sẽ hiển thị trong phần **document** bên trái và **reading order** bên phải để tiện theo dõi, group các từ thành dòng, dòng thành đoạn, và thành page tương ứng. thay đổi vị trí các từ để xác định đúng thứ tự đọc. 
+
+DORI sẽ hiển thị màu khác nhau đối với dòng/đoạn/trang, đồng thời khi bạn select từng bên phần văn bản hay reading order thì các từ tương ứng bên phần ảnh sẽ được hiển thị giúp bạn kiểm tra nhanh chóng. Khi các bạn hover chuột qua các từ bên phần ảnh, nhãn của box đó sẽ được hiển thị giúp bạn kiểm tra, nếu bạn muốn thay đổi thì click vào box đó, thay đổi và nhấn enter. nhấn esc để ẩn box nhập liệu giúp bạn dễ dàng hơn khi điều chỉnh kích thước box. 
 
 ### Làm như nào để đánh nhãn ở bước này chính xác?
 Khi vẽ bounrady box cần phải vẽ cho từng từ, không phải vẽ cho từng kí tự, cũng ko phải vẽ cho từng câu hay đoạn. Boundary box cần bao phủ chính xác từng từ, ko đươc thiếu dấu câu hay nét, không được overlap với những boundary box khác. Các bạn xem thêm minh hoạ phía dưới, hình bên trái vẽ box chính xác bao phủ các dấu câu, các nét của từ. ngược lại bên trái các box vẽ không chính xác, do đó sẽ ảnh hưởng kết quả nhận dạng 
