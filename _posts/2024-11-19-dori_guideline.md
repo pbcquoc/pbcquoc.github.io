@@ -122,15 +122,29 @@ Sau khi văn bản được nhận dạng và sắp xếp, bạn cần xác đ�
 #### Làm như nào để đánh nhãn ở bước này chính xác?
 Khi chọn các thông tin cần nhận dạng, các bạn phải select toàn bộ đối tượng đó trong văn bản. Ví dụ, bạn muốn đánh nhãn `Nguyễn Văn A` là tên thì phải bôi đen liên tục cụm từ này, không được select Nguyễn riêng, Văn riêng, A riêng. Nếu Nguyễn Văn A không nằm liên tục nhau trên văn bản, bạn cần quay lại bước text detection để group các từ thành dòng, dòng thành cụm. v.v hoặc thay đổi thứ tự đọc nếu việc group không hiệu quả.
 
-## Sử dụng tính năng self train để tăng tốc quá trình đánh nhãn
-Quá trình đánh nhãn thường mất nhiều thời gian và công sức, nhưng Dori cung cấp tính năng **Self Train** để giúp bạn tận dụng mô hình được huấn luyện trên dữ liệu đã đánh nhãn để tự động áp dụng vào dữ liệu chưa đánh nhãn. Thông thường, bạn chỉ cần đánh nhãn 10-20 mẫu, sau đó huấn luyện mô hình trên dữ liệu này. Khi huấn luyện xong, bạn chỉ cần nhấn **Self Train** để áp dụng mô hình lên phần dữ liệu còn lại.
+
+
 
 ## Huấn luyện Mô Hình  
 Huấn luyện mô hình là quá trình sử dụng tập dữ liệu đã được đánh nhãn để xây dựng mô hình nhận dạng. Trên Dori, bạn có thể huấn luyện mô hình trên tập dữ liệu của mình bất cứ khi nào cần. Việc huấn luyện có thể được thực hiện sau mỗi 10, 50, 100, hoặc 1000 mẫu dữ liệu để theo dõi độ chính xác của mô hình, sau khi cập nhật hoặc bổ sung dữ liệu, hoặc khi muốn nhận dạng thêm trường thông tin mới.
 
 Để bắt đầu huấn luyện trên Dori, bạn cần vào phần **Setting**, chọn **Train**, sau đó chọn mô hình phù hợp và cấu hình các tham số huấn luyện. Nhấn **Add** để khởi động quá trình huấn luyện mô hình. Hệ thống sẽ gửi email thông báo khi quá trình huấn luyện bắt đầu và kết thúc. Bạn có thể theo dõi lịch sử và độ chính xác của mô hình trong phần log.
 
-phải đợi text detection xong đã rồi mới tới text recognition, vì thứ tự huấn luyện là quan trọng
+Mỗi mô hình có một cấu hình riêng, bạn có thể click vào tab `Model` để xem cấu hình đang được sử dụng. Các thay đổi trong phần này sẽ được lưu lại, ngoài ra bạn cũng có thể reload lại default config của mô hình bằng nút reload bên phải. 
+
+<img width="1396" alt="Screenshot 2024-12-10 at 21 41 44" src="https://github.com/user-attachments/assets/69f0ad99-6327-447e-9f11-af655964e2fe">
+
+Clip dưới minh hoạ quá trình tạo job train mô hình mới, các bạn có thể dễ dàng xem log và theo dõi độ chính xác của mô hình bằng cách click vào log 
+<div class="img-div" markdown="0">
+  <img width="1396" alt="Screenshot 2024-12-10 at 21 41 44" src="/images/dori/ScreenRecording2024-12-10at21.46.58-ezgif.com-video-to-gif-converter.gif">
+</div>
+
+
+Một điều quan trọng là bạn phải đợi text detection xong đã rồi mới tới text recognition, reading order và cuối cùng là key information extraction, kết quả huấn luyện của các mô hình trước đó được sử dụng cho các mô hình phía sau. 
+
+### Sử dụng tính năng self train để tăng tốc quá trình đánh nhãn
+Quá trình đánh nhãn thường mất nhiều thời gian và công sức, nhưng Dori cung cấp tính năng **Self Train** để giúp bạn tận dụng mô hình được huấn luyện trên dữ liệu đã đánh nhãn để tự động áp dụng vào dữ liệu chưa đánh nhãn. Thông thường, bạn chỉ cần đánh nhãn 10-20 mẫu, sau đó huấn luyện mô hình trên dữ liệu này. Khi huấn luyện xong, bạn chỉ cần nhấn **Self Train** để áp dụng mô hình lên phần dữ liệu còn lại.
+
 ### Huấn luyện text detection như nào?
 ## Huấn luyện text recognition như nào?
 ## Huấn luyện reading order detection như nào?
