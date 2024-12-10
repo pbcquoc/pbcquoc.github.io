@@ -68,6 +68,9 @@ Xem minh hoạ này, các bạn thấy nếu không group thành page( tương t
 
 Các bước group ở trên giúp tạo thành hier text, từ đó giúp xác định thứ tự đọc đúng cho văn bản. Thứ tự đúng này ảnh hưởng rất lớn đến khả năng nhận dạng key information ở bước sau. ở DORI, mình đã phát triển mô hình giúp xác định đến 4 level (từ, dòng,đoạn, page) bằng một mô hình duy nhất. Hầu hết các mô hình có sẵn như google/aws chỉ có phép nhận dạng tới dòng hoặc page những kết quả không tốt tối với tiếng việt. Ngoài ra, theo mình quan sát, phần lớn các loại giấy tờ chỉ cần group tới paragraph là đủ để xác định thứ tự đọc. chỉ những văn bản có nhiều page như trên, thì các bạn mới xem xét group thêm page. 
 
+Mặc dù mình chúng đã xác định dòng/đoạn/trang văn bản, tuy nhiên đôi khi thứ tự đọc vẫn không chính xác nếu chỉ sắp xếp các từ dựa vào những thông tin trên. Ví dụ như hoá đơn bị nghiên, hoặc văn bản có nhiều cột. thì lúc này chúng ta cần sử dụng mô hình reading order để xác định đúng thứ tự đọc của văn bản. ở DORI, mình cũng cho phép các bạn sắp xếp từng từ để xác định đúng thứ tự đọc văn bản, và dựa vào dữ liệu đó để huấn luyện reading order model. 
+
+Phần tiếp theo mình sẽ làm rõ reading order model là gì?
 
 **Xác định thứ tự đọc là gì? (Reading Order Detection)**  
 Trong các tài liệu phức tạp, thứ tự đọc không luôn rõ ràng, đặc biệt khi có nhiều cột, bảng hoặc bố cục đặc biệt. Xác định thứ tự đọc giúp đảm bảo xử lý đúng thông tin, hỗ trợ việc trích xuất dữ liệu chính xác.
