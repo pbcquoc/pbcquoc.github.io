@@ -87,6 +87,12 @@ Với DORI, mình tích hợp ba bước này trong một công cụ gọi là *
 
 Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập văn bản, nội dung này sẽ hiển thị trong phần **document** bên trái và **reading order** bên phải để tiện theo dõi, group các từ thành dòng, dòng thành đoạn, và thành page tương ứng. thay đổi vị trí các từ để xác định đúng thứ tự đọc. 
 
+DORI cho phép bạn select từng từ và right click để group lại thành dòng, các bạn có thể group từ và dòng thành đoạn, hay các dòng với nhau thành đoạn, tương tự như page. Đồng thời để dễ dàng hơn trong việc group mình hỗ trợ các bạn group các từ/dòng/đoạn trực tiếp tại phần hiển thị ảnh
+
+<img src="/images/dori/ScreenRecording2024-12-10at20.08.27-ezgif.com-video-to-gif-converter.gif" width="500"/>
+<img src="/images/dori/ScreenRecording2024-12-10at20.09.50-ezgif.com-video-to-gif-converter.gif" width="500"/>
+
+
 DORI sẽ hiển thị màu khác nhau đối với dòng/đoạn/trang, đồng thời khi bạn select từng bên phần văn bản hay reading order thì các từ tương ứng bên phần ảnh sẽ được hiển thị giúp bạn kiểm tra nhanh chóng. Khi các bạn hover chuột qua các từ bên phần ảnh, nhãn của box đó sẽ được hiển thị giúp bạn kiểm tra, nếu bạn muốn thay đổi thì click vào box đó, thay đổi và nhấn enter. nhấn esc để ẩn box nhập liệu giúp bạn dễ dàng hơn khi điều chỉnh kích thước box. 
 
 <img src="/images/dori/ScreenRecording2024-12-10at19.19.31-ezgif.com-video-to-gif-converter.gif" width="500"/>
