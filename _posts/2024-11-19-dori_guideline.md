@@ -88,7 +88,8 @@ Với DORI, mình tích hợp ba bước này trong một công cụ gọi là *
 Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập văn bản, nội dung này sẽ hiển thị trong phần **document** bên trái và **reading order** bên phải để tiện theo dõi, group các từ thành dòng, dòng thành đoạn, và thành page tương ứng. thay đổi vị trí các từ để xác định đúng thứ tự đọc.  
 
 ### Làm như nào để đánh nhãn ở bước này chính xác?
-Khi vẽ bounrady box cần phải vẽ cho từng từ, không phải vẽ cho từng kí tự, cũng ko phải vẽ cho từng câu hay đoạn. Boundary box cần bao phủ chính xác từng từ, ko đươc thiếu dấu câu hay nét, không được overlap với những boundary box khác. Các bạn xem thêm minh hoạ phía dưới
+Khi vẽ bounrady box cần phải vẽ cho từng từ, không phải vẽ cho từng kí tự, cũng ko phải vẽ cho từng câu hay đoạn. Boundary box cần bao phủ chính xác từng từ, ko đươc thiếu dấu câu hay nét, không được overlap với những boundary box khác. Các bạn xem thêm minh hoạ phía dưới, hình bên trái vẽ box chính xác bao phủ các dấu câu, các nét của từ. ngược lại bên trái các box vẽ không chính xác, do đó sẽ ảnh hưởng kết quả nhận dạng 
+![image](https://github.com/user-attachments/assets/7889a128-18ef-40ce-88a3-5a4637332f79)
 
 ### 4. Trích xuất Thông tin Chính (Key Information Extraction)  
 **Trích xuất thông tin chính là gì?**  
