@@ -76,8 +76,9 @@ Phần tiếp theo mình sẽ làm rõ reading order model là gì?
 Trong các tài liệu phức tạp, nếu chỉ dựa vào vị trí tạo độ và các nhóm như dòng/đoạn/trang thì thứ tự đọc vẫn không xác định được chính xác. Do đó các bạn cần phải xây dựng mô hình xác định thứ tự đọc, từ đó hỗ trợ việc trích xuất dữ liệu chính xác.
 
 Ví dụ bên dưới minh hoạ cho bạn thấy thứ tự đúng của việc đọc là từ trên xuống trước, sau đó mới từ trái qua phải. Về cơ bản mô hình reading order xác định xem từ nào nên được đọc trước, từ nào nên được đọc sau. 
-<img width="400" alt="Screenshot 2024-11-19 at 15 20 06" src="https://github.com/user-attachments/assets/806299c8-6d25-42e4-8b7d-84f4f001e9db">
-
+<div class="img-div" markdown="0">
+    <img src="/images/dori/https://github.com/user-attachments/assets/806299c8-6d25-42e4-8b7d-84f4f001e9db" width="500"/>
+</div>
 Để đánh nhãn cho mô hình reading order, DORI cho phép bạn di chuyển vị trí các từ để xác định lại thứ tự đọc, sau đó mô hình reading order dựa vào thông tin đó để học. 
 <img width="953" alt="Screenshot 2024-12-10 at 15 47 25" src="https://github.com/user-attachments/assets/5a12433a-2a97-409e-af4b-24e1ac443ecb">
 
@@ -95,7 +96,7 @@ Clip dưới là minh hoạ group các từ/dòng/đoạn bằng cách select t�
 </div>
 Clip dưới minh hoạ cách group từ/dòng/đoạn bằng cách select bên phần ảnh
 <div class="img-div" markdown="0">
-    <img src="/images/dori/ScreenRecording2024-12-10at20.09.50-ezgif.com-video-to-gif-converter.gif" width="500"/>
+    <img src="/images/dori/ScreenRecording2024-12-10at20.09.50-ezgif.com-video-to-gif-converter (1).gif" width="500"/>
 </div>
 
 DORI sẽ hiển thị màu khác nhau đối với dòng/đoạn/trang, đồng thời khi bạn select từng bên phần văn bản hay reading order thì các từ tương ứng bên phần ảnh sẽ được hiển thị giúp bạn kiểm tra nhanh chóng. Khi các bạn hover chuột qua các từ bên phần ảnh, nhãn của box đó sẽ được hiển thị giúp bạn kiểm tra, nếu bạn muốn thay đổi thì click vào box đó, thay đổi và nhấn enter. nhấn esc để ẩn box nhập liệu giúp bạn dễ dàng hơn khi điều chỉnh kích thước box. 
@@ -109,9 +110,10 @@ DORI sẽ hiển thị màu khác nhau đối với dòng/đoạn/trang, đồng
 Khi vẽ bounrady box cần phải vẽ cho từng từ, không phải vẽ cho từng kí tự, cũng ko phải vẽ cho từng câu hay đoạn. Boundary box cần bao phủ chính xác từng từ, ko đươc thiếu dấu câu hay nét, không được overlap với những boundary box khác. Các bạn xem thêm minh hoạ phía dưới, hình bên trái vẽ box chính xác bao phủ các dấu câu, các nét của từ. ngược lại bên trái các box vẽ thiếu chính xác, do đó sẽ ảnh hưởng kết quả nhận dạng 
 ![image](https://github.com/user-attachments/assets/7889a128-18ef-40ce-88a3-5a4637332f79)
 
+Sau khi đánh nhãn xong thì bước tiếp theo là xác định các key information mà bạn muốn nhận dạng. 
 ### 4. Trích xuất Thông tin Chính (Key Information Extraction)  
 **Trích xuất thông tin chính là gì?**  
-Sau khi văn bản được nhận dạng và sắp xếp, bạn cần xác định thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích **Họ Tên** và **ID**, hãy gắn nhãn cho hai loại thông tin này và chọn cụm từ tương ứng trong văn bản. Bạn có thể tham khảo video dưới để biết thêm chi tiết. 
+Sau khi văn bản được nhận dạng và sắp xếp, bạn cần xác định thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích **Họ Tên** và **ID**, bạn cần gắn nhãn cho hai loại thông tin này và chọn cụm từ tương ứng trong văn bản. Bạn tham khảo video dưới để biết chi tiết
 
 
 #### Làm như nào để đánh nhãn ở bước này chính xác?
