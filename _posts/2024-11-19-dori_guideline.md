@@ -78,14 +78,15 @@ Trong các tài liệu phức tạp, nếu chỉ dựa vào vị trí tạo đ�
 Ví dụ bên dưới minh hoạ cho bạn thấy thứ tự đúng của việc đọc là từ trên xuống trước, sau đó mới từ trái qua phải. Về cơ bản mô hình reading order xác định xem từ nào nên được đọc trước, từ nào nên được đọc sau. 
 ![image](https://github.com/user-attachments/assets/eee8f09a-bba2-481a-9642-961f798af1ed)
 
-DORI cho phép bạn di chuyển vị trí các từ để xác định lại thứ tự đọc, sau đó mô hình reading order dựa vào thông tin đó để học. 
+Để đánh nhãn cho mô hình reading order, DORI cho phép bạn di chuyển vị trí các từ để xác định lại thứ tự đọc, sau đó mô hình reading order dựa vào thông tin đó để học. 
 <img width="953" alt="Screenshot 2024-12-10 at 15 47 25" src="https://github.com/user-attachments/assets/5a12433a-2a97-409e-af4b-24e1ac443ecb">
 
 
-Dori tích hợp ba bước này trong một công cụ gọi là **Text Detection**. Công cụ này hiển thị các từ cùng với vị trí hộp giới hạn của chúng. Dori sẽ xử lý văn bản của bạn theo từng từ, do đó, bạn cần chỉnh sửa, xóa hoặc thêm các hộp và văn bản có sẵn để đảm bảo tính chính xác, cũng như sắp xếp lại thứ tự đọc nếu cần. Dori cung cấp hai loại hộp cơ bản: **rectangle** và **polygon**. Với các văn bản thông thường, chỉ cần chọn **rectangle** là đủ, còn các chữ phức tạp mới cần dùng **polygon**.
+Với DORI, mình tích hợp ba bước này trong một công cụ gọi là **Text Detection**. Công cụ này hiển thị các từ cùng với vị trí box của chúng. DORI cung cấp hai loại box cơ bản: **rectangle** và **polygon**. Với các văn bản thông thường, chỉ cần chọn **rectangle** là đủ, còn các chữ phức tạp mới cần dùng **polygon**.
 <img width="1482" alt="Screenshot 2024-12-09 at 21 43 59" src="https://github.com/user-attachments/assets/d89cf111-1d2a-412a-91d0-c7923ab51e9e">
 
-Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập văn bản, nội dung này sẽ hiển thị trong phần **document** bên trái và **reading order** bên phải để tiện theo dõi.
+Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập văn bản, nội dung này sẽ hiển thị trong phần **document** bên trái và **reading order** bên phải để tiện theo dõi, group các từ thành dòng, dòng thành đoạn, và thành page tương ứng. thay đổi vị trí các từ để xác định đúng thứ tự đọc.  
+
 ### Làm như nào để đánh nhãn ở bước này chính xác?
 Khi vẽ bounrady box cần phải vẽ cho từng từ, không phải vẽ cho từng kí tự, cũng ko phải vẽ cho từng câu hay đoạn. Boundary box cần bao phủ chính xác từng từ, ko đươc thiếu dấu câu hay nét, không được overlap với những boundary box khác. Các bạn xem thêm minh hoạ phía dưới
 
