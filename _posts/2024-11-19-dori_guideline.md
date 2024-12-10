@@ -73,7 +73,10 @@ Mặc dù mình chúng đã xác định dòng/đoạn/trang văn bản, tuy nhi
 Phần tiếp theo mình sẽ làm rõ reading order model là gì?
 
 **Xác định thứ tự đọc là gì? (Reading Order Detection)**  
-Trong các tài liệu phức tạp, thứ tự đọc không luôn rõ ràng, đặc biệt khi có nhiều cột, bảng hoặc bố cục đặc biệt. Xác định thứ tự đọc giúp đảm bảo xử lý đúng thông tin, hỗ trợ việc trích xuất dữ liệu chính xác.
+Trong các tài liệu phức tạp, nếu chỉ dựa vào vị trí tạo độ và các nhóm như dòng/đoạn/trang thì thứ tự đọc vẫn không xác định được chính xác. Do đó các bạn cần phải xây dựng mô hình xác định thứ tự đọc, từ đó hỗ trợ việc trích xuất dữ liệu chính xác.
+
+![image](https://github.com/user-attachments/assets/eee8f09a-bba2-481a-9642-961f798af1ed)
+
 
 Dori tích hợp ba bước này trong một công cụ gọi là **Text Detection**. Công cụ này hiển thị các từ cùng với vị trí hộp giới hạn của chúng. Dori sẽ xử lý văn bản của bạn theo từng từ, do đó, bạn cần chỉnh sửa, xóa hoặc thêm các hộp và văn bản có sẵn để đảm bảo tính chính xác, cũng như sắp xếp lại thứ tự đọc nếu cần. Dori cung cấp hai loại hộp cơ bản: **rectangle** và **polygon**. Với các văn bản thông thường, chỉ cần chọn **rectangle** là đủ, còn các chữ phức tạp mới cần dùng **polygon**.
 
