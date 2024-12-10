@@ -39,6 +39,9 @@ Sau đó, bạn nhấn vào **Label** để bắt đầu đánh nhãn các ảnh
 ## Đánh Nhãn  
 Đánh nhãn là quá trình tạo dữ liệu mẫu để huấn luyện mô hình, tuỳ mỗi mô hình và bài toán khác nhau mà có cách đánh nhãn khác nhau. Đồng thời công cụ đánh nhãn chuyên biệt sẽ giảm rất nhiều công sức đãnh nhãn. ở DORI, mình thiết kế công cụ đánh nhãn để tối ưu cho bài toán văn bản đồng thời học hỏi và khắc phục những hạn chế của những công cụ có sẵn khác. 
 
+Bước tốn thời gian nhất cho quá trình ocr là xác định và đánh nhãn cho từng từ, với những văn bản có vài trăm từ thì việc này cực kì tốn thời gian, ở DORI, sau khi các bạn upload ảnh lên mình sẽ tự chạy ocr để nhận dạng các từ/dòng/đoạn văn bản, đồng thời cũng nhận dạng nội dung của từng đó đó, giúp các bạn giảm thiếu khá nhiều thời gian huấn luyện. đồng thời, những mô hình nhận dạng và phát hiện văn bản cũng được huấn luyện trước trên vài trăm nghìn mẫu dữ liệu giúp cho các bạn chỉ cần đánh nhãn với số lượng rất ít, có thể là 10 ảnh, cũng được huấn luyện mô hình ra cho kết quả tốt. Ngoài ra, để rút ngắn thời gian đánh nhãn hơn nữa, DORI cũng cho phép sử dụng mô hình vừa huấn luyện của bạn để áp dụng vào tập dữ liệu chưa được đánh nhãn, vì mô hình mới này là do bạn tự huấn luyện trên tập các bạn đã đánh nhãn, nên kết quả của mô hình sẽ tốt hơn mô hình mặc định. 
+
+Quay trở lại với các bước cụ thể trong quá trình đánh nhãn để huấn luyện mô hình phát hiện, nhận dạng và xác định thứ tự đọc của văn bản. 
 ### 1. Phát hiện và Nhận dạng Văn bản (Text Detection & Recognition)  
 Trước khi hướng dẫn sử dụng Dori, chúng tôi sẽ mô tả quy trình 3 bước trong việc phát hiện văn bản để giúp bạn hiểu mục đích của từng bước.
 
