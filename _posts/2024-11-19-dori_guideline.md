@@ -113,7 +113,10 @@ Khi vẽ bounrady box cần phải vẽ cho từng từ, không phải vẽ cho 
 Sau khi đánh nhãn xong thì bước tiếp theo là xác định các key information mà bạn muốn nhận dạng. 
 ### 4. Trích xuất Thông tin Chính (Key Information Extraction)  
 **Trích xuất thông tin chính là gì?**  
-Sau khi văn bản được nhận dạng và sắp xếp, bạn cần xác định thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích **Họ Tên** và **ID**, bạn cần gắn nhãn cho hai loại thông tin này và chọn cụm từ tương ứng trong văn bản. Bạn tham khảo video dưới để biết chi tiết
+Sau khi văn bản được nhận dạng và sắp xếp, bạn cần xác định thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích **Họ Tên** và **ID**, bạn cần tạo nhãn cho hai loại thông tin này và chọn cụm từ tương ứng trong văn bản. Bạn tham khảo video dưới để biết chi tiết
+<div class="img-div" markdown="0">
+    <img src="/images/dori/ScreenRecording2024-12-10at21.07.55-ezgif.com-video-to-gif-converter.gif" width="500"/>
+</div>
 
 
 #### Làm như nào để đánh nhãn ở bước này chính xác?
