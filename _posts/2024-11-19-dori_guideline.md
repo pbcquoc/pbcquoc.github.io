@@ -43,13 +43,12 @@ Bước tốn thời gian nhất cho quá trình ocr là xác định và đánh
 
 Quay trở lại với các bước cụ thể trong quá trình đánh nhãn để huấn luyện mô hình phát hiện, nhận dạng và xác định thứ tự đọc của văn bản. 
 ### 1. Phát hiện và Nhận dạng Văn bản (Text Detection & Recognition)  
-Trước khi hướng dẫn sử dụng Dori, chúng tôi sẽ mô tả quy trình 3 bước trong việc phát hiện văn bản để giúp bạn hiểu mục đích của từng bước.
 
-**Phát hiện văn bản là gì? (Text Detection)**  
-Đây là bước đầu tiên trong xử lý tài liệu. Phát hiện văn bản giúp xác định các vùng có chứa văn bản trong ảnh hoặc tài liệu bằng cách tạo các hộp giới hạn (bounding boxes) xung quanh các đoạn, dòng hoặc cụm từ.
+**Phát hiện văn bản là gì? (Text Detection)** : Đây là bước xác định các vùng có chứa văn bản trong ảnh hoặc tài liệu bằng cách tạo các hộp giới hạn (bounding boxes, box) xung quanh các từ
 
-**Nhận dạng văn bản là gì? (Text Recognition)**  
-Sau khi xác định được vùng chứa văn bản, bước tiếp theo là nhận dạng nội dung trong các vùng đó, chuyển đổi hình ảnh chữ thành văn bản số mà máy tính có thể xử lý, thường sử dụng các mô hình OCR (Optical Character Recognition).
+**Nhận dạng văn bản là gì? (Text Recognition)**: Sau khi xác định được vùng chứa văn bản, bước tiếp theo là nhận dạng nội dung trong các vùng đó, chuyển đổi hình ảnh chữ thành văn bản số mà máy tính có thể xử lý, thường sử dụng các mô hình OCR (Optical Character Recognition).
+
+Ở DORI, mình thiết kế công cụ đánh nhãn không chỉ giúp các bạn đánh từng từ dễ dàng mà còn cho phép xác định dòng/đoạn/page một cách dễ dàng thành thao tác *group* 
 
 **Xác định thứ tự đọc là gì? (Reading Order Detection)**  
 Trong các tài liệu phức tạp, thứ tự đọc không luôn rõ ràng, đặc biệt khi có nhiều cột, bảng hoặc bố cục đặc biệt. Xác định thứ tự đọc giúp đảm bảo xử lý đúng thông tin, hỗ trợ việc trích xuất dữ liệu chính xác.
