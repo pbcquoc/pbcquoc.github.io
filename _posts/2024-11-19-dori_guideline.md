@@ -60,8 +60,11 @@ Có lẽ các bạn đã quen với việc cần phải xác định box và n�
 
 Trong minh hoạ trên, các bạn thấy mình nên group các từ cộng -> hoà, độc lâp -> hạnh phúc, căn cưới công dân, v.v.v thành một dòng vì chúng là các cụm có nghĩa và để để đảm bảo thứ tự đọc chính xác 
 
-![image](https://github.com/user-attachments/assets/a09fdfb0-a6e8-441f-af17-60b9764de3dc)
+![image](https://github.com/user-attachments/assets/9ccad852-b0c7-4d77-b41e-3e907dc97f7d)
+
 Ở mình hoạ này, các bạn thấy file document có 2 trang rõ ràng, nên lúc này cần group các từ/dòng/đoạn tương ứng lại thành một trang. 
+![image](https://github.com/user-attachments/assets/21b73210-6f4f-402d-82ed-4b591a8836c6)
+Xem minh hoạ này, các bạn thấy nếu không group thành page( tương tự với dòng/đoạn) thì 2 từ nằm ở 2 trang sẽ nằm khác nhau sẽ nối với nhau vì thứ tự đọc mặc định sẽ là từ trái sang phải, trên xuống. Hãy tưởng tượng thông tin như *Tên Họ* nằm không liên tục thì chắn chắn sẽ ảnh hưởng đến độ chính xác nhận dạng key information. Do đó bước group này là quan trọng.
 
 Các bước group ở trên giúp tạo thành hier text, từ đó giúp xác định thứ tự đọc đúng cho văn bản. Thứ tự đúng này ảnh hưởng rất lớn đến khả năng nhận dạng key information ở bước sau. ở DORI, mình đã phát triển mô hình giúp xác định đến 4 level (từ, dòng,đoạn, page) bằng một mô hình duy nhất. Hầu hết các mô hình có sẵn như google/aws chỉ có phép nhận dạng tới dòng hoặc page những kết quả không tốt tối với tiếng việt. Ngoài ra, theo mình quan sát, phần lớn các loại giấy tờ chỉ cần group tới paragraph là đủ để xác định thứ tự đọc. chỉ những văn bản có nhiều page như trên, thì các bạn mới xem xét group thêm page. 
 
