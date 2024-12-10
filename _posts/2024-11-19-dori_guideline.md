@@ -79,9 +79,11 @@ Ví dụ bên dưới minh hoạ cho bạn thấy thứ tự đúng của việc
 ![image](https://github.com/user-attachments/assets/eee8f09a-bba2-481a-9642-961f798af1ed)
 
 DORI cho phép bạn di chuyển vị trí các từ để xác định lại thứ tự đọc, sau đó mô hình reading order dựa vào thông tin đó để học. 
+<img width="953" alt="Screenshot 2024-12-10 at 15 47 25" src="https://github.com/user-attachments/assets/5a12433a-2a97-409e-af4b-24e1ac443ecb">
 
 
 Dori tích hợp ba bước này trong một công cụ gọi là **Text Detection**. Công cụ này hiển thị các từ cùng với vị trí hộp giới hạn của chúng. Dori sẽ xử lý văn bản của bạn theo từng từ, do đó, bạn cần chỉnh sửa, xóa hoặc thêm các hộp và văn bản có sẵn để đảm bảo tính chính xác, cũng như sắp xếp lại thứ tự đọc nếu cần. Dori cung cấp hai loại hộp cơ bản: **rectangle** và **polygon**. Với các văn bản thông thường, chỉ cần chọn **rectangle** là đủ, còn các chữ phức tạp mới cần dùng **polygon**.
+<img width="1482" alt="Screenshot 2024-12-09 at 21 43 59" src="https://github.com/user-attachments/assets/d89cf111-1d2a-412a-91d0-c7923ab51e9e">
 
 Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập văn bản, nội dung này sẽ hiển thị trong phần **document** bên trái và **reading order** bên phải để tiện theo dõi.
 ### Làm như nào để đánh nhãn ở bước này chính xác?
