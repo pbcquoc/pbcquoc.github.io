@@ -89,6 +89,10 @@ Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập văn bản, nội dun
 
 DORI sẽ hiển thị màu khác nhau đối với dòng/đoạn/trang, đồng thời khi bạn select từng bên phần văn bản hay reading order thì các từ tương ứng bên phần ảnh sẽ được hiển thị giúp bạn kiểm tra nhanh chóng. Khi các bạn hover chuột qua các từ bên phần ảnh, nhãn của box đó sẽ được hiển thị giúp bạn kiểm tra, nếu bạn muốn thay đổi thì click vào box đó, thay đổi và nhấn enter. nhấn esc để ẩn box nhập liệu giúp bạn dễ dàng hơn khi điều chỉnh kích thước box. 
 
+<img src="/images/dori/ScreenRecording2024-12-10at19.19.31-ezgif.com-video-to-gif-converter.gif" width="500"/>
+
+
+
 ### Làm như nào để đánh nhãn ở bước này chính xác?
 Khi vẽ bounrady box cần phải vẽ cho từng từ, không phải vẽ cho từng kí tự, cũng ko phải vẽ cho từng câu hay đoạn. Boundary box cần bao phủ chính xác từng từ, ko đươc thiếu dấu câu hay nét, không được overlap với những boundary box khác. Các bạn xem thêm minh hoạ phía dưới, hình bên trái vẽ box chính xác bao phủ các dấu câu, các nét của từ. ngược lại bên trái các box vẽ không chính xác, do đó sẽ ảnh hưởng kết quả nhận dạng 
 ![image](https://github.com/user-attachments/assets/7889a128-18ef-40ce-88a3-5a4637332f79)
