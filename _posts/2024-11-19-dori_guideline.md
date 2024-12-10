@@ -42,13 +42,29 @@ Sau đó, bạn nhấn vào **Label** để bắt đầu đánh nhãn các ảnh
 Bước tốn thời gian nhất cho quá trình ocr là xác định và đánh nhãn cho từng từ, với những văn bản có vài trăm từ thì việc này cực kì tốn thời gian, ở DORI, sau khi các bạn upload ảnh lên mình sẽ tự chạy ocr để nhận dạng các từ/dòng/đoạn văn bản, đồng thời cũng nhận dạng nội dung của từng đó đó, giúp các bạn giảm thiếu khá nhiều thời gian huấn luyện. đồng thời, những mô hình nhận dạng và phát hiện văn bản cũng được huấn luyện trước trên vài trăm nghìn mẫu dữ liệu giúp cho các bạn chỉ cần đánh nhãn với số lượng rất ít, có thể là 10 ảnh, cũng được huấn luyện mô hình ra cho kết quả tốt. Ngoài ra, để rút ngắn thời gian đánh nhãn hơn nữa, DORI cũng cho phép sử dụng mô hình vừa huấn luyện của bạn để áp dụng vào tập dữ liệu chưa được đánh nhãn, vì mô hình mới này là do bạn tự huấn luyện trên tập các bạn đã đánh nhãn, nên kết quả của mô hình sẽ tốt hơn mô hình mặc định. 
 
 Quay trở lại với các bước cụ thể trong quá trình đánh nhãn để huấn luyện mô hình phát hiện, nhận dạng và xác định thứ tự đọc của văn bản. 
-### 1. Phát hiện và Nhận dạng Văn bản (Text Detection & Recognition)  
+### 1. Phát hiện, Nhận dạng và xác định thứ tự đọc của văn bản (Text Detection, Recognition & Reading Order)  
 
 **Phát hiện văn bản là gì? (Text Detection)** : Đây là bước xác định các vùng có chứa văn bản trong ảnh hoặc tài liệu bằng cách tạo các hộp giới hạn (bounding boxes, box) xung quanh các từ
 
 **Nhận dạng văn bản là gì? (Text Recognition)**: Sau khi xác định được vùng chứa văn bản, bước tiếp theo là nhận dạng nội dung trong các vùng đó, chuyển đổi hình ảnh chữ thành văn bản số mà máy tính có thể xử lý, thường sử dụng các mô hình OCR (Optical Character Recognition).
 
-Ở DORI, mình thiết kế công cụ đánh nhãn không chỉ giúp các bạn đánh từng từ dễ dàng mà còn cho phép xác định dòng/đoạn/page một cách dễ dàng thành thao tác *group* 
+Có lẽ các bạn đã quen với việc cần phải xác định box và nội dung trong đó, 
+Ở DORI, mình thiết kế công cụ đánh nhãn không chỉ giúp các bạn đánh từng từ dễ dàng mà còn cho phép xác định dòng/đoạn/page một cách dễ dàng thành thao tác **group**. Ở DORI, mình định nghĩa:
+- **Dòng văn bản (Line)** là các từ có liên quan với nhau được sắp xếp theo tạo độ x ( ví dụ như tên sản phảm, địa chỉ, v.v.v tóm lại là những từ nên được gộp chung trên 1 dòng để tạo dành một cụm từ có nghĩa)
+- **Đoạn văn bản(Paragraph)** là các dòng liên quan với nhau nên được sắp xếp theo tạo độ y để tạo ra một đoạn có nghĩa.
+- **Trang văn bản(Page)*** là các tập hợp các từ/dòng/đoạn để tạo thành một trang, thông thường, các bạn chỉ cần nhóm tới level Paragraph là đủ, chỉ những file pdf/ảnh chứa nhiều trang mới cần tới level Page
+
+Để hiểu rõ hơn các bạn xem những ví dụ ở dưới đây về việc nên nhóm dòng/đoạn/trang văn bản như nào cho tốt.
+
+![image](https://github.com/user-attachments/assets/0ad88a4c-74ba-47df-91cc-5478b9fc2b1e)
+
+Trong minh hoạ trên, các bạn thấy mình nên group các từ cộng -> hoà, độc lâp -> hạnh phúc, căn cưới công dân, v.v.v thành một dòng vì chúng là các cụm có nghĩa và để để đảm bảo thứ tự đọc chính xác 
+
+![image](https://github.com/user-attachments/assets/a09fdfb0-a6e8-441f-af17-60b9764de3dc)
+Ở mình hoạ này, các bạn thấy file document có 2 trang rõ ràng, nên lúc này cần group các từ/dòng/đoạn tương ứng lại thành một trang. 
+
+Các bước group ở trên giúp tạo thành hier text, từ đó giúp xác định thứ tự đọc đúng cho văn bản. Thứ tự đúng này ảnh hưởng rất lớn đến khả năng nhận dạng key information ở bước sau. ở DORI, mình đã phát triển mô hình giúp xác định đến 4 level (từ, dòng,đoạn, page) bằng một mô hình duy nhất. Hầu hết các mô hình có sẵn như google/aws chỉ có phép nhận dạng tới dòng hoặc page những kết quả không tốt tối với tiếng việt. Ngoài ra, theo mình quan sát, phần lớn các loại giấy tờ chỉ cần group tới paragraph là đủ để xác định thứ tự đọc. chỉ những văn bản có nhiều page như trên, thì các bạn mới xem xét group thêm page. 
+
 
 **Xác định thứ tự đọc là gì? (Reading Order Detection)**  
 Trong các tài liệu phức tạp, thứ tự đọc không luôn rõ ràng, đặc biệt khi có nhiều cột, bảng hoặc bố cục đặc biệt. Xác định thứ tự đọc giúp đảm bảo xử lý đúng thông tin, hỗ trợ việc trích xuất dữ liệu chính xác.
