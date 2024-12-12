@@ -161,3 +161,11 @@ Quá trình đánh nhãn thường mất nhiều thời gian và công sức, nh
 ### Huấn luyện text detection, text recognition, reading order detection, key information extraction như nào?
 Huấn luyện mô hình text detection, text recognition, v.v trên DORI về cơ bản là hoàn thành giống như. Tuy nhiên mình muốn nhấn mạnh rằng thứ tự huấn luyện là quan trọng vì mô trước phía sau như text recognition, key information extract sử dụng mô hình huấn luyện ở bước trước. 
 
+## Chạy Offline mô hình của bạn. 
+
+Khi huấn luyện xong, DORI cho phép bạn tải về mô hình của mình và chạy offline trên máy tính, những mô hình được mình thiết kế để chạy on-device, lightweight nên đều chạy được trên CPU và có tốt độ xử lý thuộc top đầu trên thị thường. Bạn chỉ đơn vào mô hình đã huấn luyện để tải về và chạy theo hướng dẫn trong README.
+<img width="1396" alt="Screenshot 2024-12-12 at 11 44 57" src="https://github.com/user-attachments/assets/3da4d2da-f968-4cf3-890a-4f79204f0c78" />
+
+
+
+Ngoài các chức năng ở trên DORI cho phép các bạn thêm các thành viên để đánh nhãn, và cũng hỗ trợ các bài toán quan trọng khác như Phân loại văn bản, xác định layout, chỉnh phẳng ảnh, nhận dạng và xác định cấu trúc bảng, rút trích mối quan hệ. 
