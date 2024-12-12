@@ -30,7 +30,7 @@ Với DORI, bạn có thể tối ưu hoá quy trình xây dựng mô hình nh�
 
 **Gợi ý**: Bạn có thể bắt đầu với 20 ảnh cho dự án thử nghiệm nhỏ và từ 100-300 ảnh để huấn luyện mô hình phục vụ thực tế. Không cần tải lên tất cả ảnh ngay từ đầu, bạn có thể bổ sung thêm trong phần **Setting** của dự án sau này. Sau khi tải lên ảnh, hệ thống sẽ tự động chạy mô hình phát hiện văn bản mặc định để giúp giảm thời gian đánh nhãn.
 <div class="img-div" markdown="0">
- <img alt="Screenshot 2024-11-19 at 15 20 06" src="/images/dori/create_project.jpg">
+ <img width="1200px" alt="Screenshot 2024-11-19 at 15 20 06" src="/images/dori/create_project.jpg">
 </div>
 
 Nhấn **Done** để hoàn tất bước tạo dự án. 
