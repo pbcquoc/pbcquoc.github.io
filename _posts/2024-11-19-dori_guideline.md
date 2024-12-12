@@ -93,17 +93,17 @@ DORI cho phép bạn select từng từ và right click để group lại thành
 
 Clip dưới là minh hoạ group các từ/dòng/đoạn bằng cách select từng từ/dòng
 <div class="img-div" markdown="0">
-    <img src="/images/dori/group.gif" width="500"/>
+    <img src="/images/dori/group.gif" width="800"/>
 </div>
 Clip dưới minh hoạ cách group từ/dòng/đoạn bằng cách select bên phần ảnh
 <div class="img-div" markdown="0">
-    <img src="/images/dori/group_2.gif" width="500"/>
+    <img src="/images/dori/group_2.gif" width="800"/>
 </div>
 
 DORI sẽ hiển thị màu khác nhau đối với dòng/đoạn/trang, đồng thời khi bạn select từng bên phần văn bản hay reading order thì các từ tương ứng bên phần ảnh sẽ được hiển thị giúp bạn kiểm tra nhanh chóng. Khi các bạn hover chuột qua các từ bên phần ảnh, nhãn của box đó sẽ được hiển thị giúp bạn kiểm tra, nếu bạn muốn thay đổi thì click vào box đó, thay đổi và nhấn enter. nhấn esc để ẩn box nhập liệu giúp bạn dễ dàng hơn khi điều chỉnh kích thước box. 
 
 <div class="img-div" markdown="0">
-    <img src="/images/dori/text_detection_label.gif" width="500"/>
+    <img src="/images/dori/text_detection_label.gif" width="800"/>
 </div>
 
 
@@ -116,7 +116,7 @@ Sau khi đánh nhãn xong thì bước tiếp theo là xác định các key inf
 **Trích xuất thông tin chính là gì?**  
 Sau khi văn bản được nhận dạng và sắp xếp, bạn cần xác định thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích **Họ Tên** và **ID**, bạn cần tạo nhãn cho hai loại thông tin này và chọn cụm từ tương ứng trong văn bản. Bạn tham khảo video dưới để biết chi tiết
 <div class="img-div" markdown="0">
-    <img src="/images/dori/kie_label.gif" width="500"/>
+    <img src="/images/dori/kie_label.gif" width="800"/>
 </div>
 
 
@@ -141,7 +141,7 @@ Clip dưới minh hoạ quá trình tạo job train mô hình mới, các bạn 
 Phần log thể hiện các metrics quan trọng được highlight bằng màu đỏ, các metrics này càng lớn càng tốt. ngoài ra phần log cũng thể hiện các lỗi nếu có, do vậy bạn có thể nhìn vào log vào thực hiện các điều chỉ hoặc yêu cầu hỗ trợ. 
 
 <div class="img-div" markdown="0">
-  <img width="1396" alt="Screenshot 2024-12-10 at 21 41 44" src="/images/dori/new_train.gif">
+  <img width="800" alt="Screenshot 2024-12-10 at 21 41 44" src="/images/dori/new_train.gif">
 </div>
 
 Sau khi huấn luyện xong, mô hình của bạn sẽ được tự động deploy ( xem thêm giải thích bên dưới). 
