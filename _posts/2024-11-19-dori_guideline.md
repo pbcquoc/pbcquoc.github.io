@@ -146,12 +146,12 @@ Nếu Nguyễn Văn A không nằm liền nhau trên văn bản, bạn cần qua
 **Huấn luyện mô hình** là quá trình sử dụng tập dữ liệu đã được đánh nhãn để xây dựng mô hình nhận dạng. Trên DORI, bạn có thể huấn luyện mô hình trên tập dữ liệu của mình bất cứ khi nào cần. Việc huấn luyện có thể thực hiện sau mỗi 10, 50, 100, hoặc 1000 mẫu dữ liệu, giúp bạn theo dõi độ chính xác của mô hình sau khi cập nhật hoặc bổ sung dữ liệu, hoặc khi muốn nhận dạng thêm các trường thông tin mới.
 
 Cách bắt đầu huấn luyện trên DORI
-	1.	**Truy cập cài đặt**: Vào phần **Setting**, chọn **Train**.
-	2.	**Chọn mô hình**: Lựa chọn mô hình phù hợp với bài toán của bạn.
-	3.	**Cấu hình tham số huấn luyện**:
-	- Thông thường, bạn không cần thay đổi các tham số mặc định, ngoại trừ epoch_num (số lần hoàn thành huấn luyện trên toàn bộ dữ liệu). Việc điều chỉnh tham số này giúp giảm thời gian huấn luyện và tối ưu hóa chi phí.
-	- Nếu cần, bạn có thể tick chọn **Include AI-Augmented Labels** để bổ sung dữ liệu phát sinh tự động bởi mô hình. Tuy nhiên, mình khuyến nghị **không nên chọn** tùy chọn này trừ khi dữ liệu đã được đánh nhãn lại cẩn thận bởi labeler.
-	4.	**Khởi động huấn luyện**: Nhấn **Add** để bắt đầu quá trình huấn luyện mô hình.
+1. **Truy cập cài đặt**: Vào phần **Setting**, chọn **Train**.
+2. **Chọn mô hình**: Lựa chọn mô hình phù hợp với bài toán của bạn.
+3. **Cấu hình tham số huấn luyện**:
+- Thông thường, bạn không cần thay đổi các tham số mặc định, ngoại trừ epoch_num (số lần hoàn thành huấn luyện trên toàn bộ dữ liệu). Việc điều chỉnh tham số này giúp giảm thời gian huấn luyện và tối ưu hóa chi phí.
+- Nếu cần, bạn có thể tick chọn **Include AI-Augmented Labels** để bổ sung dữ liệu phát sinh tự động bởi mô hình. Tuy nhiên, mình khuyến nghị **không nên chọn** tùy chọn này trừ khi dữ liệu đã được đánh nhãn lại cẩn thận bởi labeler.
+4. **Khởi động huấn luyện**: Nhấn **Add** để bắt đầu quá trình huấn luyện mô hình.
 
 Hệ thống sẽ gửi email thông báo khi quá trình huấn luyện bắt đầu và kết thúc. Bạn cũng có thể theo dõi lịch sử và độ chính xác của mô hình trong phần **Log**, giúp quản lý và đánh giá hiệu quả mô hình một cách dễ dàng.
 
