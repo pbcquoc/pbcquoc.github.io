@@ -15,15 +15,13 @@ Trong bài viết này, mình sẽ hướng dẫn bạn cách sử dụng **DORI
 
 Thực hiện thủ công các bước trên đòi hỏi rất nhiều thời gian, chi phí, và công sức—từ chi phí đánh nhãn, quản lý dữ liệu, phát triển giải pháp, đến huấn luyện mô hình và cập nhật khi dữ liệu mới xuất hiện. Nếu bạn muốn nhận dạng hàng chục loại giấy tờ khác nhau, khối lượng công việc và thách thức sẽ gia tăng đáng kể.
 
-Trong quá trình phát triển nhiều mô hình nhận dạng khác nhau, mình nhận thấy rằng các bài toán này luôn tuân theo một quy trình chuẩn. Chính từ những kinh nghiệm đó, mình đã xây dựng **DORI** – một nền tảng **end-to-end** chuyên cung cấp các giải pháp nhận dạng văn bản toàn diện. **DORI** không chỉ giúp bạn rút ngắn thời gian xây dựng mô hình mà còn hỗ trợ tạo ra các giải pháp chất lượng cao, phù hợp cho cả cá nhân lẫn doanh nghiệp.
+Trong quá trình phát triển nhiều mô hình nhận dạng khác nhau, mình nhận thấy rằng các bài toán này luôn tuân theo một quy trình chuẩn. Từ những kinh nghiệm tích lũy, mình đã xây dựng DORI – một nền tảng end-to-end chuyên cung cấp các giải pháp nhận dạng văn bản toàn diện. DORI không chỉ giúp rút ngắn thời gian xây dựng mô hình mà còn hỗ trợ tạo ra các giải pháp chất lượng cao, đáp ứng nhu cầu của cả cá nhân lẫn doanh nghiệp. Với khả năng xử lý hiệu quả và giao diện thân thiện, DORI tối ưu hóa quy trình xây dựng mô hình nhận dạng văn bản, giúp bạn giảm thiểu chi phí, tiết kiệm thời gian và đảm bảo tiêu chuẩn chất lượng cao nhất cho các giải pháp OCR – đặc biệt là trong ngôn ngữ tiếng Việt.
 
 **DORI** không đơn thuần là một công cụ. Với khả năng đóng vai trò như một “**baseline**” chuẩn mực, **DORI** còn là nền tảng để cộng đồng cùng tham khảo và nâng cao chất lượng trong các bài toán nhận dạng tiếng Việt. Nổi bật với các tính năng sẵn có như:
 - **Giao diện đánh nhãn dữ liệu trực quan**: Giúp bạn dễ dàng xử lý và quản lý dữ liệu.
 - **Quy trình huấn luyện tự động**: Đơn giản hóa việc huấn luyện mô hình chỉ với vài thao tác.
 - **Công cụ triển khai và kiểm thử mô hình**: Tích hợp các bước từ huấn luyện đến triển khai để đánh giá hiệu quả.
 - **Mô hình pretrained cho tiếng Việt và tiếng Anh**: Tăng tốc độ đánh nhãn và huấn luyện, giảm thiểu khối lượng công việc thủ công.
-
-Với **DORI**, bạn có thể tối ưu hóa quy trình xây dựng mô hình nhận dạng văn bản, giảm chi phí và thời gian, đồng thời đảm bảo tiêu chuẩn chất lượng cao nhất cho các giải pháp OCR – đặc biệt trong ngôn ngữ **tiếng Việt**.
 
 Để sử dụng **DORI**, các bạn truy cập trang chủ tại [https://dori.vn](https://dori.vn). Sau đó, chọn Đăng nhập hoặc Đăng ký nếu chưa có tài khoản. **DORI** hỗ trợ đăng nhập dễ dàng bằng tài khoản Google hoặc bằng tài khoản tự tạo.
 
