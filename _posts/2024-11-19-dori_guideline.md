@@ -105,6 +105,9 @@ Clip dưới là minh hoạ group các từ/dòng/đoạn bằng cách select t�
 <div class="img-div" markdown="0">
     <img src="/images/dori/group.gif" width="800"/>
 </div>
+
+![image](/images/dori/group.gif)
+
 Clip dưới minh hoạ cách group từ/dòng/đoạn bằng cách select bên phần ảnh
 <div class="img-div" markdown="0">
     <img src="/images/dori/group_2.gif" width="800"/>
@@ -132,7 +135,9 @@ Sau khi đánh nhãn xong thì bước tiếp theo là xác định các key inf
 **Trích xuất thông tin chính là gì?**  
 Sau khi văn bản được nhận dạng và sắp xếp, bước tiếp theo là xác định các thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích **Họ Tên** và **ID**, bạn sẽ tạo nhãn cho hai loại thông tin này, sau đó chọn các cụm từ tương ứng trong văn bản để gán nhãn.
 
-Các bạn có thể tham khảo video dưới đây để hiểu rõ hơn về cách thực hiện.<div class="img-div" markdown="0">
+Các bạn có thể tham khảo video dưới đây để hiểu rõ hơn về cách thực hiện.
+
+<div class="img-div" markdown="0">
     <img src="/images/dori/kie_label.gif" width="800"/>
 </div>
 
