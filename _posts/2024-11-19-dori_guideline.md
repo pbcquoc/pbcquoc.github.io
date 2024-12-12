@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hướng dẫn sử dụng DORI để nhận dạng các thông tin chính ( Key Information Extraction using DORI)
+title: Hướng dẫn sử dụng DORI để nhận dạng các thông tin chính - Key Information Extraction using DORI
 ---
 
 Trong bài viết này, mình sẽ hướng dẫn bạn cách sử dụng **DORI** để nhận dạng và trích xuất các thông tin quan trọng từ tài liệu. Chẳng hạn, nếu bạn cần xác định **Họ Tên** và **ID** trên căn cước công dân, thì hai thông tin đó chính là mục tiêu mà bạn muốn mô hình nhận dạng. Về cơ bản, quy trình thực hiện gồm các bước chính sau:
