@@ -168,15 +168,14 @@ Nếu cần quay lại cấu hình mặc định của mô hình, bạn chỉ c�
 
 Clip dưới đây minh họa quá trình tạo job để huấn luyện mô hình mới. Các bạn có thể dễ dàng theo dõi **log** và kiểm tra độ chính xác của mô hình bằng cách nhấn vào log.
 
-Phần log hiển thị các **metrics quan trọng** được đánh dấu bằng màu đỏ, giúp bạn dễ dàng nhận biết. Các metrics này **càng lớn** thì mô hình hoạt động càng tốt. Bên cạnh đó, log cũng cung cấp thông tin về các lỗi (nếu có), giúp bạn nhanh chóng phát hiện vấn đề và thực hiện các điều chỉnh cần thiết, hoặc yêu cầu hỗ trợ kịp thời.
-
 <div class="img-div" markdown="0">
   <img width="800" alt="Screenshot 2024-12-10 at 21 41 44" src="/images/dori/new_train.gif">
 </div>
 
-Sau khi quá trình huấn luyện hoàn tất, mô hình của bạn sẽ được tự động **deploy** (triển khai) để sẵn sàng sử dụng.
+Phần log hiển thị các **metrics quan trọng** được đánh dấu bằng màu đỏ, giúp bạn dễ dàng nhận biết. Các metrics này **càng lớn** thì mô hình hoạt động càng tốt. Bên cạnh đó, log cũng cung cấp thông tin về các lỗi (nếu có), giúp bạn nhanh chóng phát hiện vấn đề và thực hiện các điều chỉnh cần thiết, hoặc yêu cầu hỗ trợ kịp thời.
 
-Nếu bạn cần thêm thông tin chi tiết về cách hoạt động của quá trình deploy, hãy xem phần giải thích bên dưới.
+
+Sau khi quá trình huấn luyện hoàn tất, mô hình của bạn sẽ được tự động **deploy** (triển khai) để sẵn sàng sử dụng. Các bạn hãy xem phần giải thích về giao diện bên dưới.
 ![image](/images/dori/train_screen.jpg)
 
 Sau đó bạn có thể dễ dàng kiểm tra mô hình vừa huấn luyện bên tab **API**
