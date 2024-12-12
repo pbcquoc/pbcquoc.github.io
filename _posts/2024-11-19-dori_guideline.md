@@ -15,7 +15,7 @@ Trong bài viết này, mình sẽ hướng dẫn bạn cách sử dụng **DORI
 
 Thực hiện thủ công các bước trên đòi hỏi rất nhiều thời gian, chi phí, và công sức—từ chi phí đánh nhãn, quản lý dữ liệu, phát triển giải pháp, đến huấn luyện mô hình và cập nhật khi dữ liệu mới xuất hiện. Nếu bạn muốn nhận dạng hàng chục loại giấy tờ khác nhau, khối lượng công việc và thách thức sẽ gia tăng đáng kể.
 
-Trong quá trình phát triển nhiều mô hình nhận dạng khác nhau, mình nhận thấy rằng các bài toán này luôn tuân theo một quy trình chuẩn. Từ những kinh nghiệm tích lũy, mình đã xây dựng DORI – một nền tảng end-to-end chuyên cung cấp các giải pháp nhận dạng văn bản toàn diện. DORI không chỉ giúp rút ngắn thời gian xây dựng mô hình mà còn hỗ trợ tạo ra các giải pháp chất lượng cao, đáp ứng nhu cầu của cả cá nhân lẫn doanh nghiệp. Với khả năng xử lý hiệu quả và giao diện thân thiện, DORI tối ưu hóa quy trình xây dựng mô hình nhận dạng văn bản, giúp bạn giảm thiểu chi phí, tiết kiệm thời gian và đảm bảo tiêu chuẩn chất lượng cao nhất cho các giải pháp OCR – đặc biệt là trong ngôn ngữ tiếng Việt.
+Trong quá trình phát triển nhiều mô hình nhận dạng khác nhau, mình nhận thấy rằng các bài toán này luôn tuân theo một quy trình chuẩn. Từ những kinh nghiệm tích lũy, mình đã xây dựng **DORI** – một nền tảng **end-to-end** chuyên cung cấp các giải pháp nhận dạng văn bản toàn diện. **DORI** không chỉ giúp rút ngắn thời gian xây dựng mô hình mà còn hỗ trợ tạo ra các giải pháp chất lượng cao, đáp ứng nhu cầu của cả cá nhân lẫn doanh nghiệp. Với khả năng xử lý hiệu quả và giao diện thân thiện, **DORI** tối ưu hóa quy trình xây dựng mô hình nhận dạng văn bản, giúp bạn giảm thiểu chi phí, tiết kiệm thời gian và đảm bảo tiêu chuẩn chất lượng cao nhất cho các giải pháp OCR – đặc biệt là trong ngôn ngữ tiếng Việt.
 
 **DORI** không đơn thuần là một công cụ. Với khả năng đóng vai trò như một “**baseline**” chuẩn mực, **DORI** còn là nền tảng để cộng đồng cùng tham khảo và nâng cao chất lượng trong các bài toán nhận dạng tiếng Việt. Nổi bật với các tính năng sẵn có như:
 - **Giao diện đánh nhãn dữ liệu trực quan**: Giúp bạn dễ dàng xử lý và quản lý dữ liệu.
@@ -23,9 +23,10 @@ Trong quá trình phát triển nhiều mô hình nhận dạng khác nhau, mìn
 - **Công cụ triển khai và kiểm thử mô hình**: Tích hợp các bước từ huấn luyện đến triển khai để đánh giá hiệu quả.
 - **Mô hình pretrained cho tiếng Việt và tiếng Anh**: Tăng tốc độ đánh nhãn và huấn luyện, giảm thiểu khối lượng công việc thủ công.
 
-Để sử dụng **DORI**, các bạn truy cập trang chủ tại [https://dori.vn](https://dori.vn). Sau đó, chọn Đăng nhập hoặc Đăng ký nếu chưa có tài khoản. **DORI** hỗ trợ đăng nhập dễ dàng bằng tài khoản Google hoặc bằng tài khoản tự tạo.
+Để sử dụng **DORI**, các bạn truy cập trang chủ tại [https://dori.vocr.vn](https://dori.vocr.vn). Sau đó, chọn Đăng nhập hoặc Đăng ký nếu chưa có tài khoản. **DORI** hỗ trợ đăng nhập dễ dàng bằng tài khoản Google hoặc bằng tài khoản tự tạo.
 
-Sau khi hoàn tất đăng nhập, các bạn sẽ được đưa đến giao diện chính, nơi quản lý tất cả các dự án của mình. Tại đây, để bắt đầu một dự án mới, các bạn thực hiện các bước sau:
+Sau khi hoàn tất đăng nhập, các bạn sẽ được đưa đến giao diện chính, nơi quản lý tất cả các dự án của mình. Bạn hãy chọn ngôn ngữ ưu thích tiếng Việt/Anh tại góc trái dưới. Sau đó, để bắt đầu một dự án mới, các bạn thực hiện các bước sau:
+![image](/images/dori/project_home.jpg)
 
 ## Tạo Dự Án Mới  
 Đầu tiên, hãy tạo một dự án mới trên DORI bằng cách nhấn vào **Create Project**, sau đó điền tên dự án, mô tả và phân loại. Hãy chọn hai công cụ cơ bản là **text detection** và **key information extraction**, ngoài 2 công cụ cơ bản ngoài DORI, còn cung cấp các công cụ khác như **Phân loại văn bản**, **Phân tích bố cục**, **Xác định cấu trúc bảng**, **Rút trích mối quan hệ**, v.v. Tiếp theo, nhấn vào **Upload Image** để chọn các ảnh cần đánh nhãn.  
@@ -179,7 +180,7 @@ Sau đó bạn có thể dễ dàng kiểm tra mô hình vừa huấn luyện b�
 
 Hãy lặp lại quy trình trên, bao gồm các bước đánh nhãn, huấn luyện, và kiểm tra, lần lượt đối với từng mô hình: **text detection**, sau đó là **text recognition**, tiếp đến là **reading order**, và cuối cùng là **key information extraction**. Lưu ý rằng kết quả huấn luyện của các mô hình trước đó sẽ được sử dụng làm đầu vào cho các mô hình phía sau, do đó cần thực hiện tuần tự và chính xác.
 
-Tại DORI, các bạn có thể dễ dàng huấn luyện mô hình chỉ với tập 10–20 ảnh ban đầu, sau đó tăng dần quy mô dữ liệu. Hãy tận dụng tính năng này để nhanh chóng có được kết quả ban đầu, từ đó thực hiện các điều chỉnh cần thiết hoặc tìm kiếm hỗ trợ từ mình. Nếu cần thêm thông tin, bạn có thể liên hệ qua website của DORI tại [dori.vn](https://dori.vn) để được tư vấn chi tiết. 
+Tại DORI, các bạn có thể dễ dàng huấn luyện mô hình chỉ với tập 10–20 ảnh ban đầu, sau đó tăng dần quy mô dữ liệu. Hãy tận dụng tính năng này để nhanh chóng có được kết quả ban đầu, từ đó thực hiện các điều chỉnh cần thiết hoặc tìm kiếm hỗ trợ từ mình. Nếu cần thêm thông tin, bạn có thể liên hệ qua website của DORI tại [dori.vn](https://dori.vocr.vn) để được tư vấn chi tiết. 
 
 ### Tip để tăng tốc quá trình đánh nhãn
 Quá trình đánh nhãn thường tốn nhiều thời gian và công sức, nhưng DORI cung cấp tính năng **AI-Augmented Labeling** để hỗ trợ bạn. Tính năng này cho phép tận dụng mô hình đã được huấn luyện trên dữ liệu đã đánh nhãn để tự động áp dụng vào phần dữ liệu chưa được đánh nhãn.
@@ -206,10 +207,10 @@ Sau khi hoàn tất quá trình huấn luyện, DORI cho phép bạn tải về 
 Ngoài các chức năng đã nêu, DORI còn cho phép bạn **thêm thành viên** vào dự án để cùng tham gia đánh nhãn, giúp tăng tốc độ và hiệu quả xử lý dữ liệu.
 
 Bên cạnh đó, DORI còn hỗ trợ nhiều bài toán quan trọng khác như:
-	•	**Phân loại văn bản**: Xác định loại tài liệu hoặc nội dung cụ thể.
-	•	**Xác định layout**: Phân tích và nhận dạng bố cục của văn bản.
-	•	**Chỉnh phẳng ảnh**: Xử lý hình ảnh bị cong hoặc nghiêng để cải thiện độ chính xác nhận dạng.
-	•	**Nhận dạng và xác định cấu trúc bảng**: Tự động phát hiện và phân tích bảng biểu trong văn bản.
-	•	**Rút trích mối quan hệ**: Tìm và trích xuất các mối liên hệ giữa các thông tin trong tài liệu.
+- **Phân loại văn bản**: Xác định loại tài liệu hoặc nội dung cụ thể.
+- **Xác định layout**: Phân tích và nhận dạng bố cục của văn bản.
+- **Chỉnh phẳng ảnh**: Xử lý hình ảnh bị cong hoặc nghiêng để cải thiện độ chính xác nhận dạng.
+- **Nhận dạng và xác định cấu trúc bảng**: Tự động phát hiện và phân tích bảng biểu trong văn bản.
+- **Rút trích mối quan hệ**: Tìm và trích xuất các mối liên hệ giữa các thông tin trong tài liệu.
 
 DORI cung cấp một giải pháp toàn diện, đáp ứng hầu hết các nhu cầu xử lý văn bản trong thực tế, giúp bạn dễ dàng quản lý và xử lý dữ liệu phức tạp.
