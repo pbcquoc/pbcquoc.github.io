@@ -106,8 +106,6 @@ Clip dưới là minh hoạ group các từ/dòng/đoạn bằng cách select t�
     <img src="/images/dori/group.gif" width="800"/>
 </div>
 
-![image](/images/dori/group.gif)
-
 Clip dưới minh hoạ cách group từ/dòng/đoạn bằng cách select bên phần ảnh
 <div class="img-div" markdown="0">
     <img src="/images/dori/group_2.gif" width="800"/>
