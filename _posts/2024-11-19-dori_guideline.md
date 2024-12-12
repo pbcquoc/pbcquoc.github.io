@@ -80,11 +80,11 @@ Ví dụ bên dưới minh hoạ cho bạn thấy thứ tự đúng của việc
     <img src="https://github.com/user-attachments/assets/806299c8-6d25-42e4-8b7d-84f4f001e9db" width="500"/>
 </div>
 Để đánh nhãn cho mô hình reading order, DORI cho phép bạn di chuyển vị trí các từ để xác định lại thứ tự đọc, sau đó mô hình reading order dựa vào thông tin đó để học. 
-<img width="953" alt="Screenshot 2024-12-10 at 15 47 25" src="https://github.com/user-attachments/assets/5a12433a-2a97-409e-af4b-24e1ac443ecb">
+![image](/images/dori/reading_order_tool.jpg)
 
 
 Với DORI, mình tích hợp ba bước này trong một công cụ gọi là **Text Detection**. Công cụ này hiển thị các từ cùng với vị trí box của chúng. DORI cung cấp hai loại box cơ bản: **rectangle** và **polygon**. Với các văn bản thông thường, chỉ cần chọn **rectangle** là đủ, còn các chữ phức tạp mới cần dùng **polygon**.
-<img width="1482" alt="Screenshot 2024-12-09 at 21 43 59" src="https://github.com/user-attachments/assets/d89cf111-1d2a-412a-91d0-c7923ab51e9e">
+![image](/images/dori/text_detection_tool.jpg)
 
 Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập văn bản, nội dung này sẽ hiển thị trong phần **document** bên trái và **reading order** bên phải để tiện theo dõi, group các từ thành dòng, dòng thành đoạn, và thành page tương ứng. thay đổi vị trí các từ để xác định đúng thứ tự đọc. 
 
@@ -129,12 +129,12 @@ Khi chọn các thông tin cần nhận dạng, các bạn phải select toàn b
 Huấn luyện mô hình là quá trình sử dụng tập dữ liệu đã được đánh nhãn để xây dựng mô hình nhận dạng. Trên Dori, bạn có thể huấn luyện mô hình trên tập dữ liệu của mình bất cứ khi nào cần. Việc huấn luyện có thể được thực hiện sau mỗi 10, 50, 100, hoặc 1000 mẫu dữ liệu để theo dõi độ chính xác của mô hình, sau khi cập nhật hoặc bổ sung dữ liệu, hoặc khi muốn nhận dạng thêm trường thông tin mới.
 
 Để bắt đầu huấn luyện trên Dori, bạn cần vào phần **Setting**, chọn **Train**, sau đó chọn mô hình phù hợp và cấu hình các tham số huấn luyện. Thông thường bạn sẽ không cần phải thay đổi tham số nào cả ngoại trừ `epoch_num` là số lần hoàn thành một lần huấn luyện trên toàn bộ dữ liệu. Điều chỉnh tham số này giúp giảm thời gian huấn luyện và giảm chi phí. Ngoài ra, tick chọn `Include AI-Augmented Labels` nếu bạn muốn thêm cả dữ liệu được phát sinh bởi model, tuy nhiên mình khuyến nghị không nên tick chọn vì dữ liệu này chưa được đánh nhãn lại cẩn thận bởi labeler.  Nhấn **Add** để khởi động quá trình huấn luyện mô hình. Hệ thống sẽ gửi email thông báo khi quá trình huấn luyện bắt đầu và kết thúc. Bạn có thể theo dõi lịch sử và độ chính xác của mô hình trong phần log.
-<img width="1396" alt="Screenshot 2024-12-12 at 11 05 33" src="https://github.com/user-attachments/assets/b0b0b37f-3d3a-45b6-a585-d33572ab2f11" />
+![image](/images/dori/new_train.jpg)
 
 
 Mỗi mô hình có một cấu hình riêng, bạn có thể click vào tab `Model` để xem cấu hình đang được sử dụng. Các thay đổi trong phần này sẽ được lưu lại, ngoài ra bạn cũng có thể reload lại default config của mô hình bằng nút reload bên phải. 
+![image](/images/dori/model_screen.jpg)
 
-<img width="1396" alt="Screenshot 2024-12-10 at 21 41 44" src="https://github.com/user-attachments/assets/69f0ad99-6327-447e-9f11-af655964e2fe">
 
 Clip dưới minh hoạ quá trình tạo job train mô hình mới, các bạn có thể dễ dàng xem log và theo dõi độ chính xác của mô hình bằng cách click vào log. 
 Phần log thể hiện các metrics quan trọng được highlight bằng màu đỏ, các metrics này càng lớn càng tốt. ngoài ra phần log cũng thể hiện các lỗi nếu có, do vậy bạn có thể nhìn vào log vào thực hiện các điều chỉ hoặc yêu cầu hỗ trợ. 
@@ -144,9 +144,10 @@ Phần log thể hiện các metrics quan trọng được highlight bằng màu
 </div>
 
 Sau khi huấn luyện xong, mô hình của bạn sẽ được tự động deploy ( xem thêm giải thích bên dưới). 
-<img width="1396" alt="Screenshot 2024-12-12 at 09 59 07" src="https://github.com/user-attachments/assets/49a79873-3751-4aac-bee3-c45f4fbde01f" />
+![image](/images/dori/train_screen.jpg)
+
 Sau đó bạn có thể dễ dàng kiểm tra mô hình vừa huấn luyện bên tab `API`
-<img width="1396" alt="Screenshot 2024-12-12 at 10 03 42" src="https://github.com/user-attachments/assets/386d0e04-75c6-4257-ba35-b3be59c37b2b" />
+![image](/images/dori/api_screen.jpg)
 
 
 Lặp lại quy trình trên từ đánh nhãn, huấn luyện, kiểm tra lần lượt đối với text detection, rồi mới tới text recognition, reading order và cuối cùng là key information extraction vì kết quả huấn luyện của các mô hình trước đó được sử dụng cho các mô hình phía sau. 
@@ -155,8 +156,8 @@ Lặp lại quy trình trên từ đánh nhãn, huấn luyện, kiểm tra lần
 
 ### Tip để tăng tốc quá trình đánh nhãn
 Quá trình đánh nhãn thường mất nhiều thời gian và công sức, nhưng Dori cung cấp tính năng **AI-Augmented Labeling** để giúp bạn tận dụng mô hình được huấn luyện trên dữ liệu đã đánh nhãn để tự động áp dụng vào dữ liệu chưa đánh nhãn. Thông thường, bạn chỉ cần đánh nhãn 10-20 mẫu, sau đó huấn luyện mô hình trên dữ liệu này. Khi huấn luyện xong, bạn chỉ cần nhấn **AI-Augmented Labeling** để áp dụng mô hình lên phần dữ liệu còn lại chưa đánh nhãn. Cá nhân mình thường xuyên sử dụng tính năng này vì nó cực kì hữu dụng giúp tiết kiệm rất nhiều thời gian và tăng năng suất của cá nhóm.
+![image](/images/dori/ai_augmented_labelling.jpg)
 
-<img width="1396" alt="Screenshot 2024-12-12 at 10 24 34" src="https://github.com/user-attachments/assets/b6742ebc-be8d-4b75-b0da-e1ed0be5336f" />
 
 ### Huấn luyện text detection, text recognition, reading order detection, key information extraction như nào?
 Huấn luyện mô hình text detection, text recognition, v.v trên DORI về cơ bản là hoàn thành giống như. Tuy nhiên mình muốn nhấn mạnh rằng thứ tự huấn luyện là quan trọng vì mô trước phía sau như text recognition, key information extract sử dụng mô hình huấn luyện ở bước trước. 
@@ -164,7 +165,7 @@ Huấn luyện mô hình text detection, text recognition, v.v trên DORI về c
 ## Chạy Offline mô hình của bạn. 
 
 Khi huấn luyện xong, DORI cho phép bạn tải về mô hình của mình và chạy offline trên máy tính, những mô hình được mình thiết kế để chạy on-device, lightweight nên đều chạy được trên CPU và có tốt độ xử lý thuộc top đầu trên thị thường. Bạn chỉ đơn vào mô hình đã huấn luyện để tải về và chạy theo hướng dẫn trong README.
-<img width="1396" alt="Screenshot 2024-12-12 at 11 44 57" src="https://github.com/user-attachments/assets/3da4d2da-f968-4cf3-890a-4f79204f0c78" />
+![image](/images/dori/download_model.jpg)
 
 
 
