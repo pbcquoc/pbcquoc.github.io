@@ -149,8 +149,10 @@ Lặp lại quy trình trên từ đánh nhãn, huấn luyện, kiểm tra lần
 
 Ở DORI, các bạn có thể dễ dàng huấn luyện model trên tập 10-20 ảnh, sau đó tăng dần lên, hãy tận dụng điều này để sớm có kết quả từ đó thực hiện các điều chỉnh hay tìm kiếm hỗ trợ từ mình hoặc liên hệ qua website của dori tại [dori.vn](https://dori.vn)
 
-### Sử dụng tính năng self train để tăng tốc quá trình đánh nhãn
-Quá trình đánh nhãn thường mất nhiều thời gian và công sức, nhưng Dori cung cấp tính năng **Self Train** để giúp bạn tận dụng mô hình được huấn luyện trên dữ liệu đã đánh nhãn để tự động áp dụng vào dữ liệu chưa đánh nhãn. Thông thường, bạn chỉ cần đánh nhãn 10-20 mẫu, sau đó huấn luyện mô hình trên dữ liệu này. Khi huấn luyện xong, bạn chỉ cần nhấn **Self Train** để áp dụng mô hình lên phần dữ liệu còn lại.
+### Tip để tăng tốc quá trình đánh nhãn
+Quá trình đánh nhãn thường mất nhiều thời gian và công sức, nhưng Dori cung cấp tính năng **AI-Augmented Labeling** để giúp bạn tận dụng mô hình được huấn luyện trên dữ liệu đã đánh nhãn để tự động áp dụng vào dữ liệu chưa đánh nhãn. Thông thường, bạn chỉ cần đánh nhãn 10-20 mẫu, sau đó huấn luyện mô hình trên dữ liệu này. Khi huấn luyện xong, bạn chỉ cần nhấn **AI-Augmented Labeling** để áp dụng mô hình lên phần dữ liệu còn lại chưa đánh nhãn. Cá nhân mình thường xuyên sử dụng tính năng này vì nó cực kì hữu dụng giúp tiết kiệm rất nhiều thời gian và tăng năng suất của cá nhóm.
+
+<img width="1396" alt="Screenshot 2024-12-12 at 10 24 34" src="https://github.com/user-attachments/assets/b6742ebc-be8d-4b75-b0da-e1ed0be5336f" />
 
 ### Huấn luyện text detection như nào?
 ## Huấn luyện text recognition như nào?
