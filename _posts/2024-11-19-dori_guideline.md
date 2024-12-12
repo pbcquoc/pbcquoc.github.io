@@ -77,7 +77,7 @@ Trong các tài liệu phức tạp, nếu chỉ dựa vào vị trí tạo đ�
 
 Ví dụ bên dưới minh hoạ cho bạn thấy thứ tự đúng của việc đọc là từ trên xuống trước, sau đó mới từ trái qua phải. Về cơ bản mô hình reading order xác định xem từ nào nên được đọc trước, từ nào nên được đọc sau. 
 <div class="img-div" markdown="0">
-    <img src="/images/dori/https://github.com/user-attachments/assets/806299c8-6d25-42e4-8b7d-84f4f001e9db" width="500"/>
+    <img src="https://github.com/user-attachments/assets/806299c8-6d25-42e4-8b7d-84f4f001e9db" width="500"/>
 </div>
 Để đánh nhãn cho mô hình reading order, DORI cho phép bạn di chuyển vị trí các từ để xác định lại thứ tự đọc, sau đó mô hình reading order dựa vào thông tin đó để học. 
 <img width="953" alt="Screenshot 2024-12-10 at 15 47 25" src="https://github.com/user-attachments/assets/5a12433a-2a97-409e-af4b-24e1ac443ecb">
