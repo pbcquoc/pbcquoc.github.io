@@ -103,7 +103,7 @@ Clip dưới minh hoạ cách group từ/dòng/đoạn bằng cách select bên 
 DORI sẽ hiển thị màu khác nhau đối với dòng/đoạn/trang, đồng thời khi bạn select từng bên phần văn bản hay reading order thì các từ tương ứng bên phần ảnh sẽ được hiển thị giúp bạn kiểm tra nhanh chóng. Khi các bạn hover chuột qua các từ bên phần ảnh, nhãn của box đó sẽ được hiển thị giúp bạn kiểm tra, nếu bạn muốn thay đổi thì click vào box đó, thay đổi và nhấn enter. nhấn esc để ẩn box nhập liệu giúp bạn dễ dàng hơn khi điều chỉnh kích thước box. 
 
 <div class="img-div" markdown="0">
-    <img src="/images/dori/ScreenRecording2024-12-10at19.19.31-ezgif.com-video-to-gif-converter.gif" width="500"/>
+    <img src="/images/dori/text_detection_label.gif" width="500"/>
 </div>
 
 
