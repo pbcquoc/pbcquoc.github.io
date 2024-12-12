@@ -49,7 +49,7 @@ Một trong những bước mất nhiều thời gian nhất khi xử lý OCR l�
 Với quy trình này, việc đánh nhãn để huấn luyện mô hình phát hiện, nhận dạng, và sắp xếp thứ tự đọc văn bản sẽ trở nên dễ dàng và hiệu quả hơn rất nhiều.
 
 Quay trở lại với các bước cụ thể trong quá trình đánh nhãn để huấn luyện mô hình phát hiện, nhận dạng và xác định thứ tự đọc của văn bản. 
-### 1. Phát hiện, Nhận dạng và xác định thứ tự đọc của văn bản (Text Detection, Recognition & Reading Order)  
+## Phát hiện, Nhận dạng và xác định thứ tự đọc của văn bản (Text Detection, Recognition & Reading Order)  
 
 **Phát hiện văn bản là gì? (Text Detection)** : Đây là bước xác định các vùng có chứa văn bản trong ảnh hoặc tài liệu bằng cách tạo các hộp giới hạn (bounding boxes, box) xung quanh các từ
 
@@ -129,7 +129,7 @@ Các bạn có thể tham khảo minh họa bên dưới. Hình bên trái cho t
 ![image](/images/dori/text_detection_example.jpg)
 
 Sau khi đánh nhãn xong thì bước tiếp theo là xác định các key information mà bạn muốn nhận dạng. 
-### 4. Trích xuất Thông tin Chính (Key Information Extraction)  
+##  Trích xuất Thông tin Chính (Key Information Extraction)  
 **Trích xuất thông tin chính là gì?**  
 Sau khi văn bản được nhận dạng và sắp xếp, bước tiếp theo là xác định các thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích **Họ Tên** và **ID**, bạn sẽ tạo nhãn cho hai loại thông tin này, sau đó chọn các cụm từ tương ứng trong văn bản để gán nhãn.
 
@@ -140,7 +140,7 @@ Các bạn có thể tham khảo video dưới đây để hiểu rõ hơn về 
 </div>
 
 
-#### Làm như nào để đánh nhãn ở bước này chính xác?
+### Làm như nào để đánh nhãn ở bước này chính xác?
 Khi chọn các thông tin cần nhận dạng, các bạn cần chọn toàn bộ đối tượng đó trong văn bản. Ví dụ, nếu muốn đánh nhãn Nguyễn Văn A là **Tên**, bạn phải bôi đen liên tục cụm từ này, không được chọn riêng Nguyễn, Văn, và A tách rời.
 
 Nếu Nguyễn Văn A không nằm liền nhau trên văn bản, bạn cần quay lại bước **text detection** để nhóm các từ thành dòng, dòng thành cụm, v.v. Hoặc, nếu việc nhóm không hiệu quả, bạn cần thay đổi thứ tự đọc để đảm bảo các từ liên quan được xử lý đúng.
