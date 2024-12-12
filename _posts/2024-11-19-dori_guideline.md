@@ -93,11 +93,11 @@ DORI cho phép bạn select từng từ và right click để group lại thành
 
 Clip dưới là minh hoạ group các từ/dòng/đoạn bằng cách select từng từ/dòng
 <div class="img-div" markdown="0">
-    <img src="/images/dori/ScreenRecording2024-12-10at20.08.27-ezgif.com-video-to-gif-converter.gif" width="500"/>
+    <img src="/images/dori/group.gif" width="500"/>
 </div>
 Clip dưới minh hoạ cách group từ/dòng/đoạn bằng cách select bên phần ảnh
 <div class="img-div" markdown="0">
-    <img src="/images/dori/ScreenRecording2024-12-10at20.09.50-ezgif.com-video-to-gif-converter (1).gif" width="500"/>
+    <img src="/images/dori/group_2.gif" width="500"/>
 </div>
 
 DORI sẽ hiển thị màu khác nhau đối với dòng/đoạn/trang, đồng thời khi bạn select từng bên phần văn bản hay reading order thì các từ tương ứng bên phần ảnh sẽ được hiển thị giúp bạn kiểm tra nhanh chóng. Khi các bạn hover chuột qua các từ bên phần ảnh, nhãn của box đó sẽ được hiển thị giúp bạn kiểm tra, nếu bạn muốn thay đổi thì click vào box đó, thay đổi và nhấn enter. nhấn esc để ẩn box nhập liệu giúp bạn dễ dàng hơn khi điều chỉnh kích thước box. 
@@ -116,7 +116,7 @@ Sau khi đánh nhãn xong thì bước tiếp theo là xác định các key inf
 **Trích xuất thông tin chính là gì?**  
 Sau khi văn bản được nhận dạng và sắp xếp, bạn cần xác định thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích **Họ Tên** và **ID**, bạn cần tạo nhãn cho hai loại thông tin này và chọn cụm từ tương ứng trong văn bản. Bạn tham khảo video dưới để biết chi tiết
 <div class="img-div" markdown="0">
-    <img src="/images/dori/ScreenRecording2024-12-10at21.07.55-ezgif.com-video-to-gif-converter.gif" width="500"/>
+    <img src="/images/dori/kie_label.gif" width="500"/>
 </div>
 
 
