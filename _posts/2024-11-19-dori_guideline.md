@@ -139,8 +139,15 @@ Clip dưới minh hoạ quá trình tạo job train mô hình mới, các bạn 
   <img width="1396" alt="Screenshot 2024-12-10 at 21 41 44" src="/images/dori/ScreenRecording2024-12-10at21.46.58-ezgif.com-video-to-gif-converter.gif">
 </div>
 
+Sau khi huấn luyện xong, mô hình của bạn sẽ được tự động deploy ( xem thêm giải thích bên dưới). 
+<img width="1396" alt="Screenshot 2024-12-12 at 09 59 07" src="https://github.com/user-attachments/assets/49a79873-3751-4aac-bee3-c45f4fbde01f" />
+Sau đó bạn có thể dễ dàng kiểm tra mô hình vừa huấn luyện bên tab `API`
+<img width="1396" alt="Screenshot 2024-12-12 at 10 03 42" src="https://github.com/user-attachments/assets/386d0e04-75c6-4257-ba35-b3be59c37b2b" />
 
-Một điều quan trọng là bạn phải đợi text detection xong đã rồi mới tới text recognition, reading order và cuối cùng là key information extraction, kết quả huấn luyện của các mô hình trước đó được sử dụng cho các mô hình phía sau. 
+
+Lặp lại quy trình trên từ đánh nhãn, huấn luyện, kiểm tra lần lượt đối với text detection, rồi mới tới text recognition, reading order và cuối cùng là key information extraction vì kết quả huấn luyện của các mô hình trước đó được sử dụng cho các mô hình phía sau. 
+
+Ở DORI, các bạn có thể dễ dàng huấn luyện model trên tập 10-20 ảnh, sau đó tăng dần lên, hãy tận dụng điều này để sớm có kết quả từ đó thực hiện các điều chỉnh hay tìm kiếm hỗ trợ từ mình hoặc liên hệ qua website của dori tại [dori.vn](https://dori.vn)
 
 ### Sử dụng tính năng self train để tăng tốc quá trình đánh nhãn
 Quá trình đánh nhãn thường mất nhiều thời gian và công sức, nhưng Dori cung cấp tính năng **Self Train** để giúp bạn tận dụng mô hình được huấn luyện trên dữ liệu đã đánh nhãn để tự động áp dụng vào dữ liệu chưa đánh nhãn. Thông thường, bạn chỉ cần đánh nhãn 10-20 mẫu, sau đó huấn luyện mô hình trên dữ liệu này. Khi huấn luyện xong, bạn chỉ cần nhấn **Self Train** để áp dụng mô hình lên phần dữ liệu còn lại.
