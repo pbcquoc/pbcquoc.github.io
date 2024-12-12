@@ -4,14 +4,14 @@ title: DRAFT_Hướng dẫn sử dụng DORI để nhận dạng các Key Inform
 ---
 
 Trong bài viết này, mình sẽ hướng dẫn bạn cách sử dụng DORI để nhận dạng và trích xuất các thông tin quan trọng từ tài liệu. Chẳng hạn, nếu bạn cần xác định Họ Tên và ID trên căn cước công dân, thì hai thông tin đó chính là mục tiêu mà bạn muốn mô hình nhận dạng. Về cơ bản, quy trình thực hiện gồm các bước chính sau:
-1.	Thu thập dữ liệu: Giả sử bạn đã có sẵn tập dữ liệu đầy đủ. Nếu chưa, bạn cần tiến hành thu thập dữ liệu trước.
-2.	Đánh nhãn dữ liệu: Đây là quá trình con người can thiệp để gắn nhãn các thông tin mà mô hình cần học. Để trích xuất thông tin chính, bạn cần đánh nhãn các thành phần:
+1.	**Thu thập dữ liệu**: Giả sử bạn đã có sẵn tập dữ liệu đầy đủ. Nếu chưa, bạn cần tiến hành thu thập dữ liệu trước.
+2.	**Đánh nhãn dữ liệu**: Đây là quá trình con người can thiệp để gắn nhãn các thông tin mà mô hình cần học. Để trích xuất thông tin chính, bạn cần đánh nhãn các thành phần:
  - Phát hiện văn bản
  - Nhận dạng văn bản
  - Xác định thứ tự đọc (không bắt buộc)
  - Trích xuất thông tin chính
-3. Huấn luyện mô hình: Huấn luyện mô hình máy học trên tập dữ liệu đã được gán nhãn ở bước trên.
-4. Kiểm tra kết quả nhận dạng: Đánh giá mô hình sau khi huấn luyện để xem kết quả đã đạt yêu cầu chưa. Nếu chưa, có thể thực hiện gán nhãn bổ sung và huấn luyện lại.
+3. **Huấn luyện mô hình**: Huấn luyện mô hình máy học trên tập dữ liệu đã được gán nhãn ở bước trên.
+4. **Kiểm tra kết quả nhận dạng**: Đánh giá mô hình sau khi huấn luyện để xem kết quả đã đạt yêu cầu chưa. Nếu chưa, có thể thực hiện gán nhãn bổ sung và huấn luyện lại.
 
 Thực hiện thủ công các bước trên đòi hỏi rất nhiều thời gian, chi phí, và công sức—từ chi phí đánh nhãn, quản lý dữ liệu, phát triển giải pháp, đến huấn luyện mô hình và cập nhật khi dữ liệu mới xuất hiện. Nếu bạn muốn nhận dạng hàng chục loại giấy tờ khác nhau, khối lượng công việc và thách thức sẽ gia tăng đáng kể.
 
