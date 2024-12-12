@@ -3,7 +3,7 @@ layout: post
 title: Hướng dẫn sử dụng DORI để nhận dạng các thông tin chính ( Key Information Extraction using DORI)
 ---
 
-Trong bài viết này, mình sẽ hướng dẫn bạn cách sử dụng DORI để nhận dạng và trích xuất các thông tin quan trọng từ tài liệu. Chẳng hạn, nếu bạn cần xác định Họ Tên và ID trên căn cước công dân, thì hai thông tin đó chính là mục tiêu mà bạn muốn mô hình nhận dạng. Về cơ bản, quy trình thực hiện gồm các bước chính sau:
+Trong bài viết này, mình sẽ hướng dẫn bạn cách sử dụng **DORI** để nhận dạng và trích xuất các thông tin quan trọng từ tài liệu. Chẳng hạn, nếu bạn cần xác định **Họ Tên** và **ID** trên căn cước công dân, thì hai thông tin đó chính là mục tiêu mà bạn muốn mô hình nhận dạng. Về cơ bản, quy trình thực hiện gồm các bước chính sau:
 1.	**Thu thập dữ liệu**: Giả sử bạn đã có sẵn tập dữ liệu đầy đủ. Nếu chưa, bạn cần tiến hành thu thập dữ liệu trước.
 2.	**Đánh nhãn dữ liệu**: Đây là quá trình con người can thiệp để gắn nhãn các thông tin mà mô hình cần học. Để trích xuất thông tin chính, bạn cần đánh nhãn các thành phần:
  - Phát hiện văn bản
@@ -15,15 +15,19 @@ Trong bài viết này, mình sẽ hướng dẫn bạn cách sử dụng DORI �
 
 Thực hiện thủ công các bước trên đòi hỏi rất nhiều thời gian, chi phí, và công sức—từ chi phí đánh nhãn, quản lý dữ liệu, phát triển giải pháp, đến huấn luyện mô hình và cập nhật khi dữ liệu mới xuất hiện. Nếu bạn muốn nhận dạng hàng chục loại giấy tờ khác nhau, khối lượng công việc và thách thức sẽ gia tăng đáng kể.
 
-Trong quá trình phát triển nhiều mô hình nhận dạng khác nhau, mình nhận thấy các bài toán này luôn tuân theo một quy trình chuẩn. Dựa trên kinh nghiệm đó, mình đã phát triển DORI, một nền tảng end-to-end chuyên về các giải pháp nhận dạng liên quan đến văn bản. DORI giúp rút ngắn thời gian xây dựng mô hình, đồng thời hỗ trợ bạn nhanh chóng tạo ra các giải pháp chất lượng cao cho cá nhân hoặc doanh nghiệp.
+Trong quá trình phát triển nhiều mô hình nhận dạng khác nhau, mình nhận thấy rằng các bài toán này luôn tuân theo một quy trình chuẩn. Chính từ những kinh nghiệm đó, mình đã xây dựng **DORI** – một nền tảng **end-to-end** chuyên cung cấp các giải pháp nhận dạng văn bản toàn diện. **DORI** không chỉ giúp bạn rút ngắn thời gian xây dựng mô hình mà còn hỗ trợ tạo ra các giải pháp chất lượng cao, phù hợp cho cả cá nhân lẫn doanh nghiệp.
 
-Hơn thế nữa, DORI không chỉ là một công cụ mà còn có thể được xem như một “baseline” để cộng đồng cùng tham khảo và nâng chuẩn chất lượng cho các bài toán nhận dạng tiếng Việt. Cụ thể, DORI cung cấp những tính năng sẵn có như:
-- Giao diện đánh nhãn dữ liệu trực quan
-- Quy trình huấn luyện tự động
-- Công cụ triển khai và kiểm thử mô hình
-- Mô hình pretrained cho tiếng Việt và tiếng Anh, giúp đẩy nhanh quá trình đánh nhãn và huấn luyện
+**DORI** không đơn thuần là một công cụ. Với khả năng đóng vai trò như một “**baseline**” chuẩn mực, **DORI** còn là nền tảng để cộng đồng cùng tham khảo và nâng cao chất lượng trong các bài toán nhận dạng tiếng Việt. Nổi bật với các tính năng sẵn có như:
+- **Giao diện đánh nhãn dữ liệu trực quan**: Giúp bạn dễ dàng xử lý và quản lý dữ liệu.
+- **Quy trình huấn luyện tự động**: Đơn giản hóa việc huấn luyện mô hình chỉ với vài thao tác.
+- **Công cụ triển khai và kiểm thử mô hình**: Tích hợp các bước từ huấn luyện đến triển khai để đánh giá hiệu quả.
+- **Mô hình pretrained cho tiếng Việt và tiếng Anh**: Tăng tốc độ đánh nhãn và huấn luyện, giảm thiểu khối lượng công việc thủ công.
 
-Với DORI, bạn có thể tối ưu hoá quy trình xây dựng mô hình nhận dạng văn bản, giảm thiểu chi phí, công sức, và thời gian, đồng thời nâng cao chất lượng và tiêu chuẩn cho các giải pháp OCR trong ngôn ngữ tiếng Việt.
+Với **DORI**, bạn có thể tối ưu hóa quy trình xây dựng mô hình nhận dạng văn bản, giảm chi phí và thời gian, đồng thời đảm bảo tiêu chuẩn chất lượng cao nhất cho các giải pháp OCR – đặc biệt trong ngôn ngữ **tiếng Việt**.
+
+Để sử dụng **DORI**, các bạn truy cập trang chủ tại [https://dori.vn](https://dori.vn). Sau đó, chọn Đăng nhập hoặc Đăng ký nếu chưa có tài khoản. **DORI** hỗ trợ đăng nhập dễ dàng bằng tài khoản Google hoặc bằng tài khoản tự tạo.
+
+Sau khi hoàn tất đăng nhập, các bạn sẽ được đưa đến giao diện chính, nơi quản lý tất cả các dự án của mình. Tại đây, để bắt đầu một dự án mới, các bạn thực hiện các bước sau:
 
 ## Tạo Dự Án Mới  
 Đầu tiên, hãy tạo một dự án mới trên DORI bằng cách nhấn vào **Create Project**, sau đó điền tên dự án, mô tả và phân loại. Hãy chọn hai công cụ cơ bản là **text detection** và **key information extraction**, ngoài 2 công cụ cơ bản ngoài DORI, còn cung cấp các công cụ khác như **Phân loại văn bản**, **Phân tích bố cục**, **Xác định cấu trúc bảng**, **Rút trích mối quan hệ**, v.v. Tiếp theo, nhấn vào **Upload Image** để chọn các ảnh cần đánh nhãn.  
