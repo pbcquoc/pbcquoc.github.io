@@ -90,10 +90,11 @@ Ví dụ dưới đây minh họa để các bạn thấy rằng thứ tự đ�
     <img src="/images/dori/reading_order_example.jpg" width="500"/>
 </div>
 Để đánh nhãn cho mô hình reading order, DORI cho phép bạn di chuyển vị trí các từ để xác định lại thứ tự đọc, sau đó mô hình reading order dựa vào thông tin đó để học. 
+
 ![image](/images/dori/reading_order_tool.jpg)
 
-
 Với DORI, mình tích hợp ba bước này trong một công cụ gọi là **Text Detection**. Công cụ này hiển thị các từ cùng với vị trí box của chúng. DORI cung cấp hai loại box cơ bản: **rectangle** và **polygon**. Với các văn bản thông thường, chỉ cần chọn **rectangle** là đủ, còn các chữ phức tạp mới cần dùng **polygon**.
+
 ![image](/images/dori/text_detection_tool.jpg)
 
 Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập nội dung văn bản. Nội dung này sẽ hiển thị ở phần **document** bên trái và **reading order** bên phải, giúp bạn dễ dàng theo dõi, nhóm các từ thành dòng, dòng thành đoạn, và đoạn thành trang. Bạn cũng có thể thay đổi vị trí các từ để xác định đúng thứ tự đọc.
