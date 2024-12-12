@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DRAFT_Hướng dẫn sử dụng DORI để nhận dạng các Key Information
+title: Hướng dẫn sử dụng DORI để nhận dạng các Key Information
 ---
 
 Trong bài viết này, mình sẽ hướng dẫn bạn cách sử dụng DORI để nhận dạng và trích xuất các thông tin quan trọng từ tài liệu. Chẳng hạn, nếu bạn cần xác định Họ Tên và ID trên căn cước công dân, thì hai thông tin đó chính là mục tiêu mà bạn muốn mô hình nhận dạng. Về cơ bản, quy trình thực hiện gồm các bước chính sau:
@@ -37,9 +37,13 @@ Nhấn **Done** để hoàn tất bước tạo dự án.
 Sau đó, bạn nhấn vào **Label** để bắt đầu đánh nhãn các ảnh vừa tải lên, do bạn đã chọn 2 tool **text detection** và **key information extraction** nên trên giao diện đánh nhãn sẽ hiển thị 2 công cụ để giúp bạn đánh nhãn cho các bài toán này. Cụ thể về chức năng của 2 công cụ này sẽ mô tả chi tiết ở phần tiếp theo. 
 
 ## Đánh Nhãn  
-Đánh nhãn là quá trình tạo dữ liệu mẫu để huấn luyện mô hình, tuỳ mỗi mô hình và bài toán khác nhau mà có cách đánh nhãn khác nhau. Đồng thời công cụ đánh nhãn chuyên biệt sẽ giảm rất nhiều công sức đãnh nhãn. ở DORI, mình thiết kế công cụ đánh nhãn để tối ưu cho bài toán văn bản đồng thời học hỏi và khắc phục những hạn chế của những công cụ có sẵn khác. 
+Đánh nhãn là bước quan trọng để tạo dữ liệu mẫu phục vụ huấn luyện mô hình, và cách thực hiện sẽ thay đổi tùy vào từng bài toán và mô hình cụ thể. Việc sử dụng các công cụ đánh nhãn chuyên biệt sẽ giúp mình và các bạn tiết kiệm rất nhiều công sức. Tại DORI, mình đã phát triển một công cụ đánh nhãn được tối ưu riêng cho các bài toán văn bản, đồng thời khắc phục những hạn chế của các công cụ hiện có.
 
-Bước tốn thời gian nhất cho quá trình ocr là xác định và đánh nhãn cho từng từ, với những văn bản có vài trăm từ thì việc này cực kì tốn thời gian, ở DORI, sau khi các bạn upload ảnh lên mình sẽ tự chạy ocr để nhận dạng các từ/dòng/đoạn văn bản, đồng thời cũng nhận dạng nội dung của từng đó đó, giúp các bạn giảm thiếu khá nhiều thời gian huấn luyện. đồng thời, những mô hình nhận dạng và phát hiện văn bản cũng được huấn luyện trước trên vài trăm nghìn mẫu dữ liệu giúp cho các bạn chỉ cần đánh nhãn với số lượng rất ít, có thể là 10 ảnh, cũng được huấn luyện mô hình ra cho kết quả tốt. Ngoài ra, để rút ngắn thời gian đánh nhãn hơn nữa, DORI cũng cho phép sử dụng mô hình vừa huấn luyện của bạn để áp dụng vào tập dữ liệu chưa được đánh nhãn, vì mô hình mới này là do bạn tự huấn luyện trên tập các bạn đã đánh nhãn, nên kết quả của mô hình sẽ tốt hơn mô hình mặc định. 
+Một trong những bước mất nhiều thời gian nhất khi xử lý OCR là xác định và đánh nhãn từng từ. Với những văn bản chứa hàng trăm từ, việc này có thể khiến các bạn tốn rất nhiều công sức. Để giải quyết điều đó, tại DORI, sau khi bạn tải ảnh lên, hệ thống sẽ tự động chạy OCR để nhận dạng từ, dòng, và đoạn văn bản. Đồng thời, hệ thống cũng nhận dạng nội dung của từng phần, giúp các bạn tiết kiệm đáng kể thời gian chuẩn bị dữ liệu. Ngoài ra, các mô hình nhận dạng và phát hiện văn bản tại DORI đã được huấn luyện trước trên hàng trăm nghìn mẫu dữ liệu, nên các bạn chỉ cần đánh nhãn một số lượng rất nhỏ – thậm chí chỉ khoảng 10 ảnh – là đã có thể huấn luyện mô hình với kết quả tốt.
+
+Để rút ngắn thời gian hơn nữa, DORI cho phép các bạn sử dụng mô hình vừa huấn luyện để tự động gán nhãn cho tập dữ liệu chưa được đánh nhãn. Vì mô hình mới này được huấn luyện trên chính dữ liệu của bạn, kết quả sẽ chính xác hơn so với mô hình mặc định.
+
+Với quy trình này, việc đánh nhãn để huấn luyện mô hình phát hiện, nhận dạng, và sắp xếp thứ tự đọc văn bản sẽ trở nên dễ dàng và hiệu quả hơn rất nhiều.
 
 Quay trở lại với các bước cụ thể trong quá trình đánh nhãn để huấn luyện mô hình phát hiện, nhận dạng và xác định thứ tự đọc của văn bản. 
 ### 1. Phát hiện, Nhận dạng và xác định thứ tự đọc của văn bản (Text Detection, Recognition & Reading Order)  
@@ -58,25 +62,27 @@ Có lẽ các bạn đã quen với việc cần phải xác định box và n�
 
 ![image](/images/dori/hier_text_1.jpg)
 
-Trong minh hoạ trên, các bạn thấy mình nên group các từ cộng -> hoà, độc lâp -> hạnh phúc, căn cưới công dân, v.v.v thành một dòng vì chúng là các cụm có nghĩa và để để đảm bảo thứ tự đọc chính xác 
+Trong minh hoạ trên, các bạn thấy mình nên group các từ *cộng* đến *hoà*, *độc lâp* đến *hạnh phúc*, *căn cưới công dân*, v.v.v thành một dòng vì chúng là các cụm có nghĩa và để đảm bảo thứ tự đọc chính xác 
 
 ![image](/images/dori/hier_text_2.jpg)
 
-Ở mình hoạ này, các bạn thấy file document có 2 trang rõ ràng, nên lúc này cần group các từ/dòng/đoạn tương ứng lại thành một trang. 
+Ở mình hoạ này, các bạn thấy file văn bản có 2 trang rõ ràng, nên lúc này cần group các từ/dòng/đoạn tương ứng lại thành một trang. 
 ![image](/images/dori/page.jpg)
 
-Xem minh hoạ này, các bạn thấy nếu không group thành page( tương tự với dòng/đoạn) thì 2 từ nằm ở 2 trang sẽ nằm khác nhau sẽ nối với nhau vì thứ tự đọc mặc định sẽ là từ trái sang phải, trên xuống. Hãy tưởng tượng thông tin như *Tên Họ* nằm không liên tục thì chắn chắn sẽ ảnh hưởng đến độ chính xác nhận dạng key information. Do đó bước group này là quan trọng.
+Xem minh họa này, các bạn sẽ thấy rằng nếu không nhóm các từ, dòng, đoạn thành page thì các từ nằm ở hai trang khác nhau có thể bị nối nhầm với nhau. Lý do là thứ tự đọc mặc định sẽ theo hướng từ trái sang phải, trên xuống dưới. Hãy tưởng tượng thông tin như **Tên Họ** bị nằm không liên tục – điều này chắc chắn sẽ ảnh hưởng đến độ chính xác khi nhận dạng thông tin chính. Do đó, bước nhóm (group) này rất quan trọng.
 
-Các bước group ở trên giúp tạo thành hier text, từ đó giúp xác định thứ tự đọc đúng cho văn bản. Thứ tự đúng này ảnh hưởng rất lớn đến khả năng nhận dạng key information ở bước sau. ở DORI, mình đã phát triển mô hình giúp xác định đến 4 level (từ, dòng,đoạn, page) bằng một mô hình duy nhất. Hầu hết các mô hình có sẵn như google/aws chỉ có phép nhận dạng tới dòng hoặc page những kết quả không tốt tối với tiếng việt. Ngoài ra, theo mình quan sát, phần lớn các loại giấy tờ chỉ cần group tới paragraph là đủ để xác định thứ tự đọc. chỉ những văn bản có nhiều page như trên, thì các bạn mới xem xét group thêm page. 
+Các bước nhóm ở trên giúp tạo thành cấu trúc hier text (cấu trúc phân cấp văn bản), từ đó hỗ trợ xác định đúng thứ tự đọc cho văn bản. Thứ tự đọc đúng này ảnh hưởng lớn đến khả năng nhận dạng thông tin chính ở các bước sau. Tại DORI, mình đã phát triển một mô hình có thể xác định tới 4 cấp độ (từ, dòng, đoạn, trang) chỉ bằng một mô hình duy nhất. Trong khi đó, hầu hết các mô hình hiện có như Google hoặc AWS thường chỉ hỗ trợ đến cấp dòng hoặc trang, nhưng lại không hoạt động hiệu quả với tiếng Việt.
 
-Mặc dù mình chúng đã xác định dòng/đoạn/trang văn bản, tuy nhiên đôi khi thứ tự đọc vẫn không chính xác nếu chỉ sắp xếp các từ dựa vào những thông tin trên. Ví dụ như hoá đơn bị nghiên, hoặc văn bản có nhiều cột. thì lúc này chúng ta cần sử dụng mô hình reading order để xác định đúng thứ tự đọc của văn bản. ở DORI, mình cũng cho phép các bạn sắp xếp từng từ để xác định đúng thứ tự đọc văn bản, và dựa vào dữ liệu đó để huấn luyện reading order model. 
+Theo mình quan sát, phần lớn các loại giấy tờ chỉ cần nhóm đến cấp đoạn (paragraph) là đủ để xác định thứ tự đọc. Chỉ khi văn bản có nhiều trang như minh họa ở trên, các bạn mới cần xem xét việc nhóm thêm cấp trang (page).
+
+Mặc dù chúng ta đã xác định được dòng, đoạn, và trang của văn bản, nhưng đôi khi thứ tự đọc vẫn có thể bị sai nếu chỉ dựa vào các thông tin này. Ví dụ, với hóa đơn bị nghiêng hoặc văn bản có nhiều cột, việc sắp xếp các từ theo cách thông thường sẽ không đủ. Trong trường hợp này, chúng ta cần sử dụng mô hình reading order để xác định đúng thứ tự đọc. Tại DORI, mình cũng cho phép các bạn tự sắp xếp từng từ để xác định chính xác thứ tự đọc của văn bản, từ đó dùng dữ liệu này để huấn luyện mô hình reading order.
 
 Phần tiếp theo mình sẽ làm rõ reading order model là gì?
 
 **Xác định thứ tự đọc là gì? (Reading Order Detection)**  
-Trong các tài liệu phức tạp, nếu chỉ dựa vào vị trí tạo độ và các nhóm như dòng/đoạn/trang thì thứ tự đọc vẫn không xác định được chính xác. Do đó các bạn cần phải xây dựng mô hình xác định thứ tự đọc, từ đó hỗ trợ việc trích xuất dữ liệu chính xác.
+Trong các tài liệu phức tạp, nếu chỉ dựa vào vị trí tọa độ và các nhóm như dòng, đoạn, hoặc trang, thì thứ tự đọc vẫn có thể không được xác định chính xác. Do đó, các bạn cần xây dựng mô hình xác định thứ tự đọc, nhằm hỗ trợ việc trích xuất dữ liệu một cách chính xác hơn.
 
-Ví dụ bên dưới minh hoạ cho bạn thấy thứ tự đúng của việc đọc là từ trên xuống trước, sau đó mới từ trái qua phải. Về cơ bản mô hình reading order xác định xem từ nào nên được đọc trước, từ nào nên được đọc sau. 
+Ví dụ dưới đây minh họa để các bạn thấy rằng thứ tự đọc đúng nên là từ trên xuống trước, sau đó mới từ trái qua phải. Về cơ bản, mô hình reading order sẽ xác định xem từ nào nên được đọc trước và từ nào nên đọc sau, từ đó đảm bảo thứ tự đọc chính xác nhất cho văn bản.
 <div class="img-div" markdown="0">
     <img src="/images/dori/reading_order_example.jpg" width="500"/>
 </div>
@@ -87,9 +93,9 @@ Ví dụ bên dưới minh hoạ cho bạn thấy thứ tự đúng của việc
 Với DORI, mình tích hợp ba bước này trong một công cụ gọi là **Text Detection**. Công cụ này hiển thị các từ cùng với vị trí box của chúng. DORI cung cấp hai loại box cơ bản: **rectangle** và **polygon**. Với các văn bản thông thường, chỉ cần chọn **rectangle** là đủ, còn các chữ phức tạp mới cần dùng **polygon**.
 ![image](/images/dori/text_detection_tool.jpg)
 
-Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập văn bản, nội dung này sẽ hiển thị trong phần **document** bên trái và **reading order** bên phải để tiện theo dõi, group các từ thành dòng, dòng thành đoạn, và thành page tương ứng. thay đổi vị trí các từ để xác định đúng thứ tự đọc. 
+Khi vẽ hộp xong, bạn sẽ được yêu cầu nhập nội dung văn bản. Nội dung này sẽ hiển thị ở phần **document** bên trái và **reading order** bên phải, giúp bạn dễ dàng theo dõi, nhóm các từ thành dòng, dòng thành đoạn, và đoạn thành trang. Bạn cũng có thể thay đổi vị trí các từ để xác định đúng thứ tự đọc.
 
-DORI cho phép bạn select từng từ và right click để group lại thành dòng, các bạn có thể group từ và dòng thành đoạn, hay các dòng với nhau thành đoạn, tương tự như page. Đồng thời để dễ dàng hơn trong việc group mình hỗ trợ các bạn group các từ/dòng/đoạn trực tiếp tại phần hiển thị ảnh
+Tại DORI, mình hỗ trợ các bạn thao tác linh hoạt hơn bằng cách cho phép chọn từng từ, sau đó **right-click** để nhóm (group) lại thành dòng. Các bạn có thể tiếp tục nhóm từ và dòng thành đoạn, hoặc nhóm các dòng lại với nhau thành đoạn, rồi tiếp tục thành trang, tùy theo nhu cầu. Đặc biệt, để việc nhóm dễ dàng hơn, mình còn hỗ trợ các bạn thực hiện trực tiếp trên phần hiển thị ảnh, giúp quá trình thao tác trở nên trực quan và nhanh chóng hơn.
 
 Clip dưới là minh hoạ group các từ/dòng/đoạn bằng cách select từng từ/dòng
 <div class="img-div" markdown="0">
@@ -100,7 +106,11 @@ Clip dưới minh hoạ cách group từ/dòng/đoạn bằng cách select bên 
     <img src="/images/dori/group_2.gif" width="800"/>
 </div>
 
-DORI sẽ hiển thị màu khác nhau đối với dòng/đoạn/trang, đồng thời khi bạn select từng bên phần văn bản hay reading order thì các từ tương ứng bên phần ảnh sẽ được hiển thị giúp bạn kiểm tra nhanh chóng. Khi các bạn hover chuột qua các từ bên phần ảnh, nhãn của box đó sẽ được hiển thị giúp bạn kiểm tra, nếu bạn muốn thay đổi thì click vào box đó, thay đổi và nhấn enter. nhấn esc để ẩn box nhập liệu giúp bạn dễ dàng hơn khi điều chỉnh kích thước box. 
+DORI sẽ hiển thị các màu khác nhau để phân biệt giữa dòng, đoạn và trang. Khi bạn chọn (select) một phần văn bản ở khu vực **document** hoặc **reading order**, các từ tương ứng trong phần ảnh sẽ được đánh dấu, giúp bạn kiểm tra nhanh chóng và chính xác.
+
+Ngoài ra, khi bạn di chuột (hover) qua các từ trong phần ảnh, nhãn của hộp (box) đó sẽ được hiển thị, giúp bạn dễ dàng kiểm tra thông tin. Nếu muốn thay đổi nhãn, bạn chỉ cần click vào hộp đó, chỉnh sửa nội dung, và nhấn **Enter** để lưu thay đổi. Trong trường hợp cần ẩn hộp nhập liệu để dễ dàng điều chỉnh kích thước hộp, bạn chỉ cần nhấn **Esc**.
+
+Với các tính năng này, DORI hỗ trợ bạn kiểm tra và chỉnh sửa một cách trực quan và hiệu quả hơn, giúp tối ưu hóa quy trình đánh nhãn.
 
 <div class="img-div" markdown="0">
     <img src="/images/dori/text_detection_label.gif" width="800"/>
@@ -108,66 +118,96 @@ DORI sẽ hiển thị màu khác nhau đối với dòng/đoạn/trang, đồng
 
 
 ### Làm như nào để đánh nhãn ở bước này chính xác?
-Khi vẽ bounrady box cần phải vẽ cho từng từ, không phải vẽ cho từng kí tự, cũng ko phải vẽ cho từng câu hay đoạn. Boundary box cần bao phủ chính xác từng từ, ko đươc thiếu dấu câu hay nét, không được overlap với những boundary box khác. Các bạn xem thêm minh hoạ phía dưới, hình bên trái vẽ box chính xác bao phủ các dấu câu, các nét của từ. ngược lại bên trái các box vẽ thiếu chính xác, do đó sẽ ảnh hưởng kết quả nhận dạng 
+Khi vẽ **boundary box**, các bạn cần vẽ cho từng từ, không phải cho từng ký tự, cũng không phải cho từng câu hay đoạn. **Boundary box** cần bao phủ chính xác từng từ, đảm bảo không thiếu dấu câu hay nét chữ và không được chồng lấn (overlap) với các **boundary box** khác.
+
+Các bạn có thể tham khảo minh họa bên dưới. Hình bên trái cho thấy các **boundary box** được vẽ chính xác, bao phủ đầy đủ dấu câu và nét chữ của từng từ. Ngược lại, hình bên phải minh họa các **boundary box** bị vẽ thiếu chính xác, bỏ sót dấu câu hoặc nét, điều này sẽ ảnh hưởng trực tiếp đến kết quả nhận dạng.
 ![image](/images/dori/text_detection_example.jpg)
 
 Sau khi đánh nhãn xong thì bước tiếp theo là xác định các key information mà bạn muốn nhận dạng. 
 ### 4. Trích xuất Thông tin Chính (Key Information Extraction)  
 **Trích xuất thông tin chính là gì?**  
-Sau khi văn bản được nhận dạng và sắp xếp, bạn cần xác định thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích **Họ Tên** và **ID**, bạn cần tạo nhãn cho hai loại thông tin này và chọn cụm từ tương ứng trong văn bản. Bạn tham khảo video dưới để biết chi tiết
-<div class="img-div" markdown="0">
+Sau khi văn bản được nhận dạng và sắp xếp, bước tiếp theo là xác định các thông tin chính cần trích xuất. Ví dụ, nếu bạn cần rút trích Họ Tên và ID, bạn sẽ tạo nhãn cho hai loại thông tin này, sau đó chọn các cụm từ tương ứng trong văn bản để gán nhãn.
+
+Các bạn có thể tham khảo video dưới đây để hiểu rõ hơn về cách thực hiện.<div class="img-div" markdown="0">
     <img src="/images/dori/kie_label.gif" width="800"/>
 </div>
 
 
 #### Làm như nào để đánh nhãn ở bước này chính xác?
-Khi chọn các thông tin cần nhận dạng, các bạn phải select toàn bộ đối tượng đó trong văn bản. Ví dụ, bạn muốn đánh nhãn `Nguyễn Văn A` là tên thì phải bôi đen liên tục cụm từ này, không được select Nguyễn riêng, Văn riêng, A riêng. Nếu Nguyễn Văn A không nằm liên tục nhau trên văn bản, bạn cần quay lại bước text detection để group các từ thành dòng, dòng thành cụm. v.v hoặc thay đổi thứ tự đọc nếu việc group không hiệu quả.
+Khi chọn các thông tin cần nhận dạng, các bạn cần chọn toàn bộ đối tượng đó trong văn bản. Ví dụ, nếu muốn đánh nhãn Nguyễn Văn A là **Tên**, bạn phải bôi đen liên tục cụm từ này, không được chọn riêng Nguyễn, Văn, và A tách rời.
 
-
-
+Nếu Nguyễn Văn A không nằm liền nhau trên văn bản, bạn cần quay lại bước **text detection** để nhóm các từ thành dòng, dòng thành cụm, v.v. Hoặc, nếu việc nhóm không hiệu quả, bạn cần thay đổi thứ tự đọc để đảm bảo các từ liên quan được xử lý đúng.
 
 ## Huấn luyện Mô Hình  
-Huấn luyện mô hình là quá trình sử dụng tập dữ liệu đã được đánh nhãn để xây dựng mô hình nhận dạng. Trên Dori, bạn có thể huấn luyện mô hình trên tập dữ liệu của mình bất cứ khi nào cần. Việc huấn luyện có thể được thực hiện sau mỗi 10, 50, 100, hoặc 1000 mẫu dữ liệu để theo dõi độ chính xác của mô hình, sau khi cập nhật hoặc bổ sung dữ liệu, hoặc khi muốn nhận dạng thêm trường thông tin mới.
+**Huấn luyện mô hình** là quá trình sử dụng tập dữ liệu đã được đánh nhãn để xây dựng mô hình nhận dạng. Trên DORI, bạn có thể huấn luyện mô hình trên tập dữ liệu của mình bất cứ khi nào cần. Việc huấn luyện có thể thực hiện sau mỗi 10, 50, 100, hoặc 1000 mẫu dữ liệu, giúp bạn theo dõi độ chính xác của mô hình sau khi cập nhật hoặc bổ sung dữ liệu, hoặc khi muốn nhận dạng thêm các trường thông tin mới.
 
-Để bắt đầu huấn luyện trên Dori, bạn cần vào phần **Setting**, chọn **Train**, sau đó chọn mô hình phù hợp và cấu hình các tham số huấn luyện. Thông thường bạn sẽ không cần phải thay đổi tham số nào cả ngoại trừ `epoch_num` là số lần hoàn thành một lần huấn luyện trên toàn bộ dữ liệu. Điều chỉnh tham số này giúp giảm thời gian huấn luyện và giảm chi phí. Ngoài ra, tick chọn `Include AI-Augmented Labels` nếu bạn muốn thêm cả dữ liệu được phát sinh bởi model, tuy nhiên mình khuyến nghị không nên tick chọn vì dữ liệu này chưa được đánh nhãn lại cẩn thận bởi labeler.  Nhấn **Add** để khởi động quá trình huấn luyện mô hình. Hệ thống sẽ gửi email thông báo khi quá trình huấn luyện bắt đầu và kết thúc. Bạn có thể theo dõi lịch sử và độ chính xác của mô hình trong phần log.
+Cách bắt đầu huấn luyện trên DORI
+	1.	**Truy cập cài đặt**: Vào phần **Setting**, chọn **Train**.
+	2.	**Chọn mô hình**: Lựa chọn mô hình phù hợp với bài toán của bạn.
+	3.	**Cấu hình tham số huấn luyện**:
+	- Thông thường, bạn không cần thay đổi các tham số mặc định, ngoại trừ epoch_num (số lần hoàn thành huấn luyện trên toàn bộ dữ liệu). Việc điều chỉnh tham số này giúp giảm thời gian huấn luyện và tối ưu hóa chi phí.
+	- Nếu cần, bạn có thể tick chọn **Include AI-Augmented Labels** để bổ sung dữ liệu phát sinh tự động bởi mô hình. Tuy nhiên, mình khuyến nghị **không nên chọn** tùy chọn này trừ khi dữ liệu đã được đánh nhãn lại cẩn thận bởi labeler.
+	4.	**Khởi động huấn luyện**: Nhấn **Add** để bắt đầu quá trình huấn luyện mô hình.
+
+Hệ thống sẽ gửi email thông báo khi quá trình huấn luyện bắt đầu và kết thúc. Bạn cũng có thể theo dõi lịch sử và độ chính xác của mô hình trong phần **Log**, giúp quản lý và đánh giá hiệu quả mô hình một cách dễ dàng.
+
 ![image](/images/dori/new_train.jpg)
 
 
-Mỗi mô hình có một cấu hình riêng, bạn có thể click vào tab `Model` để xem cấu hình đang được sử dụng. Các thay đổi trong phần này sẽ được lưu lại, ngoài ra bạn cũng có thể reload lại default config của mô hình bằng nút reload bên phải. 
+Mỗi mô hình có một cấu hình riêng, và bạn có thể xem cấu hình hiện tại bằng cách nhấp vào tab **Model**. Tại đây, bạn có thể thực hiện các thay đổi tùy chỉnh trong cấu hình. Những thay đổi này sẽ được tự động lưu lại.
+
+Nếu cần quay lại cấu hình mặc định của mô hình, bạn chỉ cần nhấn nút **reload** ở góc phải. Điều này giúp bạn dễ dàng khôi phục cấu hình ban đầu khi cần.
 ![image](/images/dori/model_screen.jpg)
 
+Clip dưới đây minh họa quá trình tạo job để huấn luyện mô hình mới. Các bạn có thể dễ dàng theo dõi **log** và kiểm tra độ chính xác của mô hình bằng cách nhấn vào log.
 
-Clip dưới minh hoạ quá trình tạo job train mô hình mới, các bạn có thể dễ dàng xem log và theo dõi độ chính xác của mô hình bằng cách click vào log. 
-Phần log thể hiện các metrics quan trọng được highlight bằng màu đỏ, các metrics này càng lớn càng tốt. ngoài ra phần log cũng thể hiện các lỗi nếu có, do vậy bạn có thể nhìn vào log vào thực hiện các điều chỉ hoặc yêu cầu hỗ trợ. 
+Phần log hiển thị các **metrics quan trọng** được đánh dấu bằng màu đỏ, giúp bạn dễ dàng nhận biết. Các metrics này **càng lớn** thì mô hình hoạt động càng tốt. Bên cạnh đó, log cũng cung cấp thông tin về các lỗi (nếu có), giúp bạn nhanh chóng phát hiện vấn đề và thực hiện các điều chỉnh cần thiết, hoặc yêu cầu hỗ trợ kịp thời.
 
 <div class="img-div" markdown="0">
   <img width="800" alt="Screenshot 2024-12-10 at 21 41 44" src="/images/dori/new_train.gif">
 </div>
 
-Sau khi huấn luyện xong, mô hình của bạn sẽ được tự động deploy ( xem thêm giải thích bên dưới). 
+Sau khi quá trình huấn luyện hoàn tất, mô hình của bạn sẽ được tự động **deploy** (triển khai) để sẵn sàng sử dụng.
+
+Nếu bạn cần thêm thông tin chi tiết về cách hoạt động của quá trình deploy, hãy xem phần giải thích bên dưới.
 ![image](/images/dori/train_screen.jpg)
 
-Sau đó bạn có thể dễ dàng kiểm tra mô hình vừa huấn luyện bên tab `API`
+Sau đó bạn có thể dễ dàng kiểm tra mô hình vừa huấn luyện bên tab **API**
 ![image](/images/dori/api_screen.jpg)
 
+Hãy lặp lại quy trình trên, bao gồm các bước đánh nhãn, huấn luyện, và kiểm tra, lần lượt đối với từng mô hình: **text detection**, sau đó là **text recognition**, tiếp đến là **reading order**, và cuối cùng là **key information extraction**. Lưu ý rằng kết quả huấn luyện của các mô hình trước đó sẽ được sử dụng làm đầu vào cho các mô hình phía sau, do đó cần thực hiện tuần tự và chính xác.
 
-Lặp lại quy trình trên từ đánh nhãn, huấn luyện, kiểm tra lần lượt đối với text detection, rồi mới tới text recognition, reading order và cuối cùng là key information extraction vì kết quả huấn luyện của các mô hình trước đó được sử dụng cho các mô hình phía sau. 
-
-Ở DORI, các bạn có thể dễ dàng huấn luyện model trên tập 10-20 ảnh, sau đó tăng dần lên, hãy tận dụng điều này để sớm có kết quả từ đó thực hiện các điều chỉnh hay tìm kiếm hỗ trợ từ mình hoặc liên hệ qua website của dori tại [dori.vn](https://dori.vn)
+Tại DORI, các bạn có thể dễ dàng huấn luyện mô hình chỉ với tập 10–20 ảnh ban đầu, sau đó tăng dần quy mô dữ liệu. Hãy tận dụng tính năng này để nhanh chóng có được kết quả ban đầu, từ đó thực hiện các điều chỉnh cần thiết hoặc tìm kiếm hỗ trợ từ mình. Nếu cần thêm thông tin, bạn có thể liên hệ qua website của DORI tại [dori.vn](https://dori.vn) để được tư vấn chi tiết. 
 
 ### Tip để tăng tốc quá trình đánh nhãn
-Quá trình đánh nhãn thường mất nhiều thời gian và công sức, nhưng Dori cung cấp tính năng **AI-Augmented Labeling** để giúp bạn tận dụng mô hình được huấn luyện trên dữ liệu đã đánh nhãn để tự động áp dụng vào dữ liệu chưa đánh nhãn. Thông thường, bạn chỉ cần đánh nhãn 10-20 mẫu, sau đó huấn luyện mô hình trên dữ liệu này. Khi huấn luyện xong, bạn chỉ cần nhấn **AI-Augmented Labeling** để áp dụng mô hình lên phần dữ liệu còn lại chưa đánh nhãn. Cá nhân mình thường xuyên sử dụng tính năng này vì nó cực kì hữu dụng giúp tiết kiệm rất nhiều thời gian và tăng năng suất của cá nhóm.
+Quá trình đánh nhãn thường tốn nhiều thời gian và công sức, nhưng DORI cung cấp tính năng **AI-Augmented Labeling** để hỗ trợ bạn. Tính năng này cho phép tận dụng mô hình đã được huấn luyện trên dữ liệu đã đánh nhãn để tự động áp dụng vào phần dữ liệu chưa được đánh nhãn.
+
+Thông thường, bạn chỉ cần đánh nhãn khoảng 10–20 mẫu, sau đó tiến hành huấn luyện mô hình trên tập dữ liệu này. Khi quá trình huấn luyện hoàn tất, bạn chỉ cần nhấn vào **AI-Augmented Labeling** để áp dụng mô hình đã huấn luyện lên phần dữ liệu còn lại chưa được đánh nhãn.
+
+Cá nhân mình thường xuyên sử dụng tính năng này vì nó cực kỳ hữu ích, giúp tiết kiệm rất nhiều thời gian và tăng năng suất của cả nhóm.
 ![image](/images/dori/ai_augmented_labelling.jpg)
 
 
 ### Huấn luyện text detection, text recognition, reading order detection, key information extraction như nào?
-Huấn luyện mô hình text detection, text recognition, v.v trên DORI về cơ bản là hoàn thành giống như. Tuy nhiên mình muốn nhấn mạnh rằng thứ tự huấn luyện là quan trọng vì mô trước phía sau như text recognition, key information extract sử dụng mô hình huấn luyện ở bước trước. 
+Việc huấn luyện các mô hình như **text detection**, **text recognition**, và các mô hình khác trên DORI về cơ bản được thực hiện theo quy trình tương tự. Tuy nhiên, mình muốn nhấn mạnh rằng **thứ tự huấn luyện** là rất quan trọng.
 
-## Chạy Offline mô hình của bạn. 
+Lý do là các mô hình ở các bước sau, chẳng hạn như **text recognition** hay **key information extraction**, sẽ sử dụng kết quả từ các mô hình đã được huấn luyện ở các bước trước. Vì vậy, cần tuân thủ trình tự huấn luyện để đảm bảo kết quả tốt nhất.
 
-Khi huấn luyện xong, DORI cho phép bạn tải về mô hình của mình và chạy offline trên máy tính, những mô hình được mình thiết kế để chạy on-device, lightweight nên đều chạy được trên CPU và có tốt độ xử lý thuộc top đầu trên thị thường. Bạn chỉ đơn vào mô hình đã huấn luyện để tải về và chạy theo hướng dẫn trong README.
+Hãy bắt đầu với **text detection**, tiếp theo là **text recognition**, rồi đến **reading order**, và cuối cùng là **key information extraction**. Thực hiện đúng thứ tự này sẽ giúp bạn xây dựng một pipeline hoạt động hiệu quả và chính xác.
+## Chạy offline mô hình của bạn. 
+
+Sau khi hoàn tất quá trình huấn luyện, DORI cho phép bạn tải về mô hình của mình và chạy offline trên máy tính. Các mô hình do mình thiết kế đều được tối ưu hóa để chạy **on-device**, có dung lượng nhẹ (**lightweight**) và hiệu suất cao. Nhờ vậy, chúng có thể chạy mượt mà trên **CPU**, đồng thời đạt tốc độ xử lý thuộc hàng top đầu trên thị trường.
+
+Để tải mô hình, bạn chỉ cần nhấn vào mô hình đã huấn luyện và tải về. Sau đó, làm theo hướng dẫn trong file **README** đi kèm để cài đặt và chạy mô hình.
 ![image](/images/dori/download_model.jpg)
 
+Ngoài các chức năng đã nêu, DORI còn cho phép bạn **thêm thành viên** vào dự án để cùng tham gia đánh nhãn, giúp tăng tốc độ và hiệu quả xử lý dữ liệu.
 
+Bên cạnh đó, DORI còn hỗ trợ nhiều bài toán quan trọng khác như:
+	•	**Phân loại văn bản**: Xác định loại tài liệu hoặc nội dung cụ thể.
+	•	**Xác định layout**: Phân tích và nhận dạng bố cục của văn bản.
+	•	**Chỉnh phẳng ảnh**: Xử lý hình ảnh bị cong hoặc nghiêng để cải thiện độ chính xác nhận dạng.
+	•	**Nhận dạng và xác định cấu trúc bảng**: Tự động phát hiện và phân tích bảng biểu trong văn bản.
+	•	**Rút trích mối quan hệ**: Tìm và trích xuất các mối liên hệ giữa các thông tin trong tài liệu.
 
-Ngoài các chức năng ở trên DORI cho phép các bạn thêm các thành viên để đánh nhãn, và cũng hỗ trợ các bài toán quan trọng khác như Phân loại văn bản, xác định layout, chỉnh phẳng ảnh, nhận dạng và xác định cấu trúc bảng, rút trích mối quan hệ. 
+DORI cung cấp một giải pháp toàn diện, đáp ứng hầu hết các nhu cầu xử lý văn bản trong thực tế, giúp bạn dễ dàng quản lý và xử lý dữ liệu phức tạp.
