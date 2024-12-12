@@ -128,13 +128,17 @@ Khi chọn các thông tin cần nhận dạng, các bạn phải select toàn b
 ## Huấn luyện Mô Hình  
 Huấn luyện mô hình là quá trình sử dụng tập dữ liệu đã được đánh nhãn để xây dựng mô hình nhận dạng. Trên Dori, bạn có thể huấn luyện mô hình trên tập dữ liệu của mình bất cứ khi nào cần. Việc huấn luyện có thể được thực hiện sau mỗi 10, 50, 100, hoặc 1000 mẫu dữ liệu để theo dõi độ chính xác của mô hình, sau khi cập nhật hoặc bổ sung dữ liệu, hoặc khi muốn nhận dạng thêm trường thông tin mới.
 
-Để bắt đầu huấn luyện trên Dori, bạn cần vào phần **Setting**, chọn **Train**, sau đó chọn mô hình phù hợp và cấu hình các tham số huấn luyện. Nhấn **Add** để khởi động quá trình huấn luyện mô hình. Hệ thống sẽ gửi email thông báo khi quá trình huấn luyện bắt đầu và kết thúc. Bạn có thể theo dõi lịch sử và độ chính xác của mô hình trong phần log.
+Để bắt đầu huấn luyện trên Dori, bạn cần vào phần **Setting**, chọn **Train**, sau đó chọn mô hình phù hợp và cấu hình các tham số huấn luyện. Thông thường bạn sẽ không cần phải thay đổi tham số nào cả ngoại trừ `epoch_num` là số lần hoàn thành một lần huấn luyện trên toàn bộ dữ liệu. Điều chỉnh tham số này giúp giảm thời gian huấn luyện và giảm chi phí. Ngoài ra, tick chọn `Include AI-Augmented Labels` nếu bạn muốn thêm cả dữ liệu được phát sinh bởi model, tuy nhiên mình khuyến nghị không nên tick chọn vì dữ liệu này chưa được đánh nhãn lại cẩn thận bởi labeler.  Nhấn **Add** để khởi động quá trình huấn luyện mô hình. Hệ thống sẽ gửi email thông báo khi quá trình huấn luyện bắt đầu và kết thúc. Bạn có thể theo dõi lịch sử và độ chính xác của mô hình trong phần log.
+<img width="1396" alt="Screenshot 2024-12-12 at 11 05 33" src="https://github.com/user-attachments/assets/b0b0b37f-3d3a-45b6-a585-d33572ab2f11" />
+
 
 Mỗi mô hình có một cấu hình riêng, bạn có thể click vào tab `Model` để xem cấu hình đang được sử dụng. Các thay đổi trong phần này sẽ được lưu lại, ngoài ra bạn cũng có thể reload lại default config của mô hình bằng nút reload bên phải. 
 
 <img width="1396" alt="Screenshot 2024-12-10 at 21 41 44" src="https://github.com/user-attachments/assets/69f0ad99-6327-447e-9f11-af655964e2fe">
 
-Clip dưới minh hoạ quá trình tạo job train mô hình mới, các bạn có thể dễ dàng xem log và theo dõi độ chính xác của mô hình bằng cách click vào log 
+Clip dưới minh hoạ quá trình tạo job train mô hình mới, các bạn có thể dễ dàng xem log và theo dõi độ chính xác của mô hình bằng cách click vào log. 
+Phần log thể hiện các metrics quan trọng được highlight bằng màu đỏ, các metrics này càng lớn càng tốt. ngoài ra phần log cũng thể hiện các lỗi nếu có, do vậy bạn có thể nhìn vào log vào thực hiện các điều chỉ hoặc yêu cầu hỗ trợ. 
+
 <div class="img-div" markdown="0">
   <img width="1396" alt="Screenshot 2024-12-10 at 21 41 44" src="/images/dori/ScreenRecording2024-12-10at21.46.58-ezgif.com-video-to-gif-converter.gif">
 </div>
@@ -154,19 +158,6 @@ Quá trình đánh nhãn thường mất nhiều thời gian và công sức, nh
 
 <img width="1396" alt="Screenshot 2024-12-12 at 10 24 34" src="https://github.com/user-attachments/assets/b6742ebc-be8d-4b75-b0da-e1ed0be5336f" />
 
-### Huấn luyện text detection như nào?
-## Huấn luyện text recognition như nào?
-## Huấn luyện reading order detection như nào?
-## Huấn luyện key information extraction như nào?
+### Huấn luyện text detection, text recognition, reading order detection, key information extraction như nào?
+Huấn luyện mô hình text detection, text recognition, v.v trên DORI về cơ bản là hoàn thành giống như. Tuy nhiên mình muốn nhấn mạnh rằng thứ tự huấn luyện là quan trọng vì mô trước phía sau như text recognition, key information extract sử dụng mô hình huấn luyện ở bước trước. 
 
-### Huấn luyện Mô Hình để rút trích thông tin chính. 
-Để huấn luyện mô hình rút trích thông tin chính, các bạn cần phải huấn luyện trước các mô hình sau **text detection**, **text recognition**, **reading order detection** ( nếu cần), và sau đó mới huấn luyện mô hình cuối cùng là **key information extraction**. Điều quan trọng là 4 mô hình này cần phải huấn luyện tuần tự, tức là mô hình **text detection** cần huấn luyện xong trước rồi mới tới mô hình **text recognition**, sau khi mô hình này xong thì mới huấn luyện tuần tự 2 mô hình còn lại. Thứ tự huấn luyện là qua trọng và chỉ bắt đầu huấn luyện mô hình tiếp theo nếu mô hình trước đó đã chạy xong. 
-
-Để hiểu rõ hơn, vui lòng tham khảo video dưới đây.
-
-
-## Kiểm Tra Mô Hình  
-Sau khi mô hình được huấn luyện xong, hệ thống sẽ tự động triển khai (deploy) mô hình để cho phép bạn kiểm tra và sử dụng. Hãy chuyển sang tab **API**, chọn mô hình tương ứng, tải lên hình ảnh và nhấn **Done**. Kết quả sẽ hiển thị ở bên phải để bạn tham khảo. Đồng thời, bạn cũng có thể sử dụng lệnh **curl** để kiểm tra mô hình. Để rõ hơn, vui lòng tham khảo video dưới đây.
-
-### Quy trình kiểm tra mô hình 
-Thông thường sau khi train xong mô hình text detection và text recognition bạn đã có thể kiểm tra kết quả nhận dạng của mô hình bằng cách chon tab **API** sau đó chọn loại mô hình là **text recognition** sau đó upload một ảnh bạn muốn kiểm tra, chọn mô hình đã được huấn luyện, nhấn nút **Done** và đợi kết quả hiển thị bên phải. 
