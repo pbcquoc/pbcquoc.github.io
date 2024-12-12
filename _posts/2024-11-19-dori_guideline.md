@@ -141,7 +141,7 @@ Clip dưới minh hoạ quá trình tạo job train mô hình mới, các bạn 
 Phần log thể hiện các metrics quan trọng được highlight bằng màu đỏ, các metrics này càng lớn càng tốt. ngoài ra phần log cũng thể hiện các lỗi nếu có, do vậy bạn có thể nhìn vào log vào thực hiện các điều chỉ hoặc yêu cầu hỗ trợ. 
 
 <div class="img-div" markdown="0">
-  <img width="1396" alt="Screenshot 2024-12-10 at 21 41 44" src="/images/dori/ScreenRecording2024-12-10at21.46.58-ezgif.com-video-to-gif-converter.gif">
+  <img width="1396" alt="Screenshot 2024-12-10 at 21 41 44" src="/images/dori/new_train.gif">
 </div>
 
 Sau khi huấn luyện xong, mô hình của bạn sẽ được tự động deploy ( xem thêm giải thích bên dưới). 
