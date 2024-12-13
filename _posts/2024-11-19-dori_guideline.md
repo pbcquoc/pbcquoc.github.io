@@ -17,13 +17,13 @@ Thực hiện thủ công các bước trên đòi hỏi rất nhiều thời gi
 
 Trong quá trình phát triển nhiều mô hình nhận dạng khác nhau, mình nhận thấy rằng các bài toán này luôn tuân theo một quy trình chuẩn. Từ những kinh nghiệm tích lũy, mình đã xây dựng **DORI** – một nền tảng **end-to-end** chuyên cung cấp các giải pháp nhận dạng văn bản toàn diện. **DORI** không chỉ giúp rút ngắn thời gian xây dựng mô hình mà còn hỗ trợ tạo ra các giải pháp chất lượng cao, đáp ứng nhu cầu của cả cá nhân lẫn doanh nghiệp. Với khả năng xử lý hiệu quả và giao diện thân thiện, **DORI** tối ưu hóa quy trình xây dựng mô hình nhận dạng văn bản, giúp bạn giảm thiểu chi phí, tiết kiệm thời gian và đảm bảo tiêu chuẩn chất lượng cao nhất cho các giải pháp OCR – đặc biệt là trong ngôn ngữ tiếng Việt.
 
-**DORI** không đơn thuần là một công cụ. Với khả năng đóng vai trò như một “**baseline**” chuẩn mực, **DORI** còn là nền tảng để cộng đồng cùng tham khảo và nâng cao chất lượng trong các bài toán nhận dạng tiếng Việt. Nổi bật với các tính năng sẵn có như:
+**DORI** không chỉ đơn thuần là một công cụ để hỗ trợ các nhân, chính phủ trong công cuộc chuyển đổi sổ mà còn đóng vai trò như một “**baseline**” chuẩn mực để cộng đồng cùng tham khảo và nâng cao chất lượng trong các bài toán nhận dạng tiếng Việt. Nổi bật với các tính năng sẵn có như:
 - **Giao diện đánh nhãn dữ liệu trực quan**: Giúp bạn dễ dàng xử lý và quản lý dữ liệu.
 - **Quy trình huấn luyện tự động**: Đơn giản hóa việc huấn luyện mô hình chỉ với vài thao tác.
 - **Công cụ triển khai và kiểm thử mô hình**: Tích hợp các bước từ huấn luyện đến triển khai để đánh giá hiệu quả.
 - **Mô hình pretrained cho tiếng Việt và tiếng Anh**: Tăng tốc độ đánh nhãn và huấn luyện, giảm thiểu khối lượng công việc thủ công.
 
-Để sử dụng **DORI**, các bạn truy cập trang chủ tại [https://dori.vocr.vn](https://dori.vocr.vn). Sau đó, chọn Đăng nhập hoặc Đăng ký nếu chưa có tài khoản. **DORI** hỗ trợ đăng nhập dễ dàng bằng tài khoản Google hoặc bằng tài khoản tự tạo.
+Để sử dụng **DORI**, các bạn truy cập trang chủ tại [dori.vocr.vn](https://dori.vocr.vn). Sau đó, chọn **Đăng nhập** hoặc **Đăng ký** nếu chưa có tài khoản. **DORI** hỗ trợ đăng nhập dễ dàng bằng tài khoản Google hoặc bằng tài khoản tự tạo.
 
 Sau khi hoàn tất đăng nhập, các bạn sẽ được đưa đến giao diện chính, nơi quản lý tất cả các dự án của mình. Bạn hãy chọn ngôn ngữ ưu thích tiếng Việt/Anh tại góc trái dưới. Sau đó, để bắt đầu một dự án mới, các bạn thực hiện các bước sau:
 ![image](/images/dori/project_home.jpg)
