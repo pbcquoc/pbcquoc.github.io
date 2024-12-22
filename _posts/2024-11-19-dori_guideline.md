@@ -23,7 +23,7 @@ Trong quá trình phát triển nhiều mô hình nhận dạng khác nhau, mìn
 - **Công cụ triển khai và kiểm thử mô hình**: Tích hợp các bước từ huấn luyện đến triển khai để đánh giá hiệu quả.
 - **Mô hình pretrained cho tiếng Việt và tiếng Anh**: Tăng tốc độ đánh nhãn và huấn luyện, giảm thiểu khối lượng công việc thủ công.
 
-Để sử dụng **DORI**, các bạn truy cập trang chủ tại [dori.vocr.vn](https://dori.vocr.vn). Sau đó, chọn **Đăng nhập** hoặc **Đăng ký** nếu chưa có tài khoản. **DORI** hỗ trợ đăng nhập dễ dàng bằng tài khoản Google hoặc bằng tài khoản tự tạo.
+Để sử dụng **DORI**, các bạn truy cập trang chủ tại [dorify.net](https://dorify.net). Sau đó, chọn **Đăng nhập** hoặc **Đăng ký** nếu chưa có tài khoản. **DORI** hỗ trợ đăng nhập dễ dàng bằng tài khoản Google hoặc bằng tài khoản tự tạo.
 
 Sau khi hoàn tất đăng nhập, các bạn sẽ được đưa đến giao diện chính, nơi quản lý tất cả các dự án của mình. Bạn hãy chọn ngôn ngữ ưu thích tiếng Việt/Anh tại góc trái dưới. Sau đó, để bắt đầu một dự án mới, các bạn thực hiện các bước sau:
 ![image](/images/dori/project_home.jpg)
@@ -183,7 +183,7 @@ Sau đó bạn có thể dễ dàng kiểm tra mô hình vừa huấn luyện b�
 
 Hãy lặp lại quy trình trên, bao gồm các bước đánh nhãn, huấn luyện, và kiểm tra, lần lượt đối với từng mô hình: **text detection**, sau đó là **text recognition**, tiếp đến là **reading order**, và cuối cùng là **key information extraction**. Lưu ý rằng kết quả huấn luyện của các mô hình trước đó sẽ được sử dụng làm đầu vào cho các mô hình phía sau, do đó cần thực hiện tuần tự và chính xác.
 
-Tại DORI, các bạn có thể dễ dàng huấn luyện mô hình chỉ với tập 10–20 ảnh ban đầu, sau đó tăng dần quy mô dữ liệu. Hãy tận dụng tính năng này để nhanh chóng có được kết quả ban đầu, từ đó thực hiện các điều chỉnh cần thiết hoặc tìm kiếm hỗ trợ từ mình. Nếu cần thêm thông tin, bạn có thể liên hệ qua website của DORI tại [dori.vocr.vn](https://dori.vocr.vn) để được tư vấn chi tiết. 
+Tại DORI, các bạn có thể dễ dàng huấn luyện mô hình chỉ với tập 10–20 ảnh ban đầu, sau đó tăng dần quy mô dữ liệu. Hãy tận dụng tính năng này để nhanh chóng có được kết quả ban đầu, từ đó thực hiện các điều chỉnh cần thiết hoặc tìm kiếm hỗ trợ từ mình. Nếu cần thêm thông tin, bạn có thể liên hệ qua website của DORI tại [dorify.net](https://dorify.net) để được tư vấn chi tiết. 
 
 ### Tip để tăng tốc quá trình đánh nhãn
 Quá trình đánh nhãn thường tốn nhiều thời gian và công sức, nhưng DORI cung cấp tính năng **AI-Augmented Labeling** để hỗ trợ bạn. Tính năng này cho phép tận dụng mô hình đã được huấn luyện trên dữ liệu đã đánh nhãn để tự động áp dụng vào phần dữ liệu chưa được đánh nhãn.
