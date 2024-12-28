@@ -79,9 +79,11 @@ Các bước nhóm ở trên giúp tạo thành cấu trúc **hier text** (cấu
 Theo mình quan sát, phần lớn các loại giấy tờ chỉ cần nhóm đến cấp đoạn (**paragraph**) là đủ để xác định thứ tự đọc. Chỉ khi văn bản có nhiều trang như minh họa ở trên, các bạn mới cần xem xét việc nhóm thêm cấp trang (**page**).
 
 Ở **DORI**, mình cho phép các bạn **hover** qua các từ/dòng/đoạn/page của văn bản ở **reading order panel** bên phải, giúp các bạn dễ dàng review tính chính xác của quá trình *group* .
+
 <div class="img-div" markdown="0">
     <img src="/images/dori/reading_order.gif" width="800"/>
 </div>
+
 Mặc dù chúng ta đã xác định được dòng, đoạn, và trang của văn bản, nhưng đôi khi thứ tự đọc vẫn có thể bị sai nếu chỉ dựa vào các thông tin này. Ví dụ, với hóa đơn bị nghiêng hoặc văn bản có nhiều cột, việc sắp xếp các từ theo cách thông thường sẽ không đủ. Trong trường hợp này, chúng ta cần sử dụng mô hình **reading order** để xác định đúng thứ tự đọc. Tại **DORI**, mình cũng cho phép các bạn tự sắp xếp từng từ để xác định chính xác thứ tự đọc của văn bản, từ đó dùng dữ liệu này để huấn luyện mô hình **reading order**.
 
 Phần tiếp theo mình sẽ làm rõ reading order model là gì?
