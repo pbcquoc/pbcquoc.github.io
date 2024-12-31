@@ -28,6 +28,9 @@ Trong quá trình phát triển nhiều mô hình nhận dạng khác nhau, mìn
 Sau khi hoàn tất đăng nhập, các bạn sẽ được đưa đến giao diện chính, nơi quản lý tất cả các dự án của mình. Bạn hãy chọn ngôn ngữ ưu thích tiếng Việt/Anh tại góc trái dưới. Sau đó, để bắt đầu một dự án mới, các bạn thực hiện các bước sau:
 ![image](/images/dori/project_home.jpg)
 
+Bạn có thể tham khảo video tóm tắt dưới đây về cách sử dụng DORI để nhận dạng thông tin chính 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gEOR42B4KzY?si=NvTofgU3isbHILef" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Tạo Dự Án Mới  
 Đầu tiên, hãy tạo một dự án mới trên DORI bằng cách nhấn vào **Create Project**, sau đó điền tên dự án, mô tả và phân loại. Hãy chọn hai công cụ cơ bản là **text detection** và **key information extraction**, ngoài 2 công cụ cơ bản ngoài DORI, còn cung cấp các công cụ khác như **Phân loại văn bản**, **Phân tích bố cục**, **Xác định cấu trúc bảng**, **Rút trích mối quan hệ**, v.v. Tiếp theo, nhấn vào **Upload Image** để chọn các ảnh cần đánh nhãn.  
 
