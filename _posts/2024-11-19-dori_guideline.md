@@ -31,7 +31,7 @@ Sau khi hoàn tất đăng nhập, các bạn sẽ được đưa đến giao di
 Bạn có thể tham khảo video tóm tắt dưới đây về cách sử dụng DORI để nhận dạng thông tin chính 
 
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gEOR42B4KzY?si=NvTofgU3isbHILef" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="840" height="472" src="https://www.youtube.com/embed/gEOR42B4KzY?si=NvTofgU3isbHILef" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </p>
 
 ## Tạo Dự Án Mới  
