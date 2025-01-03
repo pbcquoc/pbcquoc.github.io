@@ -228,6 +228,10 @@ Sau khi hoàn tất quá trình huấn luyện, DORI cho phép bạn tải về 
 Để tải mô hình, bạn chỉ cần nhấn vào mô hình đã huấn luyện và tải về. Sau đó, làm theo hướng dẫn trong file **README** đi kèm để cài đặt và chạy mô hình.
 ![image](/images/dori/download_model.jpg)
 
+
+## Các lỗi thường gặp
+- Đánh quá ít dữ liệu: Thông thường các bạn cần tối thiếu 10 mẫu để huấn luyện là không báo lỗi.
+
 Ngoài các chức năng đã nêu, DORI còn cho phép bạn **thêm thành viên** vào dự án để cùng tham gia đánh nhãn, giúp tăng tốc độ và hiệu quả xử lý dữ liệu.
 
 Bên cạnh đó, DORI còn hỗ trợ nhiều bài toán quan trọng khác như:
