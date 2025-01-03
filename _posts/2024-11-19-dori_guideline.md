@@ -231,7 +231,8 @@ Sau khi hoàn tất quá trình huấn luyện, DORI cho phép bạn tải về 
 
 ## Các lỗi thường gặp
 - Đánh quá ít dữ liệu: Thông thường các bạn cần tối thiếu 10 mẫu để huấn luyện là không báo lỗi.
-
+- Ảnh đánh nhãn khác với ảnh chạy thực tế: Luôn đảm bảo rằng cách bạn thu thập ảnh để đánh nhãn giống với ảnh input cho mô hình khi chạy thực tế.
+   
 Ngoài các chức năng đã nêu, DORI còn cho phép bạn **thêm thành viên** vào dự án để cùng tham gia đánh nhãn, giúp tăng tốc độ và hiệu quả xử lý dữ liệu.
 
 Bên cạnh đó, DORI còn hỗ trợ nhiều bài toán quan trọng khác như:
