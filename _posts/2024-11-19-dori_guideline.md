@@ -225,8 +225,19 @@ Hãy bắt đầu với **text detection**, tiếp theo là **text recognition**
 
 Sau khi hoàn tất quá trình huấn luyện, DORI cho phép bạn tải về mô hình của mình và chạy offline trên máy tính. Các mô hình do mình thiết kế đều được tối ưu hóa để chạy **on-device**, có dung lượng nhẹ (**lightweight**) và hiệu suất cao. Nhờ vậy, chúng có thể chạy mượt mà trên **CPU**, đồng thời đạt tốc độ xử lý thuộc hàng top đầu trên thị trường.
 
-Để tải mô hình, bạn chỉ cần nhấn vào mô hình đã huấn luyện và tải về. Sau đó, làm theo hướng dẫn trong file **README** đi kèm để cài đặt và chạy mô hình.
+Để tải mô hình, bạn chỉ cần nhấn vào mô hình đã huấn luyện và tải về. Sau đó, làm theo hướng dẫn trong file **README** đi kèm để cài đặt và chạy mô hình hoặc xem 2 clip dưới để biết cách build docker image và chạy offline API cho mô hình của bạn.
 ![image](/images/dori/download_model.jpg)
+
+Build docker image của bạn
+<div class="img-div" markdown="0">
+  <img width="800" alt="Screenshot 2024-12-10 at 21 41 44" src="/images/dori/docker-build-dori.gif">
+</div>
+
+Truy cập API của mô hình vừa tải về
+<div class="img-div" markdown="0">
+  <img width="800" alt="Screenshot 2024-12-10 at 21 41 44" src="/images/dori/dori-api.gif">
+</div>
+
 
 
 ## Các lỗi thường gặp
